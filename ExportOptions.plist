@@ -7,6 +7,11 @@
   <string>app-store</string>
   <key>teamID</key>
   <string>C677KJH544</string>
+  <key>provisioningProfiles</key>
+  <dict>
+    <key>com.taowang.tank-the-future</key>
+    <string>tank</string>
+  </dict>
   <key>uploadSymbols</key>
   <true/>
   <key>compileBitcode</key>
