@@ -74,7 +74,6 @@ jobs:
           security list-keychains -s "$HOME/Library/Keychains/actions.keychain"
           security default-keychain -s "$HOME/Library/Keychains/actions.keychain"
           security unlock-keychain -p github "$HOME/Library/Keychains/actions.keychain"
-          # Allow non-interactive codesign
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k github "$HOME/Library/Keychains/actions.keychain"
 
       # Keep keychain unlocked & show identity to prevent codesign stalls
@@ -85,7 +84,7 @@ jobs:
           echo "== Codesigning identities in actions.keychain =="
           security find-identity -v -p codesigning "$HOME/Library/Keychains/actions.keychain" || true
 
-      # Install WWDR intermediate (defensive; avoids rare trust delays)
+      # Install WWDR intermediate (defensive)
       - name: Install Apple WWDR intermediate (optional)
         run: |
           curl -fsSL https://www.apple.com/certificateauthority/AppleWWDRCAG4.cer -o AppleWWDRCAG4.cer
@@ -174,11 +173,32 @@ jobs:
             -exportPath "$PWD/build/output" \
             OTHER_CODE_SIGN_FLAGS="--keychain $HOME/Library/Keychains/actions.keychain --timestamp=none"
 
-      # 7) Upload to TestFlight with App Store Connect API Key
+      # 6.1) Show what's in the export folder (helps if upload can't find the ipa)
+      - name: List export folder
+        run: |
+          echo "== build/output contents =="
+          ls -lah build/output || true
+          echo "== build tree =="
+          find build -maxdepth 2 -type f | sed 's/^/  /'
+
+      # 6.2) Locate exact IPA path (avoid globs passed to altool)
+      - name: Locate IPA
+        id: locate_ipa
+        run: |
+          set -e
+          IPA=$(ls -1 build/output/*.ipa 2>/dev/null | head -n 1 || true)
+          if [ -z "$IPA" ]; then
+            echo "::error ::No .ipa found in build/output/"
+            exit 1
+          fi
+          echo "Found IPA: $IPA"
+          echo "ipa_path=$IPA" >> "$GITHUB_OUTPUT"
+
+      # 7) Upload to TestFlight with App Store Connect API Key (use exact path)
       - name: Upload to TestFlight
         uses: apple-actions/upload-testflight-build@v1
         with:
-          app-path: build/output/*.ipa
+          app-path: ${{ steps.locate_ipa.outputs.ipa_path }}
           issuer-id: ${{ secrets.APP_STORE_ISSUER_ID }}
           api-key-id: ${{ secrets.APP_STORE_KEY_ID }}
           api-private-key: ${{ secrets.APP_STORE_API_KEY }}
@@ -188,4 +208,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Tank-iOS-IPA
-          path: build/output/*.ipa
+          path: ${{ steps.locate_ipa.outputs.ipa_path }}
