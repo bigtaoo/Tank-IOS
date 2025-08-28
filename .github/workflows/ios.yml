@@ -40,6 +40,10 @@ jobs:
           /usr/libexec/PlistBuddy -c "Set :objects:UnityFramework:attributes:ProvisioningStyle Automatic" Unity-iPhone.xcodeproj/project.pbxproj || true
           /usr/libexec/PlistBuddy -c "Set :TargetAttributes:UnityFramework:ProvisioningStyle Automatic" Unity-iPhone.xcodeproj/project.pbxproj || true
 
+      - name: Force UnityFramework signing to Automatic
+        run: |
+          sed -i '' 's/ProvisioningStyle = Manual;/ProvisioningStyle = Automatic;/g' Unity-iPhone.xcodeproj/project.pbxproj
+
       # Archive app
       - name: Archive app
         run: |
