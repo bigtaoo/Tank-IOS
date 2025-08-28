@@ -1,4 +1,4 @@
-name: iOS Build & Upload (Manual Sign per Target + API Key Upload)
+name: iOS Build & Upload (Per-Target Manual Sign + API Key)
 
 on:
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
           UUID=$(/usr/libexec/PlistBuddy -c Print:UUID /dev/stdin <<< "$(security cms -D -i tank.mobileprovision)")
           cp tank.mobileprovision "$HOME/Library/MobileDevice/Provisioning Profiles/$UUID.mobileprovision"
 
-      # 2) Install certificate (.p12 -> base64 secret)
+      # 2) Install Apple Distribution certificate (.p12 -> base64 secret)
       - name: Install signing certificate
         run: |
           echo "${{ secrets.P12_BASE64 }}" | base64 --decode > dist.p12
@@ -36,8 +36,8 @@ jobs:
           # Allow codesign without UI prompts
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k github "$HOME/Library/Keychains/actions.keychain"
 
-      # 3) Patch signing per target using the xcodeproj gem (reliable for Unity projects)
-      - name: Patch project signing (Unity-iPhone manual, UnityFramework automatic)
+      # 3) Patch project signing with xcodeproj (reliable for Unity)
+      - name: Patch signing per target
         run: |
           gem install xcodeproj --no-document
           ruby - <<'RUBY'
@@ -49,44 +49,53 @@ jobs:
             PROFILE   = 'tank'
             APP_ID    = 'com.taowang.tank-the-future'
 
-            app_target = project.targets.find { |t| t.name == 'Unity-iPhone' }
-            fw_target  = project.targets.find { |t| t.name == 'UnityFramework' }
+            app = project.targets.find { |t| t.name == 'Unity-iPhone' }
+            fw  = project.targets.find { |t| t.name == 'UnityFramework' }
+            raise 'Unity-iPhone target not found' unless app
+            raise 'UnityFramework target not found' unless fw
 
-            raise 'Unity-iPhone target not found' unless app_target
-            raise 'UnityFramework target not found' unless fw_target
-
-            # Unity-iPhone -> Manual signing with Distribution profile
-            app_target.build_configurations.each do |cfg|
+            # App target: Manual + Distribution + provisioning profile
+            app.build_configurations.each do |cfg|
               s = cfg.build_settings
-              s['DEVELOPMENT_TEAM']             = TEAM_ID
-              s['CODE_SIGN_STYLE']              = 'Manual'
-              s['CODE_SIGN_IDENTITY']           = 'Apple Distribution'
-              s['PROVISIONING_PROFILE_SPECIFIER']= PROFILE
-              # Optional: make sure bundle id is correct
-              # s['PRODUCT_BUNDLE_IDENTIFIER']     = APP_ID
+              s['DEVELOPMENT_TEAM']               = TEAM_ID
+              s['CODE_SIGN_STYLE']                = 'Manual'
+              s['CODE_SIGN_IDENTITY']             = 'Apple Distribution'
+              s['PROVISIONING_PROFILE_SPECIFIER'] = PROFILE
+              # Ensure bundle id if needed:
+              # s['PRODUCT_BUNDLE_IDENTIFIER']       = APP_ID
             end
 
-            # UnityFramework -> Automatic signing, no profile/identity
-            fw_target.build_configurations.each do |cfg|
+            # Framework target: Manual + Distribution, NO provisioning profile
+            fw.build_configurations.each do |cfg|
               s = cfg.build_settings
               s['DEVELOPMENT_TEAM']   = TEAM_ID
-              s['CODE_SIGN_STYLE']    = 'Automatic'
+              s['CODE_SIGN_STYLE']    = 'Manual'
+              s['CODE_SIGN_IDENTITY'] = 'Apple Distribution'
               s.delete('PROVISIONING_PROFILE_SPECIFIER')
               s.delete('PROVISIONING_PROFILE')
-              s.delete('CODE_SIGN_IDENTITY')
             end
 
-            # Also fix TargetAttributes ProvisioningStyle (helps Xcode)
-            target_attrs = project.root_object.attributes['TargetAttributes'] ||= {}
-            target_attrs[app_target.uuid] ||= {}
-            target_attrs[app_target.uuid]['ProvisioningStyle'] = 'Manual'
-            target_attrs[fw_target.uuid]  ||= {}
-            target_attrs[fw_target.uuid]['ProvisioningStyle']  = 'Automatic'
+            # TargetAttributes help Xcode honor the styles
+            attrs = project.root_object.attributes['TargetAttributes'] ||= {}
+            attrs[app.uuid] ||= {}
+            attrs[app.uuid]['ProvisioningStyle'] = 'Manual'
+            attrs[fw.uuid]  ||= {}
+            attrs[fw.uuid]['ProvisioningStyle']  = 'Manual'
 
             project.save
           RUBY
 
-      # 4) Archive (no global PROVISIONING_PROFILE_SPECIFIER to avoid leaking to UnityFramework)
+      # 4) Show effective signing for verification
+      - name: Show signing (Unity-iPhone)
+        run: |
+          xcodebuild -project Unity-iPhone.xcodeproj -target Unity-iPhone -showBuildSettings \
+          | egrep -i 'CODE_SIGN|PROVISION|DEVELOPMENT_TEAM|PRODUCT_BUNDLE_IDENTIFIER' || true
+      - name: Show signing (UnityFramework)
+        run: |
+          xcodebuild -project Unity-iPhone.xcodeproj -target UnityFramework -showBuildSettings \
+          | egrep -i 'CODE_SIGN|PROVISION|DEVELOPMENT_TEAM|PRODUCT_BUNDLE_IDENTIFIER' || true
+
+      # 5) Archive (no global signing overrides; use project settings we just patched)
       - name: Archive
         run: |
           xcodebuild \
@@ -98,7 +107,7 @@ jobs:
             archive \
             COMPILER_INDEX_STORE_ENABLE=NO
 
-      # 5) Export IPA
+      # 6) Export IPA
       - name: Export IPA
         run: |
           xcodebuild \
@@ -107,7 +116,7 @@ jobs:
             -exportOptionsPlist ExportOptions.plist \
             -exportPath "$PWD/build/output"
 
-      # 6) Upload to TestFlight via App Store Connect API Key
+      # 7) Upload to TestFlight with App Store Connect API Key
       - name: Upload to TestFlight
         uses: apple-actions/upload-testflight-build@v1
         with:
@@ -116,7 +125,7 @@ jobs:
           api-key-id: ${{ secrets.APP_STORE_KEY_ID }}
           api-private-key: ${{ secrets.APP_STORE_API_KEY }}
 
-      # 7) Keep IPA as artifact
+      # 8) Keep IPA as artifact
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
         with:
