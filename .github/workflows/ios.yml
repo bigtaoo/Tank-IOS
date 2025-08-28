@@ -1,4 +1,4 @@
-name: iOS Build & Upload (LFS + Per-Target Manual Sign + Stable Codesign + API Key)
+name: iOS Build & Upload (LFS + Per-Target Manual Sign + Stable Codesign + API Key + Privacy Key)
 
 on:
   workflow_dispatch:
@@ -139,6 +139,35 @@ jobs:
 
             project.save
           RUBY
+
+      # 3.5) Ensure NSCameraUsageDescription in Info.plist + bump build number (to satisfy App Store Connect)
+      - name: Ensure NSCameraUsageDescription + bump build
+        run: |
+          set -e
+          # Find the Info.plist used by Unity-iPhone (Release)
+          PLIST_REL=$(xcodebuild -project Unity-iPhone.xcodeproj -scheme Unity-iPhone -configuration Release -showBuildSettings 2>/dev/null | awk '/INFOPLIST_FILE =/ {print $3; exit}')
+          if [ -z "$PLIST_REL" ]; then
+            echo "::error ::Could not resolve INFOPLIST_FILE from build settings."
+            exit 1
+          fi
+          # Normalize to absolute path
+          if [ -f "$PLIST_REL" ]; then
+            PLIST_ABS="$PLIST_REL"
+          else
+            PLIST_ABS="$(dirname Unity-iPhone.xcodeproj)/$PLIST_REL"
+          fi
+          echo "Using Info.plist at: $PLIST_ABS"
+
+          # Add/replace NSCameraUsageDescription
+          /usr/libexec/PlistBuddy -c "Delete :NSCameraUsageDescription" "$PLIST_ABS" >/dev/null 2>&1 || true
+          /usr/libexec/PlistBuddy -c "Add :NSCameraUsageDescription string Camera access is used only for optional features (e.g., capturing photos/video if you choose)." "$PLIST_ABS"
+
+          # Bump CFBundleVersion to ensure App Store Connect accepts the new build
+          BN="${GITHUB_RUN_NUMBER:-1}"
+          /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BN" "$PLIST_ABS" || /usr/libexec/PlistBuddy -c "Add :CFBundleVersion string $BN" "$PLIST_ABS"
+
+          echo "First lines of updated Info.plist:"
+          /usr/libexec/PlistBuddy -c "Print" "$PLIST_ABS" | head -n 50
 
       # 4) Show effective signing (sanity check in logs)
       - name: Show signing (Unity-iPhone)
