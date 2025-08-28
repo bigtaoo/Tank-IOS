@@ -5,16 +5,22 @@
 <dict>
   <key>method</key>
   <string>app-store</string>
+
   <key>teamID</key>
   <string>C677KJH544</string>
+
+  <!-- Map only the app's bundle id to your profile NAME -->
   <key>provisioningProfiles</key>
   <dict>
     <key>com.taowang.tank-the-future</key>
     <string>tank</string>
   </dict>
+
   <key>uploadSymbols</key>
   <true/>
+
+  <!-- Bitcode is deprecated; disabling avoids unnecessary work -->
   <key>compileBitcode</key>
-  <true/>
+  <false/>
 </dict>
 </plist>

@@ -1,4 +1,4 @@
-name: iOS Build & Upload (LFS + Per-Target Manual Sign + API Key)
+name: iOS Build & Upload (LFS + Per-Target Manual Sign + Stable Codesign + API Key)
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      # 0) Checkout with LFS enabled so .a files are real binaries (not pointer text files)
+      # 0) Checkout with LFS so Unity .a archives are real binaries (not LFS pointer text files)
       - name: Checkout (with LFS)
         uses: actions/checkout@v4
         with:
@@ -34,20 +34,19 @@ jobs:
             echo "==> $f"
             ls -lh "$f" || true
             file "$f" || true
-            # If it's text (pointer), fail early
             if file "$f" | grep -qi 'text'; then
               echo "::error ::$f looks like a Git LFS pointer (text). LFS content not downloaded."
               bad=1
             fi
           done
           if [ "$found" -eq 0 ]; then
-            echo "::warning ::No .a files found under Libraries/. If your project expects them, make sure they are committed (often via LFS)."
+            echo "::warning ::No .a files found under Libraries/. If your project expects them, ensure they're committed (often via LFS)."
           fi
           if [ "$bad" -ne 0 ]; then
             exit 1
           fi
 
-      # Prefer Xcode 16.4 (has iOS 18.5 SDK) if available
+      # Prefer Xcode 16.4 (iOS 18.5 SDK) if available
       - name: Select Xcode
         run: |
           if [ -d "/Applications/Xcode_16.4.app" ]; then
@@ -58,7 +57,7 @@ jobs:
           xcodebuild -version
           xcodebuild -showsdks
 
-      # 1) Install provisioning profile (base64 secret of tank.mobileprovision)
+      # 1) Install provisioning profile (base64 of tank.mobileprovision)
       - name: Install provisioning profile
         run: |
           echo "${{ secrets.MOBILEPROVISION_BASE64 }}" | base64 --decode > tank.mobileprovision
@@ -66,7 +65,7 @@ jobs:
           UUID=$(/usr/libexec/PlistBuddy -c Print:UUID /dev/stdin <<< "$(security cms -D -i tank.mobileprovision)")
           cp tank.mobileprovision "$HOME/Library/MobileDevice/Provisioning Profiles/$UUID.mobileprovision"
 
-      # 2) Install Distribution certificate (.p12 base64 + password)
+      # 2) Install Apple Distribution certificate (.p12 + password)
       - name: Install signing certificate
         run: |
           echo "${{ secrets.P12_BASE64 }}" | base64 --decode > dist.p12
@@ -75,9 +74,26 @@ jobs:
           security list-keychains -s "$HOME/Library/Keychains/actions.keychain"
           security default-keychain -s "$HOME/Library/Keychains/actions.keychain"
           security unlock-keychain -p github "$HOME/Library/Keychains/actions.keychain"
+          # Allow non-interactive codesign
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k github "$HOME/Library/Keychains/actions.keychain"
 
-      # 3) Patch signing per target using xcodeproj
+      # Keep keychain unlocked & show identity to prevent codesign stalls
+      - name: Keep keychain unlocked + verify identity
+        run: |
+          security set-keychain-settings -lut 21600 "$HOME/Library/Keychains/actions.keychain"
+          security unlock-keychain -p github "$HOME/Library/Keychains/actions.keychain"
+          echo "== Codesigning identities in actions.keychain =="
+          security find-identity -v -p codesigning "$HOME/Library/Keychains/actions.keychain" || true
+
+      # Install WWDR intermediate (defensive; avoids rare trust delays)
+      - name: Install Apple WWDR intermediate (optional)
+        run: |
+          curl -fsSL https://www.apple.com/certificateauthority/AppleWWDRCAG4.cer -o AppleWWDRCAG4.cer
+          sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain AppleWWDRCAG4.cer || true
+
+      # 3) Patch signing per target using xcodeproj:
+      #    Unity-iPhone -> Manual + Apple Distribution + profile "tank"
+      #    UnityFramework -> Manual + Apple Distribution, NO provisioning profile
       - name: Patch signing per target
         run: |
           gem install xcodeproj --no-document
@@ -115,7 +131,7 @@ jobs:
               s.delete('PROVISIONING_PROFILE')
             end
 
-            # Help Xcode honor styles
+            # Help Xcode honor the styles
             attrs = project.root_object.attributes['TargetAttributes'] ||= {}
             attrs[app.uuid] ||= {}
             attrs[app.uuid]['ProvisioningStyle'] = 'Manual'
@@ -125,7 +141,7 @@ jobs:
             project.save
           RUBY
 
-      # 4) Show effective signing for both targets (debug visibility)
+      # 4) Show effective signing (sanity check in logs)
       - name: Show signing (Unity-iPhone)
         run: |
           xcodebuild -project Unity-iPhone.xcodeproj -target Unity-iPhone -showBuildSettings \
@@ -135,7 +151,7 @@ jobs:
           xcodebuild -project Unity-iPhone.xcodeproj -target UnityFramework -showBuildSettings \
           | egrep -i 'CODE_SIGN|PROVISION|DEVELOPMENT_TEAM|PRODUCT_BUNDLE_IDENTIFIER' || true
 
-      # 5) Archive (pin to installed iPhoneOS SDK to avoid destination resolver issues)
+      # 5) Archive (pin to installed iPhoneOS SDK; force codesign to use our keychain & skip timestamp)
       - name: Archive
         run: |
           xcodebuild \
@@ -145,16 +161,18 @@ jobs:
             -sdk iphoneos \
             -archivePath "$PWD/build/TankIOS.xcarchive" \
             archive \
+            OTHER_CODE_SIGN_FLAGS="--keychain $HOME/Library/Keychains/actions.keychain --timestamp=none" \
             COMPILER_INDEX_STORE_ENABLE=NO
 
-      # 6) Export IPA
+      # 6) Export IPA (same codesign flags)
       - name: Export IPA
         run: |
           xcodebuild \
             -exportArchive \
             -archivePath "$PWD/build/TankIOS.xcarchive" \
             -exportOptionsPlist ExportOptions.plist \
-            -exportPath "$PWD/build/output"
+            -exportPath "$PWD/build/output" \
+            OTHER_CODE_SIGN_FLAGS="--keychain $HOME/Library/Keychains/actions.keychain --timestamp=none"
 
       # 7) Upload to TestFlight with App Store Connect API Key
       - name: Upload to TestFlight
