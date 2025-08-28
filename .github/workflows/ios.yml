@@ -20,7 +20,7 @@ jobs:
       - name: Archive app
         run: |
           xcodebuild \
-            -project Tank-IOS.xcodeproj \
+            -project Unity-iPhone.xcodeproj \
             -scheme Unity-iPhone \
             -sdk iphoneos \
             -configuration Release \
