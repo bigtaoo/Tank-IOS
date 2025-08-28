@@ -1,4 +1,4 @@
-name: Build and Upload iOS IPA (Auto-Signing)
+name: Build and Upload iOS IPA (API Key)
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
       - name: Set Xcode version
         run: sudo xcode-select -s /Applications/Xcode.app
 
-      # Archive app with full automatic signing
+      # Archive with automatic signing (API key handles auth)
       - name: Archive app
         run: |
           xcodebuild \
@@ -39,16 +39,16 @@ jobs:
             -exportPath $PWD/build/output \
             -allowProvisioningUpdates
 
-      # Upload IPA to App Store Connect
-      - name: Upload IPA to App Store Connect
-        run: |
-          xcrun altool --upload-app \
-            -f build/output/*.ipa \
-            -t ios \
-            -u "${{ secrets.APPLE_ID }}" \
-            -p "${{ secrets.APPLE_PASSWORD }}"
+      # Upload IPA with API Key
+      - name: Upload IPA to TestFlight
+        uses: apple-actions/upload-testflight-build@v1
+        with:
+          app-path: build/output/*.ipa
+          issuer-id: ${{ secrets.APP_STORE_ISSUER_ID }}
+          api-key-id: ${{ secrets.APP_STORE_KEY_ID }}
+          api-private-key: ${{ secrets.APP_STORE_API_KEY }}
 
-      # Save IPA as artifact (optional)
+      # Save IPA as GitHub artifact (optional)
       - name: Upload IPA as artifact
         uses: actions/upload-artifact@v4
         with:
