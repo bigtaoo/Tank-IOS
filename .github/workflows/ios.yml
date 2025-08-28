@@ -1,7 +1,7 @@
 name: Build and Upload iOS IPA
 
 on:
-  workflow_dispatch: # run manually
+  workflow_dispatch:
   push:
     branches: [ "main" ]
 
@@ -16,6 +16,24 @@ jobs:
       - name: Set Xcode version
         run: sudo xcode-select -s /Applications/Xcode.app
 
+      # Install provisioning profile
+      - name: Install provisioning profile
+        run: |
+          echo "${{ secrets.MOBILEPROVISION_BASE64 }}" | base64 --decode > build_profile.mobileprovision
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          UUID=$(/usr/libexec/PlistBuddy -c Print:UUID /dev/stdin <<< $(security cms -D -i build_profile.mobileprovision))
+          cp build_profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/$UUID.mobileprovision
+
+      # Install signing certificate
+      - name: Install certificate
+        run: |
+          echo "${{ secrets.P12_BASE64 }}" | base64 --decode > cert.p12
+          security create-keychain -p github actions.keychain
+          security import cert.p12 -k ~/Library/Keychains/actions.keychain -P "${{ secrets.P12_PASSWORD }}" -T /usr/bin/codesign
+          security list-keychains -s ~/Library/Keychains/actions.keychain
+          security default-keychain -s ~/Library/Keychains/actions.keychain
+          security unlock-keychain -p github ~/Library/Keychains/actions.keychain
+
       # Archive app
       - name: Archive app
         run: |
@@ -27,7 +45,7 @@ jobs:
             -archivePath $PWD/build/TankIOS.xcarchive archive \
             -allowProvisioningUpdates
 
-      # Export IPA for App Store
+      # Export IPA
       - name: Export IPA
         run: |
           xcodebuild \
@@ -37,7 +55,7 @@ jobs:
             -exportPath $PWD/build/output \
             -allowProvisioningUpdates
 
-      # Upload to TestFlight/App Store using Apple ID + App-specific password
+      # Upload IPA to App Store Connect
       - name: Upload IPA to App Store Connect
         run: |
           xcrun altool --upload-app \
