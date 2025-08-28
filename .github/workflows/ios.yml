@@ -34,15 +34,10 @@ jobs:
           security default-keychain -s ~/Library/Keychains/actions.keychain
           security unlock-keychain -p github ~/Library/Keychains/actions.keychain
 
-      # Patch UnityFramework to use Automatic signing
-      - name: Patch UnityFramework signing
-        run: |
-          /usr/libexec/PlistBuddy -c "Set :objects:UnityFramework:attributes:ProvisioningStyle Automatic" Unity-iPhone.xcodeproj/project.pbxproj || true
-          /usr/libexec/PlistBuddy -c "Set :TargetAttributes:UnityFramework:ProvisioningStyle Automatic" Unity-iPhone.xcodeproj/project.pbxproj || true
-
+      # Patch UnityFramework to Automatic signing
       - name: Force UnityFramework signing to Automatic
         run: |
-          sed -i '' 's/ProvisioningStyle = Manual;/ProvisioningStyle = Automatic;/g' Unity-iPhone.xcodeproj/project.pbxproj
+          sed -i '' '/UnityFramework/,/ProvisioningStyle = Manual;/ s/ProvisioningStyle = Manual;/ProvisioningStyle = Automatic;/' Unity-iPhone.xcodeproj/project.pbxproj
 
       # Archive app
       - name: Archive app
@@ -78,7 +73,7 @@ jobs:
             -u "${{ secrets.APPLE_ID }}" \
             -p "${{ secrets.APPLE_PASSWORD }}"
 
-      # Optional: also keep IPA as GitHub artifact
+      # Save IPA as GitHub artifact
       - name: Upload IPA as artifact
         uses: actions/upload-artifact@v4
         with:
