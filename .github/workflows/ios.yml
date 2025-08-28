@@ -45,7 +45,8 @@ jobs:
             -archivePath $PWD/build/TankIOS.xcarchive archive \
             DEVELOPMENT_TEAM=C677KJH544 \
             PROVISIONING_PROFILE_SPECIFIER="tank" \
-            CODE_SIGN_STYLE=Manual
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="Apple Distribution"
 
       # Export IPA
       - name: Export IPA
