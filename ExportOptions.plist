@@ -14,7 +14,7 @@
   <key>provisioningProfiles</key>
   <dict>
     <key>com.taowang.tank-the-future</key>
-    <string>tank.mobileprovision</string>
+    <string>tank</string>
   </dict>
 </dict>
 </plist>

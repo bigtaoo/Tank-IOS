@@ -44,7 +44,7 @@ jobs:
             -configuration Release \
             -archivePath $PWD/build/TankIOS.xcarchive archive \
             DEVELOPMENT_TEAM=C677KJH544 \
-            PROVISIONING_PROFILE_SPECIFIER="tank.mobileprovision" \
+            PROVISIONING_PROFILE_SPECIFIER="tank" \
             CODE_SIGN_STYLE=Manual
 
       # Export IPA
