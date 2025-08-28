@@ -43,7 +43,9 @@ jobs:
             -sdk iphoneos \
             -configuration Release \
             -archivePath $PWD/build/TankIOS.xcarchive archive \
-            -allowProvisioningUpdates
+            DEVELOPMENT_TEAM=C677KJH544 \
+            PROVISIONING_PROFILE_SPECIFIER="tank.mobileprovision" \
+            CODE_SIGN_STYLE=Manual
 
       # Export IPA
       - name: Export IPA
