@@ -34,6 +34,12 @@ jobs:
           security default-keychain -s ~/Library/Keychains/actions.keychain
           security unlock-keychain -p github ~/Library/Keychains/actions.keychain
 
+      # Patch UnityFramework to use Automatic signing
+      - name: Patch UnityFramework signing
+        run: |
+          /usr/libexec/PlistBuddy -c "Set :objects:UnityFramework:attributes:ProvisioningStyle Automatic" Unity-iPhone.xcodeproj/project.pbxproj || true
+          /usr/libexec/PlistBuddy -c "Set :TargetAttributes:UnityFramework:ProvisioningStyle Automatic" Unity-iPhone.xcodeproj/project.pbxproj || true
+
       # Archive app
       - name: Archive app
         run: |
@@ -44,9 +50,10 @@ jobs:
             -configuration Release \
             -archivePath $PWD/build/TankIOS.xcarchive archive \
             DEVELOPMENT_TEAM=C677KJH544 \
-            PROVISIONING_PROFILE_SPECIFIER="tank" \
+            CODE_SIGN_IDENTITY="Apple Distribution" \
             CODE_SIGN_STYLE=Manual \
-            CODE_SIGN_IDENTITY="Apple Distribution"
+            PROVISIONING_PROFILE_SPECIFIER="tank" \
+            -allowProvisioningUpdates
 
       # Export IPA
       - name: Export IPA
@@ -66,3 +73,10 @@ jobs:
             -t ios \
             -u "${{ secrets.APPLE_ID }}" \
             -p "${{ secrets.APPLE_PASSWORD }}"
+
+      # Optional: also keep IPA as GitHub artifact
+      - name: Upload IPA as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Tank-iOS-IPA
+          path: build/output/*.ipa
