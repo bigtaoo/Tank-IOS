@@ -1,4 +1,4 @@
-name: iOS Build & Upload (LFS + Per-Target Manual Sign + Stable Codesign + API Key + Privacy Key + Version Bump)
+name: iOS Build & Upload (LFS + Per-Target Manual Sign + Stable Codesign + API Key + Privacy + Version)
 
 on:
   workflow_dispatch:
@@ -76,7 +76,7 @@ jobs:
           security unlock-keychain -p github "$HOME/Library/Keychains/actions.keychain"
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k github "$HOME/Library/Keychains/actions.keychain"
 
-      # Keep keychain unlocked & show identity to prevent codesign stalls
+      # Keep keychain unlocked & show identity
       - name: Keep keychain unlocked + verify identity
         run: |
           security set-keychain-settings -lut 21600 "$HOME/Library/Keychains/actions.keychain"
@@ -84,13 +84,13 @@ jobs:
           echo "== Codesigning identities in actions.keychain =="
           security find-identity -v -p codesigning "$HOME/Library/Keychains/actions.keychain" || true
 
-      # Install WWDR intermediate (defensive)
+      # WWDR intermediate (defensive)
       - name: Install Apple WWDR intermediate (optional)
         run: |
           curl -fsSL https://www.apple.com/certificateauthority/AppleWWDRCAG4.cer -o AppleWWDRCAG4.cer
           sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain AppleWWDRCAG4.cer || true
 
-      # 3) Patch signing per target using xcodeproj:
+      # 3) Patch signing per target:
       #    Unity-iPhone -> Manual + Apple Distribution + profile "tank"
       #    UnityFramework -> Manual + Apple Distribution, NO provisioning profile
       - name: Patch signing per target
@@ -110,7 +110,6 @@ jobs:
             raise 'Unity-iPhone target not found' unless app
             raise 'UnityFramework target not found' unless fw
 
-            # App target: Manual + Distribution + provisioning profile
             app.build_configurations.each do |cfg|
               s = cfg.build_settings
               s['DEVELOPMENT_TEAM']               = TEAM_ID
@@ -120,7 +119,6 @@ jobs:
               # s['PRODUCT_BUNDLE_IDENTIFIER']       = APP_ID
             end
 
-            # Framework target: Manual + Distribution, NO provisioning profile
             fw.build_configurations.each do |cfg|
               s = cfg.build_settings
               s['DEVELOPMENT_TEAM']   = TEAM_ID
@@ -130,7 +128,6 @@ jobs:
               s.delete('PROVISIONING_PROFILE')
             end
 
-            # Help Xcode honor the styles
             attrs = project.root_object.attributes['TargetAttributes'] ||= {}
             attrs[app.uuid] ||= {}
             attrs[app.uuid]['ProvisioningStyle'] = 'Manual'
@@ -140,27 +137,31 @@ jobs:
             project.save
           RUBY
 
-      # 3.5) Ensure NSCameraUsageDescription + robust version bump BEFORE archive
-      - name: Ensure NSCameraUsageDescription + bump build
+      # 3.5) Ensure NSCameraUsageDescription + set build number on the *Unity-iPhone target's* Info.plist
+      - name: Ensure NSCameraUsageDescription + bump build (correct target)
+        id: bump
         env:
-          FALLBACK_BUILD: ${{ github.run_number }}
+          BUILD_NUMBER: ${{ github.run_number }}
         run: |
           set -e
-          # Resolve Info.plist path using Xcode settings
-          SETTINGS=$(xcodebuild -project Unity-iPhone.xcodeproj -scheme Unity-iPhone -configuration Release -showBuildSettings)
-          PLIST_REL=$(echo "$SETTINGS" | awk '/INFOPLIST_FILE =/ {print $3; exit}')
-          PROJ_DIR=$(echo "$SETTINGS" | awk -F' = ' '/PROJECT_DIR =/ {print $2; exit}')
-          if [ -z "$PLIST_REL" ] || [ -z "$PROJ_DIR" ]; then
-            echo "::error ::Could not resolve INFOPLIST_FILE/PROJECT_DIR from build settings."
+          # Resolve Info.plist for the *Unity-iPhone target* specifically
+          SETTINGS=$(xcodebuild -project Unity-iPhone.xcodeproj -target Unity-iPhone -configuration Release -showBuildSettings)
+          PLIST_REL=$(echo "$SETTINGS" | awk -F' = ' '/^ *INFOPLIST_FILE *=/ {print $2; exit}')
+          SRCROOT=$(echo "$SETTINGS" | awk -F' = ' '/^ *SRCROOT *=/ {print $2; exit}')
+          if [ -z "$PLIST_REL" ] || [ -z "$SRCROOT" ]; then
+            echo "::error ::Could not resolve Unity-iPhone target's INFOPLIST_FILE/SRCROOT."
             exit 1
           fi
-          # Absolute path
           if echo "$PLIST_REL" | grep -q '^/'; then
             PLIST_ABS="$PLIST_REL"
           else
-            PLIST_ABS="$PROJ_DIR/$PLIST_REL"
+            PLIST_ABS="$SRCROOT/$PLIST_REL"
           fi
-          echo "Using Info.plist at: $PLIST_ABS"
+          if [ ! -f "$PLIST_ABS" ]; then
+            echo "::error ::Resolved Info.plist does not exist: $PLIST_ABS"
+            exit 1
+          fi
+          echo "Using Unity-iPhone Info.plist at: $PLIST_ABS"
 
           # Add/replace NSCameraUsageDescription
           /usr/libexec/PlistBuddy -c "Delete :NSCameraUsageDescription" "$PLIST_ABS" >/dev/null 2>&1 || true
@@ -172,19 +173,18 @@ jobs:
             /usr/libexec/PlistBuddy -c "Add :CFBundleShortVersionString string 1.0" "$PLIST_ABS"
           fi
 
-          # Robust build number: use GitHub run number (>=1), else timestamp
-          BN="${FALLBACK_BUILD:-1}"
-          if [ -z "$BN" ] || [ "$BN" -le 0 ] 2>/dev/null; then
+          # Build number: must strictly increase; use GitHub run number or timestamp fallback
+          BN="${BUILD_NUMBER:-1}"
+          if [ -z "$BN" ] || ! [[ "$BN" =~ ^[0-9]+$ ]]; then
             BN=$(date +%Y%m%d%H%M)
           fi
-
-          # Set CFBundleVersion
           /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BN" "$PLIST_ABS" || /usr/libexec/PlistBuddy -c "Add :CFBundleVersion string $BN" "$PLIST_ABS"
 
-          echo "Updated CFBundleShortVersionString: $(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$PLIST_ABS")"
-          echo "Updated CFBundleVersion:           $(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion'           "$PLIST_ABS")"
+          echo "bundle_version=$BN" >> "$GITHUB_OUTPUT"
+          echo "CFBundleShortVersionString: $(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$PLIST_ABS")"
+          echo "CFBundleVersion:            $(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion'            "$PLIST_ABS")"
 
-      # 4) Show effective signing (sanity check in logs)
+      # 4) Show effective signing (sanity)
       - name: Show signing (Unity-iPhone)
         run: |
           xcodebuild -project Unity-iPhone.xcodeproj -target Unity-iPhone -showBuildSettings \
@@ -194,7 +194,7 @@ jobs:
           xcodebuild -project Unity-iPhone.xcodeproj -target UnityFramework -showBuildSettings \
           | egrep -i 'CODE_SIGN|PROVISION|DEVELOPMENT_TEAM|PRODUCT_BUNDLE_IDENTIFIER' || true
 
-      # 5) Archive (pin to installed iPhoneOS SDK; force codesign to use our keychain & skip timestamp)
+      # 5) Archive (force codesign to our keychain; also pass CURRENT_PROJECT_VERSION to ensure Xcode uses BN)
       - name: Archive
         run: |
           xcodebuild \
@@ -204,10 +204,11 @@ jobs:
             -sdk iphoneos \
             -archivePath "$PWD/build/TankIOS.xcarchive" \
             archive \
+            CURRENT_PROJECT_VERSION="${{ steps.bump.outputs.bundle_version }}" \
             OTHER_CODE_SIGN_FLAGS="--keychain $HOME/Library/Keychains/actions.keychain --timestamp=none" \
             COMPILER_INDEX_STORE_ENABLE=NO
 
-      # 6) Export IPA (same codesign flags)
+      # 6) Export IPA
       - name: Export IPA
         run: |
           xcodebuild \
@@ -217,7 +218,7 @@ jobs:
             -exportPath "$PWD/build/output" \
             OTHER_CODE_SIGN_FLAGS="--keychain $HOME/Library/Keychains/actions.keychain --timestamp=none"
 
-      # 6.1) Show what's in the export folder (helps if upload can't find the ipa)
+      # 6.1) List output
       - name: List export folder
         run: |
           echo "== build/output contents =="
@@ -225,7 +226,7 @@ jobs:
           echo "== build tree =="
           find build -maxdepth 2 -type f | sed 's/^/  /'
 
-      # 6.2) Locate exact IPA path (avoid globs passed to altool)
+      # 6.2) Locate IPA
       - name: Locate IPA
         id: locate_ipa
         run: |
@@ -238,7 +239,28 @@ jobs:
           echo "Found IPA: $IPA"
           echo "ipa_path=$IPA" >> "$GITHUB_OUTPUT"
 
-      # 7) Upload to TestFlight with App Store Connect API Key (use exact path)
+      # 6.3) Verify IPA's Info.plist actually contains the new build number (pre-flight check)
+      - name: Verify IPA Info.plist
+        run: |
+          set -e
+          TMPDIR=$(mktemp -d)
+          unzip -q "${{ steps.locate_ipa.outputs.ipa_path }}" -d "$TMPDIR"
+          APP_PLIST=$(find "$TMPDIR/Payload" -name Info.plist -maxdepth 2 | head -n 1)
+          if [ -z "$APP_PLIST" ] || [ ! -f "$APP_PLIST" ]; then
+            echo "::error ::Could not find Info.plist inside IPA"
+            exit 1
+          fi
+          echo "IPA Info.plist path: $APP_PLIST"
+          echo "IPA CFBundleShortVersionString: $(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$APP_PLIST" 2>/dev/null || echo MISSING)"
+          echo "IPA CFBundleVersion:            $(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$APP_PLIST" 2>/dev/null || echo MISSING)"
+          # Fail early if build number didn't propagate
+          IPA_BN=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$APP_PLIST" 2>/dev/null || echo "")
+          if [ -z "$IPA_BN" ] || [ "$IPA_BN" = "0" ]; then
+            echo "::error ::IPA CFBundleVersion is '$IPA_BN' (must be > 0)."
+            exit 1
+          fi
+
+      # 7) Upload to TestFlight (API key)
       - name: Upload to TestFlight
         uses: apple-actions/upload-testflight-build@v1
         with:
