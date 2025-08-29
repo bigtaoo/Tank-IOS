@@ -1,4 +1,4 @@
-name: iOS Build & Upload (LFS + Per-Target Manual Sign + Stable Codesign + API Key + Privacy Key)
+name: iOS Build & Upload (LFS + Per-Target Manual Sign + Stable Codesign + API Key + Privacy Key + Version Bump)
 
 on:
   workflow_dispatch:
@@ -140,21 +140,25 @@ jobs:
             project.save
           RUBY
 
-      # 3.5) Ensure NSCameraUsageDescription in Info.plist + bump build number (to satisfy App Store Connect)
+      # 3.5) Ensure NSCameraUsageDescription + robust version bump BEFORE archive
       - name: Ensure NSCameraUsageDescription + bump build
+        env:
+          FALLBACK_BUILD: ${{ github.run_number }}
         run: |
           set -e
-          # Find the Info.plist used by Unity-iPhone (Release)
-          PLIST_REL=$(xcodebuild -project Unity-iPhone.xcodeproj -scheme Unity-iPhone -configuration Release -showBuildSettings 2>/dev/null | awk '/INFOPLIST_FILE =/ {print $3; exit}')
-          if [ -z "$PLIST_REL" ]; then
-            echo "::error ::Could not resolve INFOPLIST_FILE from build settings."
+          # Resolve Info.plist path using Xcode settings
+          SETTINGS=$(xcodebuild -project Unity-iPhone.xcodeproj -scheme Unity-iPhone -configuration Release -showBuildSettings)
+          PLIST_REL=$(echo "$SETTINGS" | awk '/INFOPLIST_FILE =/ {print $3; exit}')
+          PROJ_DIR=$(echo "$SETTINGS" | awk -F' = ' '/PROJECT_DIR =/ {print $2; exit}')
+          if [ -z "$PLIST_REL" ] || [ -z "$PROJ_DIR" ]; then
+            echo "::error ::Could not resolve INFOPLIST_FILE/PROJECT_DIR from build settings."
             exit 1
           fi
-          # Normalize to absolute path
-          if [ -f "$PLIST_REL" ]; then
+          # Absolute path
+          if echo "$PLIST_REL" | grep -q '^/'; then
             PLIST_ABS="$PLIST_REL"
           else
-            PLIST_ABS="$(dirname Unity-iPhone.xcodeproj)/$PLIST_REL"
+            PLIST_ABS="$PROJ_DIR/$PLIST_REL"
           fi
           echo "Using Info.plist at: $PLIST_ABS"
 
@@ -162,12 +166,23 @@ jobs:
           /usr/libexec/PlistBuddy -c "Delete :NSCameraUsageDescription" "$PLIST_ABS" >/dev/null 2>&1 || true
           /usr/libexec/PlistBuddy -c "Add :NSCameraUsageDescription string Camera access is used only for optional features (e.g., capturing photos/video if you choose)." "$PLIST_ABS"
 
-          # Bump CFBundleVersion to ensure App Store Connect accepts the new build
-          BN="${GITHUB_RUN_NUMBER:-1}"
+          # Ensure CFBundleShortVersionString exists (keep current if present)
+          EXIST_VER=$(/usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" "$PLIST_ABS" 2>/dev/null || true)
+          if [ -z "$EXIST_VER" ]; then
+            /usr/libexec/PlistBuddy -c "Add :CFBundleShortVersionString string 1.0" "$PLIST_ABS"
+          fi
+
+          # Robust build number: use GitHub run number (>=1), else timestamp
+          BN="${FALLBACK_BUILD:-1}"
+          if [ -z "$BN" ] || [ "$BN" -le 0 ] 2>/dev/null; then
+            BN=$(date +%Y%m%d%H%M)
+          fi
+
+          # Set CFBundleVersion
           /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BN" "$PLIST_ABS" || /usr/libexec/PlistBuddy -c "Add :CFBundleVersion string $BN" "$PLIST_ABS"
 
-          echo "First lines of updated Info.plist:"
-          /usr/libexec/PlistBuddy -c "Print" "$PLIST_ABS" | head -n 50
+          echo "Updated CFBundleShortVersionString: $(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$PLIST_ABS")"
+          echo "Updated CFBundleVersion:           $(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion'           "$PLIST_ABS")"
 
       # 4) Show effective signing (sanity check in logs)
       - name: Show signing (Unity-iPhone)
