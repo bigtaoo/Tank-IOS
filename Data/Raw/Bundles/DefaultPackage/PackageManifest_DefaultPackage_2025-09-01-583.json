@@ -1,0 +1,963 @@
+{
+    "FileVersion": "2.0.0",
+    "EnableAddressable": false,
+    "LocationToLower": false,
+    "IncludeAssetGUID": false,
+    "OutputNameStyle": 0,
+    "BuildPipeline": "BuiltinBuildPipeline",
+    "PackageName": "DefaultPackage",
+    "PackageVersion": "2025-09-01-583",
+    "AssetList": [
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/CommandLine.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/MemoryPack.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/MongoDB.Bson.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/mscorlib.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/NLog.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/System.Core.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/System.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/System.Runtime.CompilerServices.Unsafe.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/Unity.Core.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/Unity.Loader.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/AotDlls/Unity.ThirdParty.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Code/Unity.Hotfix.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Code/Unity.Hotfix.pdb.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Code/Unity.HotfixView.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Code/Unity.HotfixView.pdb.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Code/Unity.Model.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Code/Unity.Model.pdb.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Code/Unity.ModelView.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Code/Unity.ModelView.pdb.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Config/AIConfigCategory.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Config/UnitConfigCategory.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/UI/Demo/UIHelp.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/UI/Demo/UILobby.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/UI/Demo/UILogin.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/UI/LockStep/UILSLobby.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/UI/LockStep/UILSLogin.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/UI/LockStep/UILSRoom.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/UI/Tank/TankUIGameMain.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/UI/Tank/TankUIGameMode.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/UI/Tank/TankUIGameResult.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 11
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Unit/Unit.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 12
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/Map1.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/Map2.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 14
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankGameMap.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 15
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-1.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-2.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 17
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-3.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 18
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-4.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 19
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-5.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-6.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-7.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 22
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-8.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 23
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-9.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 24
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-10.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 25
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-11.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 26
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-12.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-13.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 28
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-14.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 29
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankMaps/level-15.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 30
+        },
+        {
+            "Address": "",
+            "AssetPath": "Assets/Bundles/Scenes/TankUIMap.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "assets_bundles_aotdlls.bundle",
+            "UnityCRC": 1685823309,
+            "FileHash": "16563893d487d0c8adf6fa6297672cf9",
+            "FileCRC": "09d874a3",
+            "FileSize": 7605352,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "assets_bundles_code.bundle",
+            "UnityCRC": 166893621,
+            "FileHash": "9ed931e2d46c7142e169d88d1a7f24bf",
+            "FileCRC": "4ab9b684",
+            "FileSize": 424912,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "assets_bundles_config.bundle",
+            "UnityCRC": 3128873268,
+            "FileHash": "9b81d3c92039beb80f69de9563ef15ba",
+            "FileCRC": "9628dcfe",
+            "FileSize": 1534,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "assets_bundles_ui_demo_uihelp.bundle",
+            "UnityCRC": 1910752475,
+            "FileHash": "24bbbc543916f85238bc69369ca1a693",
+            "FileCRC": "9bc36c47",
+            "FileSize": 4733,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "assets_bundles_ui_demo_uilobby.bundle",
+            "UnityCRC": 2358008325,
+            "FileHash": "f8d6656e24259a1b6dd87a23d43e0bc1",
+            "FileCRC": "0e41a9aa",
+            "FileSize": 11069,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "assets_bundles_ui_demo_uilogin.bundle",
+            "UnityCRC": 729928807,
+            "FileHash": "4fa467ec7d38da8a1355a68093eab1ed",
+            "FileCRC": "29319862",
+            "FileSize": 14013,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "assets_bundles_ui_lockstep_uilslobby.bundle",
+            "UnityCRC": 3702135381,
+            "FileHash": "e72390d484989b59d55d59f149754817",
+            "FileCRC": "9aab238a",
+            "FileSize": 14110,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "assets_bundles_ui_lockstep_uilslogin.bundle",
+            "UnityCRC": 4030696176,
+            "FileHash": "d82cfc6f177f311ab0bd9318b8067f04",
+            "FileCRC": "8aad25da",
+            "FileSize": 14114,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "assets_bundles_ui_lockstep_uilsroom.bundle",
+            "UnityCRC": 2464696096,
+            "FileHash": "95bb945b3d8f48fc6ecf98a516f0e14a",
+            "FileCRC": "bf4c1038",
+            "FileSize": 15322,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "assets_bundles_ui_tank_tankuigamemain.bundle",
+            "UnityCRC": 484775427,
+            "FileHash": "fc45226226af4e69ddd6d97bbc9a6055",
+            "FileCRC": "b2820954",
+            "FileSize": 14909,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                36,
+                35,
+                34
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_ui_tank_tankuigamemode.bundle",
+            "UnityCRC": 1703037227,
+            "FileHash": "2554136ac09a1a77c9ac2ccd12b70022",
+            "FileCRC": "33c8a45c",
+            "FileSize": 16011,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                37,
+                32,
+                36,
+                35,
+                34
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_ui_tank_tankuigameresult.bundle",
+            "UnityCRC": 2011227873,
+            "FileHash": "aba595683c9c3bc145dac186be1a3586",
+            "FileCRC": "c41bdc19",
+            "FileSize": 12466,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                36,
+                35,
+                34
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_unit_unit.bundle",
+            "UnityCRC": 2603369213,
+            "FileHash": "b8c671a233f3f83091bdd692b2b7fdac",
+            "FileCRC": "81e17613",
+            "FileSize": 2531,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                38,
+                40,
+                41,
+                39,
+                34
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_map1.bundle",
+            "UnityCRC": 2831790226,
+            "FileHash": "b337c3525115195be5277519331356d7",
+            "FileCRC": "b0c7e354",
+            "FileSize": 1430442,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                43,
+                42,
+                44,
+                34
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_map2.bundle",
+            "UnityCRC": 3083275156,
+            "FileHash": "cd91397374b408ae0247ba226e7b2de0",
+            "FileCRC": "3c708adb",
+            "FileSize": 45295,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                43,
+                45,
+                44,
+                34
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankgamemap.bundle",
+            "UnityCRC": 631065725,
+            "FileHash": "6bc2f94c6567036f8e6b1f6575b62a8c",
+            "FileCRC": "81aacdd7",
+            "FileSize": 171536,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-1.bundle",
+            "UnityCRC": 688852757,
+            "FileHash": "52726604fcfafb24aa831085230da126",
+            "FileCRC": "9e120d5b",
+            "FileSize": 170383,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-2.bundle",
+            "UnityCRC": 163255924,
+            "FileHash": "dd46023b19c16a6896dcd2b33425b239",
+            "FileCRC": "90854b8c",
+            "FileSize": 170589,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-3.bundle",
+            "UnityCRC": 3054008,
+            "FileHash": "ff1c76d89b632cf0d1351567c2c619ac",
+            "FileCRC": "9bf9d098",
+            "FileSize": 171151,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-4.bundle",
+            "UnityCRC": 1820840599,
+            "FileHash": "7cf52572ac8fe8e8d18c16a1fae5bf83",
+            "FileCRC": "1fac8184",
+            "FileSize": 170781,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-5.bundle",
+            "UnityCRC": 1112042458,
+            "FileHash": "165a83711bc4c7d414375636fe245522",
+            "FileCRC": "2d481169",
+            "FileSize": 170511,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-6.bundle",
+            "UnityCRC": 1458012807,
+            "FileHash": "ecfbc4a74c3935e225a2d9b3a3a1fead",
+            "FileCRC": "ab22ee78",
+            "FileSize": 170782,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-7.bundle",
+            "UnityCRC": 2440708795,
+            "FileHash": "4c27a3240a1165ddd6a2c5dae56a0e3d",
+            "FileCRC": "4572c03a",
+            "FileSize": 170486,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-8.bundle",
+            "UnityCRC": 3364115523,
+            "FileHash": "ee5576139ac781d4ae94731162c80fce",
+            "FileCRC": "4df6036f",
+            "FileSize": 170538,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-9.bundle",
+            "UnityCRC": 474707158,
+            "FileHash": "e1cda0bd27b08d22634dffadd058c15b",
+            "FileCRC": "2e445b83",
+            "FileSize": 170559,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-10.bundle",
+            "UnityCRC": 2182368143,
+            "FileHash": "1a14bd6337b0c98de5c10f86494eb810",
+            "FileCRC": "3280abda",
+            "FileSize": 170491,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-11.bundle",
+            "UnityCRC": 3154960289,
+            "FileHash": "99203a058590803c8fe76d7dad932fa5",
+            "FileCRC": "a85d873e",
+            "FileSize": 170627,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-12.bundle",
+            "UnityCRC": 2351724468,
+            "FileHash": "92c4118559012acd0a24c8eb4d738a8b",
+            "FileCRC": "4e120e6d",
+            "FileSize": 170633,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-13.bundle",
+            "UnityCRC": 674558420,
+            "FileHash": "5b92e29cecd006f54ba054c570989262",
+            "FileCRC": "0f1f1143",
+            "FileSize": 171114,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-14.bundle",
+            "UnityCRC": 4117357486,
+            "FileHash": "7c96d57f37b3657cfc0f80f1684fd517",
+            "FileCRC": "a6dbd382",
+            "FileSize": 171035,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankmaps_level-15.bundle",
+            "UnityCRC": 2439515499,
+            "FileHash": "04fac25d893312f5d660fcdeb3b2f8fa",
+            "FileCRC": "1c01630b",
+            "FileSize": 171250,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46,
+                47
+            ]
+        },
+        {
+            "BundleName": "assets_bundles_scenes_tankuimap.bundle",
+            "UnityCRC": 3054819247,
+            "FileHash": "151ffa78659c458775cf60d9e167273d",
+            "FileCRC": "9606a287",
+            "FileSize": 169081,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32,
+                46
+            ]
+        },
+        {
+            "BundleName": "share_assets_bundles_sprites.bundle",
+            "UnityCRC": 3089369290,
+            "FileHash": "dc032e92393fb87705dc0e07c65536a8",
+            "FileCRC": "157b2c8e",
+            "FileSize": 2075654,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "share_packages_com_unity_ugui_editor resources_gizmos.bundle",
+            "UnityCRC": 808953743,
+            "FileHash": "9337f20848349f571403e59e09d78977",
+            "FileCRC": "a1dde7dd",
+            "FileSize": 5495,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "unityshaders.bundle",
+            "UnityCRC": 1594920339,
+            "FileHash": "e75e18a2265ecf30f7600c9d70b6f246",
+            "FileCRC": "3c049d6e",
+            "FileSize": 50636,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "share_assets_textmesh pro_resources_fonts & materials.bundle",
+            "UnityCRC": 272099376,
+            "FileHash": "fcce5645985bed1f65c2d54a0526126f",
+            "FileCRC": "db5d9ea8",
+            "FileSize": 374096,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                36,
+                34
+            ]
+        },
+        {
+            "BundleName": "share_assets_textmesh pro_fonts.bundle",
+            "UnityCRC": 4018811628,
+            "FileHash": "d401a62626856830c84e16c3c35157b8",
+            "FileCRC": "bc2742bf",
+            "FileSize": 227219,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "share_assets_bundles_prefabs.bundle",
+            "UnityCRC": 1781928215,
+            "FileHash": "ac2f89f8a909e36293e605678477cdb4",
+            "FileCRC": "ea4998ff",
+            "FileSize": 4290,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32
+            ]
+        },
+        {
+            "BundleName": "share_assets_res_unit_skeleton.bundle",
+            "UnityCRC": 2780136891,
+            "FileHash": "9f3888fb4f22b4017c68dda094327f7f",
+            "FileCRC": "e2dd7d93",
+            "FileSize": 10712,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                40,
+                41,
+                39,
+                34
+            ]
+        },
+        {
+            "BundleName": "share_assets_res_unit_skeleton_texture.bundle",
+            "UnityCRC": 753509076,
+            "FileHash": "ea0671dbe811e8a63c8f55c042744b05",
+            "FileCRC": "dee4a7b1",
+            "FileSize": 604163,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "share_assets_res_unit_skeleton_ani.bundle",
+            "UnityCRC": 2958333793,
+            "FileHash": "58490f5d16c084ee46bb2457c4dd17ae",
+            "FileCRC": "8fdefccf",
+            "FileSize": 201086,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                41,
+                39,
+                34
+            ]
+        },
+        {
+            "BundleName": "share_assets_res_unit_skeleton_ani_materials.bundle",
+            "UnityCRC": 2713178826,
+            "FileHash": "8ba914911cdbb06c2191f30997ea0028",
+            "FileCRC": "f71490f2",
+            "FileSize": 2868,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                39,
+                34
+            ]
+        },
+        {
+            "BundleName": "share_assets_bundles_scenes_map1.bundle",
+            "UnityCRC": 3704222395,
+            "FileHash": "64a5bfb69bd0297d06ceaa74cd231de9",
+            "FileCRC": "a2273ae3",
+            "FileSize": 1626852,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "share_assets_bundles_scenes.bundle",
+            "UnityCRC": 681318005,
+            "FileHash": "1e0a18d93e6aeb5ba9d27c98467ba27e",
+            "FileCRC": "e94151a5",
+            "FileSize": 1403,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "share_assets_res_mat.bundle",
+            "UnityCRC": 1861101920,
+            "FileHash": "2b4e36d21c9e38c55ad3255479ed5feb",
+            "FileCRC": "94853300",
+            "FileSize": 2947,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                34
+            ]
+        },
+        {
+            "BundleName": "share_assets_bundles_scenes_map2.bundle",
+            "UnityCRC": 1898914396,
+            "FileHash": "4c738b862fc9e8cdb72436221a85cd8a",
+            "FileCRC": "6411eacc",
+            "FileSize": 470449,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        },
+        {
+            "BundleName": "share_assets_bundles_tiles.bundle",
+            "UnityCRC": 3384124096,
+            "FileHash": "5f9d86e63a9c969111c0839ca6b89a99",
+            "FileCRC": "4c028093",
+            "FileSize": 2537,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": [
+                32
+            ]
+        },
+        {
+            "BundleName": "share_packages_com_unity_2d_sprite_editor_objectmenucreation_defaultassets_textures_v2.bundle",
+            "UnityCRC": 1335029384,
+            "FileHash": "79998911de2fbf9c16f6c87c66e049f9",
+            "FileCRC": "afc7b7dc",
+            "FileSize": 6606,
+            "Encrypted": false,
+            "Tags": [],
+            "DependIDs": []
+        }
+    ]
+}
