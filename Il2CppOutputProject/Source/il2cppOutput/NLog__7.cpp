@@ -8027,7 +8027,7 @@ IL_006e:
 		XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* L_21 = ___0_reader;
 		NullCheck(L_21);
 		bool L_22;
-		L_22 = VirtualFuncInvoker0< bool >::Invoke(24, L_21);
+		L_22 = VirtualFuncInvoker0< bool >::Invoke(31, L_21);
 		if (L_22)
 		{
 			goto IL_001e;
@@ -8060,7 +8060,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NLogXmlElement_ParseAttributes_mD78CE0A1
 		XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* L_0 = ___0_reader;
 		NullCheck(L_0);
 		bool L_1;
-		L_1 = VirtualFuncInvoker0< bool >::Invoke(20, L_0);
+		L_1 = VirtualFuncInvoker0< bool >::Invoke(27, L_0);
 		if (!L_1)
 		{
 			goto IL_00b5;
@@ -8172,7 +8172,7 @@ IL_00a3:
 		XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* L_33 = ___0_reader;
 		NullCheck(L_33);
 		bool L_34;
-		L_34 = VirtualFuncInvoker0< bool >::Invoke(21, L_33);
+		L_34 = VirtualFuncInvoker0< bool >::Invoke(28, L_33);
 		if (L_34)
 		{
 			goto IL_000b;
@@ -8182,7 +8182,7 @@ IL_00a3:
 		XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* L_35 = ___0_reader;
 		NullCheck(L_35);
 		bool L_36;
-		L_36 = VirtualFuncInvoker0< bool >::Invoke(22, L_35);
+		L_36 = VirtualFuncInvoker0< bool >::Invoke(29, L_35);
 	}
 
 IL_00b5:
@@ -10454,7 +10454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlLoggingConfiguration_Initialize_mFE58
 			XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* L_2 = ___0_reader;
 			NullCheck(L_2);
 			int32_t L_3;
-			L_3 = VirtualFuncInvoker0< int32_t >::Invoke(32, L_2);
+			L_3 = VirtualFuncInvoker0< int32_t >::Invoke(43, L_2);
 			XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* L_4 = ___0_reader;
 			NLogXmlElement_t335BE4D1A15031580661DD86276F67D6C9A26F0D* L_5 = (NLogXmlElement_t335BE4D1A15031580661DD86276F67D6C9A26F0D*)il2cpp_codegen_object_new(NLogXmlElement_t335BE4D1A15031580661DD86276F67D6C9A26F0D_il2cpp_TypeInfo_var);
 			NLogXmlElement__ctor_mC5F7EFF91C761A39D2AE4637DB223B0746075AA1(L_5, L_4, NULL);
@@ -10811,7 +10811,7 @@ IL_0046:
 			XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* L_10 = V_0;
 			NullCheck(L_10);
 			int32_t L_11;
-			L_11 = VirtualFuncInvoker0< int32_t >::Invoke(32, L_10);
+			L_11 = VirtualFuncInvoker0< int32_t >::Invoke(43, L_10);
 			XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* L_12 = V_0;
 			NLogXmlElement_t335BE4D1A15031580661DD86276F67D6C9A26F0D* L_13 = (NLogXmlElement_t335BE4D1A15031580661DD86276F67D6C9A26F0D*)il2cpp_codegen_object_new(NLogXmlElement_t335BE4D1A15031580661DD86276F67D6C9A26F0D_il2cpp_TypeInfo_var);
 			NLogXmlElement__ctor_m97D0A8F010EB0B7B8B57A0F146E51FAEEEBC94B7(L_13, L_12, (bool)1, NULL);

@@ -770,6 +770,7 @@ struct UIRenderer_t92C2C36451BAD524541C4C548B02D0EAC798644E;
 struct UITKTextHandle_t1FF3B4EC2367C05F42D61C660D6FE30DF91C06CE;
 struct UnhandledExceptionEventHandler_tB13FF21A6201A59BB462E68CD10C5B5BEE54941C;
 struct UxmlAsset_t3390B2BDC40F2F8C1E82D9E0E724998D51BA109A;
+struct UxmlAttributeAttribute_t2F7D0EF58BB69767F61F8EC7A27D57C92CC3EFA9;
 struct UxmlAttributeDescription_t742D021489DB2B564142146CAAAC3F9191825EF2;
 struct UxmlAttributeOverridesFactory_t8DC6883CE444FFD7F7EB6BE87BEA29B2EE4A2A0C;
 struct UxmlAttributeOverridesTraits_tE607A4A26491C6A3DE530D8822901732592D2476;
@@ -785,6 +786,7 @@ struct UxmlIntAttributeDescription_tFDF4F77C2CD7C4790E8E135B0F353699D19CB5B4;
 struct UxmlLongAttributeDescription_t5B27C54F972BAACA9CB7B53CF76AAE5603E291D8;
 struct UxmlObjectAsset_tC01ADA4F547B35AFDFED4AF9106CA475214ECFD8;
 struct UxmlObjectAttribute_tDF016BFA6DA1EE1C9E161749304C85B0962E23FF;
+struct UxmlObjectReferenceAttribute_t6B3B1723E7CABD4CA96D53AA326FFBBB6F8F0E77;
 struct UxmlRootElementFactory_t2F773C3F5B052C30E6079D453A7242D22DA3C9E2;
 struct UxmlRootElementTraits_t17835D11517D46AEC127845AA33E6F409E69C736;
 struct UxmlSerializedData_t5BDDB665835158F6BC2975E086891B337C3BB706;
@@ -1297,6 +1299,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral4B36601D1927316A17FDAF2BC7E1B599BEC3B9C8
 IL2CPP_EXTERN_C String_t* _stringLiteral4F8D051EB429E6C51DC531682DD4DD377BB0BC86;
 IL2CPP_EXTERN_C String_t* _stringLiteral544DC80A2A82A08B6321F56F8987CB7E5DEED1C4;
 IL2CPP_EXTERN_C String_t* _stringLiteral55130191C47AC5C101C75DBE0AC53B213347521A;
+IL2CPP_EXTERN_C String_t* _stringLiteral5BEFD8CC60A79699B5BB00E37BAC5B62D371E174;
 IL2CPP_EXTERN_C String_t* _stringLiteral5C9660BC337150CBC766309DC912F22F712B7A73;
 IL2CPP_EXTERN_C String_t* _stringLiteral614B501556B12B5890C878B29FB23C1807F2B680;
 IL2CPP_EXTERN_C String_t* _stringLiteral6539D89C943EE099490ED121854E0CFDA2B234BE;
@@ -1341,6 +1344,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralE249DDFD90EBFAAEE63734F28F6668A2FB5BD5AF
 IL2CPP_EXTERN_C String_t* _stringLiteralE39D44CC6F4FA2099E5D7C5C0DFF69D94202B9B1;
 IL2CPP_EXTERN_C String_t* _stringLiteralE3DFC065B6A6D9931B797808DD066491AAB82B29;
 IL2CPP_EXTERN_C String_t* _stringLiteralE54446A3D9F33E4A0133E6B0485FF58F7BFB0B4A;
+IL2CPP_EXTERN_C String_t* _stringLiteralE64338E20D40894E8F4ADB2603E06F4812300A55;
 IL2CPP_EXTERN_C String_t* _stringLiteralE855887D97B38B5FF13FB33465602F8581F4C280;
 IL2CPP_EXTERN_C String_t* _stringLiteralEBDBCCC3B36488892EA638BB04D565F1723C2960;
 IL2CPP_EXTERN_C String_t* _stringLiteralEC8D2B1EC3E954083D64BF4DDCCC9E46BE24B490;
@@ -1775,6 +1779,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* UxmlFactory_2__ctor_mB672680ACFBD52DB0DA168
 IL2CPP_EXTERN_C const RuntimeMethod* UxmlFactory_2__ctor_mE8A6CB15FEA96922DA7E74AEDCA0B6306CED0E51_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UxmlFactory_2__ctor_mF48BE9A72715128D6F1A271734AAADE7B48941C9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UxmlObjectFactoryRegistry_RegisterFactory_m42DE8C3D0511469E82EB2258ACC525CC2219092B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UxmlObjectReferenceAttribute__ctor_mED6B73A1B2784F7FE5B80F09818899CDFCFE429E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VisualElementExtensions_LocalToWorld_mDDE4378293C3CC8A99E8EA2AA0984BBF30C8FDCD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VisualElementExtensions_StretchToParentSize_m470D10ED2862920021F7B36ED4AA5A97BCAD1B1A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VisualElementExtensions_WorldToLocal_m6F92CEAE8BF73F6729262B535191AD1437DC1A9F_RuntimeMethod_var;
@@ -3376,6 +3381,11 @@ struct UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF
 {
 	uint64_t ___m_value;
 };
+struct UxmlAttributeAttribute_t2F7D0EF58BB69767F61F8EC7A27D57C92CC3EFA9  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
+{
+	String_t* ___name;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___obsoleteNames;
+};
 struct UxmlElementAttribute_tC5C4E253CEEAD90E683BC09A339960EEEF1FC7EA  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
 	String_t* ___name;
@@ -3404,6 +3414,11 @@ struct UxmlNamespaceDefinition_t6B70CA125A4C1D5F74F1C901A6F4F72637F6621B_marshal
 };
 struct UxmlObjectAttribute_tDF016BFA6DA1EE1C9E161749304C85B0962E23FF  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
+};
+struct UxmlObjectReferenceAttribute_t6B3B1723E7CABD4CA96D53AA326FFBBB6F8F0E77  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
+{
+	String_t* ___name;
+	TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___types;
 };
 struct UxmlTraits_t3311A2EDB0705584A614B5511216DAD5279C4160  : public BaseUxmlTraits_t2A13D24373542A6401FE350C5119DE0FCE86E21E
 {
@@ -7306,6 +7321,40 @@ struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeA
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
+struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Type_t* m_Items[1];
+
+	inline Type_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Type_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Type_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Type_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Type_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Type_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 struct IBaseUxmlObjectFactoryU5BU5D_tD9DDCD48B9B78F2C6B24F9B6C8F8BB40D34AFC83  : public RuntimeArray
 {
 	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
@@ -7369,40 +7418,6 @@ struct AssemblyU5BU5D_t97B7B4E3FD4DA4944A4BFAA4DC484EA7D990B339  : public Runtim
 		return m_Items + index;
 	}
 	inline void SetAtUnchecked(il2cpp_array_size_t index, Assembly_t* value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-};
-struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB  : public RuntimeArray
-{
-	ALIGN_FIELD (8) Type_t* m_Items[1];
-
-	inline Type_t* GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Type_t** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Type_t* value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-	inline Type_t* GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Type_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Type_t* value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
@@ -9175,6 +9190,9 @@ inline Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 UxmlAttributeDescriptio
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m2FD1D6275F7141EB6E5DCC02FB8793D25E3745DF (U3CU3Ec_t5A8146F0176EDD35D2C5AFF249A618699AFF45C8* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 Hash128_Parse_mA918076817FF18F2172F1427AFA472C0A8321E47 (String_t* ___0_hashString, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Attribute__ctor_m79ED1BF1EE36D1E417BA89A0D9F91F8AAD8D19E2 (Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlAttributeAttribute__ctor_m880A187D7900737D575552DAE65AB9667F4FD928 (UxmlAttributeAttribute_t2F7D0EF58BB69767F61F8EC7A27D57C92CC3EFA9* __this, String_t* ___0_name, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___1_obsoleteNames, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlObjectReferenceAttribute__ctor_m59FDE323847AF69F113A3E0884F9365EC6AE94C0 (UxmlObjectReferenceAttribute_t6B3B1723E7CABD4CA96D53AA326FFBBB6F8F0E77* __this, String_t* ___0_uxmlName, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___1_acceptedTypes, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BaseUxmlTraits_set_canHaveAnyAttribute_mC31D80C34331597E976F8E069F8F83A475D3DA10_inline (BaseUxmlTraits_t2A13D24373542A6401FE350C5119DE0FCE86E21E* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaseUxmlTraits__ctor_m54FB63BC9B1A763C6D9AF8E108F61BFB3AB95B43 (BaseUxmlTraits_t2A13D24373542A6401FE350C5119DE0FCE86E21E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlAttributeDescription__ctor_mBF5AF9327F0CDFF2707D73C4A55BC0C4A7BE82BD (UxmlAttributeDescription_t742D021489DB2B564142146CAAAC3F9191825EF2* __this, const RuntimeMethod* method) ;
@@ -9247,7 +9265,6 @@ inline RuntimeObject* Enumerator_get_Current_m9F2FBA183959BB04EDD991A8E204C8B3FC
 {
 	return ((  RuntimeObject* (*) (Enumerator_t68F56938EF4D43B378EBC4C35F9D88413ADFE3F3*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 inline bool Enumerator_MoveNext_m25DDC054BAEAD5805DE3896B5519A854D8BDAFCF (Enumerator_t68F56938EF4D43B378EBC4C35F9D88413ADFE3F3* __this, const RuntimeMethod* method)
 {
 	return ((  bool (*) (Enumerator_t68F56938EF4D43B378EBC4C35F9D88413ADFE3F3*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
@@ -20618,6 +20635,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlElementAttribute__ctor_m9901ACF0891A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlAttributeAttribute__ctor_m174FC9B18E68DC3F99EE7F3842EAAA7EA2FD84DF (UxmlAttributeAttribute_t2F7D0EF58BB69767F61F8EC7A27D57C92CC3EFA9* __this, const RuntimeMethod* method) 
+{
+	{
+		UxmlAttributeAttribute__ctor_m880A187D7900737D575552DAE65AB9667F4FD928(__this, (String_t*)NULL, (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)NULL, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlAttributeAttribute__ctor_m4607DF10E3AEDFBBCC3368F01ABBAC1C122BA2E1 (UxmlAttributeAttribute_t2F7D0EF58BB69767F61F8EC7A27D57C92CC3EFA9* __this, String_t* ___0_name, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_name;
+		UxmlAttributeAttribute__ctor_m880A187D7900737D575552DAE65AB9667F4FD928(__this, L_0, (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)NULL, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlAttributeAttribute__ctor_m880A187D7900737D575552DAE65AB9667F4FD928 (UxmlAttributeAttribute_t2F7D0EF58BB69767F61F8EC7A27D57C92CC3EFA9* __this, String_t* ___0_name, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___1_obsoleteNames, const RuntimeMethod* method) 
+{
+	{
+		Attribute__ctor_m79ED1BF1EE36D1E417BA89A0D9F91F8AAD8D19E2(__this, NULL);
+		String_t* L_0 = ___0_name;
+		__this->___name = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___name), (void*)L_0);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = ___1_obsoleteNames;
+		__this->___obsoleteNames = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___obsoleteNames), (void*)L_1);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlIgnoreAttribute__ctor_mCE7FE05BEEEB7B0E425F6BBD2D621686831023F6 (UxmlIgnoreAttribute_t3B9A842BF67C815520E100ED5F1360EA4148EC2E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20637,6 +20690,67 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlObjectAttribute__ctor_m620485369F132
 {
 	{
 		Attribute__ctor_m79ED1BF1EE36D1E417BA89A0D9F91F8AAD8D19E2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlObjectReferenceAttribute__ctor_m8100ACB493B56C7C02ED32D447A1CD77D6A3B877 (UxmlObjectReferenceAttribute_t6B3B1723E7CABD4CA96D53AA326FFBBB6F8F0E77* __this, const RuntimeMethod* method) 
+{
+	{
+		UxmlObjectReferenceAttribute__ctor_m59FDE323847AF69F113A3E0884F9365EC6AE94C0(__this, (String_t*)NULL, (TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB*)NULL, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlObjectReferenceAttribute__ctor_mED6B73A1B2784F7FE5B80F09818899CDFCFE429E (UxmlObjectReferenceAttribute_t6B3B1723E7CABD4CA96D53AA326FFBBB6F8F0E77* __this, String_t* ___0_uxmlName, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5BEFD8CC60A79699B5BB00E37BAC5B62D371E174);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		String_t* L_0 = ___0_uxmlName;
+		UxmlObjectReferenceAttribute__ctor_m59FDE323847AF69F113A3E0884F9365EC6AE94C0(__this, L_0, (TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB*)NULL, NULL);
+		String_t* L_1 = ___0_uxmlName;
+		bool L_2;
+		L_2 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_1, _stringLiteral5BEFD8CC60A79699B5BB00E37BAC5B62D371E174, NULL);
+		V_0 = L_2;
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_4 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE64338E20D40894E8F4ADB2603E06F4812300A55)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UxmlObjectReferenceAttribute__ctor_mED6B73A1B2784F7FE5B80F09818899CDFCFE429E_RuntimeMethod_var)));
+	}
+
+IL_0024:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlObjectReferenceAttribute__ctor_m59FDE323847AF69F113A3E0884F9365EC6AE94C0 (UxmlObjectReferenceAttribute_t6B3B1723E7CABD4CA96D53AA326FFBBB6F8F0E77* __this, String_t* ___0_uxmlName, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___1_acceptedTypes, const RuntimeMethod* method) 
+{
+	{
+		Attribute__ctor_m79ED1BF1EE36D1E417BA89A0D9F91F8AAD8D19E2(__this, NULL);
+		String_t* L_0 = ___0_uxmlName;
+		__this->___name = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___name), (void*)L_0);
+		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_1 = ___1_acceptedTypes;
+		__this->___types = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___types), (void*)L_1);
 		return;
 	}
 }
@@ -22095,6 +22209,29 @@ IL_00e2:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UxmlSerializedData_ShouldWriteAttributeValue_m4242D90AD1DE452E50334FD921F80899456B5582 (uint8_t ___0_attributeFlags, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UxmlSerializedData_t5BDDB665835158F6BC2975E086891B337C3BB706_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		uint8_t L_0 = ___0_attributeFlags;
+		il2cpp_codegen_runtime_class_init_inline(UxmlSerializedData_t5BDDB665835158F6BC2975E086891B337C3BB706_il2cpp_TypeInfo_var);
+		uint8_t L_1 = ((UxmlSerializedData_t5BDDB665835158F6BC2975E086891B337C3BB706_StaticFields*)il2cpp_codegen_static_fields_for(UxmlSerializedData_t5BDDB665835158F6BC2975E086891B337C3BB706_il2cpp_TypeInfo_var))->___s_CurrentDeserializeFlags;
+		V_0 = (bool)((!(((uint32_t)((int32_t)((int32_t)L_0&(int32_t)L_1))) <= ((uint32_t)0)))? 1 : 0);
+		goto IL_000e;
+	}
+
+IL_000e:
+	{
+		bool L_2 = V_0;
+		return L_2;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData__ctor_m8E645726E8E81BF54451A8B6F5014A5F25F71153 (UxmlSerializedData_t5BDDB665835158F6BC2975E086891B337C3BB706* __this, const RuntimeMethod* method) 
 {
 	{

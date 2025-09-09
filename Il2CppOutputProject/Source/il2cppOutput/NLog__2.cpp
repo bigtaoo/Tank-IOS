@@ -1544,6 +1544,7 @@ struct WebProxy_tD66B652C7B6DF4BC4C10B7475C42FB1F4F82E437  : public RuntimeObjec
 };
 struct XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F  : public RuntimeObject
 {
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___writeNodeBuffer;
 };
 struct ZipArchiveFileCompressor_t9E8D26F8B1B797206DA96CBA2DD9A929B068A20F  : public RuntimeObject
 {
@@ -22062,7 +22063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpPostSoapFormatterBase_WriteContent_m
 		String_t* L_5;
 		L_5 = VirtualFuncInvoker0< String_t* >::Invoke(7, __this);
 		NullCheck(L_3);
-		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_3, L_4, _stringLiteral3C177F114EA343FA4E78A0DF34CF0666925B3DD0, L_5);
+		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_3, L_4, _stringLiteral3C177F114EA343FA4E78A0DF34CF0666925B3DD0, L_5);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_6 = V_0;
 		String_t* L_7;
 		L_7 = VirtualFuncInvoker0< String_t* >::Invoke(7, __this);
@@ -22086,16 +22087,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpPostSoapFormatterBase_WriteContent_m
 		HttpPostXmlFormatterBase_WriteAllParametersToCurrenElement_mFE2D59E7E1BD7121E5FCB34662A8E89B5065BDFB(__this, L_13, L_14, NULL);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_15 = V_0;
 		NullCheck(L_15);
-		VirtualActionInvoker0::Invoke(8, L_15);
+		VirtualActionInvoker0::Invoke(10, L_15);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_16 = V_0;
 		NullCheck(L_16);
-		VirtualActionInvoker0::Invoke(8, L_16);
+		VirtualActionInvoker0::Invoke(10, L_16);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_17 = V_0;
 		NullCheck(L_17);
-		VirtualActionInvoker0::Invoke(8, L_17);
+		VirtualActionInvoker0::Invoke(10, L_17);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_18 = V_0;
 		NullCheck(L_18);
-		VirtualActionInvoker0::Invoke(27, L_18);
+		VirtualActionInvoker0::Invoke(29, L_18);
 		return;
 	}
 }
@@ -22442,10 +22443,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpPostXmlDocumentFormatter_WriteConten
 		HttpPostXmlFormatterBase_WriteAllParametersToCurrenElement_mFE2D59E7E1BD7121E5FCB34662A8E89B5065BDFB(__this, L_8, L_9, NULL);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_10 = V_0;
 		NullCheck(L_10);
-		VirtualActionInvoker0::Invoke(8, L_10);
+		VirtualActionInvoker0::Invoke(10, L_10);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_11 = V_0;
 		NullCheck(L_11);
-		VirtualActionInvoker0::Invoke(27, L_11);
+		VirtualActionInvoker0::Invoke(29, L_11);
 		return;
 	}
 }

@@ -23180,7 +23180,7 @@ IL_0010_1:
 			XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* L_5 = ___1_xmlReader;
 			NullCheck(L_5);
 			int32_t L_6;
-			L_6 = VirtualFuncInvoker0< int32_t >::Invoke(27, L_5);
+			L_6 = VirtualFuncInvoker0< int32_t >::Invoke(34, L_5);
 			if ((!(((uint32_t)L_6) == ((uint32_t)2))))
 			{
 				goto IL_0057_1;

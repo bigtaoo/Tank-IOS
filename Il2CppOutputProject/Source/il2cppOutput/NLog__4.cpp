@@ -1617,6 +1617,7 @@ struct Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7  : public RuntimeObject
 };
 struct XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F  : public RuntimeObject
 {
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___writeNodeBuffer;
 };
 struct U3CU3Ec__DisplayClass1_0_tEDA52347BA01590A88EFBC3D5B0CF5B39F3766A6  : public RuntimeObject
 {
@@ -15265,7 +15266,7 @@ IL_0217:
 				il2cpp_codegen_runtime_class_init_inline(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var);
 				String_t* L_7 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespace;
 				NullCheck(L_6);
-				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_6, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralEAA8D9C3445FEBFE3701DDB0406A86D63B80BB2F, L_7);
+				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_6, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralEAA8D9C3445FEBFE3701DDB0406A86D63B80BB2F, L_7);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_8 = V_1;
 				String_t* L_9 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNLogNamespace;
 				il2cpp_codegen_runtime_class_init_inline(XmlHelper_tA04B8F6B88636AC4127DD0D211174E2529E90020_il2cpp_TypeInfo_var);
@@ -15424,7 +15425,7 @@ IL_0151_1:
 				il2cpp_codegen_runtime_class_init_inline(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var);
 				String_t* L_60 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespace;
 				NullCheck(L_59);
-				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_59, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_60);
+				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_59, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_60);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_61 = V_1;
 				il2cpp_codegen_runtime_class_init_inline(XmlHelper_tA04B8F6B88636AC4127DD0D211174E2529E90020_il2cpp_TypeInfo_var);
 				XmlHelper_WriteAttributeSafeString_m2FD9DB87DC7809F270F9045E89C896707A022124(L_61, _stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F, _stringLiteralC23D0750040C47538B0DE77E668EA57E3273B97B, NULL);
@@ -15434,11 +15435,11 @@ IL_0151_1:
 				XmlHelper_WriteAttributeSafeString_m2FD9DB87DC7809F270F9045E89C896707A022124(L_62, _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8, L_63, NULL);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_64 = V_1;
 				NullCheck(L_64);
-				VirtualActionInvoker0::Invoke(8, L_64);
+				VirtualActionInvoker0::Invoke(10, L_64);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_65 = V_1;
 				String_t* L_66 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespace;
 				NullCheck(L_65);
-				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_65, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_66);
+				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_65, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_66);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_67 = V_1;
 				XmlHelper_WriteAttributeSafeString_m2FD9DB87DC7809F270F9045E89C896707A022124(L_67, _stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F, _stringLiteralC349E05201C6584D83D2D3EA41912A7473E27896, NULL);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_68 = V_1;
@@ -15446,16 +15447,16 @@ IL_0151_1:
 				XmlHelper_WriteAttributeSafeString_m2FD9DB87DC7809F270F9045E89C896707A022124(L_68, _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8, L_69, NULL);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_70 = V_1;
 				NullCheck(L_70);
-				VirtualActionInvoker0::Invoke(8, L_70);
+				VirtualActionInvoker0::Invoke(10, L_70);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_71 = V_1;
 				NullCheck(L_71);
-				VirtualActionInvoker0::Invoke(8, L_71);
+				VirtualActionInvoker0::Invoke(10, L_71);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_72 = V_1;
 				NullCheck(L_72);
-				VirtualActionInvoker0::Invoke(8, L_72);
+				VirtualActionInvoker0::Invoke(10, L_72);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_73 = V_1;
 				NullCheck(L_73);
-				VirtualActionInvoker0::Invoke(27, L_73);
+				VirtualActionInvoker0::Invoke(29, L_73);
 				StringBuilder_t* L_74 = V_0;
 				String_t* L_75 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespaceRemover;
 				String_t* L_76 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_defaults.string_class))->___Empty;
@@ -15581,7 +15582,7 @@ IL_0015_1:
 				il2cpp_codegen_runtime_class_init_inline(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var);
 				String_t* L_12 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespace;
 				NullCheck(L_11);
-				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_11, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_12);
+				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_11, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_12);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_13 = ___0_xtw;
 				String_t* L_14 = V_1;
 				il2cpp_codegen_runtime_class_init_inline(XmlHelper_tA04B8F6B88636AC4127DD0D211174E2529E90020_il2cpp_TypeInfo_var);
@@ -15591,7 +15592,7 @@ IL_0015_1:
 				XmlHelper_WriteAttributeSafeString_m2FD9DB87DC7809F270F9045E89C896707A022124(L_15, _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8, L_16, NULL);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_17 = ___0_xtw;
 				NullCheck(L_17);
-				VirtualActionInvoker0::Invoke(8, L_17);
+				VirtualActionInvoker0::Invoke(10, L_17);
 			}
 
 IL_005e_1:
@@ -15736,7 +15737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log4JXmlEventLayoutRenderer_AppendExcept
 		il2cpp_codegen_runtime_class_init_inline(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var);
 		String_t* L_3 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespace;
 		NullCheck(L_2);
-		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_2, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteral4E7D012A71989375BDA4D68A0950A70A4BADC64F, L_3);
+		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_2, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteral4E7D012A71989375BDA4D68A0950A70A4BADC64F, L_3);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_4 = ___1_xtw;
 		LogEventInfo_t0D46B012CC61C9446F0D58F06158DB50C3011BB1* L_5 = ___0_logEvent;
 		NullCheck(L_5);
@@ -15749,7 +15750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log4JXmlEventLayoutRenderer_AppendExcept
 		XmlHelper_WriteSafeCData_m90F326C2D16A7F281369B8425814F9178E346754(L_4, L_7, NULL);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_8 = ___1_xtw;
 		NullCheck(L_8);
-		VirtualActionInvoker0::Invoke(8, L_8);
+		VirtualActionInvoker0::Invoke(10, L_8);
 	}
 
 IL_0034:
@@ -15908,7 +15909,7 @@ IL_0054:
 		il2cpp_codegen_runtime_class_init_inline(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var);
 		String_t* L_19 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespace;
 		NullCheck(L_18);
-		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_18, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_19);
+		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_18, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_19);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_20 = ___1_xtw;
 		NLogViewerParameterInfo_t0D1B6773FA3452BFA3134BFAD9AEAD81E8510B79* L_21 = V_1;
 		NullCheck(L_21);
@@ -15921,7 +15922,7 @@ IL_0054:
 		XmlHelper_WriteAttributeSafeString_m2FD9DB87DC7809F270F9045E89C896707A022124(L_23, _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8, L_24, NULL);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_25 = ___1_xtw;
 		NullCheck(L_25);
-		VirtualActionInvoker0::Invoke(8, L_25);
+		VirtualActionInvoker0::Invoke(10, L_25);
 	}
 
 IL_008c:
@@ -16008,7 +16009,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log4JXmlEventLayoutRenderer_AppendProper
 		il2cpp_codegen_runtime_class_init_inline(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var);
 		String_t* L_1 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespace;
 		NullCheck(L_0);
-		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_0, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteral8640B5B3EA5D79BF55FFD3D0D0AADA17A24415C1, L_1);
+		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_0, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteral8640B5B3EA5D79BF55FFD3D0D0AADA17A24415C1, L_1);
 		bool L_2;
 		L_2 = Log4JXmlEventLayoutRenderer_get_IncludeMdc_m04CE916AFF0334E1F23BC0C639BC9CE9D5985F85_inline(__this, NULL);
 		if (!L_2)
@@ -16082,7 +16083,7 @@ IL_002a_1:
 				il2cpp_codegen_runtime_class_init_inline(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var);
 				String_t* L_14 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespace;
 				NullCheck(L_13);
-				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_13, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_14);
+				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_13, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_14);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_15 = ___0_xtw;
 				String_t* L_16 = V_1;
 				il2cpp_codegen_runtime_class_init_inline(XmlHelper_tA04B8F6B88636AC4127DD0D211174E2529E90020_il2cpp_TypeInfo_var);
@@ -16092,7 +16093,7 @@ IL_002a_1:
 				XmlHelper_WriteAttributeSafeString_m2FD9DB87DC7809F270F9045E89C896707A022124(L_17, _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8, L_18, NULL);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_19 = ___0_xtw;
 				NullCheck(L_19);
-				VirtualActionInvoker0::Invoke(8, L_19);
+				VirtualActionInvoker0::Invoke(10, L_19);
 			}
 
 IL_0073_1:
@@ -16206,7 +16207,7 @@ IL_0013:
 		il2cpp_codegen_runtime_class_init_inline(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var);
 		String_t* L_16 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespace;
 		NullCheck(L_15);
-		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_15, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralB6A813A9D24F20A648AB9BFFAEB99343B3902FC2, L_16);
+		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_15, _stringLiteral187A30D4014DBEF5BF357F65BAE0C22ACA2E227C, _stringLiteralB6A813A9D24F20A648AB9BFFAEB99343B3902FC2, L_16);
 		String_t* L_17 = V_1;
 		bool L_18;
 		L_18 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_17, NULL);
@@ -16267,7 +16268,7 @@ IL_00c3:
 	{
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_34 = ___1_xtw;
 		NullCheck(L_34);
-		VirtualActionInvoker0::Invoke(8, L_34);
+		VirtualActionInvoker0::Invoke(10, L_34);
 		bool L_35;
 		L_35 = Log4JXmlEventLayoutRenderer_get_IncludeNLogData_m6E2C7DB202630CF39A89BD9B484A8704CB580216_inline(__this, NULL);
 		if (!L_35)
@@ -16294,7 +16295,7 @@ IL_00c3:
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_42 = ___1_xtw;
 		String_t* L_43 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNLogNamespace;
 		NullCheck(L_42);
-		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_42, _stringLiteralF97E232018D261985B7AC0ADD7A8FB8AC5854401, _stringLiteralB6A813A9D24F20A648AB9BFFAEB99343B3902FC2, L_43);
+		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_42, _stringLiteralF97E232018D261985B7AC0ADD7A8FB8AC5854401, _stringLiteralB6A813A9D24F20A648AB9BFFAEB99343B3902FC2, L_43);
 		MethodBase_t* L_44 = V_0;
 		if (L_44)
 		{
@@ -16343,18 +16344,18 @@ IL_0140:
 	{
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_53 = ___1_xtw;
 		NullCheck(L_53);
-		VirtualActionInvoker0::Invoke(8, L_53);
+		VirtualActionInvoker0::Invoke(10, L_53);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_54 = ___1_xtw;
 		il2cpp_codegen_runtime_class_init_inline(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var);
 		String_t* L_55 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNLogNamespace;
 		NullCheck(L_54);
-		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_54, _stringLiteralF97E232018D261985B7AC0ADD7A8FB8AC5854401, _stringLiteral8640B5B3EA5D79BF55FFD3D0D0AADA17A24415C1, L_55);
+		VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_54, _stringLiteralF97E232018D261985B7AC0ADD7A8FB8AC5854401, _stringLiteral8640B5B3EA5D79BF55FFD3D0D0AADA17A24415C1, L_55);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_56 = ___1_xtw;
 		LogEventInfo_t0D46B012CC61C9446F0D58F06158DB50C3011BB1* L_57 = ___0_logEvent;
 		Log4JXmlEventLayoutRenderer_AppendProperties_m7428E7F0542675EDE1CCCCDD8935F9DCF26D7A35(__this, _stringLiteralF97E232018D261985B7AC0ADD7A8FB8AC5854401, L_56, L_57, NULL);
 		XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_58 = ___1_xtw;
 		NullCheck(L_58);
-		VirtualActionInvoker0::Invoke(8, L_58);
+		VirtualActionInvoker0::Invoke(10, L_58);
 	}
 
 IL_016e:
@@ -16476,7 +16477,7 @@ IL_0016_1:
 				il2cpp_codegen_runtime_class_init_inline(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var);
 				String_t* L_18 = ((Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_StaticFields*)il2cpp_codegen_static_fields_for(Log4JXmlEventLayoutRenderer_t814E12A48FF4648970225CFFF19B83B437248EC5_il2cpp_TypeInfo_var))->___dummyNamespace;
 				NullCheck(L_16);
-				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(7, L_16, L_17, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_18);
+				VirtualActionInvoker3< String_t*, String_t*, String_t* >::Invoke(9, L_16, L_17, _stringLiteralA44A39671D4B7FA8FBE50D795EAB52248D5C5469, L_18);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_19 = ___1_xtw;
 				String_t* L_20 = V_2;
 				il2cpp_codegen_runtime_class_init_inline(XmlHelper_tA04B8F6B88636AC4127DD0D211174E2529E90020_il2cpp_TypeInfo_var);
@@ -16486,7 +16487,7 @@ IL_0016_1:
 				XmlHelper_WriteAttributeSafeString_m2FD9DB87DC7809F270F9045E89C896707A022124(L_21, _stringLiteral46F273EF641E07D271D91E0DC24A4392582671F8, L_22, NULL);
 				XmlWriter_tCBC8D0C4891828A0A384C68D0414337F20E1A17F* L_23 = ___1_xtw;
 				NullCheck(L_23);
-				VirtualActionInvoker0::Invoke(8, L_23);
+				VirtualActionInvoker0::Invoke(10, L_23);
 			}
 
 IL_0071_1:
