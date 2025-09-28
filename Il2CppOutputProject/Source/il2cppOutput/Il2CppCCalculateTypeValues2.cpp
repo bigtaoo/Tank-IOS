@@ -38735,6 +38735,10 @@ struct TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996  : public Mon
 	int32_t ___playerHP;
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___robotCount;
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___robotLevel;
+	int32_t ___robotMoveSpeed;
+	int32_t ___robotBulletMoveSpeed;
+	int32_t ___robotSpawnInterval;
+	int32_t ___robotShootInterval;
 };
 struct TankTile_tB603058CE7E09DFDB9A9F1108D3B454E7DA2D72F  : public Tile_t33119F106CFC3DC767E7D9306A958AAE12133490
 {

@@ -4760,6 +4760,10 @@ struct TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996  : public Mon
 	int32_t ___playerHP;
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___robotCount;
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___robotLevel;
+	int32_t ___robotMoveSpeed;
+	int32_t ___robotBulletMoveSpeed;
+	int32_t ___robotSpawnInterval;
+	int32_t ___robotShootInterval;
 };
 struct TankTile_tB603058CE7E09DFDB9A9F1108D3B454E7DA2D72F  : public Tile_t33119F106CFC3DC767E7D9306A958AAE12133490
 {
@@ -9361,6 +9365,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TankInitialConfig_RobotLevel_m67007FD
 IL_0012:
 	{
 		return 0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TankInitialConfig_get_RobotMoveSpeed_m3ED432A5AA80761C92008457421751E25665EA95 (TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___robotMoveSpeed;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TankInitialConfig_get_RobotBulletMoveSpeed_m602720EB971F7527848A5528FE3B160E817F7D09 (TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___robotBulletMoveSpeed;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TankInitialConfig_get_RobotSpawnInterval_mF75A83DAF9B489AD3092CBFA9F5380C8722432D3 (TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___robotSpawnInterval;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TankInitialConfig_get_RobotShootInterval_m7FB569859BD239A3AC2F23154C0A8D874DB980C1 (TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___robotShootInterval;
+		return L_0;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TankInitialConfig__ctor_m20F9851E790013EAD3EF8E32F5815D2B8FF11F64 (TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996* __this, const RuntimeMethod* method) 

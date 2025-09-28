@@ -18057,6 +18057,10 @@ struct TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996  : public Mon
 	int32_t ___playerHP;
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___robotCount;
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___robotLevel;
+	int32_t ___robotMoveSpeed;
+	int32_t ___robotBulletMoveSpeed;
+	int32_t ___robotSpawnInterval;
+	int32_t ___robotShootInterval;
 };
 struct TankTile_tB603058CE7E09DFDB9A9F1108D3B454E7DA2D72F  : public Tile_t33119F106CFC3DC767E7D9306A958AAE12133490
 {
@@ -27530,9 +27534,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14623[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14625[1] = 
 {
 	static_cast<int32_t>(offsetof(TilemapDebugger_t8FF751787D362A1DCFE8C754831E43ACC416DC1B, ___tilemap)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14626[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14626[8] = 
 {
-	static_cast<int32_t>(offsetof(TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996, ___playerHP)),0,static_cast<int32_t>(offsetof(TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996, ___robotCount)),static_cast<int32_t>(offsetof(TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996, ___robotLevel)),};
+	static_cast<int32_t>(offsetof(TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996, ___playerHP)),0,static_cast<int32_t>(offsetof(TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996, ___robotCount)),static_cast<int32_t>(offsetof(TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996, ___robotLevel)),static_cast<int32_t>(offsetof(TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996, ___robotMoveSpeed)),static_cast<int32_t>(offsetof(TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996, ___robotBulletMoveSpeed)),static_cast<int32_t>(offsetof(TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996, ___robotSpawnInterval)),static_cast<int32_t>(offsetof(TankInitialConfig_tE46680C489835F45B844E28D96C945B705848996, ___robotShootInterval)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable14627[6] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,};
