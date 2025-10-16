@@ -270,7 +270,6 @@ struct Func_2_t4413089D739AA5DDB9D744DB3B447A0246563A86;
 struct Func_2_tACBF5A1656250800CE861707354491F0611F6624;
 struct Func_2_tB6F1E0F98E8BA26E8A53507DB60F146CA9BEB39F;
 struct Func_2_tD0FFDD4EB52371E6D5C977F4273D2B58000F469A;
-struct HashSet_1_tB0D8BEB55EE8D7CCDDEE7710376D3FB984232BB5;
 struct HashSet_1_tD5E258BE67A170C7133F16DA6C76AD2547B92C03;
 struct HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885;
 struct HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178;
@@ -2076,7 +2075,6 @@ struct ResourceManager_t23CA39B6F8FB4F38DFCA7F6FDAEE868D709C933D  : public Runti
 	HashSet_1_tB813E9BB87712BD40D5CDC96CDB692FCBBEB5267* ___m_TrackedInstanceOperations;
 	DelegateList_1_t472259E3E09904EE80A15B306399DBFE8998BAAD* ___m_UpdateCallbacks;
 	List_1_t8922AAF75172DC9F479AA861DF5C6769C984DA9C* ___m_DeferredCompleteCallbacks;
-	HashSet_1_tB0D8BEB55EE8D7CCDDEE7710376D3FB984232BB5* ___m_AssetBundleProviders;
 	bool ___m_InsideExecuteDeferredCallbacksMethod;
 	List_1_t6F2A33FA3CBA05A74EE6F93DB2A8A81424997307* ___m_DeferredCallbacksToRegister;
 	Action_1_tA57E75E816C50B3444F6BEFBEBF19A03BA2DF22E* ___m_ReleaseOpNonCached;
@@ -2870,7 +2868,7 @@ struct __StaticArrayInitTypeSizeU3D16_t7B6450439A8D14F8220D3FB95D5DF991444A704E
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D16420_tA3384A0B09C3C6F13FF0970D2B1C15EBF5367EDD 
+struct __StaticArrayInitTypeSizeU3D18539_t80D57A700AF3F698FE0B6CCA5B464169FF7CDA53 
 {
 	union
 	{
@@ -2880,7 +2878,7 @@ struct __StaticArrayInitTypeSizeU3D16420_tA3384A0B09C3C6F13FF0970D2B1C15EBF5367E
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D16420_tA3384A0B09C3C6F13FF0970D2B1C15EBF5367EDD__padding[16420];
+		uint8_t __StaticArrayInitTypeSizeU3D18539_t80D57A700AF3F698FE0B6CCA5B464169FF7CDA53__padding[18539];
 	};
 };
 #pragma pack(pop, tp)
@@ -4242,7 +4240,7 @@ struct List_1_t400759C2D4ADECDB1173AAE28E606825639021D8_StaticFields
 };
 struct U3CPrivateImplementationDetailsU3E_tB120913804D7A6049B1642BF4F13975D01CE81A7_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D16420_tA3384A0B09C3C6F13FF0970D2B1C15EBF5367EDD ___083E6519A121C56491896DF1E222CDACF2FBFA25D154C006E0ABBCD221565A42;
+	__StaticArrayInitTypeSizeU3D18539_t80D57A700AF3F698FE0B6CCA5B464169FF7CDA53 ___18112FE52FF55F9B2485211AC840C46297A99960BF056C20E484BBFBDA6DF328;
 	__StaticArrayInitTypeSizeU3D19574_t6E3D9F859A3FECEA5360E17CEF718B60799A3114 ___3CA5D898DAEDFC972E393A233D30B0C19F32BA982E5B86879AC5AF1594CE15C1;
 	__StaticArrayInitTypeSizeU3D16_t7B6450439A8D14F8220D3FB95D5DF991444A704E ___7120394F626BBF1FA0CBCCC594E26088288785E527E95DF88B22A147DD1E1350;
 };
@@ -9176,6 +9174,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoolVariable__ctor_mC70B49AD6F4517F22915
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_mAA16AC3631706D168F84483C4F5ADEE15A1913F4 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_m7E706BC22A20B9CAD9AA78F90A405C85A184E684 (UxmlSerializedData_t32D4569215DAF0CE18FEAA432C5A799117F7B24D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9232,6 +9236,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SByteVariable__ctor_mF910269DADD4DE87A3B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_m9ED62C578D643375F4272416FDD12B60B30A6436 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_mCD7BF2E3B1FF2F8953BF3F2BEC504FAD2F6CF2D7 (UxmlSerializedData_tC14D3F152C5869C67770D52504BE24B767B1E569* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9288,6 +9298,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ByteVariable__ctor_mC535A7145BA8222A9CBB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_mC15F7FFB69C70F9788AFD13C85686BFE53CAD908 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_mA0B634486124318CC1D352FD7923DC6CA674A1CB (UxmlSerializedData_t778070B0076ADCB8B69179A2CA2DD04B97ABBB72* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9344,6 +9360,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShortVariable__ctor_mE6EDF910A2FD5B3237A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_m01BB3E1A20681ACE43B7F719465BC291BF6CFFE3 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_mEC6AE6200573DCF15E3ABE4540C3452CAD05BC78 (UxmlSerializedData_t8919E53E04FBF36A605992BAFAF06C08616C7054* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9400,6 +9422,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UShortVariable__ctor_m0497F1417E52DFC5CB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_m4E24A76BFDE7BB059D75C32E824D9DC95A283ACA (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_mDD757F8531B01E4D6CFCA8B40114162299B49495 (UxmlSerializedData_tD9056CC99B62D1B96843EF9754539B68377C16F7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9456,6 +9484,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntVariable__ctor_m19D15D00ACCA8B8AF56B2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_mE13482835A1DCE1D451B2E9F6D9665FA1CEBEF8E (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_mFC3141812E597355A8CA6DAB84D5574B5A903672 (UxmlSerializedData_tCEAC57417FBC5DB5691FB98F471D949044BC0BC3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9512,6 +9546,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIntVariable__ctor_m5BF131118FFF041B7BAA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_m1853F9A8953CC7F2E61217DE89B5FFED01ABD470 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_mA4DE8214FD3D5DC4DE7F5F38B9CD487D6BE4FACD (UxmlSerializedData_t264A7E05E4F11AD619816181CCDEBAA585CE19FD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9568,6 +9608,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LongVariable__ctor_mF54BF8911067BC419C1F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_m446DFA7F5BE921D1D35F341866A12801CD539C7A (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_m47A13B659419516A685AA5A980CE028D51AD8CD5 (UxmlSerializedData_t1E36D87ED2DD549C21949ABEFDEF4A106F770838* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9624,6 +9670,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ULongVariable__ctor_m6149EA3745796687200
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_m608B036D16E5E121938F3D6EA0886777CF9DDEC9 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_m0D42A425A7535C1AC870A5ECB7E1A5AA67D43D9F (UxmlSerializedData_tDD227E8D8847CF50DD8F5B0069A5125EB2A79A8A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9680,6 +9732,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringVariable__ctor_mA81D860938B25EE8E9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_m09438F613E762EE64BC9717704C950FB8C3AA835 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_mA2D41A0A58962F4A6741AF02C876DE463F71C7E5 (UxmlSerializedData_tE89BF2FFD01C36A992E6FADCD9498CAB77A97684* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9736,6 +9794,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FloatVariable__ctor_m7B413AB5935A4773DBB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_mF5D4D5DF2F4E278B2821984A1AB2CEC3A3AB13A2 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_mED40903F02916B68B730EA109F6098062B1CBA2F (UxmlSerializedData_t75D0E3DD55B1CC69AEB8779948702DCC7348C63D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9792,6 +9856,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoubleVariable__ctor_mB7E8748223AD8282BA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_m6EA29125B6C507868C77F7BE3028B4E8F8B7E2E2 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_mDAE5EAEC87CDD682AA5514A4C2F1195C1E0B27D8 (UxmlSerializedData_tFBF26B5674D1714A77AF4D881CC894FB46D5D55A* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9848,6 +9918,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectVariable__ctor_mE00EF94DB1A65D11C7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlSerializedData_Register_m1E9053763CDAA923B648E62F110E9AD5D888A391 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UxmlSerializedData_CreateInstance_m3AB8C3100A3670CEF467E673F5F257FBC89C6B6C (UxmlSerializedData_tD1A4A82E55F7509CF2CB6D01A6FEE3906EF3A0EB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;

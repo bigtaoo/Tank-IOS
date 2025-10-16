@@ -99,7 +99,8 @@ static DisplayManager* _DisplayManager = nil;
     _view   = view;
 
     CGSize layerSize = _view.layer.bounds.size;
-    _screenSize = CGSizeMake(roundf(layerSize.width) * _view.contentScaleFactor, roundf(layerSize.height) * _view.contentScaleFactor);
+    _screenSize = CGSizeMake(::roundf(layerSize.width * _view.contentScaleFactor), ::roundf(layerSize.height * _view.contentScaleFactor));
+    ((CAMetalLayer*)_view.layer).drawableSize = layerSize;
 }
 
 - (void)createView:(BOOL)useForRendering
@@ -165,8 +166,8 @@ static DisplayManager* _DisplayManager = nil;
     if (api == apiMetal)
     {
         UnityDisplaySurfaceMTL* surf = new UnityDisplaySurfaceMTL();
-        surf->layer         = (CAMetalLayer*)_view.layer;
-        surf->device        = UnityGetMetalDevice();
+        surf->swapchain.layer = (CAMetalLayer*)_view.layer;
+        surf->device = UnityGetMetalDevice();
         ret = surf;
     }
     else
@@ -183,15 +184,7 @@ static DisplayManager* _DisplayManager = nil;
     // On metal we depend on hardware screen compositor to handle upscaling this way avoiding additional blit
     CGSize layerSize = _view.layer.bounds.size;
     float scale = _view.contentScaleFactor;
-    CGSize screenSize = CGSizeMake(layerSize.width * scale, layerSize.height * scale);
-    // if we did request custom resolution we apply it here.
-    // for metal we use hardware scaler which will be triggered exactly because our window is not of "native" size
-    // but we also want to enforce native resolution as maximum, otherwise we might run out of memory vert fast
-    // TODO: how about supersampling screenshots? maybe there are reasonable usecases
-    if (UnitySelectedRenderingAPI() == apiMetal && params.renderW > 0 && params.renderH > 0)
-        _screenSize = CGSizeMake(fminf(screenSize.width, params.renderW), fminf(screenSize.height, params.renderH));
-    else
-        _screenSize = screenSize;
+    _screenSize = CGSizeMake(::roundf(layerSize.width * scale), ::roundf(layerSize.height * scale));
 
     bool hdrChanged         = surface->hdr != params.hdr;
     bool systemSizeChanged  = surface->systemW != _screenSize.width || surface->systemH != _screenSize.height;
@@ -231,11 +224,7 @@ static DisplayManager* _DisplayManager = nil;
 
     const int api = UnitySelectedRenderingAPI();
     if (api == apiMetal)
-    {
-        UnityDisplaySurfaceMTL* mtlSurf = (UnityDisplaySurfaceMTL*)surface;
-        recreateSystemSurface = recreateSystemSurface || mtlSurf->systemColorRB == 0;
-        mtlSurf->framebufferOnly = params.metalFramebufferOnly;
-    }
+        ((UnityDisplaySurfaceMTL*)surface)->framebufferOnly = params.metalFramebufferOnly;
 
     if (recreateSystemSurface)
         CreateSystemRenderingSurface(surface);
@@ -246,13 +235,13 @@ static DisplayManager* _DisplayManager = nil;
     if (recreateSystemSurface || recreateRenderingSurface || recreateDepthbuffer)
         CreateUnityRenderBuffers(surface);
 
-    if (recreateSystemSurface || recreateRenderingSurface)
+    if (api == apiMetal && (recreateSystemSurface || recreateRenderingSurface))
     {
         UnityDisplaySurfaceMTL* mtlSurf = (UnityDisplaySurfaceMTL*)surface;
 #if !PLATFORM_TVOS
         if (@available(iOS 16.0, *))
         {
-            mtlSurf->layer.wantsExtendedDynamicRangeContent = surface->hdr != 0;
+            mtlSurf->swapchain.layer.wantsExtendedDynamicRangeContent = surface->hdr != 0;
         }
 #endif
         UnitySetHDRMode(surface->hdr);
@@ -276,7 +265,7 @@ static DisplayManager* _DisplayManager = nil;
         if (api == apiMetal)
         {
             self.surfaceMTL->device = nil;
-            self.surfaceMTL->layer  = nil;
+            self.surfaceMTL->swapchain.layer  = nil;
         }
     }
 
@@ -603,7 +592,7 @@ static void EnsureDisplayIsInited(DisplayConnection* conn)
     if (conn.surface == 0)
         needRecreate = true;
     else if (api == apiMetal)
-        needRecreate = conn.surfaceMTL->layer == nil;
+        needRecreate = conn.surfaceMTL->swapchain.layer == nil;
 
     if (needRecreate)
     {
@@ -677,23 +666,25 @@ extern "C" void UnityDisplayManager_DisplaySystemResolution(void* nativeDisplay,
     //   so we have CAMetalLayer.drawableSize = rendering size
     //   and        CAMetalLayer.size         = system (native) size
     const CGSize layerSize = conn.view.layer.bounds.size; const float scale = conn.view.contentScaleFactor;
-    *w = (int)(layerSize.width * scale);
-    *h = (int)(layerSize.height * scale);
+    *w = (int)::roundf(layerSize.width * scale);
+    *h = (int)::roundf(layerSize.height * scale);
 #endif
 }
 
 extern "C" void UnityDisplayManager_DisplayRenderingResolution(void* nativeDisplay, int* w, int* h)
 {
-#if !PLATFORM_VISIONOS
     if (nativeDisplay == NULL)
         return;
 
+#if !PLATFORM_VISIONOS
     DisplayConnection* conn = [DisplayManager Instance][(__bridge UIScreen*)nativeDisplay];
+#else
+    DisplayConnection* conn = [DisplayManager Instance].mainDisplay;
+#endif
     EnsureDisplayIsInited(conn);
 
     *w = (int)conn.surface->targetW;
     *h = (int)conn.surface->targetH;
-#endif
 }
 
 extern "C" void UnityDisplayManager_DisplayRenderingBuffers(void* nativeDisplay, void** colorBuffer, void** depthBuffer)
@@ -852,4 +843,4 @@ extern "C" bool UnityIsFullscreen()
 {
     return false;
 }
-#endif 
+#endif

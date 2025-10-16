@@ -264,8 +264,6 @@ struct Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00;
 struct Func_4_t2FBAEC9DF2A11666D61C3F84E9A95850907B8F35;
 struct Func_4_tEFD6FD592F103AD7D61584F748205035444853C4;
 struct ICollection_1_t445A23F34A03D85933B7273E5B53AACCF51754B6;
-struct IComparer_1_tC0A12A847AF97F369A5CE9A0CCE71CE18EE1440E;
-struct IComparer_1_t202527205E8EEB5C8D3BB7694EEEA3AEC69FE3CD;
 struct IEnumerable_1_t0AFD6CF8DF742647C96B2C7BB9E9FAE42538D551;
 struct IEnumerable_1_tD37A384B5C733F14F038782DD50683BDF25EF98F;
 struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
@@ -880,7 +878,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_AddRange_m8338E210501007C3BFAC9729E4
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mCC54D1DBA180233452BADDCC063B8803864624DB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_RemoveAt_m1E2B55E137F490D2912FAA43D329D531596CC3F7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Sort_m14A362E28E0466D7F8CED3A57761AAFFDD8FE9E6_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* List_1_Sort_m8EE0FB566C1837218E9FB8195B93C4422375C51F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mD0E176930DF8F857DD74385E40E59321F78F4704_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mD910536376B8EBB5BDB30088BE4FE395391592F3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m0832AF0214CB742595C9E073DB612D56D5126462_RuntimeMethod_var;
@@ -4244,7 +4241,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_mEB3B61CB86B1419919338B0668D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Item_m3C58DBC69A321AF2826595584FF3E9F43C07EA56_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_m4204C143D97E871DF2553329CFB0FBE3CD1A01F2_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Task_1__ctor_m323D56E98AFD8C95866A2866CF440831DA74657D_gshared (Task_1_tE41CFF640EB7C045550D9D0D92BE67533B084C17* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Task_1_TrySetResult_m80576355963E201DD03E813734ED4CDA847E199E_gshared (Task_1_tE41CFF640EB7C045550D9D0D92BE67533B084C17* __this, VoidTaskResult_t73B628B764C6668DAAAE2D37BD6FC07BCA27A5AC ___0_result, const RuntimeMethod* method) ;
@@ -4762,10 +4758,6 @@ inline void List_1_set_Item_m74DB7A94701398C67D0FFBC8BB6F53C9F390A9C3 (List_1_t2
 inline void List_1_RemoveAt_m1E2B55E137F490D2912FAA43D329D531596CC3F7 (List_1_t211B46430616FF360A4D9F04792912304A177744* __this, int32_t ___0_index, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_t211B46430616FF360A4D9F04792912304A177744*, int32_t, const RuntimeMethod*))List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared)(__this, ___0_index, method);
-}
-inline void List_1_Sort_m8EE0FB566C1837218E9FB8195B93C4422375C51F (List_1_t211B46430616FF360A4D9F04792912304A177744* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method)
-{
-	((  void (*) (List_1_t211B46430616FF360A4D9F04792912304A177744*, RuntimeObject*, const RuntimeMethod*))List_1_Sort_m4204C143D97E871DF2553329CFB0FBE3CD1A01F2_gshared)(__this, ___0_comparer, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scheduler__ctor_m229436C448CC61D8F96742F635D30D662C0383C0 (Scheduler_tDB0486C2DDAAB94544061CD295D4798386C62A79* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OperationCanceledException__ctor_m980BF7ABCE5C603648AA46FB4C75437D110D0B5D (OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662* __this, String_t* ___0_message, const RuntimeMethod* method) ;
@@ -21503,7 +21495,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Scheduler_RunSchedulerLoop_m89ABC7ACF
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Comparison_1_t549607E0F51811A79D5890A4F6FBEAEC1EA5C7D9_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_RemoveAt_m1E2B55E137F490D2912FAA43D329D531596CC3F7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Sort_m14A362E28E0466D7F8CED3A57761AAFFDD8FE9E6_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Sort_m8EE0FB566C1837218E9FB8195B93C4422375C51F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m0832AF0214CB742595C9E073DB612D56D5126462_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m2AC8EF93585D3B05DB9EA6F2762BD6C00250F8BC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_set_Item_m74DB7A94701398C67D0FFBC8BB6F53C9F390A9C3_RuntimeMethod_var);
@@ -21720,7 +21711,7 @@ IL_014c:
 		il2cpp_codegen_memory_barrier();
 		if (!L_53)
 		{
-			goto IL_0170;
+			goto IL_017c;
 		}
 	}
 	{
@@ -21728,57 +21719,60 @@ IL_014c:
 		TimerComparer_tA489751F7F61781F51DFF2033BCA60B91C1B2C50 L_55 = V_3;
 		TimerComparer_tA489751F7F61781F51DFF2033BCA60B91C1B2C50 L_56 = L_55;
 		RuntimeObject* L_57 = Box(TimerComparer_tA489751F7F61781F51DFF2033BCA60B91C1B2C50_il2cpp_TypeInfo_var, &L_56);
+		RuntimeObject* L_58 = L_57;
+		Comparison_1_t549607E0F51811A79D5890A4F6FBEAEC1EA5C7D9* L_59 = (Comparison_1_t549607E0F51811A79D5890A4F6FBEAEC1EA5C7D9*)il2cpp_codegen_object_new(Comparison_1_t549607E0F51811A79D5890A4F6FBEAEC1EA5C7D9_il2cpp_TypeInfo_var);
+		Comparison_1__ctor_mD79DB5BBD189DEE070E7C479CF1293F7EF77A280(L_59, L_58, (intptr_t)((void*)GetVirtualMethodInfo(L_58, 5)), NULL);
 		NullCheck(L_54);
-		List_1_Sort_m8EE0FB566C1837218E9FB8195B93C4422375C51F(L_54, (RuntimeObject*)L_57, List_1_Sort_m8EE0FB566C1837218E9FB8195B93C4422375C51F_RuntimeMethod_var);
+		List_1_Sort_m14A362E28E0466D7F8CED3A57761AAFFDD8FE9E6(L_54, L_59, List_1_Sort_m14A362E28E0466D7F8CED3A57761AAFFDD8FE9E6_RuntimeMethod_var);
 		il2cpp_codegen_memory_barrier();
 		__this->___needReSort = (bool)0;
 	}
 
-IL_0170:
+IL_017c:
 	{
 		V_0 = (-1);
-		int64_t L_58 = V_4;
-		__this->___current_next_run = L_58;
-		int64_t L_59 = V_4;
-		if ((((int64_t)L_59) == ((int64_t)((int64_t)(std::numeric_limits<int64_t>::max)()))))
+		int64_t L_60 = V_4;
+		__this->___current_next_run = L_60;
+		int64_t L_61 = V_4;
+		if ((((int64_t)L_61) == ((int64_t)((int64_t)(std::numeric_limits<int64_t>::max)()))))
 		{
-			goto IL_01b4;
+			goto IL_01c0;
 		}
 	}
 	{
-		int64_t L_60 = V_4;
-		int64_t L_61;
-		L_61 = Timer_GetTimeMonotonic_mC5BBAC0435D60A4604BB74AADAC2EE774EFA5509(NULL);
-		V_7 = ((int64_t)(((int64_t)il2cpp_codegen_subtract(L_60, L_61))/((int64_t)((int32_t)10000))));
-		int64_t L_62 = V_7;
-		if ((((int64_t)L_62) <= ((int64_t)((int64_t)((int32_t)2147483647LL)))))
+		int64_t L_62 = V_4;
+		int64_t L_63;
+		L_63 = Timer_GetTimeMonotonic_mC5BBAC0435D60A4604BB74AADAC2EE774EFA5509(NULL);
+		V_7 = ((int64_t)(((int64_t)il2cpp_codegen_subtract(L_62, L_63))/((int64_t)((int32_t)10000))));
+		int64_t L_64 = V_7;
+		if ((((int64_t)L_64) <= ((int64_t)((int64_t)((int32_t)2147483647LL)))))
 		{
-			goto IL_01aa;
+			goto IL_01b6;
 		}
 	}
 	{
 		V_0 = ((int32_t)2147483646);
-		goto IL_01b4;
+		goto IL_01c0;
 	}
 
-IL_01aa:
+IL_01b6:
 	{
-		int64_t L_63 = V_7;
-		V_0 = ((int32_t)L_63);
-		int32_t L_64 = V_0;
-		if ((((int32_t)L_64) >= ((int32_t)0)))
+		int64_t L_65 = V_7;
+		V_0 = ((int32_t)L_65);
+		int32_t L_66 = V_0;
+		if ((((int32_t)L_66) >= ((int32_t)0)))
 		{
-			goto IL_01b4;
+			goto IL_01c0;
 		}
 	}
 	{
 		V_0 = 0;
 	}
 
-IL_01b4:
+IL_01c0:
 	{
-		int32_t L_65 = V_0;
-		return L_65;
+		int32_t L_67 = V_0;
+		return L_67;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scheduler__cctor_m399E92CADDE02F3F5D00DCFB92A2EF83FAE4D974 (const RuntimeMethod* method) 

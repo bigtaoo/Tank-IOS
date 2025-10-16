@@ -2057,6 +2057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_Destroy_m98A8D0957538
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HierarchyViewModel_IndexOf_Injected_mB55FD8D854ADF92F571B58B6B942162087C7DF67 (intptr_t ___0__unity_self, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___1_node, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HierarchyViewModel_Contains_Injected_mF077F41FF42704DC1B3EB88B541C0F228202B9AC (intptr_t ___0__unity_self, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___1_node, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HierarchyViewModel_GetChildrenCount_Injected_m4B80A1D550BF50535394344F45C7053EBE969A6A (intptr_t ___0__unity_self, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___1_node, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_SetFlagsAll_m66790FBC6566098AA3E803BE180CD797A8FE84C7 (HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* __this, uint32_t ___0_flags, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_SetFlagsNode_mDBD06C6F1F34E509193616D1DBE847164C1EB5DB (HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* __this, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___0_node, uint32_t ___1_flags, bool ___2_recurse, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HierarchyViewModel_HasAllFlagsNode_m6735138F172E7305AD53AEF8E6844C088DBE1AB7 (HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* __this, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___0_node, uint32_t ___1_flags, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_ClearFlagsNode_m499231173B54A5AFE911D2211FEE5C4B7AF2ED42 (HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* __this, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___0_node, uint32_t ___1_flags, bool ___2_recurse, const RuntimeMethod* method) ;
@@ -2064,6 +2065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate__ctor_mB6FF1341DD3FF5652BD5E8F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_Update_Injected_mF54D16567A1B0AFCB8B2C3765298946F1966432B (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m92AD996B2BC7A1DF6BEF8439EB170DA6B312DFAA (Enumerator_t12BF7D8AA68701F79CA061E8E716BAD4D6BA89A6* __this, HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* ___0_hierarchyViewModel, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t HierarchyViewModel_Create_Injected_m99A253762279A6AC35CDAB9AC4F872D174C0E80A (intptr_t ___0_handlePtr, intptr_t ___1_hierarchyFlattened, uint32_t ___2_defaultFlags, intptr_t* ___3_nodesPtr, int32_t* ___4_nodesCount, int32_t* ___5_version, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_SetFlagsAll_Injected_m3775ACA8F69E8A30D5DFBF3711D68279B09D1FB5 (intptr_t ___0__unity_self, uint32_t ___1_flags, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_SetFlagsNode_Injected_m336A711E3C9F127BE98613F6B11BA569E04735A0 (intptr_t ___0__unity_self, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___1_node, uint32_t ___2_flags, bool ___3_recurse, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HierarchyViewModel_HasAllFlagsNode_Injected_mF7F62FA75F49596DBCF0997BAAD7B7FE12671C50 (intptr_t ___0__unity_self, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___1_node, uint32_t ___2_flags, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_ClearFlagsNode_Injected_mF463A7C45AD5250E510B4250D68C7616879B2661 (intptr_t ___0__unity_self, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___1_node, uint32_t ___2_flags, bool ___3_recurse, const RuntimeMethod* method) ;
@@ -10011,6 +10013,14 @@ IL_000f:
 		return L_3;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_SetFlags_m0C74C74B51799866BCA64337E137E720F87FB86B (HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* __this, uint32_t ___0_flags, const RuntimeMethod* method) 
+{
+	{
+		uint32_t L_0 = ___0_flags;
+		HierarchyViewModel_SetFlagsAll_m66790FBC6566098AA3E803BE180CD797A8FE84C7(__this, L_0, NULL);
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_SetFlags_m8ACF05C9B80E2A614E35FEBBB5CC796328BFDEAC (HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* __this, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___0_node, uint32_t ___1_flags, bool ___2_recurse, const RuntimeMethod* method) 
 {
 	{
@@ -10191,6 +10201,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_Destroy_m98A8D0957538
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (HierarchyViewModel_Destroy_m98A8D09575380A0F312FBA377F7049926BB00ECE_ftn)il2cpp_codegen_resolve_icall ("Unity.Hierarchy.HierarchyViewModel::Destroy(System.IntPtr)");
 	_il2cpp_icall_func(___0_nativePtr);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_SetFlagsAll_m66790FBC6566098AA3E803BE180CD797A8FE84C7 (HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* __this, uint32_t ___0_flags, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = BindingsMarshaller_ConvertToNative_mC9215547DB5A62A0AE63A44AEA82D898A7C477A8_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		uint32_t L_2 = ___0_flags;
+		HierarchyViewModel_SetFlagsAll_Injected_m3775ACA8F69E8A30D5DFBF3711D68279B09D1FB5(G_B2_0, L_2, NULL);
+		return;
+	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_SetFlagsNode_mDBD06C6F1F34E509193616D1DBE847164C1EB5DB (HierarchyViewModel_t818D495B7E4AFC2E498598998847F9779E0DA317* __this, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___0_node, uint32_t ___1_flags, bool ___2_recurse, const RuntimeMethod* method) 
 {
@@ -10472,6 +10511,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t HierarchyViewModel_Create_Injected_m
 	_il2cpp_icall_func = (HierarchyViewModel_Create_Injected_m99A253762279A6AC35CDAB9AC4F872D174C0E80A_ftn)il2cpp_codegen_resolve_icall ("Unity.Hierarchy.HierarchyViewModel::Create_Injected(System.IntPtr,System.IntPtr,Unity.Hierarchy.HierarchyNodeFlags,System.IntPtr&,System.Int32&,System.Int32&)");
 	intptr_t icallRetVal = _il2cpp_icall_func(___0_handlePtr, ___1_hierarchyFlattened, ___2_defaultFlags, ___3_nodesPtr, ___4_nodesCount, ___5_version);
 	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_SetFlagsAll_Injected_m3775ACA8F69E8A30D5DFBF3711D68279B09D1FB5 (intptr_t ___0__unity_self, uint32_t ___1_flags, const RuntimeMethod* method) 
+{
+	typedef void (*HierarchyViewModel_SetFlagsAll_Injected_m3775ACA8F69E8A30D5DFBF3711D68279B09D1FB5_ftn) (intptr_t, uint32_t);
+	static HierarchyViewModel_SetFlagsAll_Injected_m3775ACA8F69E8A30D5DFBF3711D68279B09D1FB5_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (HierarchyViewModel_SetFlagsAll_Injected_m3775ACA8F69E8A30D5DFBF3711D68279B09D1FB5_ftn)il2cpp_codegen_resolve_icall ("Unity.Hierarchy.HierarchyViewModel::SetFlagsAll_Injected(System.IntPtr,Unity.Hierarchy.HierarchyNodeFlags)");
+	_il2cpp_icall_func(___0__unity_self, ___1_flags);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HierarchyViewModel_SetFlagsNode_Injected_m336A711E3C9F127BE98613F6B11BA569E04735A0 (intptr_t ___0__unity_self, HierarchyNode_t6A6A738223CC5D7FB463CAF6F379C48726891704* ___1_node, uint32_t ___2_flags, bool ___3_recurse, const RuntimeMethod* method) 
 {

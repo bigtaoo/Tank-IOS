@@ -34,7 +34,7 @@ static BOOL _shouldUseDefaultViewControllerForFixedOrientations = NO;
     [_unityView didRotate];
 
     // after we have updated unity view, this will poke unity itself about the changes in orient/extents
-    [_unityView boundsUpdated];
+    [_unityView updateUnityBackbufferSize];
 }
 
 #endif
@@ -187,6 +187,8 @@ static BOOL _shouldUseDefaultViewControllerForFixedOrientations = NO;
 #if UNITY_SUPPORT_ROTATION
     [self checkOrientationRequest];
 #endif
+
+    [_unityView updateUnityBackbufferSize];
     [_unityView recreateRenderingSurface];
 
     // UI hierarchy
@@ -206,18 +208,26 @@ static BOOL _shouldUseDefaultViewControllerForFixedOrientations = NO;
 
     [self advanceEngineLoadState: kUnityEngineLoadStateAppReady];
 
-    // why we skip present:
-    // this will be the first frame to draw, so Start methods will be called
-    // and we want to properly handle resolution request in Start (which might trigger surface recreate)
-    // NB: we want to draw right after showing window, to avoid black frame creeping in
+    // this is/was needed as a workaround for various issues with first frame rendering
+    //   on older iOS, not doing this "render twice" would result in black frame showing
+    // that does not seem necessary now, but we keep it "just in case" when using CADisplayLink
+    // when using CAMetalDisplayLink we cannot render to backbuffer (drawable) out of the displaylink callback, hence we must skip this
 
-    _skipPresent = true;
+    if(!self.unityUsesMetalDisplayLink)
+    {
+        // why we skip present:
+        // this will be the first frame to draw, so Start methods will be called
+        // and we want to properly handle resolution request in Start (which might trigger surface recreate)
+        // NB: we want to draw right after showing window, to avoid black frame creeping in
 
-    if (!UnityIsPaused())
-        UnityRepaint();
+        _skipPresent = true;
 
-    _skipPresent = false;
-    [self repaint];
+        if (!UnityIsPaused())
+            UnityRepaint();
+
+        _skipPresent = false;
+        [self repaint];
+    }
 
     [UIView setAnimationsEnabled: YES];
 }
@@ -263,7 +273,7 @@ static BOOL _shouldUseDefaultViewControllerForFixedOrientations = NO;
     // not call -viewWillTransitionToSize:.
     UIInterfaceOrientation newOrientation = UIViewControllerInterfaceOrientation(vc);
     BOOL orientationChangedToSupported = vc.supportedInterfaceOrientations & (1 << newOrientation);
-    if (!UnityiOS160orNewer() || orientationChangedToSupported)
+    if (!UnityiOSVersionIsAtLeast(16) || orientationChangedToSupported)
     {
         [self didTransitionToViewController: vc fromViewController: _rootController];
     }

@@ -446,6 +446,8 @@ struct StringVariable_t97EC411DDB6395BC5F30DF0CF2456B3CD1EA47E9;
 struct SubStringFormatter_t3D2113F00C63DE8C7F8D2A541B359333222BE20D;
 struct TemplateFormatter_t61DF1372788EAFBDF0289E394C28743C7B8D6EF6;
 struct TextInfo_tD3BAFCFD77418851E7D5CB8D2588F47019E414B4;
+struct TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3;
+struct TextWriterOutput_t5B1187EF4A0B01298A9DA9AA984E477F49A62408;
 struct TimeFormatter_tAAA6004D4EB28B6DC0B14B3EC4116DF9856EEB14;
 struct TimeTextInfo_t1FE879E1D4D396F0A108FAD034F4B6FEAFAE17B1;
 struct Type_t;
@@ -643,6 +645,7 @@ IL2CPP_EXTERN_C RuntimeClass* ScopedUpdate_t0E788218F623BFCA0DD889E94A3BEB2ECD8A
 IL2CPP_EXTERN_C RuntimeClass* Selector_tC0A2513C0579FAD06840D0C532ABA8FCDA95B901_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SmartSettings_t91024DD59BBEC7CADCC8346AD02C54278AFF03F0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SplitListPool_t9968FF06736DD799E41F76779FB953BC46F6899D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SplitList_tEA0019A03987958B43F8A5387BDB6D636517FAD1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringBuilderPool_t60095C99DD6889E1A750AF1BF2C0205D4CB26B48_il2cpp_TypeInfo_var;
@@ -652,6 +655,7 @@ IL2CPP_EXTERN_C RuntimeClass* StringOutputPool_t1C18B568D29A05728B61F338F0E30264
 IL2CPP_EXTERN_C RuntimeClass* StringOutput_tB69426ACA5BD0AC2029F0AE2766482713CE317CF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SystemTime_t228D8C458565944AB1D3C16A8BD26EDA307289ED_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* TextWriterOutput_t5B1187EF4A0B01298A9DA9AA984E477F49A62408_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimeSpanFormatOptionsConverter_t50505D17A90CFC7188819DD69583C961164CAABD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimeSpanFormatOptionsU5BU5D_tB09D0B98C14EA14B34CCE3C8304B29C9A054A1F2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimeSpanFormatOptions_t0A1799EC0AFA91CF771B9137D0047E772592A746_il2cpp_TypeInfo_var;
@@ -1783,6 +1787,18 @@ struct GroupCollection_tFFA1789730DD9EA122FBE77DC03BFEDCC3F2945E  : public Runti
 	Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ____captureMap;
 	GroupU5BU5D_t9924453EAB39E5BC350475A536C5C7093F9A04A9* ____groups;
 };
+struct MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE  : public RuntimeObject
+{
+	RuntimeObject* ____identity;
+};
+struct MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshaled_pinvoke
+{
+	Il2CppIUnknown* ____identity;
+};
+struct MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshaled_com
+{
+	Il2CppIUnknown* ____identity;
+};
 struct MatchCollection_t84805BAED3D556A405EE3FD165856045026106BC  : public RuntimeObject
 {
 	Regex_tE773142C2BE45C5D362B0F815AFF831707A51772* ____regex;
@@ -1827,6 +1843,12 @@ struct ReflectionSource_tF4057977B3A3C9796968DBB0C99352804223C190  : public Runt
 {
 	Dictionary_2_t825A5D949C90E859C190FEA0400D0C8702D0E62A* ___m_TypeCache;
 };
+struct Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0  : public RuntimeObject
+{
+};
+struct SmartExtensions_t41F56959B50AA04E7A4D71DF28B908C18CDF2A2A  : public RuntimeObject
+{
+};
 struct SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1  : public RuntimeObject
 {
 	SmartSettings_t91024DD59BBEC7CADCC8346AD02C54278AFF03F0* ___m_Settings;
@@ -1864,6 +1886,10 @@ struct StringOutputPool_t1C18B568D29A05728B61F338F0E30264DD586E3A  : public Runt
 };
 struct SystemTime_t228D8C458565944AB1D3C16A8BD26EDA307289ED  : public RuntimeObject
 {
+};
+struct TextWriterOutput_t5B1187EF4A0B01298A9DA9AA984E477F49A62408  : public RuntimeObject
+{
+	TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___U3COutputU3Ek__BackingField;
 };
 struct TimeSpanFormatOptionsConverter_t50505D17A90CFC7188819DD69583C961164CAABD  : public RuntimeObject
 {
@@ -2422,6 +2448,12 @@ struct TemplateFormatter_t61DF1372788EAFBDF0289E394C28743C7B8D6EF6  : public For
 	List_1_t2BE012426F5A2A9C0C27C57296040A2AEC8DEDC3* ___m_Templates;
 	RuntimeObject* ___m_TemplatesDict;
 	SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* ___m_Formatter;
+};
+struct TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3  : public MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE
+{
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___CoreNewLine;
+	String_t* ___CoreNewLineStr;
+	RuntimeObject* ____internalFormatProvider;
 };
 struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A 
 {
@@ -3216,6 +3248,10 @@ struct ReflectionSource_tF4057977B3A3C9796968DBB0C99352804223C190_StaticFields
 {
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___k_Empty;
 };
+struct Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_StaticFields
+{
+	SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* ___U3CDefaultU3Ek__BackingField;
+};
 struct SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1_StaticFields
 {
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___k_Empty;
@@ -3378,6 +3414,11 @@ struct ListFormatter_t7F35200BEFB43B284F30EC166228A5317692A9C8_StaticFields
 {
 	int32_t ___U3CCollectionIndexU3Ek__BackingField;
 };
+struct TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3_StaticFields
+{
+	TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___Null;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___s_coreNewLine;
+};
 struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_StaticFields
 {
 	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___Zero;
@@ -3426,6 +3467,40 @@ struct Type_t_StaticFields
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
 {
 	ALIGN_FIELD (8) String_t* m_Items[1];
@@ -3495,40 +3570,6 @@ struct ISourceU5BU5D_tF1B066C1F98136BDCBBC4930F8640D47B42E74C1  : public Runtime
 	}
 };
 struct IFormatterU5BU5D_tA44974E282717A2E634C528C76F6F1EDDC755042  : public RuntimeArray
-{
-	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
-
-	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-};
-struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
 {
 	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
 
@@ -3927,6 +3968,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectPool_1_get_CountInactive_m9A907BFCDCBFE910B784BDBF71EEDC6D14C90608_gshared (ObjectPool_1_t13378E8CD14858BB05EA28BAB9CC49EDB91BA259* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m378B392086AAB6F400944FA9839516326B3F7BB8_gshared (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* __this, int32_t ___0_item, const RuntimeMethod* method) ;
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringOutput__ctor_mFC8BB885D005A0B5CCEA2789D1C62A9AEADD7E5B (StringOutput_tB69426ACA5BD0AC2029F0AE2766482713CE317CF* __this, StringBuilder_t* ___0_output, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* Smart_get_Default_m3B30A972D3C9A52DF5C74EB6A6F6A2D9519992D7_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SmartFormatter_FormatInto_mEB4C97F827E49B50A602AD22C93D6934DDCC5375 (SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* __this, RuntimeObject* ___0_output, String_t* ___1_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_args, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SmartExtensions_AppendSmart_mCE7A3DA2741DE5FA26125942922167FDEEAD1BC3 (StringBuilder_t* ___0_sb, String_t* ___1_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_args, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_AppendLine_m3BC704C4E6A8531027D8C9287D0AB2AA0188AC4E (StringBuilder_t* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextWriterOutput__ctor_mD2E7BA491C0876C1B81ED54738F36DE6BF129281 (TextWriterOutput_t5B1187EF4A0B01298A9DA9AA984E477F49A62408* __this, TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___0_output, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SmartExtensions_WriteSmart_mD72B6FA9609748648E67B5B1B168C86863301C34 (TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___0_writer, String_t* ___1_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_args, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Smart_Format_m0EEDB6BA8823CD0C02743C6CEA3CA114B44D87D6 (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SmartFormatter_FormatWithCache_m72B6C490F70554E3C19FD3AF30C3614795C43F42 (SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* __this, FormatCache_tCEC272C82C2AED273DEE6F00BA89C327269F934D** ___0_cache, String_t* ___1_format, RuntimeObject* ___2_args, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___0_a, Delegate_t* ___1_b, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3 (Delegate_t* ___0_source, Delegate_t* ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
@@ -5156,6 +5206,131 @@ inline void List_1_AddWithResize_m378B392086AAB6F400944FA9839516326B3F7BB8 (List
 {
 	((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, int32_t, const RuntimeMethod*))List_1_AddWithResize_m378B392086AAB6F400944FA9839516326B3F7BB8_gshared)(__this, ___0_item, method);
 }
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SmartExtensions_AppendSmart_mCE7A3DA2741DE5FA26125942922167FDEEAD1BC3 (StringBuilder_t* ___0_sb, String_t* ___1_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_args, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringOutput_tB69426ACA5BD0AC2029F0AE2766482713CE317CF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	StringOutput_tB69426ACA5BD0AC2029F0AE2766482713CE317CF* V_0 = NULL;
+	{
+		StringBuilder_t* L_0 = ___0_sb;
+		StringOutput_tB69426ACA5BD0AC2029F0AE2766482713CE317CF* L_1 = (StringOutput_tB69426ACA5BD0AC2029F0AE2766482713CE317CF*)il2cpp_codegen_object_new(StringOutput_tB69426ACA5BD0AC2029F0AE2766482713CE317CF_il2cpp_TypeInfo_var);
+		StringOutput__ctor_mFC8BB885D005A0B5CCEA2789D1C62A9AEADD7E5B(L_1, L_0, NULL);
+		V_0 = L_1;
+		il2cpp_codegen_runtime_class_init_inline(Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var);
+		SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* L_2;
+		L_2 = Smart_get_Default_m3B30A972D3C9A52DF5C74EB6A6F6A2D9519992D7_inline(NULL);
+		StringOutput_tB69426ACA5BD0AC2029F0AE2766482713CE317CF* L_3 = V_0;
+		String_t* L_4 = ___1_format;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = ___2_args;
+		NullCheck(L_2);
+		SmartFormatter_FormatInto_mEB4C97F827E49B50A602AD22C93D6934DDCC5375(L_2, L_3, L_4, L_5, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SmartExtensions_AppendLineSmart_m3F7F79564F825BC675199C3CB7CFE1BF034AFAAD (StringBuilder_t* ___0_sb, String_t* ___1_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_args, const RuntimeMethod* method) 
+{
+	{
+		StringBuilder_t* L_0 = ___0_sb;
+		String_t* L_1 = ___1_format;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ___2_args;
+		SmartExtensions_AppendSmart_mCE7A3DA2741DE5FA26125942922167FDEEAD1BC3(L_0, L_1, L_2, NULL);
+		StringBuilder_t* L_3 = ___0_sb;
+		NullCheck(L_3);
+		StringBuilder_t* L_4;
+		L_4 = StringBuilder_AppendLine_m3BC704C4E6A8531027D8C9287D0AB2AA0188AC4E(L_3, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SmartExtensions_WriteSmart_mD72B6FA9609748648E67B5B1B168C86863301C34 (TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___0_writer, String_t* ___1_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_args, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextWriterOutput_t5B1187EF4A0B01298A9DA9AA984E477F49A62408_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	TextWriterOutput_t5B1187EF4A0B01298A9DA9AA984E477F49A62408* V_0 = NULL;
+	{
+		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = ___0_writer;
+		TextWriterOutput_t5B1187EF4A0B01298A9DA9AA984E477F49A62408* L_1 = (TextWriterOutput_t5B1187EF4A0B01298A9DA9AA984E477F49A62408*)il2cpp_codegen_object_new(TextWriterOutput_t5B1187EF4A0B01298A9DA9AA984E477F49A62408_il2cpp_TypeInfo_var);
+		TextWriterOutput__ctor_mD2E7BA491C0876C1B81ED54738F36DE6BF129281(L_1, L_0, NULL);
+		V_0 = L_1;
+		il2cpp_codegen_runtime_class_init_inline(Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var);
+		SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* L_2;
+		L_2 = Smart_get_Default_m3B30A972D3C9A52DF5C74EB6A6F6A2D9519992D7_inline(NULL);
+		TextWriterOutput_t5B1187EF4A0B01298A9DA9AA984E477F49A62408* L_3 = V_0;
+		String_t* L_4 = ___1_format;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = ___2_args;
+		NullCheck(L_2);
+		SmartFormatter_FormatInto_mEB4C97F827E49B50A602AD22C93D6934DDCC5375(L_2, L_3, L_4, L_5, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SmartExtensions_WriteLineSmart_m09167B7A22F6D984F2F6DAF38AE7088EBE87C61A (TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___0_writer, String_t* ___1_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_args, const RuntimeMethod* method) 
+{
+	{
+		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = ___0_writer;
+		String_t* L_1 = ___1_format;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ___2_args;
+		SmartExtensions_WriteSmart_mD72B6FA9609748648E67B5B1B168C86863301C34(L_0, L_1, L_2, NULL);
+		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_3 = ___0_writer;
+		NullCheck(L_3);
+		VirtualActionInvoker0::Invoke(35, L_3);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SmartExtensions_FormatSmart_mE3E94CBB14F3EF0131303A82740BA0138803F7BB (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___0_format;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = ___1_args;
+		il2cpp_codegen_runtime_class_init_inline(Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var);
+		String_t* L_2;
+		L_2 = Smart_Format_m0EEDB6BA8823CD0C02743C6CEA3CA114B44D87D6(L_0, L_1, NULL);
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SmartExtensions_FormatSmart_m8AEF647110FC901F2CB19067DE0372B668E469B2 (String_t* ___0_format, FormatCache_tCEC272C82C2AED273DEE6F00BA89C327269F934D** ___1_cache, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_args, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var);
+		SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* L_0;
+		L_0 = Smart_get_Default_m3B30A972D3C9A52DF5C74EB6A6F6A2D9519992D7_inline(NULL);
+		FormatCache_tCEC272C82C2AED273DEE6F00BA89C327269F934D** L_1 = ___1_cache;
+		String_t* L_2 = ___0_format;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = ___2_args;
+		NullCheck(L_0);
+		String_t* L_4;
+		L_4 = SmartFormatter_FormatWithCache_m72B6C490F70554E3C19FD3AF30C3614795C43F42(L_0, L_1, L_2, (RuntimeObject*)L_3, NULL);
+		return L_4;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -30105,6 +30280,20 @@ IL_0031:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* Smart_get_Default_m3B30A972D3C9A52DF5C74EB6A6F6A2D9519992D7_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var);
+		SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* L_0 = ((Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_StaticFields*)il2cpp_codegen_static_fields_for(Smart_t7F06A838A4CC2E328E73384A44E7EE90566AB8C0_il2cpp_TypeInfo_var))->___U3CDefaultU3Ek__BackingField;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t4F710087B42CFFC460A6F1281808B540E912C360* SmartFormatter_get_FormatterExtensions_m088089092CB1D9718DC451B9FF5A78991225BFA1_inline (SmartFormatter_tF96E08EAA9077966A9C2A10ABA44ED9BF37E58B1* __this, const RuntimeMethod* method) 
 {
 	{

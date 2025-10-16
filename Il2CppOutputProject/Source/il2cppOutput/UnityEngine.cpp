@@ -6,17 +6,13 @@
 
 
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
-struct BlittableArrayWrapper_t8819577383B62A660D178A91C741852D58B85024;
-struct BlittableListWrapper_t1E1F719B32BFF5C97F3E51A4D2F8403644189C89;
 struct DownloadHandlerMovieTexture_t047526B1C59FC7C031900A8F819FA88418DB90A0;
 struct GUIElement_t374514E36250F54B88A85781BA9219071D387AEA;
 struct GUILayer_t595003AC2E9DA25ABF516421FE9D104318070D31;
 struct GUIText_t71364ECC27AB4CE947198862A571EB21188CE4A2;
 struct GUITexture_tEEB256051FD933786F5D1495130DFF51B27E6067;
-struct ManagedSpanWrapper_t61DCE26C1D8D4DEC33C2B1214CA5AFA262E25094;
 struct ObjectSelectorHandlerWithLabelsAttribute_t489C9D6F2A9E335D2C689A309C85C82A240427C9;
 struct ObjectSelectorHandlerWithTagsAttribute_tDF94A41CD0C19B25BC6AE2B27B8D1CC6138D9F48;
-struct OutStringMarshaller_t0A80BAD24DCE214CDCD69AA0AC22E49299EFC35C;
 struct PhysicMaterial_tF489A8072DC0117153F65187C5960CEB828AD5D2;
 struct ProceduralMaterial_t342168D8C6E4EA9A9B79CEC626B9CA7F4CCC2E62;
 struct ProceduralPropertyDescription_tAA815D24DB124AC8A3EB18CDA93DC00BFCC20A5B;
@@ -36,12 +32,6 @@ IL2CPP_EXTERN_C_END
 struct U3CModuleU3E_t853A105E2E1595E463CC860AFEE0FB13A177A12C 
 {
 };
-struct BlittableArrayWrapper_t8819577383B62A660D178A91C741852D58B85024  : public RuntimeObject
-{
-};
-struct BlittableListWrapper_t1E1F719B32BFF5C97F3E51A4D2F8403644189C89  : public RuntimeObject
-{
-};
 struct DownloadHandlerMovieTexture_t047526B1C59FC7C031900A8F819FA88418DB90A0  : public RuntimeObject
 {
 };
@@ -57,16 +47,10 @@ struct GUIText_t71364ECC27AB4CE947198862A571EB21188CE4A2  : public RuntimeObject
 struct GUITexture_tEEB256051FD933786F5D1495130DFF51B27E6067  : public RuntimeObject
 {
 };
-struct ManagedSpanWrapper_t61DCE26C1D8D4DEC33C2B1214CA5AFA262E25094  : public RuntimeObject
-{
-};
 struct ObjectSelectorHandlerWithLabelsAttribute_t489C9D6F2A9E335D2C689A309C85C82A240427C9  : public RuntimeObject
 {
 };
 struct ObjectSelectorHandlerWithTagsAttribute_tDF94A41CD0C19B25BC6AE2B27B8D1CC6138D9F48  : public RuntimeObject
-{
-};
-struct OutStringMarshaller_t0A80BAD24DCE214CDCD69AA0AC22E49299EFC35C  : public RuntimeObject
 {
 };
 struct PhysicMaterial_tF489A8072DC0117153F65187C5960CEB828AD5D2  : public RuntimeObject
@@ -141,6 +125,10 @@ struct ProceduralProcessorUsage_tF4C16D5BDD854EE9F2A94A2B02019D7983DB8295
 	int32_t ___value__;
 };
 struct ProceduralPropertyType_t75D7F02ADEC0DBCC6D17DF592FD78849D108D0B0 
+{
+	int32_t ___value__;
+};
+struct ShaderHardwareTier_t1082B8D47E463408C6A68F1A713640E07A5B044C 
 {
 	int32_t ___value__;
 };
@@ -363,67 +351,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DownloadHandlerMovieTexture__ctor_mE72C0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Remote__ctor_m0494F2604ECB04C8FFAE16324B17B8C41FC8AFF6 (Remote_t44F4BAF0E1B8A05898B547CBFB12C077EC094024* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlittableArrayWrapper__ctor_mFBE0BBBDAC020C09684D45769D947EBC5A68C819 (BlittableArrayWrapper_t8819577383B62A660D178A91C741852D58B85024* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlittableListWrapper__ctor_mC62676BD3D323A8764B6CFA8FA99D1A11A0F1919 (BlittableListWrapper_t1E1F719B32BFF5C97F3E51A4D2F8403644189C89* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManagedSpanWrapper__ctor_mF5D2C833A05364C629FA4F7380B1F5BDEC4EEE7B (ManagedSpanWrapper_t61DCE26C1D8D4DEC33C2B1214CA5AFA262E25094* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OutStringMarshaller__ctor_m5D48CD504D3D66ED71A6EF4FEB34182A1B1316F3 (OutStringMarshaller_t0A80BAD24DCE214CDCD69AA0AC22E49299EFC35C* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);

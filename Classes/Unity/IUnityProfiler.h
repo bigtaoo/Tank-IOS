@@ -244,6 +244,7 @@ template<typename T> struct UnityProfilerCounter;
 // Available since 2021.2
 UNITY_DECLARE_INTERFACE(IUnityProfilerV2)
 {
+#ifdef __cplusplus
     void BeginSample(const UnityProfilerMarkerDesc * markerDesc)
     {
         (this->EmitEvent)(markerDesc, kUnityProfilerMarkerEventTypeBegin, 0, NULL);
@@ -258,6 +259,7 @@ UNITY_DECLARE_INTERFACE(IUnityProfilerV2)
     {
         (this->EmitEvent)(markerDesc, kUnityProfilerMarkerEventTypeEnd, 0, NULL);
     }
+#endif
 
     // Create instrumentation event.
     // \param markerDesc is a pointer to marker description struct.
@@ -465,6 +467,7 @@ struct UnityProfilerCounter : public UnityProfilerCounterValue
 // Available since 2020.1
 UNITY_DECLARE_INTERFACE(IUnityProfiler)
 {
+#ifdef __cplusplus
     void BeginSample(const UnityProfilerMarkerDesc* markerDesc)
     {
         (this->EmitEvent)(markerDesc, kUnityProfilerMarkerEventTypeBegin, 0, NULL);
@@ -479,6 +482,7 @@ UNITY_DECLARE_INTERFACE(IUnityProfiler)
     {
         (this->EmitEvent)(markerDesc, kUnityProfilerMarkerEventTypeEnd, 0, NULL);
     }
+#endif
 
     void(UNITY_INTERFACE_API * EmitEvent)(const UnityProfilerMarkerDesc* markerDesc, UnityProfilerMarkerEventType eventType, uint16_t eventDataCount, const UnityProfilerMarkerData* eventData);
 

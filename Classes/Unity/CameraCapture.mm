@@ -243,7 +243,9 @@ static NSMutableArray<CameraCaptureController*> *activeColorAndDepthCameraContro
     if (otherController != nil)
     {
         [otherController initColorAndDepthCameraCaptureSession];
-        [otherController.captureSession startRunning];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+            [otherController.captureSession startRunning];
+        });
     }
 }
 
@@ -363,7 +365,9 @@ static NSMutableArray<CameraCaptureController*> *activeColorAndDepthCameraContro
     {
         [CameraCaptureController clearColorAndDepthCameraControllers];
     }
-    [self.captureSession startRunning];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        [self.captureSession startRunning];
+    });
 }
 
 - (void)pause
@@ -475,8 +479,6 @@ static NSMutableArray<CameraCaptureDevice*> *videoCaptureDevices = nil;
 
 - (WebCamKind)getKind
 {
-    if ([self isColorAndDepthCaptureDevice])
-        return kWebCamColorAndDepth;
 #if !PLATFORM_VISIONOS
     AVCaptureDeviceType type = _device.deviceType;
     if ([type isEqualToString: AVCaptureDeviceTypeBuiltInWideAngleCamera])
@@ -485,8 +487,8 @@ static NSMutableArray<CameraCaptureDevice*> *videoCaptureDevices = nil;
         return kWebCamUltraWideAngle;
     if ([type isEqualToString: AVCaptureDeviceTypeBuiltInTelephotoCamera])
         return kWebCamTelephoto;
-    if ([type isEqualToString: AVCaptureDeviceTypeBuiltInDualCamera])
-        return kWebCamTelephoto;
+    if ([type isEqualToString: AVCaptureDeviceTypeBuiltInDualCamera] && [self isColorAndDepthCaptureDevice])
+        return kWebCamColorAndDepth;
     if ([type isEqualToString: AVCaptureDeviceTypeBuiltInDualWideCamera])
         return kWebCamWideAngle;
     if ([type isEqualToString: AVCaptureDeviceTypeBuiltInTripleCamera])
@@ -506,7 +508,7 @@ static NSMutableArray<CameraCaptureDevice*> *videoCaptureDevices = nil;
         if ([type isEqualToString: AVCaptureDeviceTypeBuiltInLiDARDepthCamera])
             return kWebCamColorAndDepth;
     }
-    if ([type isEqualToString: AVCaptureDeviceTypeBuiltInTrueDepthCamera])
+    if ([type isEqualToString: AVCaptureDeviceTypeBuiltInTrueDepthCamera] && [self isColorAndDepthCaptureDevice])
         return kWebCamColorAndDepth;
 #endif
 

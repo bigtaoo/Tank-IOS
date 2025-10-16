@@ -30,6 +30,7 @@ KeyboardShowParam;
 - (void)textInputLostFocus;
 - (void)textViewDidChange:(UITextView *)textView;
 - (void)becomeFirstResponder;
+- (void)layoutSubviews;
 
 #if PLATFORM_IOS || PLATFORM_VISIONOS
 - (void)textInputModeDidChange:(NSNotification*)notification;

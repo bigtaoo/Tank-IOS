@@ -16,29 +16,95 @@ extern bool _didResignActive;
 static int _renderingAPI = 0;
 static void SelectRenderingAPIImpl();
 
+
 @implementation UnityAppController (Rendering)
 
-- (void)createDisplayLink
+#if !PLATFORM_VISIONOS
+- (BOOL)usingCompositorLayer
+{
+    return NO;
+}
+#endif
+
+- (void)createCADisplayLink
 {
     _displayLink = [CADisplayLink displayLinkWithTarget: self selector: @selector(repaintDisplayLink)];
     [self callbackFramerateChange: -1];
     [_displayLink addToRunLoop: [NSRunLoop currentRunLoop] forMode: NSRunLoopCommonModes];
+
+    printf_console("CADisplayLink created\n");
+}
+
+#if UNITY_USES_METAL_DISPLAY_LINK
+- (void)createMetalDisplayLink
+{
+    if (@available(iOS 17.0, tvOS 17.0, *))
+    {
+        _usesMetalDisplayLink = YES;
+
+        _metalDisplayLink = [[CAMetalDisplayLink alloc] initWithMetalLayer:(CAMetalLayer*)_unityView.layer];
+        _metalDisplayLink.preferredFrameLatency = 2;
+        _metalDisplayLink.paused = NO;
+        _metalDisplayLink.delegate = self;
+
+        [self callbackFramerateChange: -1];
+        [_metalDisplayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+
+        printf_console("CAMetalDisplayLink created\n");
+    }
+}
+#endif
+
+- (void)createDisplayLink
+{
+    _usesMetalDisplayLink = NO; // we will set it to YES inside createMetalDisplayLink
+
+#if UNITY_USES_METAL_DISPLAY_LINK
+    if(self.renderingAPI == apiMetal && [self shouldUseMetalDisplayLink])
+        [self createMetalDisplayLink];
+#endif
+
+    if (!_usesMetalDisplayLink)
+        [self createCADisplayLink];
 }
 
 - (void)destroyDisplayLink
 {
     [_displayLink invalidate];
     _displayLink = nil;
+
+#if UNITY_USES_METAL_DISPLAY_LINK
+    if (@available(iOS 17.0, tvOS 17.0, *))
+    {
+        [_metalDisplayLink invalidate];
+        _metalDisplayLink = nil;
+    }
+#endif
 }
 
 - (void)repaintDisplayLink
 {
-    if (!_didResignActive)
+    if (self.usingCompositorLayer == NO)
     {
         UnityDisplayLinkCallback(_displayLink.timestamp);
         [self repaint];
     }
+    else
+    {
+        [self repaintCompositorLayer];
+    }
 }
+
+#if UNITY_USES_METAL_DISPLAY_LINK
+- (void)metalDisplayLink:(CAMetalDisplayLink*)link needsUpdate:(CAMetalDisplayLinkUpdate*)update
+{
+    UnityDisplayLinkCallback(0);
+
+    UnityDisplaySurfaceMTL* displaySurface = (UnityDisplaySurfaceMTL*)_mainDisplay.surface;
+    displaySurface->swapchain.nextDrawable = update.drawable;
+    [self repaint];
+}
+#endif
 
 - (void)repaint
 {
@@ -48,13 +114,52 @@ static void SelectRenderingAPIImpl();
 #if UNITY_SUPPORT_ROTATION
     [self checkOrientationRequest];
 #endif
+
     [_unityView recreateRenderingSurfaceIfNeeded];
     [_unityView processKeyboard];
     UnityDeliverUIEvents();
 
-    if (!UnityIsPaused())
+    // we want to support both CADisplayLink and CAMetalDisplayLink
+    // the major complication is that they work quite differently under the hood
+    // CADisplayLink: you can consider this a simple timer-based callback
+    //   so if we get this while in background - we might be not allowed to render at all
+    //   and before we were having an explicit check to repain only if we are not paused
+    // CAMetalDisplayLink: unlike CADisplayLink (where we query drawable from view),
+    //   the callback comes when we are asked explicitly to render view contents (we are given drawable)
+    //   and we cannot bypass rendering when asked at all
+
+    if(UnityIsPaused())
+    {
+        if(self.unityUsesMetalDisplayLink)
+            UnityRenderWithoutPlayerLoopWithBackbuffer(GetMainDisplaySurface()->unityColorBuffer, GetMainDisplaySurface()->unityDepthBuffer);
+    }
+    else
+    {
         UnityRepaint();
+    }
+
+#if !PLATFORM_VISIONOS
+    if (UnityResolutionScalingFixedDPIFactorChanged())
+    {
+        // note that changing contentScaleFactor below would trigger drawableSize change
+        // if we are still rendering AND using delayed drawable acquisition, we can get "out of sync"
+        // NOTE: moving this to happen before rendering won't help since we can be still processing
+        // NOTE:   rendering commands in threaded rendering
+        // NOTE: there might be a way to do it nicer, but since it is needed only on CADisplayLink
+        // NOTE:   and we do not expect dpi scaling to change frequently, this is fine
+        if(!self.unityUsesMetalDisplayLink)
+            UnityFinishRendering();
+
+        _unityView.contentScaleFactor = UnityScreenScaleFactor([UIScreen mainScreen]);
+    }
+#endif
 }
+
+#if !PLATFORM_VISIONOS
+- (void)repaintCompositorLayer
+{
+}
+#endif
 
 - (void)callbackGfxInited
 {
@@ -63,6 +168,8 @@ static void SelectRenderingAPIImpl();
     [self advanceEngineLoadState: kUnityEngineLoadStateRenderingInitialized];
 
     [self shouldAttachRenderDelegate];
+    [_unityView updateUnityBackbufferSize];
+    [_unityView updateLayerDrawableSizeFromBounds];
     [_unityView recreateRenderingSurface];
     [_renderDelegate mainDisplayInited: _mainDisplay.surface];
 
@@ -114,10 +221,20 @@ static void SelectRenderingAPIImpl();
         return;
     }
 
-    if (@available(iOS 15.0, tvOS 15.0, *))
-        _displayLink.preferredFrameRateRange = CAFrameRateRangeMake(targetFPS, targetFPS, targetFPS);
+    if(_usesMetalDisplayLink)
+    {
+    #if UNITY_USES_METAL_DISPLAY_LINK
+        if (@available(iOS 17.0, tvOS 17.0, *))
+            _metalDisplayLink.preferredFrameRateRange = CAFrameRateRangeMake(targetFPS, targetFPS, targetFPS);
+    #endif
+    }
     else
-        _displayLink.preferredFramesPerSecond = targetFPS;
+    {
+        if (@available(iOS 15.0, tvOS 15.0, *))
+            _displayLink.preferredFrameRateRange = CAFrameRateRangeMake(targetFPS, targetFPS, targetFPS);
+        else
+            _displayLink.preferredFramesPerSecond = targetFPS;
+    }
 }
 
 - (void)selectRenderingAPI
@@ -194,7 +311,7 @@ extern "C" void UnityRepaint()
         if (UnityIsBatchmode())
             UnityBatchPlayerLoop();
         else
-            UnityPlayerLoop();
+            UnityPlayerLoopWithBackbuffer(GetMainDisplaySurface()->unityColorBuffer, GetMainDisplaySurface()->unityDepthBuffer);
         Profiler_FrameEnd();
     }
 }

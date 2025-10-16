@@ -10,12 +10,12 @@
 extern void AssetFileNameExtensionAttribute__ctor_mBDD7C2006F136025094AABE2295D190F43F7F224 (void);
 extern void ThreadAndSerializationSafeAttribute__ctor_m5023D29907E8D1092714DFFA137A8364454709C7 (void);
 extern void WritableAttribute__ctor_mC4E14F120A46CC52A65942F34224E2FB20CFF55A (void);
+extern void RejectDragAndDropMaterial__ctor_m506305EEEFB3F69DE6F77279272177DC03132CE6 (void);
 extern void UnityEngineModuleAssembly__ctor_m3F8B023CF6E911C448EF9284C72F7BE92C6E72E3 (void);
 extern void NativeClassAttribute_set_QualifiedNativeName_m5DA8C7AE66E1D4F1ACEA7592ABBF331A2650E0D6 (void);
 extern void NativeClassAttribute_set_Declaration_mE5497339ED9E55F30DABACBE40AD6D9D36CAE653 (void);
 extern void NativeClassAttribute__ctor_mA4C67EDCE7DA70AAADE77FE63EEECFFA911AD0C7 (void);
 extern void NativeClassAttribute__ctor_m92A42152D6ACC3FB9C381EFDFAA691251E2C3DD7 (void);
-extern void UnityString_Format_m98A0629641086A1BE20BBF7F4EADDE3FE3877D85 (void);
 extern void VisibleToOtherModulesAttribute__ctor_m2F00FAC0C9348472A15E93AD256145DCDD967E59 (void);
 extern void VisibleToOtherModulesAttribute__ctor_m2FC15A41D7218FFD29ECA4F70323F6DF8F19EC35 (void);
 extern void NativeConditionalAttribute_set_Condition_m96107E75DC095D9B4A9A7CCE0EB0C3EFAA2F0053 (void);
@@ -40,7 +40,6 @@ extern void NativePropertyAttribute_set_TargetType_m858E4E653A2F81F5313EF4F5D697
 extern void NativePropertyAttribute__ctor_mAF06F05D29FE386561167B2BDF0149E3744411EA (void);
 extern void NativePropertyAttribute__ctor_m32EC1C27977EA39BC2824743EC417561AC138BA3 (void);
 extern void NativePropertyAttribute__ctor_m61A6A85F47F1111850244DFFD401B94E3234BDC7 (void);
-extern void NativePropertyAttribute__ctor_m6FD4C499DD1D0AD75668B6D860FACB837DFB6095 (void);
 extern void NativeAsStructAttribute__ctor_m6AF1CD76481CC41BF7CE5C87DCF6CE68EF187298 (void);
 extern void NativeTypeAttribute_set_Header_m847CE2407B2426DFF214F3F18DE9644062A5FB8A (void);
 extern void NativeTypeAttribute_set_IntermediateScriptingStructName_mA5791DC59CA4C7572D8B5C80D28176559E2BC907 (void);
@@ -73,17 +72,17 @@ extern void RequiredByNativeCodeAttribute__ctor_m6FB8966FBCB6CC8B3989B0846EE7ED1
 extern void RequiredByNativeCodeAttribute_set_Name_mF218FB9A613487B6377AF13FA3531E5D581F487B (void);
 extern void RequiredByNativeCodeAttribute_set_Optional_m009CBA1D24E7F6EDAE1411CB6A7A01CB2A13B541 (void);
 extern void RequiredByNativeCodeAttribute_set_GenerateProxy_m63E4D29F468D0F254136F1596AEA106BD9EDC89B (void);
-static Il2CppMethodPointer s_methodPointers[66] = 
+static Il2CppMethodPointer s_methodPointers[65] = 
 {
 	AssetFileNameExtensionAttribute__ctor_mBDD7C2006F136025094AABE2295D190F43F7F224,
 	ThreadAndSerializationSafeAttribute__ctor_m5023D29907E8D1092714DFFA137A8364454709C7,
 	WritableAttribute__ctor_mC4E14F120A46CC52A65942F34224E2FB20CFF55A,
+	RejectDragAndDropMaterial__ctor_m506305EEEFB3F69DE6F77279272177DC03132CE6,
 	UnityEngineModuleAssembly__ctor_m3F8B023CF6E911C448EF9284C72F7BE92C6E72E3,
 	NativeClassAttribute_set_QualifiedNativeName_m5DA8C7AE66E1D4F1ACEA7592ABBF331A2650E0D6,
 	NativeClassAttribute_set_Declaration_mE5497339ED9E55F30DABACBE40AD6D9D36CAE653,
 	NativeClassAttribute__ctor_mA4C67EDCE7DA70AAADE77FE63EEECFFA911AD0C7,
 	NativeClassAttribute__ctor_m92A42152D6ACC3FB9C381EFDFAA691251E2C3DD7,
-	UnityString_Format_m98A0629641086A1BE20BBF7F4EADDE3FE3877D85,
 	VisibleToOtherModulesAttribute__ctor_m2F00FAC0C9348472A15E93AD256145DCDD967E59,
 	VisibleToOtherModulesAttribute__ctor_m2FC15A41D7218FFD29ECA4F70323F6DF8F19EC35,
 	NativeConditionalAttribute_set_Condition_m96107E75DC095D9B4A9A7CCE0EB0C3EFAA2F0053,
@@ -108,7 +107,6 @@ static Il2CppMethodPointer s_methodPointers[66] =
 	NativePropertyAttribute__ctor_mAF06F05D29FE386561167B2BDF0149E3744411EA,
 	NativePropertyAttribute__ctor_m32EC1C27977EA39BC2824743EC417561AC138BA3,
 	NativePropertyAttribute__ctor_m61A6A85F47F1111850244DFFD401B94E3234BDC7,
-	NativePropertyAttribute__ctor_m6FD4C499DD1D0AD75668B6D860FACB837DFB6095,
 	NativeAsStructAttribute__ctor_m6AF1CD76481CC41BF7CE5C87DCF6CE68EF187298,
 	NativeTypeAttribute_set_Header_m847CE2407B2426DFF214F3F18DE9644062A5FB8A,
 	NativeTypeAttribute_set_IntermediateScriptingStructName_mA5791DC59CA4C7572D8B5C80D28176559E2BC907,
@@ -142,80 +140,79 @@ static Il2CppMethodPointer s_methodPointers[66] =
 	RequiredByNativeCodeAttribute_set_Optional_m009CBA1D24E7F6EDAE1411CB6A7A01CB2A13B541,
 	RequiredByNativeCodeAttribute_set_GenerateProxy_m63E4D29F468D0F254136F1596AEA106BD9EDC89B,
 };
-static const int32_t s_InvokerIndices[66] = 
+static const int32_t s_InvokerIndices[65] = 
 {
-	8649,
-	19508,
-	19508,
-	19508,
-	15530,
-	15530,
-	15530,
-	8649,
-	27024,
-	19508,
-	15530,
-	15530,
-	15530,
-	15319,
-	15530,
-	8649,
-	15530,
-	15530,
-	15530,
-	15530,
-	15530,
-	15319,
-	15319,
-	15319,
-	15319,
-	19508,
-	15530,
-	8619,
-	4406,
-	15462,
-	19508,
-	15530,
-	4409,
-	2869,
-	19508,
-	15530,
-	15530,
-	15462,
-	19508,
-	15462,
-	15530,
-	8139,
-	19508,
-	19508,
-	19508,
-	15530,
-	8619,
-	19508,
-	15530,
-	15462,
-	15530,
-	8641,
-	15319,
-	19508,
-	15319,
-	19508,
-	19508,
-	19508,
-	15530,
-	15530,
-	19508,
-	15530,
-	15319,
-	15530,
-	15319,
-	15319,
+	8939,
+	20125,
+	20125,
+	20125,
+	20125,
+	16034,
+	16034,
+	16034,
+	8939,
+	20125,
+	16034,
+	16034,
+	16034,
+	15813,
+	16034,
+	8939,
+	16034,
+	16034,
+	16034,
+	16034,
+	16034,
+	15813,
+	15813,
+	15813,
+	15813,
+	20125,
+	16034,
+	8908,
+	4549,
+	15962,
+	20125,
+	16034,
+	4552,
+	20125,
+	16034,
+	16034,
+	15962,
+	20125,
+	15962,
+	16034,
+	8418,
+	20125,
+	20125,
+	20125,
+	16034,
+	8908,
+	20125,
+	16034,
+	15962,
+	16034,
+	8931,
+	15813,
+	20125,
+	15813,
+	20125,
+	20125,
+	20125,
+	16034,
+	16034,
+	20125,
+	16034,
+	15813,
+	16034,
+	15813,
+	15813,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_SharedInternalsModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_SharedInternalsModule_CodeGenModule = 
 {
 	"UnityEngine.SharedInternalsModule.dll",
-	66,
+	65,
 	s_methodPointers,
 	0,
 	NULL,

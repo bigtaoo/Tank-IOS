@@ -4,6 +4,7 @@
 #include "OrientationSupport.h"
 #include "Unity/DisplayManager.h"
 #include "Unity/ObjCRuntime.h"
+#include "UI/Keyboard.h"
 
 extern bool _skipPresent;
 
@@ -14,19 +15,93 @@ extern bool _skipPresent;
 
 @synthesize contentOrientation  = _curOrientation;
 
-- (void)onUpdateSurfaceSize:(CGSize)size
+// we need to support both CADisplayLink and CAMetalDisplayLink
+// alas they have a bit of an "opposite" approach to backbuffer (drawable) management so we have several complications
+// - for CADisplayLink the callback is more or less just "oh it is time: you asked to be poked every N ms"
+//     we will query drawable from the view's layer (we delay this as much as possible to not introduce sync point)
+//   so we should NOT tweak drawable size at "random" times
+//   our approach was:
+//     whenever iOS is telling us that view should be resized, we poke unity native side
+//     * this is a bit more complicated: we were doing so only in layoutSubviews and some corner cases with orientation change
+//     and on the next displaylink callback we recreate the "connection" between native side and trampoline (using "new" drawable extents)
+//
+// - for CAMetalDisplayLink the callback gives us a ready CAMetalDrawable
+//     that is all the syncing is handled by iOS (this is very good) and it now acts like a compositor of sorts
+//   there are several caveats though (read above: we have a "unity approach" already in place)
+//   first of all: we can never "skip" rendering (before it was fine, simply because if we don't query drawable, the contents are preserved by iOS)
+//   second: we should update drawable size whenever iOS is telling us that the view bounds are tweaked
+//     recall that we get ready-made drawable in the callback - at this point we can not tweak anything regarding drawable
+//     and yet we should delay updating unity on "backbuffer" change, since it might have drawable of the old size currently
+//
+// So our plan is:
+// - override "change bounds" methods to track drawable size (with _surfaceSize)
+//     note that we will update drawableSize immediately when using CAMetalDisplayLink, but not when using CADisplayLink
+// - on displaylink callback as before we will update connection to unity render surfaces
+//     when using CADisplayLink we will also update drawableSize here before poking unity
+//
+
+// this will do update drawable size to agree with bounds
+// CAMetalDisplayLink: will be called from onUpdateDrawableSize, called in all "something view related changed" callbacks
+// CADisplayLink: we will call it from the display link callback, to not touch drawableSize while we are potentially rendering to drawable
+//   using old extents
+- (void)updateLayerDrawableSizeFromBounds
 {
+    CAMetalLayer* metalLayer = (CAMetalLayer*)self.layer;
+    @synchronized(metalLayer)
+    {
+        const CGSize size  = self.bounds.size;
+        const float  scale = self.contentScaleFactor;
+        const CGSize systemRenderSize = CGSizeMake(::roundf(size.width * scale), ::roundf(size.height * scale));
+
+        if (systemRenderSize.width <= 0 || systemRenderSize.width <= 0)
+        {
+            _shouldRecreateView = NO;
+        }
+        else if (systemRenderSize.width == metalLayer.drawableSize.width && systemRenderSize.height == metalLayer.drawableSize.height)
+        {
+            _shouldRecreateView = NO;
+        }
+        else
+        {
+            metalLayer.drawableSize = systemRenderSize;
+            _shouldRecreateView = YES;
+        }
+    }
+}
+
+- (void)onUpdateDrawableSize
+{
+    // when using metal display link, update drawable size immediately so that we are getting callback with correct size
+    // when using old display link we will do this on frame start along with updating proxy textures (so that they all agree)
+    if(GetAppController().unityUsesMetalDisplayLink)
+        [self updateLayerDrawableSizeFromBounds];
+}
+
+// this reports "backbuffer" update to unity: this should be done right before player loop
+- (void)updateUnityBackbufferSize
+{
+    const CGSize size  = self.bounds.size;
+
+    // this is needed for CADisplayLink handling since in this case we do not track view extents changes
+    if (size.width != _surfaceSize.width || size.height != _surfaceSize.height)
+        _shouldRecreateView = YES;
     _surfaceSize = size;
 
-    CGSize systemRenderSize = CGSizeMake(size.width * self.contentScaleFactor, size.height * self.contentScaleFactor);
+    const float  scale = self.contentScaleFactor;
+    const CGSize systemRenderSize = CGSizeMake(::roundf(size.width * scale), ::roundf(size.height * scale));
+
     _curOrientation = (ScreenOrientation)UnityReportResizeView((unsigned)systemRenderSize.width, (unsigned)systemRenderSize.height, _curOrientation);
     ReportSafeAreaChangeForView(self);
 }
 
+// this was part of public interface, so keep it around just in case
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-implementations"
 - (void)boundsUpdated
 {
-    [self onUpdateSurfaceSize: self.bounds.size];
+    [self updateUnityBackbufferSize];
 }
+#pragma clang diagnostic pop
 
 - (void)initImpl:(CGRect)frame scaleFactor:(CGFloat)scale
 {
@@ -43,7 +118,7 @@ extern bool _skipPresent;
     _curOrientation = UNITY_VISIONOS_ORIENTATION;
 #endif
 
-    [self onUpdateSurfaceSize: frame.size];
+    [self updateUnityBackbufferSize];
 }
 
 - (id)initWithFrame:(CGRect)frame scaleFactor:(CGFloat)scale;
@@ -78,41 +153,16 @@ extern bool _skipPresent;
     self.skipRendering = NO;
 }
 
-- (void)layoutSubviews
-{
-    if (_surfaceSize.width != self.bounds.size.width || _surfaceSize.height != self.bounds.size.height)
-        _shouldRecreateView = YES;
-    [self onUpdateSurfaceSize: self.bounds.size];
-
-    for (UIView* subView in self.subviews)
-    {
-        if ([subView respondsToSelector: @selector(onUnityUpdateViewLayout)])
-            [subView performSelector: @selector(onUnityUpdateViewLayout)];
-    }
-
-    [super layoutSubviews];
-}
-
-- (void)safeAreaInsetsDidChange
-{
-    ReportSafeAreaChangeForView(self);
-}
-
 - (void)recreateRenderingSurfaceIfNeeded
 {
-#if !PLATFORM_VISIONOS
-    float requestedContentScaleFactor = UnityScreenScaleFactor([UIScreen mainScreen]);
-#else
-    float requestedContentScaleFactor = 1.0f;
-#endif
+    // when using metal display link, update drawable size immediately so that we are getting callback with correct size
+    // when using old display link we will do this on frame start along with updating proxy textures (so that they all agree)
+    if(!GetAppController().unityUsesMetalDisplayLink)
+        [self updateLayerDrawableSizeFromBounds];
 
-    if (abs(requestedContentScaleFactor - self.contentScaleFactor) > FLT_EPSILON)
-    {
-        self.contentScaleFactor = requestedContentScaleFactor;
-        [self onUpdateSurfaceSize: self.bounds.size];
-    }
+    [self updateUnityBackbufferSize];
 
-    unsigned requestedW, requestedH;    UnityGetRenderingResolution(&requestedW, &requestedH);
+    unsigned requestedW, requestedH; UnityGetRenderingResolution(&requestedW, &requestedH);
     int requestedMSAA = UnityGetDesiredMSAASampleCount(1);
     int requestedSRGB = UnityGetSRGBRequested();
     int requestedWideColor = UnityGetWideColorRequested();
@@ -196,6 +246,43 @@ extern bool _skipPresent;
 
     _shouldRecreateView = NO;
 }
+
+- (void)safeAreaInsetsDidChange
+{
+    ReportSafeAreaChangeForView(self);
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    [self onUpdateDrawableSize];
+    [[KeyboardDelegate Instance] layoutSubviews];
+
+    for (UIView* subView in self.subviews)
+    {
+        if ([subView respondsToSelector: @selector(onUnityUpdateViewLayout)])
+            [subView performSelector: @selector(onUnityUpdateViewLayout)];
+    }
+}
+
+- (void)setContentScaleFactor:(CGFloat)contentScaleFactor
+{
+    [super setContentScaleFactor:contentScaleFactor];
+    [self onUpdateDrawableSize];
+}
+
+- (void)setFrame:(CGRect)frame
+{
+    [super setFrame:frame];
+    [self onUpdateDrawableSize];
+}
+
+- (void)setBounds:(CGRect)bounds
+{
+    [super setBounds:bounds];
+    [self onUpdateDrawableSize];
+}
+
 
 @end
 
@@ -292,10 +379,10 @@ CGRect ComputeSafeArea(UIView* view)
 
     // Truncate safe area size because in some cases (for example when Display zoom is turned on)
     // it might become larger than Screen.width/height which are returned as ints.
-    screenRect.origin.x = (unsigned)(screenRect.origin.x * scale);
-    screenRect.origin.y = (unsigned)(screenRect.origin.y * scale);
-    screenRect.size.width = (unsigned)(screenRect.size.width * scale);
-    screenRect.size.height = (unsigned)(screenRect.size.height * scale);
+    screenRect.origin.x = (unsigned)::roundf(screenRect.origin.x * scale);
+    screenRect.origin.y = (unsigned)::roundf(screenRect.origin.y * scale);
+    screenRect.size.width = (unsigned)::roundf(screenRect.size.width * scale);
+    screenRect.size.height = (unsigned)::roundf(screenRect.size.height * scale);
 
     return screenRect;
 }
@@ -308,6 +395,7 @@ CGSize GetCutoutToScreenRatio()
     switch (UnityDeviceGeneration())
     {
         case deviceiPhone14:
+        case deviceiPhone16e:
             return CGSizeMake(0.415, 0.04);
         case deviceiPhone14Plus:
             return CGSizeMake(0.377, 0.036);

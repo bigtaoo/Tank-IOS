@@ -1580,11 +1580,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebRequestUtils_MakeUriString_mC95B
 	String_t* V_0 = NULL;
 	bool V_1 = false;
 	String_t* V_2 = NULL;
-	bool V_3 = false;
-	String_t* V_4 = NULL;
-	bool V_5 = false;
+	String_t* V_3 = NULL;
+	bool V_4 = false;
+	String_t* V_5 = NULL;
 	bool V_6 = false;
-	String_t* V_7 = NULL;
+	bool V_7 = false;
 	bool V_8 = false;
 	bool V_9 = false;
 	bool V_10 = false;
@@ -1606,7 +1606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebRequestUtils_MakeUriString_mC95B
 		bool L_2 = V_1;
 		if (!L_2)
 		{
-			goto IL_00c9;
+			goto IL_00c8;
 		}
 	}
 	{
@@ -1614,11 +1614,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebRequestUtils_MakeUriString_mC95B
 		NullCheck(L_3);
 		bool L_4;
 		L_4 = Uri_get_IsLoopback_m0E865DCC324F483C0C60E7D8E6FEF7AD0F46059A(L_3, NULL);
-		V_3 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
-		bool L_5 = V_3;
+		V_4 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
+		bool L_5 = V_4;
 		if (!L_5)
 		{
-			goto IL_0029;
+			goto IL_002b;
 		}
 	}
 	{
@@ -1626,47 +1626,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebRequestUtils_MakeUriString_mC95B
 		NullCheck(L_6);
 		String_t* L_7;
 		L_7 = Uri_get_OriginalString_m3031F9054CA10F2C55C0E2415CC19810D360A5D6(L_6, NULL);
-		V_4 = L_7;
-		goto IL_0207;
+		V_5 = L_7;
+		goto IL_0206;
 	}
 
-IL_0029:
+IL_002b:
 	{
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_8 = ___0_targetUri;
 		NullCheck(L_8);
 		String_t* L_9;
 		L_9 = Uri_get_AbsolutePath_mABB93DD30D4C0F11948DE5C117650B1C3A9925CA(L_8, NULL);
 		V_2 = L_9;
-		String_t* L_10 = V_2;
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_10 = ___0_targetUri;
 		NullCheck(L_10);
-		bool L_11;
-		L_11 = String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3(L_10, _stringLiteral6C066B34F4DB79023C0642AFBC43B25A5327F710, NULL);
-		V_5 = L_11;
-		bool L_12 = V_5;
-		if (!L_12)
+		String_t* L_11;
+		L_11 = Uri_get_OriginalString_m3031F9054CA10F2C55C0E2415CC19810D360A5D6(L_10, NULL);
+		V_3 = L_11;
+		String_t* L_12 = V_2;
+		NullCheck(L_12);
+		bool L_13;
+		L_13 = String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3(L_12, _stringLiteral6C066B34F4DB79023C0642AFBC43B25A5327F710, NULL);
+		V_6 = L_13;
+		bool L_14 = V_6;
+		if (!L_14)
 		{
-			goto IL_008b;
+			goto IL_008a;
 		}
 	}
 	{
-		String_t* L_13 = V_2;
-		NullCheck(L_13);
-		bool L_14;
-		L_14 = String_Contains_mC67F1B9E92187E2BB125A560160DA30A5BA703F2(L_13, ((int32_t)43), NULL);
-		V_6 = L_14;
-		bool L_15 = V_6;
-		if (!L_15)
+		String_t* L_15 = V_2;
+		NullCheck(L_15);
+		bool L_16;
+		L_16 = String_Contains_mC67F1B9E92187E2BB125A560160DA30A5BA703F2(L_15, ((int32_t)43), NULL);
+		V_7 = L_16;
+		bool L_17 = V_7;
+		if (!L_17)
 		{
-			goto IL_0083;
+			goto IL_0082;
 		}
 	}
 	{
-		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_16 = ___0_targetUri;
-		NullCheck(L_16);
-		String_t* L_17;
-		L_17 = Uri_get_OriginalString_m3031F9054CA10F2C55C0E2415CC19810D360A5D6(L_16, NULL);
-		V_7 = L_17;
-		String_t* L_18 = V_7;
+		String_t* L_18 = V_3;
 		NullCheck(L_18);
 		bool L_19;
 		L_19 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_18, _stringLiteral9A62305734B1A5D8C56B0791FEB96BCDDD1CD15E, NULL);
@@ -1674,22 +1674,22 @@ IL_0029:
 		bool L_20 = V_8;
 		if (!L_20)
 		{
-			goto IL_0082;
+			goto IL_0081;
 		}
 	}
 	{
-		String_t* L_21 = V_7;
+		String_t* L_21 = V_3;
 		String_t* L_22;
 		L_22 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral218F5A08519088A96BE3C1074984C53EA49F1CCA, L_21, NULL);
-		V_4 = L_22;
-		goto IL_0207;
+		V_5 = L_22;
+		goto IL_0206;
 	}
 
-IL_0082:
+IL_0081:
 	{
 	}
 
-IL_0083:
+IL_0082:
 	{
 		String_t* L_23 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(WebRequestUtils_t23F1FB533DBFDA3BE5624D901D535B4C6EFAD443_il2cpp_TypeInfo_var);
@@ -1698,7 +1698,7 @@ IL_0083:
 		V_2 = L_24;
 	}
 
-IL_008b:
+IL_008a:
 	{
 		String_t* L_25 = V_2;
 		NullCheck(L_25);
@@ -1706,7 +1706,7 @@ IL_008b:
 		L_26 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_25, NULL);
 		if ((((int32_t)L_26) <= ((int32_t)0)))
 		{
-			goto IL_00a4;
+			goto IL_00a3;
 		}
 	}
 	{
@@ -1715,21 +1715,21 @@ IL_008b:
 		Il2CppChar L_28;
 		L_28 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_27, 0, NULL);
 		G_B12_0 = ((((int32_t)((((int32_t)L_28) == ((int32_t)((int32_t)47)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_00a5;
+		goto IL_00a4;
 	}
 
-IL_00a4:
+IL_00a3:
 	{
 		G_B12_0 = 0;
 	}
 
-IL_00a5:
+IL_00a4:
 	{
 		V_9 = (bool)G_B12_0;
 		bool L_29 = V_9;
 		if (!L_29)
 		{
-			goto IL_00b7;
+			goto IL_00b6;
 		}
 	}
 	{
@@ -1739,16 +1739,16 @@ IL_00a5:
 		V_2 = L_31;
 	}
 
-IL_00b7:
+IL_00b6:
 	{
 		String_t* L_32 = V_2;
 		String_t* L_33;
 		L_33 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral218F5A08519088A96BE3C1074984C53EA49F1CCA, L_32, NULL);
-		V_4 = L_33;
-		goto IL_0207;
+		V_5 = L_33;
+		goto IL_0206;
 	}
 
-IL_00c9:
+IL_00c8:
 	{
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_34 = ___0_targetUri;
 		NullCheck(L_34);
@@ -1758,7 +1758,7 @@ IL_00c9:
 		bool L_36 = ___2_prependProtocol;
 		if (L_36)
 		{
-			goto IL_00fa;
+			goto IL_00f9;
 		}
 	}
 	{
@@ -1772,7 +1772,7 @@ IL_00c9:
 		L_40 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_39, NULL);
 		if ((((int32_t)L_38) < ((int32_t)((int32_t)il2cpp_codegen_add(L_40, 2)))))
 		{
-			goto IL_00fa;
+			goto IL_00f9;
 		}
 	}
 	{
@@ -1785,21 +1785,21 @@ IL_00c9:
 		Il2CppChar L_44;
 		L_44 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_41, ((int32_t)il2cpp_codegen_add(L_43, 1)), NULL);
 		G_B19_0 = ((((int32_t)((((int32_t)L_44) == ((int32_t)((int32_t)47)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_00fb;
+		goto IL_00fa;
 	}
 
-IL_00fa:
+IL_00f9:
 	{
 		G_B19_0 = 0;
 	}
 
-IL_00fb:
+IL_00fa:
 	{
 		V_10 = (bool)G_B19_0;
 		bool L_45 = V_10;
 		if (!L_45)
 		{
-			goto IL_01e2;
+			goto IL_01e1;
 		}
 	}
 	{
@@ -1822,7 +1822,7 @@ IL_00fb:
 		bool L_54 = V_12;
 		if (!L_54)
 		{
-			goto IL_01bb;
+			goto IL_01ba;
 		}
 	}
 	{
@@ -1839,7 +1839,7 @@ IL_00fb:
 		bool L_59 = V_14;
 		if (!L_59)
 		{
-			goto IL_0155;
+			goto IL_0154;
 		}
 	}
 	{
@@ -1850,7 +1850,7 @@ IL_00fb:
 		V_13 = L_61;
 	}
 
-IL_0155:
+IL_0154:
 	{
 		String_t* L_62 = V_13;
 		NullCheck(L_62);
@@ -1858,7 +1858,7 @@ IL_0155:
 		L_63 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_62, _stringLiteral225454A90D745E7A7A5DE5C12169566FBC05370D, NULL);
 		if (!L_63)
 		{
-			goto IL_017e;
+			goto IL_017d;
 		}
 	}
 	{
@@ -1868,7 +1868,7 @@ IL_0155:
 		L_65 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_64, NULL);
 		if ((((int32_t)L_65) <= ((int32_t)6)))
 		{
-			goto IL_017e;
+			goto IL_017d;
 		}
 	}
 	{
@@ -1877,21 +1877,21 @@ IL_0155:
 		Il2CppChar L_67;
 		L_67 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_66, 6, NULL);
 		G_B27_0 = ((((int32_t)((((int32_t)L_67) == ((int32_t)((int32_t)47)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_017f;
+		goto IL_017e;
 	}
 
-IL_017e:
+IL_017d:
 	{
 		G_B27_0 = 0;
 	}
 
-IL_017f:
+IL_017e:
 	{
 		V_15 = (bool)G_B27_0;
 		bool L_68 = V_15;
 		if (!L_68)
 		{
-			goto IL_01a6;
+			goto IL_01a5;
 		}
 	}
 	{
@@ -1907,10 +1907,10 @@ IL_017f:
 		NullCheck(L_71);
 		StringBuilder_t* L_74;
 		L_74 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_71, L_73, NULL);
-		goto IL_01b0;
+		goto IL_01af;
 	}
 
-IL_01a6:
+IL_01a5:
 	{
 		StringBuilder_t* L_75 = V_11;
 		String_t* L_76 = V_13;
@@ -1919,17 +1919,17 @@ IL_01a6:
 		L_77 = StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D(L_75, L_76, NULL);
 	}
 
-IL_01b0:
+IL_01af:
 	{
 		StringBuilder_t* L_78 = V_11;
 		NullCheck(L_78);
 		String_t* L_79;
 		L_79 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_78);
-		V_4 = L_79;
-		goto IL_0207;
+		V_5 = L_79;
+		goto IL_0206;
 	}
 
-IL_01bb:
+IL_01ba:
 	{
 		StringBuilder_t* L_80 = V_11;
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_81 = ___0_targetUri;
@@ -1951,11 +1951,11 @@ IL_01bb:
 		NullCheck(L_88);
 		String_t* L_89;
 		L_89 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_88);
-		V_4 = L_89;
-		goto IL_0207;
+		V_5 = L_89;
+		goto IL_0206;
 	}
 
-IL_01e2:
+IL_01e1:
 	{
 		String_t* L_90 = ___1_targetUrl;
 		NullCheck(L_90);
@@ -1965,7 +1965,7 @@ IL_01e2:
 		bool L_92 = V_16;
 		if (!L_92)
 		{
-			goto IL_01fd;
+			goto IL_01fc;
 		}
 	}
 	{
@@ -1973,23 +1973,23 @@ IL_01e2:
 		NullCheck(L_93);
 		String_t* L_94;
 		L_94 = Uri_get_OriginalString_m3031F9054CA10F2C55C0E2415CC19810D360A5D6(L_93, NULL);
-		V_4 = L_94;
-		goto IL_0207;
+		V_5 = L_94;
+		goto IL_0206;
 	}
 
-IL_01fd:
+IL_01fc:
 	{
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_95 = ___0_targetUri;
 		NullCheck(L_95);
 		String_t* L_96;
 		L_96 = Uri_get_AbsoluteUri_m080934F4F2E2160EBEABDF00F8B6D59888EA63AE(L_95, NULL);
-		V_4 = L_96;
-		goto IL_0207;
+		V_5 = L_96;
+		goto IL_0206;
 	}
 
-IL_0207:
+IL_0206:
 	{
-		String_t* L_97 = V_4;
+		String_t* L_97 = V_5;
 		return L_97;
 	}
 }

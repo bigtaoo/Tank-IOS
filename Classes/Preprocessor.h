@@ -120,6 +120,22 @@
 #else
     #define UNITY_HAS_IOSSDK_15_0  0
 #endif
+#if defined(__IPHONE_16_0)
+    #define UNITY_HAS_IOSSDK_16_0  1
+#else
+    #define UNITY_HAS_IOSSDK_16_0  0
+#endif
+#if defined(__IPHONE_17_0)
+    #define UNITY_HAS_IOSSDK_17_0  1
+#else
+    #define UNITY_HAS_IOSSDK_17_0  0
+#endif
+#if defined(__IPHONE_18_0)
+    #define UNITY_HAS_IOSSDK_18_0  1
+#else
+    #define UNITY_HAS_IOSSDK_18_0  0
+#endif
+
 #if defined(__TVOS_10_0)
     #define UNITY_HAS_TVOSSDK_10_0 1
 #else
@@ -155,6 +171,23 @@
 #else
     #define UNITY_HAS_TVOSSDK_15_0 0
 #endif
+#if defined(__TVOS_16_0)
+    #define UNITY_HAS_TVOSSDK_16_0 1
+#else
+    #define UNITY_HAS_TVOSSDK_16_0 0
+#endif
+#if defined(__TVOS_17_0)
+    #define UNITY_HAS_TVOSSDK_17_0 1
+#else
+    #define UNITY_HAS_TVOSSDK_17_0 0
+#endif
+
+#if defined(__VISIONOS_2_0)
+    #define UNITY_HAS_VISIONOSSDK_2_0 1
+#else
+    #define UNITY_HAS_VISIONOSSDK_2_0 0
+#endif
+
 
 //------------------------------------------------------------------------------
 //

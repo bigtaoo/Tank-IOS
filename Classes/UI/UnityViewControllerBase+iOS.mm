@@ -168,8 +168,12 @@ const NSTimeInterval REORIENTATION_RENDERING_PAUSE = 0.15;
 
     // delay resolution change, ideally we want it to happen in the middle of rotation animation
     // we force rendering back upon completion, just in case transition happens sooner
-    GetAppController().unityView.skipRendering = YES;
-    [GetAppController().unityView performSelector: @selector(resumeRendering) withObject: nil afterDelay: REORIENTATION_RENDERING_PAUSE];
+    // NOTE: with CAMetalDisplayLink we cannot just skip rendering, hence the if
+    if(!GetAppController().unityUsesMetalDisplayLink)
+    {
+        GetAppController().unityView.skipRendering = YES;
+        [GetAppController().unityView performSelector: @selector(resumeRendering) withObject: nil afterDelay: REORIENTATION_RENDERING_PAUSE];
+    }
 
     // in case of presentation controller it will take control over orientations
     // so to avoid crazy corner cases, make default view controller to ignore "wrong" orientations

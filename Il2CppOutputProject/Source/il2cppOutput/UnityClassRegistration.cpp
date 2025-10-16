@@ -21,9 +21,6 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Animation();
 	RegisterModule_Animation();
 
-	void RegisterModule_AssetBundle();
-	RegisterModule_AssetBundle();
-
 	void RegisterModule_Audio();
 	RegisterModule_Audio();
 
@@ -57,8 +54,17 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_HotReload();
 	RegisterModule_HotReload();
 
+	void RegisterModule_AssetBundle();
+	RegisterModule_AssetBundle();
+
+	void RegisterModule_InputLegacy();
+	RegisterModule_InputLegacy();
+
 	void RegisterModule_IMGUI();
 	RegisterModule_IMGUI();
+
+	void RegisterModule_Identifiers();
+	RegisterModule_Identifiers();
 
 	void RegisterModule_ImageConversion();
 	RegisterModule_ImageConversion();
@@ -66,14 +72,14 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Input();
 	RegisterModule_Input();
 
-	void RegisterModule_InputLegacy();
-	RegisterModule_InputLegacy();
-
 	void RegisterModule_InputForUI();
 	RegisterModule_InputForUI();
 
 	void RegisterModule_JSONSerialize();
 	RegisterModule_JSONSerialize();
+
+	void RegisterModule_Insights();
+	RegisterModule_Insights();
 
 	void RegisterModule_Localization();
 	RegisterModule_Localization();
@@ -101,9 +107,6 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_ScreenCapture();
 	RegisterModule_ScreenCapture();
-
-	void RegisterModule_ShaderVariantAnalytics();
-	RegisterModule_ShaderVariantAnalytics();
 
 	void RegisterModule_SpriteShape();
 	RegisterModule_SpriteShape();
@@ -156,17 +159,23 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_UnityConnect();
 	RegisterModule_UnityConnect();
 
+	void RegisterModule_UnityWebRequest();
+	RegisterModule_UnityWebRequest();
+
 	void RegisterModule_UnityAnalytics();
 	RegisterModule_UnityAnalytics();
+
+	void RegisterModule_ShaderVariantAnalytics();
+	RegisterModule_ShaderVariantAnalytics();
+
+	void RegisterModule_UnityConsent();
+	RegisterModule_UnityConsent();
 
 	void RegisterModule_UnityCurl();
 	RegisterModule_UnityCurl();
 
 	void RegisterModule_UnityTestProtocol();
 	RegisterModule_UnityTestProtocol();
-
-	void RegisterModule_UnityWebRequest();
-	RegisterModule_UnityWebRequest();
 
 	void RegisterModule_UnityWebRequestAssetBundle();
 	RegisterModule_UnityWebRequestAssetBundle();
