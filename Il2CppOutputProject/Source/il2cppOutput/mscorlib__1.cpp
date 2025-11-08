@@ -7066,7 +7066,7 @@ IL_0004:
 		uint32_t L_11 = ___0_r;
 		uint32_t L_12 = V_2;
 		int32_t L_13 = V_3;
-		if ((((int64_t)((int64_t)(uint64_t)L_11)) >= ((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)L_12), ((int64_t)L_13))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_11))) >= ((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uint32_t)L_12)), ((int64_t)L_13))))))
 		{
 			goto IL_0040;
 		}
@@ -7708,7 +7708,7 @@ IL_020e:
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_126 = ___0_stream;
 		uint32_t L_127 = V_21;
 		NullCheck(L_126);
-		VirtualActionInvoker1< int64_t >::Invoke(15, L_126, ((int64_t)(uint64_t)L_127));
+		VirtualActionInvoker1< int64_t >::Invoke(15, L_126, ((int64_t)(uint64_t)((uint32_t)L_127)));
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_128 = ___0_stream;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_129 = V_23;
 		int32_t L_130 = V_22;
@@ -7831,7 +7831,7 @@ IL_04b1:
 				Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_167 = ___0_stream;
 				uint32_t L_168 = V_15;
 				NullCheck(L_167);
-				VirtualActionInvoker1< int64_t >::Invoke(15, L_167, ((int64_t)(uint64_t)L_168));
+				VirtualActionInvoker1< int64_t >::Invoke(15, L_167, ((int64_t)(uint64_t)((uint32_t)L_168)));
 				Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_169 = ___0_stream;
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_170 = V_27;
 				uint32_t L_171 = V_16;
@@ -7944,7 +7944,7 @@ IL_03a0_2:
 						Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_202 = ___0_stream;
 						uint32_t L_203 = V_31;
 						NullCheck(L_202);
-						VirtualActionInvoker1< int64_t >::Invoke(15, L_202, ((int64_t)(uint64_t)L_203));
+						VirtualActionInvoker1< int64_t >::Invoke(15, L_202, ((int64_t)(uint64_t)((uint32_t)L_203)));
 						Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_204 = ___0_stream;
 						ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_205 = V_33;
 						int32_t L_206 = V_32;
@@ -8023,7 +8023,7 @@ IL_041b_2:
 						Array_Reverse_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m4298AF0CA764FA936F9C5ED3606D1B4E2EC9EBA2(L_230, Array_Reverse_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m4298AF0CA764FA936F9C5ED3606D1B4E2EC9EBA2_RuntimeMethod_var);
 						int32_t L_231 = V_34;
 						uint32_t L_232 = V_14;
-						V_35 = ((int32_t)((int64_t)il2cpp_codegen_add(((int64_t)L_231), ((int64_t)(uint64_t)L_232))));
+						V_35 = ((int32_t)((int64_t)il2cpp_codegen_add(((int64_t)L_231), ((int64_t)(uint64_t)((uint32_t)L_232)))));
 						int32_t L_233 = V_32;
 						int32_t L_234 = V_35;
 						V_36 = ((int32_t)il2cpp_codegen_subtract(L_233, L_234));
@@ -8331,7 +8331,7 @@ IL_0087:
 			uint32_t L_23;
 			L_23 = StrongNameSignature_get_SignaturePosition_m3133032508FE18F0CB062FD39143C267E0E962D8_inline(L_22, NULL);
 			NullCheck(L_21);
-			VirtualActionInvoker1< int64_t >::Invoke(15, L_21, ((int64_t)(uint64_t)L_23));
+			VirtualActionInvoker1< int64_t >::Invoke(15, L_21, ((int64_t)(uint64_t)((uint32_t)L_23)));
 			FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_24 = V_4;
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_25 = V_1;
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_26 = V_1;
@@ -21650,7 +21650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MD4Managed_HashCore_mFBEA6B2C12804CC2611
 		int32_t L_8 = 0;
 		uint32_t L_9 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
 		int32_t L_10 = ___2_cbSize;
-		if ((((int64_t)((int64_t)(uint64_t)L_9)) >= ((int64_t)((int64_t)((int32_t)(L_10<<3))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_9))) >= ((int64_t)((int64_t)((int32_t)(L_10<<3))))))
 		{
 			goto IL_0041;
 		}

@@ -8082,7 +8082,7 @@ IL_0069:
 		NullCheck(L_22);
 		int32_t L_23;
 		L_23 = Mesh_get_subMeshCount_mC0141293D0F339D8D721CCA2612B32E6FD7E3F8B(L_22, NULL);
-		V_4 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)L_20)) < ((int64_t)((int64_t)L_23)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		V_4 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_20))) < ((int64_t)((int64_t)L_23)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_24 = V_4;
 		if (!L_24)
 		{
@@ -8346,7 +8346,7 @@ IL_007e:
 		NullCheck(L_25);
 		int32_t L_26;
 		L_26 = Mesh_get_subMeshCount_mC0141293D0F339D8D721CCA2612B32E6FD7E3F8B(L_25, NULL);
-		V_5 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)L_23)) < ((int64_t)((int64_t)L_26)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		V_5 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_23))) < ((int64_t)((int64_t)L_26)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_27 = V_5;
 		if (!L_27)
 		{
@@ -8669,7 +8669,7 @@ IL_0069:
 		NullCheck(L_22);
 		int32_t L_23;
 		L_23 = Mesh_get_subMeshCount_mC0141293D0F339D8D721CCA2612B32E6FD7E3F8B(L_22, NULL);
-		V_4 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)L_20)) < ((int64_t)((int64_t)L_23)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		V_4 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_20))) < ((int64_t)((int64_t)L_23)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_24 = V_4;
 		if (!L_24)
 		{
@@ -8973,7 +8973,7 @@ IL_007e:
 		NullCheck(L_25);
 		int32_t L_26;
 		L_26 = Mesh_get_subMeshCount_mC0141293D0F339D8D721CCA2612B32E6FD7E3F8B(L_25, NULL);
-		V_5 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)L_23)) < ((int64_t)((int64_t)L_26)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		V_5 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_23))) < ((int64_t)((int64_t)L_26)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_27 = V_5;
 		if (!L_27)
 		{

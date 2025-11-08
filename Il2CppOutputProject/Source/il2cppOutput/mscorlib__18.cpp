@@ -14800,7 +14800,7 @@ IL_00f1_1:
 			{
 				int32_t L_49 = V_5;
 				uint32_t L_50 = __this->____iterations;
-				if ((((int64_t)((int64_t)L_49)) <= ((int64_t)((int64_t)(uint64_t)L_50))))
+				if ((((int64_t)((int64_t)L_49)) <= ((int64_t)((int64_t)(uint64_t)((uint32_t)L_50)))))
 				{
 					goto IL_009f_1;
 				}
@@ -22873,7 +22873,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t DES_QuadWordFromBigEndian_m794696464
 		NullCheck(L_21);
 		int32_t L_22 = 7;
 		uint8_t L_23 = (L_21)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
-		return ((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(uint64_t)L_2)<<((int32_t)56)))|((int64_t)(((int64_t)(uint64_t)L_5)<<((int32_t)48)))))|((int64_t)(((int64_t)(uint64_t)L_8)<<((int32_t)40)))))|((int64_t)(((int64_t)(uint64_t)L_11)<<((int32_t)32)))))|((int64_t)(((int64_t)(uint64_t)L_14)<<((int32_t)24)))))|((int64_t)(((int64_t)(uint64_t)L_17)<<((int32_t)16)))))|((int64_t)(((int64_t)(uint64_t)L_20)<<8))))|((int64_t)(uint64_t)L_23)));
+		return ((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_2))<<((int32_t)56)))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_5))<<((int32_t)48)))))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_8))<<((int32_t)40)))))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_11))<<((int32_t)32)))))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_14))<<((int32_t)24)))))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_17))<<((int32_t)16)))))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_20))<<8))))|((int64_t)(uint64_t)((uint32_t)L_23))));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DES__cctor_m9EB8459C4DB9ED5612E0FFBC998344E19B98D370 (const RuntimeMethod* method) 

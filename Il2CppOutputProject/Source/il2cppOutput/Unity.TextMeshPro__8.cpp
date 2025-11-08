@@ -7306,7 +7306,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t TMP_TextUtilities_ToUpperASCIIFast_m
 		NullCheck(_stringLiteral0C9E0579800D2261789D578B378D6BD8D6F31974);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(_stringLiteral0C9E0579800D2261789D578B378D6BD8D6F31974, NULL);
-		if ((((int64_t)((int64_t)(uint64_t)L_0)) <= ((int64_t)((int64_t)((int32_t)il2cpp_codegen_subtract(L_1, 1))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_0))) <= ((int64_t)((int64_t)((int32_t)il2cpp_codegen_subtract(L_1, 1))))))
 		{
 			goto IL_0013;
 		}

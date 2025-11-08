@@ -20755,7 +20755,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CullingResults_GetHashCode_m9CD85BFBC
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		CullingAllocationInfo_tB260F5CD0B290F74E145EB16E54B901CC68D9D5A* L_3 = __this->___m_AllocationInfo;
-		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_2, ((int32_t)397)))^((int32_t)((int64_t)(uint64_t)(intptr_t)L_3))));
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_2, ((int32_t)397)))^((int32_t)((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_3)))));
 		int32_t L_4 = V_0;
 		V_1 = L_4;
 		goto IL_0023;

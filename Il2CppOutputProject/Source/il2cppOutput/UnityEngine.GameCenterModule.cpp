@@ -3278,7 +3278,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Score_t9ED78BAAA0A342F85A3473CCF95CE31E6BF03D
 		String_t* L_7 = __this->___m_FormattedValue;
 		int32_t L_8 = __this->___m_Rank;
 		Score_t9ED78BAAA0A342F85A3473CCF95CE31E6BF03D53* L_9 = (Score_t9ED78BAAA0A342F85A3473CCF95CE31E6BF03D53*)il2cpp_codegen_object_new(Score_t9ED78BAAA0A342F85A3473CCF95CE31E6BF03D53_il2cpp_TypeInfo_var);
-		Score__ctor_mD90E3983F2E8AF6001AB7C5E54497752F21E0F31(L_9, L_0, ((int64_t)il2cpp_codegen_add(((int64_t)(((int64_t)L_1)<<((int32_t)32))), ((int64_t)(uint64_t)L_2))), L_3, L_6, L_7, L_8, NULL);
+		Score__ctor_mD90E3983F2E8AF6001AB7C5E54497752F21E0F31(L_9, L_0, ((int64_t)il2cpp_codegen_add(((int64_t)(((int64_t)L_1)<<((int32_t)32))), ((int64_t)(uint64_t)((uint32_t)L_2)))), L_3, L_6, L_7, L_8, NULL);
 		V_1 = L_9;
 		goto IL_0052;
 	}

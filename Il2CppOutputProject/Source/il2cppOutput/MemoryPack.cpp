@@ -10510,7 +10510,7 @@ IL_0033:
 	{
 		uint8_t L_1;
 		L_1 = MemoryPackReader_ReadUnmanaged_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m74A3211A4D30F89DA39423E4985B72DED35A4A0F_inline(__this, MemoryPackReader_ReadUnmanaged_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m74A3211A4D30F89DA39423E4985B72DED35A4A0F_RuntimeMethod_var);
-		return ((int64_t)(uint64_t)L_1);
+		return ((int64_t)(uint64_t)((uint32_t)L_1));
 	}
 
 IL_003b:
@@ -10525,7 +10525,7 @@ IL_0043:
 	{
 		uint16_t L_3;
 		L_3 = MemoryPackReader_ReadUnmanaged_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_mD6D8FF85876395EC85BC67F5FE64382567E79D06_inline(__this, MemoryPackReader_ReadUnmanaged_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_mD6D8FF85876395EC85BC67F5FE64382567E79D06_RuntimeMethod_var);
-		return ((int64_t)(uint64_t)L_3);
+		return ((int64_t)(uint64_t)((uint32_t)L_3));
 	}
 
 IL_004b:
@@ -10540,7 +10540,7 @@ IL_0053:
 	{
 		uint32_t L_5;
 		L_5 = MemoryPackReader_ReadUnmanaged_TisUInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_m4F6D54533E26424DAA587B6FFED8B15EE1496EAE_inline(__this, MemoryPackReader_ReadUnmanaged_TisUInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_m4F6D54533E26424DAA587B6FFED8B15EE1496EAE_RuntimeMethod_var);
-		return ((int64_t)(uint64_t)L_5);
+		return ((int64_t)(uint64_t)((uint32_t)L_5));
 	}
 
 IL_005b:
@@ -10638,7 +10638,7 @@ IL_0033:
 	{
 		uint8_t L_1;
 		L_1 = MemoryPackReader_ReadUnmanaged_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m74A3211A4D30F89DA39423E4985B72DED35A4A0F_inline(__this, MemoryPackReader_ReadUnmanaged_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m74A3211A4D30F89DA39423E4985B72DED35A4A0F_RuntimeMethod_var);
-		return ((int64_t)(uint64_t)L_1);
+		return ((int64_t)(uint64_t)((uint32_t)L_1));
 	}
 
 IL_003b:
@@ -10652,7 +10652,7 @@ IL_0043:
 	{
 		uint16_t L_3;
 		L_3 = MemoryPackReader_ReadUnmanaged_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_mD6D8FF85876395EC85BC67F5FE64382567E79D06_inline(__this, MemoryPackReader_ReadUnmanaged_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_mD6D8FF85876395EC85BC67F5FE64382567E79D06_RuntimeMethod_var);
-		return ((int64_t)(uint64_t)L_3);
+		return ((int64_t)(uint64_t)((uint32_t)L_3));
 	}
 
 IL_004b:
@@ -10666,7 +10666,7 @@ IL_0053:
 	{
 		uint32_t L_5;
 		L_5 = MemoryPackReader_ReadUnmanaged_TisUInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_m4F6D54533E26424DAA587B6FFED8B15EE1496EAE_inline(__this, MemoryPackReader_ReadUnmanaged_TisUInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_m4F6D54533E26424DAA587B6FFED8B15EE1496EAE_RuntimeMethod_var);
-		return ((int64_t)(uint64_t)L_5);
+		return ((int64_t)(uint64_t)((uint32_t)L_5));
 	}
 
 IL_005b:

@@ -10998,7 +10998,7 @@ IL_004c:
 		RuntimeObject* L_15 = V_0;
 		uint8_t L_16 = ___2_value;
 		NullCheck(L_15);
-		InterfaceActionInvoker1< int64_t >::Invoke(19, IBsonWriter_tCF34221858FA0DBF091E5CD6BC42EB04E8658512_il2cpp_TypeInfo_var, L_15, ((int64_t)(uint64_t)L_16));
+		InterfaceActionInvoker1< int64_t >::Invoke(19, IBsonWriter_tCF34221858FA0DBF091E5CD6BC42EB04E8658512_il2cpp_TypeInfo_var, L_15, ((int64_t)(uint64_t)((uint32_t)L_16)));
 		goto IL_008d;
 	}
 
@@ -25672,7 +25672,7 @@ IL_0038:
 		uint32_t L_9 = ___2_value;
 		NullCheck(L_8);
 		Decimal128_t1F25EF9D95345A635F9EE2BCDDC78D4019FB2C3A L_10;
-		L_10 = RepresentationConverter_ToDecimal128_m872594065A0ED678FA128C881DDBCB5F28AE5C83(L_8, ((int64_t)(uint64_t)L_9), NULL);
+		L_10 = RepresentationConverter_ToDecimal128_m872594065A0ED678FA128C881DDBCB5F28AE5C83(L_8, ((int64_t)(uint64_t)((uint32_t)L_9)), NULL);
 		NullCheck(L_7);
 		InterfaceActionInvoker1< Decimal128_t1F25EF9D95345A635F9EE2BCDDC78D4019FB2C3A >::Invoke(14, IBsonWriter_tCF34221858FA0DBF091E5CD6BC42EB04E8658512_il2cpp_TypeInfo_var, L_7, L_10);
 		goto IL_00b9;
@@ -30353,7 +30353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t RepresentationConverter_ToInt64_m2BF6
 	int64_t V_0 = 0;
 	{
 		uint32_t L_0 = ___0_value;
-		V_0 = ((int64_t)(uint64_t)L_0);
+		V_0 = ((int64_t)(uint64_t)((uint32_t)L_0));
 		goto IL_0006;
 	}
 
@@ -30414,7 +30414,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t RepresentationConverter_ToInt64_mD6B5
 	int64_t V_0 = 0;
 	{
 		uint16_t L_0 = ___0_value;
-		V_0 = ((int64_t)(uint64_t)L_0);
+		V_0 = ((int64_t)(uint64_t)((uint32_t)L_0));
 		goto IL_0006;
 	}
 

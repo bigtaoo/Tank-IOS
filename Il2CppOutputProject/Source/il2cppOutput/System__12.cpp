@@ -15590,7 +15590,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileSystemWatcher_set_InternalBufferSize
 	{
 		uint32_t L_0 = __this->____internalBufferSize;
 		int32_t L_1 = ___0_value;
-		if ((((int64_t)((int64_t)(uint64_t)L_0)) == ((int64_t)((int64_t)L_1))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_0))) == ((int64_t)((int64_t)L_1))))
 		{
 			goto IL_002d;
 		}

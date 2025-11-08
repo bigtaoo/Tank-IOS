@@ -20927,7 +20927,7 @@ IL_0064:
 IL_006c:
 	{
 		RuntimeObject* L_5 = ___0_value;
-		return ((int64_t)(uint64_t)((*(uint8_t*)UnBox(L_5, il2cpp_defaults.byte_class))));
+		return ((int64_t)(uint64_t)((uint32_t)((*(uint8_t*)UnBox(L_5, il2cpp_defaults.byte_class)))));
 	}
 
 IL_0074:
@@ -20936,7 +20936,7 @@ IL_0074:
 		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 		uint8_t L_7;
 		L_7 = Convert_ToByte_mC22A7EFFB28AA32D8F797E456E92BA88DBA19A08(((*(bool*)UnBox(L_6, il2cpp_defaults.boolean_class))), NULL);
-		return ((int64_t)(uint64_t)L_7);
+		return ((int64_t)(uint64_t)((uint32_t)L_7));
 	}
 
 IL_0081:
@@ -20948,19 +20948,19 @@ IL_0081:
 IL_0089:
 	{
 		RuntimeObject* L_9 = ___0_value;
-		return ((int64_t)(uint64_t)((*(uint16_t*)UnBox(L_9, il2cpp_defaults.uint16_class))));
+		return ((int64_t)(uint64_t)((uint32_t)((*(uint16_t*)UnBox(L_9, il2cpp_defaults.uint16_class)))));
 	}
 
 IL_0091:
 	{
 		RuntimeObject* L_10 = ___0_value;
-		return ((int64_t)(uint64_t)((*(Il2CppChar*)UnBox(L_10, il2cpp_defaults.char_class))));
+		return ((int64_t)(uint64_t)((uint32_t)((*(Il2CppChar*)UnBox(L_10, il2cpp_defaults.char_class)))));
 	}
 
 IL_0099:
 	{
 		RuntimeObject* L_11 = ___0_value;
-		return ((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_11, il2cpp_defaults.uint32_class))));
+		return ((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_11, il2cpp_defaults.uint32_class)))));
 	}
 
 IL_00a1:

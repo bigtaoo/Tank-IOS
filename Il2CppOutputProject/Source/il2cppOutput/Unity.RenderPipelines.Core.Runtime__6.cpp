@@ -8572,7 +8572,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TileLayoutUtils_TryLayoutByTiles_mF9F8DA
 		int32_t L_0;
 		L_0 = RectInt_get_width_m6B7B2FB764EAE83B7F63E7F77FA33973606761A7_inline((&___0_src), NULL);
 		uint32_t L_1 = ___1_tileSize;
-		if ((((int64_t)((int64_t)L_0)) < ((int64_t)((int64_t)(uint64_t)L_1))))
+		if ((((int64_t)((int64_t)L_0)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_1)))))
 		{
 			goto IL_0018;
 		}
@@ -8581,7 +8581,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TileLayoutUtils_TryLayoutByTiles_mF9F8DA
 		int32_t L_2;
 		L_2 = RectInt_get_height_mE25FB938714942D7A3BA0B3C21BC5CB913D5709C_inline((&___0_src), NULL);
 		uint32_t L_3 = ___1_tileSize;
-		if ((((int64_t)((int64_t)L_2)) >= ((int64_t)((int64_t)(uint64_t)L_3))))
+		if ((((int64_t)((int64_t)L_2)) >= ((int64_t)((int64_t)(uint64_t)((uint32_t)L_3)))))
 		{
 			goto IL_0058;
 		}
@@ -8704,7 +8704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TileLayoutUtils_TryLayoutByRow_mB65FDC56
 		int32_t L_0;
 		L_0 = RectInt_get_height_mE25FB938714942D7A3BA0B3C21BC5CB913D5709C_inline((&___0_src), NULL);
 		uint32_t L_1 = ___1_tileSize;
-		if ((((int64_t)((int64_t)L_0)) >= ((int64_t)((int64_t)(uint64_t)L_1))))
+		if ((((int64_t)((int64_t)L_0)) >= ((int64_t)((int64_t)(uint64_t)((uint32_t)L_1)))))
 		{
 			goto IL_002c;
 		}
@@ -8775,7 +8775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TileLayoutUtils_TryLayoutByCol_m4A2C09CF
 		int32_t L_0;
 		L_0 = RectInt_get_width_m6B7B2FB764EAE83B7F63E7F77FA33973606761A7_inline((&___0_src), NULL);
 		uint32_t L_1 = ___1_tileSize;
-		if ((((int64_t)((int64_t)L_0)) >= ((int64_t)((int64_t)(uint64_t)L_1))))
+		if ((((int64_t)((int64_t)L_0)) >= ((int64_t)((int64_t)(uint64_t)((uint32_t)L_1)))))
 		{
 			goto IL_002c;
 		}

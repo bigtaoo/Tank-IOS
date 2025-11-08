@@ -25774,7 +25774,7 @@ IL_0015:
 		il2cpp_codegen_runtime_class_init_inline(UIRenderDevice_t59628CBA89B4617E832C2B270E1C1A3931D01302_il2cpp_TypeInfo_var);
 		uint32_t L_6;
 		L_6 = UIRenderDevice_get_maxVerticesPerPage_mAEF2D856352CFBCDBF341E76DC05FC15D86EE66F(NULL);
-		V_3 = ((int32_t)((int64_t)(((int64_t)(uint64_t)L_6)&((int64_t)((int32_t)-4)))));
+		V_3 = ((int32_t)((int64_t)(((int64_t)(uint64_t)((uint32_t)L_6))&((int64_t)((int32_t)-4)))));
 		ATGMeshInfo_t92E7F6713ADB43FC6EB49CEEC1DF4FAFC5C78A9E L_7 = V_2;
 		bool L_8 = L_7.___hasMultipleColors;
 		V_4 = L_8;

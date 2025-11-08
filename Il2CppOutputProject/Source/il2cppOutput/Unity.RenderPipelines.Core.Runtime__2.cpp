@@ -18034,7 +18034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		uint32_t L_1 = ___0_directionIndex;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2 = V_0;
 		NullCheck(L_2);
-		if ((((int64_t)((int64_t)(uint64_t)L_1)) == ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_1))) == ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
 		{
 			goto IL_0016;
 		}

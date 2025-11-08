@@ -8163,7 +8163,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t DtProximityGrid_CombineKey_mEF54B51AE
 		int32_t L_1 = ___1_y;
 		V_0 = L_1;
 		uint32_t L_2 = V_0;
-		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))<<((int32_t)32)))|((int64_t)(uint64_t)L_2)));
+		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_2))));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DtProximityGrid_DecomposeKey_mFBFE7A23A6ADBBBE5BF24E900F87A7C6CDF5A189 (int64_t ___0_key, int32_t* ___1_x, int32_t* ___2_y, const RuntimeMethod* method) 
@@ -16636,7 +16636,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t DtProximityGrid_CombineKe
 		int32_t L_1 = ___1_y;
 		V_0 = L_1;
 		uint32_t L_2 = V_0;
-		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))<<((int32_t)32)))|((int64_t)(uint64_t)L_2)));
+		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_2))));
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RcVec3f_t9045BCB347DDE2481E43817651C94A3CE4CD6700 RcVec3f_Cross_m1C4656A8C3B8E8AE0E2C51632BB60545583A167A_inline (RcVec3f_t9045BCB347DDE2481E43817651C94A3CE4CD6700 ___0_v1, RcVec3f_t9045BCB347DDE2481E43817651C94A3CE4CD6700 ___1_v2, const RuntimeMethod* method) 
@@ -18051,7 +18051,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint64_t BinaryPrimitives_Reverse
 		uint64_t L_2 = ___0_value;
 		uint32_t L_3;
 		L_3 = BinaryPrimitives_ReverseEndianness_mCCA2099164ECA9672968898DD996A9F04B392FFF_inline(((int32_t)(uint32_t)((int64_t)((uint64_t)L_2>>((int32_t)32)))), NULL);
-		return ((int64_t)il2cpp_codegen_add(((int64_t)(((int64_t)(uint64_t)L_1)<<((int32_t)32))), ((int64_t)(uint64_t)L_3)));
+		return ((int64_t)il2cpp_codegen_add(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_1))<<((int32_t)32))), ((int64_t)(uint64_t)((uint32_t)L_3))));
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint8_t* Array_GetRawSzArrayData_m2F8F5B2A381AEF971F12866D9C0A6C4FBA59F6BB_inline (RuntimeArray* __this, const RuntimeMethod* method) 

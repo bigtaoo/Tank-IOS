@@ -26127,7 +26127,7 @@ IL_0013:
 		il2cpp_codegen_runtime_class_init_inline(Vector_1_tD2965BA64E0D21713A390E38B795DA460AC39884_il2cpp_TypeInfo_var);
 		uint32_t L_7;
 		L_7 = Vector_1_get_Item_mA80489270736561EE0C06480F40B1052A5B221E7((&___0_source), L_6, Vector_1_get_Item_mA80489270736561EE0C06480F40B1052A5B221E7_RuntimeMethod_var);
-		*((int64_t*)((uint64_t*)il2cpp_codegen_add((intptr_t)L_4, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_5), 8))))) = (int64_t)((int64_t)(uint64_t)L_7);
+		*((int64_t*)((uint64_t*)il2cpp_codegen_add((intptr_t)L_4, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_5), 8))))) = (int64_t)((int64_t)(uint64_t)((uint32_t)L_7));
 		int32_t L_8 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_8, 1));
 	}
@@ -26162,7 +26162,7 @@ IL_003b:
 		il2cpp_codegen_runtime_class_init_inline(Vector_1_tD2965BA64E0D21713A390E38B795DA460AC39884_il2cpp_TypeInfo_var);
 		uint32_t L_18;
 		L_18 = Vector_1_get_Item_mA80489270736561EE0C06480F40B1052A5B221E7((&___0_source), ((int32_t)il2cpp_codegen_add(L_16, ((int32_t)(L_17/2)))), Vector_1_get_Item_mA80489270736561EE0C06480F40B1052A5B221E7_RuntimeMethod_var);
-		*((int64_t*)((uint64_t*)il2cpp_codegen_add((intptr_t)L_14, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_15), 8))))) = (int64_t)((int64_t)(uint64_t)L_18);
+		*((int64_t*)((uint64_t*)il2cpp_codegen_add((intptr_t)L_14, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_15), 8))))) = (int64_t)((int64_t)(uint64_t)((uint32_t)L_18));
 		int32_t L_19 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_19, 1));
 	}
@@ -77838,7 +77838,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint64_t BinaryPrimitives_Reverse
 		uint64_t L_2 = ___0_value;
 		uint32_t L_3;
 		L_3 = BinaryPrimitives_ReverseEndianness_mCCA2099164ECA9672968898DD996A9F04B392FFF_inline(((int32_t)(uint32_t)((int64_t)((uint64_t)L_2>>((int32_t)32)))), NULL);
-		return ((int64_t)il2cpp_codegen_add(((int64_t)(((int64_t)(uint64_t)L_1)<<((int32_t)32))), ((int64_t)(uint64_t)L_3)));
+		return ((int64_t)il2cpp_codegen_add(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_1))<<((int32_t)32))), ((int64_t)(uint64_t)((uint32_t)L_3))));
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint8_t ConstantHelper_GetByteWithAllBitsSet_m38E318296F5FB9BAE51C97C1AE058716CFC889D7_inline (const RuntimeMethod* method) 

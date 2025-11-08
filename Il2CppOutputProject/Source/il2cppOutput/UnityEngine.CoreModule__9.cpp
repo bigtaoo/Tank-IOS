@@ -18043,7 +18043,7 @@ IL_001c:
 		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = Mesh_get_subMeshCount_mC0141293D0F339D8D721CCA2612B32E6FD7E3F8B(L_8, NULL);
-		V_1 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)L_6)) < ((int64_t)((int64_t)L_9)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		V_1 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_6))) < ((int64_t)((int64_t)L_9)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_10 = V_1;
 		if (!L_10)
 		{
@@ -18252,7 +18252,7 @@ IL_0019:
 		NullCheck(L_9);
 		int32_t L_10;
 		L_10 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_9, NULL);
-		G_B5_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)L_7)) < ((int64_t)((int64_t)L_10)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		G_B5_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_7))) < ((int64_t)((int64_t)L_10)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_003d;
 	}
 
@@ -18314,7 +18314,7 @@ IL_0071:
 		NullCheck(L_30);
 		int32_t L_31;
 		L_31 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_30, NULL);
-		G_B10_0 = ((((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)L_26), ((int64_t)L_28)))) > ((int64_t)((int64_t)L_31)))? 1 : 0);
+		G_B10_0 = ((((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uint32_t)L_26)), ((int64_t)L_28)))) > ((int64_t)((int64_t)L_31)))? 1 : 0);
 		goto IL_009a;
 	}
 
@@ -18456,7 +18456,7 @@ IL_0147:
 		NullCheck(L_71);
 		int32_t L_72;
 		L_72 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_71, NULL);
-		G_B23_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)L_69)) < ((int64_t)((int64_t)L_72)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		G_B23_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_69))) < ((int64_t)((int64_t)L_72)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_016b;
 	}
 
@@ -18518,7 +18518,7 @@ IL_01a1:
 		NullCheck(L_92);
 		int32_t L_93;
 		L_93 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_92, NULL);
-		G_B28_0 = ((((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)L_88), ((int64_t)L_90)))) > ((int64_t)((int64_t)L_93)))? 1 : 0);
+		G_B28_0 = ((((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uint32_t)L_88)), ((int64_t)L_90)))) > ((int64_t)((int64_t)L_93)))? 1 : 0);
 		goto IL_01ca;
 	}
 
@@ -18889,7 +18889,7 @@ IL_007d:
 		NullCheck(L_24);
 		int32_t L_25;
 		L_25 = Mesh_get_subMeshCount_mC0141293D0F339D8D721CCA2612B32E6FD7E3F8B(L_24, NULL);
-		V_5 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)L_22)) < ((int64_t)((int64_t)L_25)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		V_5 = (bool)((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_22))) < ((int64_t)((int64_t)L_25)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_26 = V_5;
 		if (!L_26)
 		{
@@ -19362,7 +19362,7 @@ IL_007c:
 		NullCheck(L_25);
 		int32_t L_26;
 		L_26 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_25, NULL);
-		G_B13_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)L_23)) < ((int64_t)((int64_t)L_26)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		G_B13_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_23))) < ((int64_t)((int64_t)L_26)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_00a0;
 	}
 
@@ -19424,7 +19424,7 @@ IL_00d6:
 		NullCheck(L_46);
 		int32_t L_47;
 		L_47 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_46, NULL);
-		G_B18_0 = ((((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)L_42), ((int64_t)L_44)))) > ((int64_t)((int64_t)L_47)))? 1 : 0);
+		G_B18_0 = ((((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uint32_t)L_42)), ((int64_t)L_44)))) > ((int64_t)((int64_t)L_47)))? 1 : 0);
 		goto IL_00ff;
 	}
 
@@ -19574,7 +19574,7 @@ IL_01be:
 		NullCheck(L_92);
 		int32_t L_93;
 		L_93 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_92, NULL);
-		G_B31_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)L_90)) < ((int64_t)((int64_t)L_93)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		G_B31_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_90))) < ((int64_t)((int64_t)L_93)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_01e2;
 	}
 
@@ -19636,7 +19636,7 @@ IL_0218:
 		NullCheck(L_113);
 		int32_t L_114;
 		L_114 = GraphicsBuffer_get_count_mFB2375DCEEFB459134AB0056F0ED77191E9EFB4F(L_113, NULL);
-		G_B36_0 = ((((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)L_109), ((int64_t)L_111)))) > ((int64_t)((int64_t)L_114)))? 1 : 0);
+		G_B36_0 = ((((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uint32_t)L_109)), ((int64_t)L_111)))) > ((int64_t)((int64_t)L_114)))? 1 : 0);
 		goto IL_0241;
 	}
 

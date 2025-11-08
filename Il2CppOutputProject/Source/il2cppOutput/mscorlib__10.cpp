@@ -23774,10 +23774,10 @@ IL_000b:
 	{
 		uint64_t L_24 = ___1_lo;
 		uint32_t L_25 = ___0_hi;
-		___1_lo = ((int64_t)il2cpp_codegen_add((int64_t)L_24, ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_25), ((int64_t)184467440737LL)))));
+		___1_lo = ((int64_t)il2cpp_codegen_add((int64_t)L_24, ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_25)), ((int64_t)184467440737LL)))));
 		uint64_t L_26 = V_3;
 		uint32_t L_27 = ___0_hi;
-		V_3 = ((int64_t)il2cpp_codegen_add((int64_t)L_26, ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_27), ((int64_t)((int32_t)9551616))))));
+		V_3 = ((int64_t)il2cpp_codegen_add((int64_t)L_26, ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_27)), ((int64_t)((int32_t)9551616))))));
 		uint64_t L_28 = V_3;
 		V_2 = ((int64_t)((uint64_t)(int64_t)L_28/(uint64_t)(int64_t)((int64_t)((int32_t)100000000))));
 		uint64_t L_29 = ___1_lo;
@@ -24552,7 +24552,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberFormatter_Init_m4B5424C39832DB8923
 IL_0022:
 	{
 		uint32_t L_4 = ___1_value;
-		NumberFormatter_InitHex_m4CDD49EF513826CCFB9AB92F578AB66E45589F29(__this, ((int64_t)(uint64_t)L_4), NULL);
+		NumberFormatter_InitHex_m4CDD49EF513826CCFB9AB92F578AB66E45589F29(__this, ((int64_t)(uint64_t)((uint32_t)L_4)), NULL);
 		return;
 	}
 
@@ -27430,7 +27430,7 @@ IL_0021:
 		__this->____ind = L_7;
 		uint32_t L_8 = __this->____val1;
 		uint32_t L_9 = __this->____val2;
-		V_2 = ((int64_t)(((int64_t)(uint64_t)L_8)|((int64_t)(((int64_t)(uint64_t)L_9)<<((int32_t)32)))));
+		V_2 = ((int64_t)(((int64_t)(uint64_t)((uint32_t)L_8))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_9))<<((int32_t)32)))));
 		goto IL_0061;
 	}
 

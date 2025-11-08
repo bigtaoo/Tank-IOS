@@ -18728,7 +18728,7 @@ IL_00b2:
 	{
 		RuntimeObject* L_18 = ___0_obj;
 		RuntimeObject* L_19;
-		L_19 = Unchecked_ConvertInt64_m4894E9B2AA1E9DCE191AB3A29C1417C656861404(__this, ((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_18, il2cpp_defaults.uint32_class)))), NULL);
+		L_19 = Unchecked_ConvertInt64_m4894E9B2AA1E9DCE191AB3A29C1417C656861404(__this, ((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_18, il2cpp_defaults.uint32_class))))), NULL);
 		return L_19;
 	}
 
@@ -19662,7 +19662,7 @@ IL_00b2:
 	{
 		RuntimeObject* L_18 = ___0_obj;
 		RuntimeObject* L_19;
-		L_19 = Checked_ConvertInt64_mE2C56C09283C275328B583BE2C38A2375F456CB0(__this, ((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_18, il2cpp_defaults.uint32_class)))), NULL);
+		L_19 = Checked_ConvertInt64_mE2C56C09283C275328B583BE2C38A2375F456CB0(__this, ((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_18, il2cpp_defaults.uint32_class))))), NULL);
 		return L_19;
 	}
 

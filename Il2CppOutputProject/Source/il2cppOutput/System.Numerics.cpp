@@ -5518,7 +5518,7 @@ IL_0054:
 	}
 	{
 		uint32_t L_31 = V_2;
-		G_B8_0 = ((int64_t)(uint64_t)L_31);
+		G_B8_0 = ((int64_t)(uint64_t)((uint32_t)L_31));
 		G_B8_1 = G_B6_0;
 		G_B8_2 = G_B6_1;
 		goto IL_0082;
@@ -5527,7 +5527,7 @@ IL_0054:
 IL_007d:
 	{
 		uint32_t L_32 = V_2;
-		G_B8_0 = ((int64_t)il2cpp_codegen_multiply(((int64_t)(-1)), ((int64_t)(uint64_t)L_32)));
+		G_B8_0 = ((int64_t)il2cpp_codegen_multiply(((int64_t)(-1)), ((int64_t)(uint64_t)((uint32_t)L_32))));
 		G_B8_1 = G_B7_0;
 		G_B8_2 = G_B7_1;
 	}
@@ -5778,7 +5778,7 @@ IL_0039:
 		int32_t L_12 = 0;
 		uint32_t L_13 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		uint64_t L_14 = V_1;
-		return (bool)((((int64_t)((int64_t)(uint64_t)L_13)) == ((int64_t)L_14))? 1 : 0);
+		return (bool)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_13))) == ((int64_t)L_14))? 1 : 0);
 	}
 
 IL_004b:
@@ -5987,7 +5987,7 @@ IL_0044:
 		NullCheck(L_13);
 		int32_t L_14 = 0;
 		uint32_t L_15 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
-		G_B11_0 = ((uint64_t)(((int64_t)(uint64_t)L_15)));
+		G_B11_0 = ((uint64_t)(((int64_t)(uint64_t)((uint32_t)L_15))));
 		goto IL_0069;
 	}
 
@@ -7734,7 +7734,7 @@ IL_0042:
 		NullCheck(L_18);
 		int32_t L_19 = 0;
 		uint32_t L_20 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
-		V_0 = ((int64_t)(uint64_t)L_20);
+		V_0 = ((int64_t)(uint64_t)((uint32_t)L_20));
 	}
 
 IL_004c:
@@ -7893,7 +7893,7 @@ IL_0049:
 		NullCheck(L_20);
 		int32_t L_21 = 0;
 		uint32_t L_22 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_21));
-		return ((int64_t)(uint64_t)L_22);
+		return ((int64_t)(uint64_t)((uint32_t)L_22));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float BigInteger_op_Explicit_m8EC30B39ADC92FEFEC38CC8D49938F4D6E9D6BD8 (BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___0_value, const RuntimeMethod* method) 
@@ -7985,10 +7985,10 @@ IL_0035:
 		int32_t L_13 = V_2;
 		if ((((int32_t)L_13) > ((int32_t)1)))
 		{
-			G_B8_0 = ((int64_t)(uint64_t)L_12);
+			G_B8_0 = ((int64_t)(uint64_t)((uint32_t)L_12));
 			goto IL_0042;
 		}
-		G_B7_0 = ((int64_t)(uint64_t)L_12);
+		G_B7_0 = ((int64_t)(uint64_t)((uint32_t)L_12));
 	}
 	{
 		G_B9_0 = 0;
@@ -9340,7 +9340,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FB
 		int32_t L_3 = 0;
 		uint32_t L_4 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 		uint32_t L_5 = ___1_right;
-		V_1 = ((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)L_4), ((int64_t)(uint64_t)L_5)));
+		V_1 = ((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uint32_t)L_4)), ((int64_t)(uint64_t)((uint32_t)L_5))));
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_6 = V_0;
 		int64_t L_7 = V_1;
 		NullCheck(L_6);
@@ -9359,7 +9359,7 @@ IL_0021:
 		int32_t L_11 = L_10;
 		uint32_t L_12 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
 		int64_t L_13 = V_2;
-		V_1 = ((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)L_12), L_13));
+		V_1 = ((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uint32_t)L_12)), L_13));
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_14 = V_0;
 		int32_t L_15 = V_3;
 		int64_t L_16 = V_1;
@@ -9685,7 +9685,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FB
 		int32_t L_3 = 0;
 		uint32_t L_4 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 		uint32_t L_5 = ___1_right;
-		V_1 = ((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)L_4), ((int64_t)(uint64_t)L_5)));
+		V_1 = ((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)((uint32_t)L_4)), ((int64_t)(uint64_t)((uint32_t)L_5))));
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_6 = V_0;
 		int64_t L_7 = V_1;
 		NullCheck(L_6);
@@ -9704,7 +9704,7 @@ IL_001f:
 		int32_t L_11 = L_10;
 		uint32_t L_12 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
 		int64_t L_13 = V_2;
-		V_1 = ((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)L_12), L_13));
+		V_1 = ((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uint32_t)L_12)), L_13));
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_14 = V_0;
 		int32_t L_15 = V_3;
 		int64_t L_16 = V_1;
@@ -10073,9 +10073,9 @@ IL_0014:
 		NullCheck(L_4);
 		int32_t L_6 = L_5;
 		uint32_t L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
-		int64_t L_8 = ((int64_t)(((int64_t)((int64_t)L_3<<((int32_t)32)))|((int64_t)(uint64_t)L_7)));
+		int64_t L_8 = ((int64_t)(((int64_t)((int64_t)L_3<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_7))));
 		uint32_t L_9 = ___1_right;
-		V_3 = ((int64_t)((uint64_t)(int64_t)L_8/(uint64_t)(int64_t)((int64_t)(uint64_t)L_9)));
+		V_3 = ((int64_t)((uint64_t)(int64_t)L_8/(uint64_t)(int64_t)((int64_t)(uint64_t)((uint32_t)L_9))));
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_10 = V_0;
 		int32_t L_11 = V_2;
 		uint64_t L_12 = V_3;
@@ -10083,7 +10083,7 @@ IL_0014:
 		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(L_11), (uint32_t)((int32_t)(uint32_t)L_12));
 		uint64_t L_13 = V_3;
 		uint32_t L_14 = ___1_right;
-		V_1 = ((int64_t)il2cpp_codegen_subtract(L_8, ((int64_t)il2cpp_codegen_multiply((int64_t)L_13, ((int64_t)(uint64_t)L_14)))));
+		V_1 = ((int64_t)il2cpp_codegen_subtract(L_8, ((int64_t)il2cpp_codegen_multiply((int64_t)L_13, ((int64_t)(uint64_t)((uint32_t)L_14))))));
 		int32_t L_15 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_subtract(L_15, 1));
 	}
@@ -10136,9 +10136,9 @@ IL_0014:
 		NullCheck(L_4);
 		int32_t L_6 = L_5;
 		uint32_t L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
-		int64_t L_8 = ((int64_t)(((int64_t)((int64_t)L_3<<((int32_t)32)))|((int64_t)(uint64_t)L_7)));
+		int64_t L_8 = ((int64_t)(((int64_t)((int64_t)L_3<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_7))));
 		uint32_t L_9 = ___1_right;
-		V_3 = ((int64_t)((uint64_t)(int64_t)L_8/(uint64_t)(int64_t)((int64_t)(uint64_t)L_9)));
+		V_3 = ((int64_t)((uint64_t)(int64_t)L_8/(uint64_t)(int64_t)((int64_t)(uint64_t)((uint32_t)L_9))));
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_10 = V_0;
 		int32_t L_11 = V_2;
 		uint64_t L_12 = V_3;
@@ -10146,7 +10146,7 @@ IL_0014:
 		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(L_11), (uint32_t)((int32_t)(uint32_t)L_12));
 		uint64_t L_13 = V_3;
 		uint32_t L_14 = ___1_right;
-		V_1 = ((int64_t)il2cpp_codegen_subtract(L_8, ((int64_t)il2cpp_codegen_multiply((int64_t)L_13, ((int64_t)(uint64_t)L_14)))));
+		V_1 = ((int64_t)il2cpp_codegen_subtract(L_8, ((int64_t)il2cpp_codegen_multiply((int64_t)L_13, ((int64_t)(uint64_t)((uint32_t)L_14))))));
 		int32_t L_15 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_subtract(L_15, 1));
 	}
@@ -10423,7 +10423,7 @@ IL_0078:
 		uint32_t* L_32 = ___0_left;
 		int32_t L_33 = V_5;
 		int32_t L_34 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_32, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)((int32_t)il2cpp_codegen_subtract(L_33, 1))), 4))))));
-		V_8 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_31)<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_34))));
+		V_8 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_31))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_34))));
 		int32_t L_35 = V_5;
 		if ((((int32_t)L_35) > ((int32_t)1)))
 		{
@@ -10491,7 +10491,7 @@ IL_00dd:
 	{
 		uint64_t L_52 = V_8;
 		uint32_t L_53 = V_0;
-		V_10 = ((int64_t)((uint64_t)(int64_t)L_52/(uint64_t)(int64_t)((int64_t)(uint64_t)L_53)));
+		V_10 = ((int64_t)((uint64_t)(int64_t)L_52/(uint64_t)(int64_t)((int64_t)(uint64_t)((uint32_t)L_53))));
 		uint64_t L_54 = V_10;
 		if ((!(((uint64_t)L_54) > ((uint64_t)((int64_t)(uint64_t)((uint32_t)(-1)))))))
 		{
@@ -10727,10 +10727,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BigIntegerCalculator_DivideGuessTooBig_m
 	{
 		uint32_t L_0 = ___3_divHi;
 		uint64_t L_1 = ___0_q;
-		V_0 = ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_0), (int64_t)L_1));
+		V_0 = ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_0)), (int64_t)L_1));
 		uint32_t L_2 = ___4_divLo;
 		uint64_t L_3 = ___0_q;
-		V_1 = ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_2), (int64_t)L_3));
+		V_1 = ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_2)), (int64_t)L_3));
 		uint64_t L_4 = V_0;
 		uint64_t L_5 = V_1;
 		V_0 = ((int64_t)il2cpp_codegen_add((int64_t)L_4, ((int64_t)((uint64_t)L_5>>((int32_t)32)))));
@@ -10764,7 +10764,7 @@ IL_0023:
 	{
 		uint64_t L_11 = V_1;
 		uint32_t L_12 = ___2_valLo;
-		if ((!(((uint64_t)L_11) < ((uint64_t)((int64_t)(uint64_t)L_12)))))
+		if ((!(((uint64_t)L_11) < ((uint64_t)((int64_t)(uint64_t)((uint32_t)L_12))))))
 		{
 			goto IL_002a;
 		}
@@ -10777,7 +10777,7 @@ IL_002a:
 	{
 		uint64_t L_13 = V_1;
 		uint32_t L_14 = ___2_valLo;
-		if ((!(((uint64_t)L_13) > ((uint64_t)((int64_t)(uint64_t)L_14)))))
+		if ((!(((uint64_t)L_13) > ((uint64_t)((int64_t)(uint64_t)((uint32_t)L_14))))))
 		{
 			goto IL_0031;
 		}
@@ -11360,7 +11360,7 @@ IL_0012:
 		uint32_t L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		uint32_t L_6 = ___1_right;
 		uint64_t L_7 = V_1;
-		V_3 = ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_5), ((int64_t)(uint64_t)L_6))), (int64_t)L_7));
+		V_3 = ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_5)), ((int64_t)(uint64_t)((uint32_t)L_6)))), (int64_t)L_7));
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_8 = V_2;
 		int32_t L_9 = V_0;
 		uint64_t L_10 = V_3;
@@ -14694,7 +14694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t NumericsHelpers_MakeUlong_mAB879C538
 	{
 		uint32_t L_0 = ___0_uHi;
 		uint32_t L_1 = ___1_uLo;
-		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_0)<<((int32_t)32)))|((int64_t)(uint64_t)L_1)));
+		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_1))));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t NumericsHelpers_Abs_m82DD45E6FEBF5DAB9533B31E5BC62DC5EF37568A (int32_t ___0_a, const RuntimeMethod* method) 

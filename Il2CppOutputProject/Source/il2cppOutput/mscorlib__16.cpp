@@ -23319,7 +23319,7 @@ IL_00a8:
 	{
 		int32_t L_38 = V_6;
 		uint32_t L_39 = __this->___cStringsMax;
-		if ((((int64_t)((int64_t)L_38)) < ((int64_t)((int64_t)(uint64_t)L_39))))
+		if ((((int64_t)((int64_t)L_38)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_39)))))
 		{
 			goto IL_0065;
 		}

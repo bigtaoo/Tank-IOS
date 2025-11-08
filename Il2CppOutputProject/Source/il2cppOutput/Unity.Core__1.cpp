@@ -2245,7 +2245,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 	};
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D4892_t988EDDD5BBCBEFDD6DF0076B25401C4C72864AE9 
+struct __StaticArrayInitTypeSizeU3D4908_tEA6CAD1B4D08FA1997D3D821D6E23F49211E92A6 
 {
 	union
 	{
@@ -2255,12 +2255,12 @@ struct __StaticArrayInitTypeSizeU3D4892_t988EDDD5BBCBEFDD6DF0076B25401C4C72864AE
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D4892_t988EDDD5BBCBEFDD6DF0076B25401C4C72864AE9__padding[4892];
+		uint8_t __StaticArrayInitTypeSizeU3D4908_tEA6CAD1B4D08FA1997D3D821D6E23F49211E92A6__padding[4908];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D8837_tBEA18C0FFB3AF031529456361329AD6F7D5F3064 
+struct __StaticArrayInitTypeSizeU3D8883_t5AD0731FC5BE13B1378F0E7CFD7097FF40CD5D70 
 {
 	union
 	{
@@ -2270,7 +2270,7 @@ struct __StaticArrayInitTypeSizeU3D8837_tBEA18C0FFB3AF031529456361329AD6F7D5F306
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D8837_tBEA18C0FFB3AF031529456361329AD6F7D5F3064__padding[8837];
+		uint8_t __StaticArrayInitTypeSizeU3D8883_t5AD0731FC5BE13B1378F0E7CFD7097FF40CD5D70__padding[8883];
 	};
 };
 #pragma pack(pop, tp)
@@ -3446,8 +3446,8 @@ struct List_1_t72C33FA8AB5BA211FFE8D0423D3638C864196F22_StaticFields
 };
 struct U3CPrivateImplementationDetailsU3E_tE353194F0D8A074405E82CB8AB448F2918E2CAE0_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D4892_t988EDDD5BBCBEFDD6DF0076B25401C4C72864AE9 ___4A879EAD62CECCF44B272BCEF5607F73E3D7E0957BE9E098CE48C8B78C43C89C;
-	__StaticArrayInitTypeSizeU3D8837_tBEA18C0FFB3AF031529456361329AD6F7D5F3064 ___75458A0C6B1246560C6752CAF272A0803AB03A558D8F20793F094172D3322892;
+	__StaticArrayInitTypeSizeU3D4908_tEA6CAD1B4D08FA1997D3D821D6E23F49211E92A6 ___2C7BEDE207172CC34780B62DFAFDA9DA3EF5696E60B11E31067707194066C38E;
+	__StaticArrayInitTypeSizeU3D8883_t5AD0731FC5BE13B1378F0E7CFD7097FF40CD5D70 ___D4EC6B0CA4C71DB13C0C4CC4D7273491F417BDCCC3ABA4CCFBFD47AF65B79FE5;
 };
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B_StaticFields
 {
@@ -8824,7 +8824,7 @@ IL_0028:
 		L_7 = NetServices_CreateAcceptChannelId_mDBEA976E0CD7815481EEB7E8FED0EF3F1F1F44C7(L_6, NULL);
 		Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* L_8 = ___1_acceptSocket;
 		TChannel_t573E3D0ED2DAC7D30DFEBAC1A5E1166552816092* L_9 = (TChannel_t573E3D0ED2DAC7D30DFEBAC1A5E1166552816092*)il2cpp_codegen_object_new(TChannel_t573E3D0ED2DAC7D30DFEBAC1A5E1166552816092_il2cpp_TypeInfo_var);
-		TChannel__ctor_mBECC719931AFC644AF8AC41FEFDCFDC3E929908C(L_9, ((int64_t)(uint64_t)L_7), L_8, __this, NULL);
+		TChannel__ctor_mBECC719931AFC644AF8AC41FEFDCFDC3E929908C(L_9, ((int64_t)(uint64_t)((uint32_t)L_7)), L_8, __this, NULL);
 		V_0 = L_9;
 		Dictionary_2_t31D203A8362E3C6AE377B4315C37EA3215B5666D* L_10 = __this->___idChannels;
 		TChannel_t573E3D0ED2DAC7D30DFEBAC1A5E1166552816092* L_11 = V_0;
@@ -18656,7 +18656,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t IdStruct_ToLong_m3839CE412492AF2B0352
 		int16_t L_0 = __this->___Process;
 		uint32_t L_1 = __this->___Time;
 		uint32_t L_2 = __this->___Value;
-		return ((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)0)|((int64_t)(uint64_t)((uint32_t)((int32_t)(uint16_t)L_0)))))<<((int32_t)30)))|((int64_t)(uint64_t)L_1)))<<((int32_t)20)))|((int64_t)(uint64_t)L_2)));
+		return ((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)0)|((int64_t)(uint64_t)((uint32_t)((int32_t)(uint16_t)L_0)))))<<((int32_t)30)))|((int64_t)(uint64_t)((uint32_t)L_1))))<<((int32_t)20)))|((int64_t)(uint64_t)((uint32_t)L_2))));
 	}
 }
 IL2CPP_EXTERN_C  int64_t IdStruct_ToLong_m3839CE412492AF2B03523CC1F9C1B961054ADAD5_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
@@ -18758,7 +18758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t InstanceIdStruct_ToLong_m9C1B17B1249A
 	{
 		uint32_t L_0 = __this->___Time;
 		uint32_t L_1 = __this->___Value;
-		return ((int64_t)(((int64_t)(((int64_t)(((int64_t)0)|((int64_t)(uint64_t)L_0)))<<((int32_t)32)))|((int64_t)(uint64_t)L_1)));
+		return ((int64_t)(((int64_t)(((int64_t)(((int64_t)0)|((int64_t)(uint64_t)((uint32_t)L_0))))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_1))));
 	}
 }
 IL2CPP_EXTERN_C  int64_t InstanceIdStruct_ToLong_m9C1B17B1249AC6C7FE489F4D8FABCB7DB06D92F2_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)

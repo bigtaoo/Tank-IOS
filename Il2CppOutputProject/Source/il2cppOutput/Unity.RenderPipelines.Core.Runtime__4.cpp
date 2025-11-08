@@ -7669,7 +7669,7 @@ IL_0407:
 		float L_300 = L_299.___z;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_301 = V_14;
 		float L_302 = L_301.___x;
-		*((float*)((float*)il2cpp_codegen_add((intptr_t)L_297, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_298), ((int64_t)4))))))) = (float)((float)(L_300/L_302));
+		*((float*)((float*)il2cpp_codegen_add((intptr_t)L_297, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_298)), ((int64_t)4))))))) = (float)((float)(L_300/L_302));
 		StpConstantBufferData_t12C7727CEDC1B8B7ECA73862CD7BB3F5D32B2754* L_303 = ___1_constants;
 		U3C_StpSetupPerViewConstantsU3Ee__FixedBuffer_t9BB7998676CF28C673FFF3872BE1163DFEDAB3F6* L_304 = (U3C_StpSetupPerViewConstantsU3Ee__FixedBuffer_t9BB7998676CF28C673FFF3872BE1163DFEDAB3F6*)(&L_303->____StpSetupPerViewConstants);
 		float* L_305 = (float*)(&L_304->___FixedElementField);
@@ -8018,7 +8018,7 @@ IL_0ce4:
 		uint32_t L_612 = V_11;
 		Config_tD41451EF7860F10CD0587D74298B529BFF444DF8* L_613 = ___0_config;
 		int32_t L_614 = L_613->___numActiveViews;
-		if ((((int64_t)((int64_t)(uint64_t)L_612)) < ((int64_t)((int64_t)L_614))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_612))) < ((int64_t)((int64_t)L_614))))
 		{
 			goto IL_0407;
 		}
@@ -20424,7 +20424,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Texture2DAtlas_NeedsUpdate_mC4400C203B33
 		uint32_t L_11;
 		L_11 = Texture_get_updateCount_m095B04AC5DECCAB128DC136DC42140F32B7021AD(L_10, NULL);
 		int32_t L_12 = V_3;
-		if ((((int64_t)((int64_t)(uint64_t)L_11)) == ((int64_t)((int64_t)L_12))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_11))) == ((int64_t)((int64_t)L_12))))
 		{
 			goto IL_00a7;
 		}
@@ -20680,7 +20680,7 @@ IL_0035:
 		uint32_t L_23;
 		L_23 = Math_Min_m66781C8F3800C6682369B449FFDB62FAD5E87121(L_20, L_22, NULL);
 		int32_t L_24 = V_4;
-		if ((((int64_t)((int64_t)(uint64_t)L_23)) == ((int64_t)((int64_t)L_24))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_23))) == ((int64_t)((int64_t)L_24))))
 		{
 			goto IL_0090;
 		}
@@ -20721,7 +20721,7 @@ IL_0090:
 		uint32_t L_35;
 		L_35 = Texture_get_updateCount_m095B04AC5DECCAB128DC136DC42140F32B7021AD(L_34, NULL);
 		int32_t L_36 = V_4;
-		if ((((int64_t)((int64_t)(uint64_t)L_35)) == ((int64_t)((int64_t)L_36))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_35))) == ((int64_t)((int64_t)L_36))))
 		{
 			goto IL_00b9;
 		}
@@ -20755,7 +20755,7 @@ IL_00b9:
 		uint32_t L_44;
 		L_44 = Texture_get_updateCount_m095B04AC5DECCAB128DC136DC42140F32B7021AD(L_43, NULL);
 		int32_t L_45 = V_4;
-		if ((((int64_t)((int64_t)(uint64_t)L_44)) == ((int64_t)((int64_t)L_45))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_44))) == ((int64_t)((int64_t)L_45))))
 		{
 			goto IL_0136;
 		}

@@ -8727,7 +8727,7 @@ IL_0152_1:
 				L_61 = Marshal_PtrToStructure_m235E141E21BFB69A01B07DDDF1702BA7D5723AC3(L_58, L_60, NULL);
 				uint32_t L_62 = ((*(sockaddr_in_tC0AC7D4A0C8F88A6A38029D746482F056C343C54*)UnBox(L_61, sockaddr_in_tC0AC7D4A0C8F88A6A38029D746482F056C343C54_il2cpp_TypeInfo_var))).___sin_addr;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_63 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_63, ((int64_t)(uint64_t)L_62), NULL);
+				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_63, ((int64_t)(uint64_t)((uint32_t)L_62)), NULL);
 				V_8 = L_63;
 				goto IL_0295_1;
 			}
@@ -8751,7 +8751,7 @@ IL_0181_1:
 				sockaddr_in6_t65FD2126904836F2D14B1D3B6095869D2F39B51B L_72 = V_16;
 				uint32_t L_73 = L_72.___sin6_scope_id;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_74 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_m8D2578858CF6F8E56591F45C8A14150DEFFA44F5(L_74, L_71, ((int64_t)(uint64_t)L_73), NULL);
+				IPAddress__ctor_m8D2578858CF6F8E56591F45C8A14150DEFFA44F5(L_74, L_71, ((int64_t)(uint64_t)((uint32_t)L_73)), NULL);
 				V_8 = L_74;
 				goto IL_0295_1;
 			}
@@ -9354,7 +9354,7 @@ IL_00bc_1:
 				L_52 = Marshal_PtrToStructure_m235E141E21BFB69A01B07DDDF1702BA7D5723AC3(L_49, L_51, NULL);
 				uint32_t L_53 = ((*(sockaddr_in_tC0AC7D4A0C8F88A6A38029D746482F056C343C54*)UnBox(L_52, sockaddr_in_tC0AC7D4A0C8F88A6A38029D746482F056C343C54_il2cpp_TypeInfo_var))).___sin_addr;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_54 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_54, ((int64_t)(uint64_t)L_53), NULL);
+				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_54, ((int64_t)(uint64_t)((uint32_t)L_53)), NULL);
 				V_5 = L_54;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_55 = ___0_address;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_56 = V_5;
@@ -9386,7 +9386,7 @@ IL_00bc_1:
 				sockaddr_in_tC0AC7D4A0C8F88A6A38029D746482F056C343C54 L_65 = L_64.___ifru_addr;
 				uint32_t L_66 = L_65.___sin_addr;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_67 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_67, ((int64_t)(uint64_t)L_66), NULL);
+				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_67, ((int64_t)(uint64_t)((uint32_t)L_66)), NULL);
 				V_7 = L_67;
 				goto IL_01e4;
 			}
@@ -10476,7 +10476,7 @@ IL_0023_1:
 				sockaddr_in6_t641F21F2C564374268F5D97D5F642AB5581DAC05 L_30 = V_14;
 				uint32_t L_31 = L_30.___sin6_scope_id;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_32 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_m8D2578858CF6F8E56591F45C8A14150DEFFA44F5(L_32, L_29, ((int64_t)(uint64_t)L_31), NULL);
+				IPAddress__ctor_m8D2578858CF6F8E56591F45C8A14150DEFFA44F5(L_32, L_29, ((int64_t)(uint64_t)((uint32_t)L_31)), NULL);
 				V_6 = L_32;
 				goto IL_0246_1;
 			}
@@ -10494,7 +10494,7 @@ IL_00d2_1:
 				sockaddr_in_t3370FB83819296A9EFA99BA3065F540088687063 L_35 = V_13;
 				uint32_t L_36 = L_35.___sin_addr;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_37 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_37, ((int64_t)(uint64_t)L_36), NULL);
+				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_37, ((int64_t)(uint64_t)((uint32_t)L_36)), NULL);
 				V_6 = L_37;
 				goto IL_0246_1;
 			}
@@ -11068,7 +11068,7 @@ IL_000d_1:
 				sockaddr_in_t3370FB83819296A9EFA99BA3065F540088687063 L_17 = V_2;
 				uint32_t L_18 = L_17.___sin_addr;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_19 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_19, ((int64_t)(uint64_t)L_18), NULL);
+				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_19, ((int64_t)(uint64_t)((uint32_t)L_18)), NULL);
 				NullCheck(L_16);
 				bool L_20;
 				L_20 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(0, L_16, L_19);
@@ -11089,7 +11089,7 @@ IL_000d_1:
 				L_25 = Marshal_PtrToStructure_m235E141E21BFB69A01B07DDDF1702BA7D5723AC3(L_22, L_24, NULL);
 				uint32_t L_26 = ((*(sockaddr_in_t3370FB83819296A9EFA99BA3065F540088687063*)UnBox(L_25, sockaddr_in_t3370FB83819296A9EFA99BA3065F540088687063_il2cpp_TypeInfo_var))).___sin_addr;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_27 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_27, ((int64_t)(uint64_t)L_26), NULL);
+				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_27, ((int64_t)(uint64_t)((uint32_t)L_26)), NULL);
 				V_3 = L_27;
 				goto IL_009f;
 			}
@@ -13152,7 +13152,7 @@ IL_0023_1:
 				sockaddr_in6_tF0DD0999A5B310123566D9592429B384979B937A L_31 = V_13;
 				uint32_t L_32 = L_31.___sin6_scope_id;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_33 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_m8D2578858CF6F8E56591F45C8A14150DEFFA44F5(L_33, L_30, ((int64_t)(uint64_t)L_32), NULL);
+				IPAddress__ctor_m8D2578858CF6F8E56591F45C8A14150DEFFA44F5(L_33, L_30, ((int64_t)(uint64_t)((uint32_t)L_32)), NULL);
 				V_6 = L_33;
 				goto IL_01eb_1;
 			}
@@ -13178,7 +13178,7 @@ IL_00d3_1:
 				L_40 = Marshal_PtrToStructure_m235E141E21BFB69A01B07DDDF1702BA7D5723AC3(L_37, L_39, NULL);
 				uint32_t L_41 = ((*(sockaddr_in_tB997AF96699E94CA62DBE7F18B41A198615687E2*)UnBox(L_40, sockaddr_in_tB997AF96699E94CA62DBE7F18B41A198615687E2_il2cpp_TypeInfo_var))).___sin_addr;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_42 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_42, ((int64_t)(uint64_t)L_41), NULL);
+				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_42, ((int64_t)(uint64_t)((uint32_t)L_41)), NULL);
 				V_6 = L_42;
 				goto IL_01eb_1;
 			}
@@ -13631,7 +13631,7 @@ IL_001c_1:
 				L_21 = Marshal_PtrToStructure_m235E141E21BFB69A01B07DDDF1702BA7D5723AC3(L_18, L_20, NULL);
 				uint32_t L_22 = ((*(sockaddr_in_tB997AF96699E94CA62DBE7F18B41A198615687E2*)UnBox(L_21, sockaddr_in_tB997AF96699E94CA62DBE7F18B41A198615687E2_il2cpp_TypeInfo_var))).___sin_addr;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_23 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_23, ((int64_t)(uint64_t)L_22), NULL);
+				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_23, ((int64_t)(uint64_t)((uint32_t)L_22)), NULL);
 				V_3 = L_23;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_24 = ___0_address;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_25 = V_3;
@@ -13655,7 +13655,7 @@ IL_001c_1:
 				L_31 = Marshal_PtrToStructure_m235E141E21BFB69A01B07DDDF1702BA7D5723AC3(L_28, L_30, NULL);
 				uint32_t L_32 = ((sockaddr_in_t3370FB83819296A9EFA99BA3065F540088687063*)UnBox(L_31, sockaddr_in_t3370FB83819296A9EFA99BA3065F540088687063_il2cpp_TypeInfo_var))->___sin_addr;
 				IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_33 = (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484*)il2cpp_codegen_object_new(IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_il2cpp_TypeInfo_var);
-				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_33, ((int64_t)(uint64_t)L_32), NULL);
+				IPAddress__ctor_mC240D2060BA0F5A96D286CDE3772FE4354D7030B(L_33, ((int64_t)(uint64_t)((uint32_t)L_32)), NULL);
 				V_4 = L_33;
 				goto IL_00e0;
 			}
@@ -28926,51 +28926,50 @@ IL_0064:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_20 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_21 = ((Exception_t*)IsInstClass((RuntimeObject*)L_20, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_21)
+				bool __filter_local = false;
+				try
 				{
-					G_B14_0 = L_21;
-					goto IL_0083;
-				}
-				G_B13_0 = L_21;
-			}
-			{
-				G_B15_0 = 0;
-				goto IL_0093;
-			}
+					{
+						Exception_t* L_20 = (Exception_t*)e.ex;;
+						Exception_t* L_21 = ((Exception_t*)IsInstClass((RuntimeObject*)L_20, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_21)
+						{
+							G_B14_0 = L_21;
+							goto IL_0083;
+						}
+						G_B13_0 = L_21;
+					}
+					{
+						G_B15_0 = 0;
+						goto IL_0093;
+					}
 
 IL_0083:
-			{
-				V_1 = G_B14_0;
-				Exception_t* L_22 = V_1;
-				G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_22, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_1 = G_B14_0;
+						Exception_t* L_22 = V_1;
+						G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_22, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_0093:
-			{
-				__filter_local = (G_B15_0) ? true : false;
+					{
+						__filter_local = (G_B15_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_0095;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_0095;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NetworkStream_Read_mB0EBC9488D9E3291AB4C6412F3AE70E8D6EEDBA7_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_0095:
@@ -29238,51 +29237,50 @@ IL_0064:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_20 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_21 = ((Exception_t*)IsInstClass((RuntimeObject*)L_20, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_21)
+				bool __filter_local = false;
+				try
 				{
-					G_B14_0 = L_21;
-					goto IL_0083;
-				}
-				G_B13_0 = L_21;
-			}
-			{
-				G_B15_0 = 0;
-				goto IL_0093;
-			}
+					{
+						Exception_t* L_20 = (Exception_t*)e.ex;;
+						Exception_t* L_21 = ((Exception_t*)IsInstClass((RuntimeObject*)L_20, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_21)
+						{
+							G_B14_0 = L_21;
+							goto IL_0083;
+						}
+						G_B13_0 = L_21;
+					}
+					{
+						G_B15_0 = 0;
+						goto IL_0093;
+					}
 
 IL_0083:
-			{
-				V_0 = G_B14_0;
-				Exception_t* L_22 = V_0;
-				G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_22, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_0 = G_B14_0;
+						Exception_t* L_22 = V_0;
+						G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_22, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_0093:
-			{
-				__filter_local = (G_B15_0) ? true : false;
+					{
+						__filter_local = (G_B15_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_0095;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_0095;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NetworkStream_Write_mFF7B408A0A6322FDEFB54BD0C759C3C6E6268AFE_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_0095:
@@ -29624,51 +29622,50 @@ IL_0064:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_22 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_23 = ((Exception_t*)IsInstClass((RuntimeObject*)L_22, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_23)
+				bool __filter_local = false;
+				try
 				{
-					G_B14_0 = L_23;
-					goto IL_0087;
-				}
-				G_B13_0 = L_23;
-			}
-			{
-				G_B15_0 = 0;
-				goto IL_0097;
-			}
+					{
+						Exception_t* L_22 = (Exception_t*)e.ex;;
+						Exception_t* L_23 = ((Exception_t*)IsInstClass((RuntimeObject*)L_22, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_23)
+						{
+							G_B14_0 = L_23;
+							goto IL_0087;
+						}
+						G_B13_0 = L_23;
+					}
+					{
+						G_B15_0 = 0;
+						goto IL_0097;
+					}
 
 IL_0087:
-			{
-				V_1 = G_B14_0;
-				Exception_t* L_24 = V_1;
-				G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_24, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_1 = G_B14_0;
+						Exception_t* L_24 = V_1;
+						G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_24, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_0097:
-			{
-				__filter_local = (G_B15_0) ? true : false;
+					{
+						__filter_local = (G_B15_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_0099;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_0099;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NetworkStream_BeginRead_mCC685D1B566FEC09C2AE76871AB01917D2446144_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_0099:
@@ -29749,51 +29746,50 @@ IL_0029:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_9 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_10 = ((Exception_t*)IsInstClass((RuntimeObject*)L_9, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_10)
+				bool __filter_local = false;
+				try
 				{
-					G_B8_0 = L_10;
-					goto IL_0045;
-				}
-				G_B7_0 = L_10;
-			}
-			{
-				G_B9_0 = 0;
-				goto IL_0055;
-			}
+					{
+						Exception_t* L_9 = (Exception_t*)e.ex;;
+						Exception_t* L_10 = ((Exception_t*)IsInstClass((RuntimeObject*)L_9, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_10)
+						{
+							G_B8_0 = L_10;
+							goto IL_0045;
+						}
+						G_B7_0 = L_10;
+					}
+					{
+						G_B9_0 = 0;
+						goto IL_0055;
+					}
 
 IL_0045:
-			{
-				V_1 = G_B8_0;
-				Exception_t* L_11 = V_1;
-				G_B9_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_11, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_1 = G_B8_0;
+						Exception_t* L_11 = V_1;
+						G_B9_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_11, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_0055:
-			{
-				__filter_local = (G_B9_0) ? true : false;
+					{
+						__filter_local = (G_B9_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_0057;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_0057;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NetworkStream_EndRead_m53CDED13D3A6DD8D42F8533F2336D0EA6C752701_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_0057:
@@ -29930,51 +29926,50 @@ IL_0064:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_22 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_23 = ((Exception_t*)IsInstClass((RuntimeObject*)L_22, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_23)
+				bool __filter_local = false;
+				try
 				{
-					G_B14_0 = L_23;
-					goto IL_0087;
-				}
-				G_B13_0 = L_23;
-			}
-			{
-				G_B15_0 = 0;
-				goto IL_0097;
-			}
+					{
+						Exception_t* L_22 = (Exception_t*)e.ex;;
+						Exception_t* L_23 = ((Exception_t*)IsInstClass((RuntimeObject*)L_22, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_23)
+						{
+							G_B14_0 = L_23;
+							goto IL_0087;
+						}
+						G_B13_0 = L_23;
+					}
+					{
+						G_B15_0 = 0;
+						goto IL_0097;
+					}
 
 IL_0087:
-			{
-				V_1 = G_B14_0;
-				Exception_t* L_24 = V_1;
-				G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_24, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_1 = G_B14_0;
+						Exception_t* L_24 = V_1;
+						G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_24, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_0097:
-			{
-				__filter_local = (G_B15_0) ? true : false;
+					{
+						__filter_local = (G_B15_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_0099;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_0099;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NetworkStream_BeginWrite_mE2F47607B52FC7FA99DD00337DB2AA0F5673E7C0_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_0099:
@@ -30053,51 +30048,50 @@ IL_0029:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_9 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_10 = ((Exception_t*)IsInstClass((RuntimeObject*)L_9, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_10)
+				bool __filter_local = false;
+				try
 				{
-					G_B8_0 = L_10;
-					goto IL_0045;
-				}
-				G_B7_0 = L_10;
-			}
-			{
-				G_B9_0 = 0;
-				goto IL_0055;
-			}
+					{
+						Exception_t* L_9 = (Exception_t*)e.ex;;
+						Exception_t* L_10 = ((Exception_t*)IsInstClass((RuntimeObject*)L_9, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_10)
+						{
+							G_B8_0 = L_10;
+							goto IL_0045;
+						}
+						G_B7_0 = L_10;
+					}
+					{
+						G_B9_0 = 0;
+						goto IL_0055;
+					}
 
 IL_0045:
-			{
-				V_0 = G_B8_0;
-				Exception_t* L_11 = V_0;
-				G_B9_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_11, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_0 = G_B8_0;
+						Exception_t* L_11 = V_0;
+						G_B9_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_11, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_0055:
-			{
-				__filter_local = (G_B9_0) ? true : false;
+					{
+						__filter_local = (G_B9_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_0057;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_0057;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NetworkStream_EndWrite_m843683738E14624DEBEF963D2480C8F3DB5EC848_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_0057:
@@ -30247,51 +30241,50 @@ IL_0064:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_23 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_24 = ((Exception_t*)IsInstClass((RuntimeObject*)L_23, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_24)
+				bool __filter_local = false;
+				try
 				{
-					G_B14_0 = L_24;
-					goto IL_0093;
-				}
-				G_B13_0 = L_24;
-			}
-			{
-				G_B15_0 = 0;
-				goto IL_00a3;
-			}
+					{
+						Exception_t* L_23 = (Exception_t*)e.ex;;
+						Exception_t* L_24 = ((Exception_t*)IsInstClass((RuntimeObject*)L_23, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_24)
+						{
+							G_B14_0 = L_24;
+							goto IL_0093;
+						}
+						G_B13_0 = L_24;
+					}
+					{
+						G_B15_0 = 0;
+						goto IL_00a3;
+					}
 
 IL_0093:
-			{
-				V_2 = G_B14_0;
-				Exception_t* L_25 = V_2;
-				G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_25, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_2 = G_B14_0;
+						Exception_t* L_25 = V_2;
+						G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_25, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_00a3:
-			{
-				__filter_local = (G_B15_0) ? true : false;
+					{
+						__filter_local = (G_B15_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_00a5;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_00a5;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NetworkStream_ReadAsync_mB629CC680C16D2F2C45CF197D90D30DBD6050518_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_00a5:
@@ -30379,51 +30372,50 @@ IL_002e:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_10 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_11 = ((Exception_t*)IsInstClass((RuntimeObject*)L_10, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_11)
+				bool __filter_local = false;
+				try
 				{
-					G_B8_0 = L_11;
-					goto IL_004d;
-				}
-				G_B7_0 = L_11;
-			}
-			{
-				G_B9_0 = 0;
-				goto IL_005d;
-			}
+					{
+						Exception_t* L_10 = (Exception_t*)e.ex;;
+						Exception_t* L_11 = ((Exception_t*)IsInstClass((RuntimeObject*)L_10, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_11)
+						{
+							G_B8_0 = L_11;
+							goto IL_004d;
+						}
+						G_B7_0 = L_11;
+					}
+					{
+						G_B9_0 = 0;
+						goto IL_005d;
+					}
 
 IL_004d:
-			{
-				V_1 = G_B8_0;
-				Exception_t* L_12 = V_1;
-				G_B9_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_12, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_1 = G_B8_0;
+						Exception_t* L_12 = V_1;
+						G_B9_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_12, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_005d:
-			{
-				__filter_local = (G_B9_0) ? true : false;
+					{
+						__filter_local = (G_B9_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_005f;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_005f;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NetworkStream_ReadAsync_mD7A23469A79B0E7C89FF03F5566997F89D839E0B_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_005f:
@@ -30575,51 +30567,50 @@ IL_0064:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_23 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_24 = ((Exception_t*)IsInstClass((RuntimeObject*)L_23, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_24)
+				bool __filter_local = false;
+				try
 				{
-					G_B14_0 = L_24;
-					goto IL_0092;
-				}
-				G_B13_0 = L_24;
-			}
-			{
-				G_B15_0 = 0;
-				goto IL_00a2;
-			}
+					{
+						Exception_t* L_23 = (Exception_t*)e.ex;;
+						Exception_t* L_24 = ((Exception_t*)IsInstClass((RuntimeObject*)L_23, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_24)
+						{
+							G_B14_0 = L_24;
+							goto IL_0092;
+						}
+						G_B13_0 = L_24;
+					}
+					{
+						G_B15_0 = 0;
+						goto IL_00a2;
+					}
 
 IL_0092:
-			{
-				V_2 = G_B14_0;
-				Exception_t* L_25 = V_2;
-				G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_25, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_2 = G_B14_0;
+						Exception_t* L_25 = V_2;
+						G_B15_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_25, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_00a2:
-			{
-				__filter_local = (G_B15_0) ? true : false;
+					{
+						__filter_local = (G_B15_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_00a4;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_00a4;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NetworkStream_WriteAsync_m1829F2663EE9DA443488E4031D103DE4E28F2C73_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_00a4:
@@ -30707,51 +30698,50 @@ IL_002e:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_10 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_11 = ((Exception_t*)IsInstClass((RuntimeObject*)L_10, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_11)
+				bool __filter_local = false;
+				try
 				{
-					G_B8_0 = L_11;
-					goto IL_004c;
-				}
-				G_B7_0 = L_11;
-			}
-			{
-				G_B9_0 = 0;
-				goto IL_005c;
-			}
+					{
+						Exception_t* L_10 = (Exception_t*)e.ex;;
+						Exception_t* L_11 = ((Exception_t*)IsInstClass((RuntimeObject*)L_10, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_11)
+						{
+							G_B8_0 = L_11;
+							goto IL_004c;
+						}
+						G_B7_0 = L_11;
+					}
+					{
+						G_B9_0 = 0;
+						goto IL_005c;
+					}
 
 IL_004c:
-			{
-				V_1 = G_B8_0;
-				Exception_t* L_12 = V_1;
-				G_B9_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_12, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_1 = G_B8_0;
+						Exception_t* L_12 = V_1;
+						G_B9_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)((OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F*)IsInstClass((RuntimeObject*)L_12, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_005c:
-			{
-				__filter_local = (G_B9_0) ? true : false;
+					{
+						__filter_local = (G_B9_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_005e;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_005e;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NetworkStream_WriteAsync_mF9FEB5879FAB94387395E59D435B94095CE9D59D_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_005e:

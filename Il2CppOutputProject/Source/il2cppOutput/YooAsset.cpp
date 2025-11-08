@@ -10472,7 +10472,7 @@ IL_002c:
 		NullCheck(L_13);
 		int64_t L_14 = L_13->___FileSize;
 		uint32_t L_15 = __this->____breakpointResumeFileSize;
-		if (!((((int32_t)((((int64_t)L_14) < ((int64_t)((int64_t)(uint64_t)L_15)))? 1 : 0)) == ((int32_t)0))? 1 : 0))
+		if (!((((int32_t)((((int64_t)L_14) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_15))))? 1 : 0)) == ((int32_t)0))? 1 : 0))
 		{
 			goto IL_0069;
 		}

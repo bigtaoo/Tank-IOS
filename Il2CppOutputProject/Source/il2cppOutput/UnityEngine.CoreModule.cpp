@@ -11310,7 +11310,7 @@ IL_0030:
 		V_2 = G_B8_0;
 		(&V_3)->___doubleValue = (0.0);
 		uint32_t L_7 = V_1;
-		(&V_3)->___longValue = ((int64_t)il2cpp_codegen_add(((int64_t)4841369599423283200LL), ((int64_t)(uint64_t)L_7)));
+		(&V_3)->___longValue = ((int64_t)il2cpp_codegen_add(((int64_t)4841369599423283200LL), ((int64_t)(uint64_t)((uint32_t)L_7))));
 		double* L_8 = (double*)(&(&V_3)->___doubleValue);
 		double* L_9 = L_8;
 		double L_10 = *((double*)L_9);

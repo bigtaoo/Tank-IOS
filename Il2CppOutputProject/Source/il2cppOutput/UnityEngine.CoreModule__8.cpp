@@ -9014,7 +9014,7 @@ IL_0017:
 		NullCheck(L_7);
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
 		int64_t L_8;
-		L_8 = Math_Min_mD731E8A02F13C67C1EAC7C1E7F81909FE466F079(((int64_t)(uint64_t)L_6), ((int64_t)((int32_t)(((RuntimeArray*)L_7)->max_length))), NULL);
+		L_8 = Math_Min_mD731E8A02F13C67C1EAC7C1E7F81909FE466F079(((int64_t)(uint64_t)((uint32_t)L_6)), ((int64_t)((int32_t)(((RuntimeArray*)L_7)->max_length))), NULL);
 		V_1 = (bool)((((int64_t)((int64_t)L_5)) < ((int64_t)L_8))? 1 : 0);
 		bool L_9 = V_1;
 		if (L_9)
@@ -9062,7 +9062,7 @@ IL_0019:
 		L_6 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___0_categories))->___m_Length);
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
 		int64_t L_7;
-		L_7 = Math_Min_mD731E8A02F13C67C1EAC7C1E7F81909FE466F079(((int64_t)(uint64_t)L_5), ((int64_t)L_6), NULL);
+		L_7 = Math_Min_mD731E8A02F13C67C1EAC7C1E7F81909FE466F079(((int64_t)(uint64_t)((uint32_t)L_5)), ((int64_t)L_6), NULL);
 		V_1 = (bool)((((int64_t)((int64_t)L_4)) < ((int64_t)L_7))? 1 : 0);
 		bool L_8 = V_1;
 		if (L_8)

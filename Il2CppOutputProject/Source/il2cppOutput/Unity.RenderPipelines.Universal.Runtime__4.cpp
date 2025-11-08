@@ -30878,7 +30878,7 @@ IL_0006:
 	{
 		(&V_0)->___doubleValue = (0.0);
 		uint32_t L_1 = ___0_x;
-		(&V_0)->___longValue = ((int64_t)il2cpp_codegen_add(((int64_t)4841369599423283200LL), ((int64_t)(uint64_t)L_1)));
+		(&V_0)->___longValue = ((int64_t)il2cpp_codegen_add(((int64_t)4841369599423283200LL), ((int64_t)(uint64_t)((uint32_t)L_1))));
 		double* L_2 = (double*)(&(&V_0)->___doubleValue);
 		double* L_3 = L_2;
 		double L_4 = *((double*)L_3);
@@ -31205,7 +31205,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ContextContainer_Contains_mD
 		uint32_t L_0 = ___0_typeId;
 		ItemU5BU5D_t4AC8CDDFF9ED634B9ECE154F0C638C00B12B5CCB* L_1 = __this->___m_Items;
 		NullCheck(L_1);
-		if ((((int64_t)((int64_t)(uint64_t)L_0)) >= ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_1)->max_length))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_0))) >= ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_1)->max_length))))))
 		{
 			goto IL_001f;
 		}

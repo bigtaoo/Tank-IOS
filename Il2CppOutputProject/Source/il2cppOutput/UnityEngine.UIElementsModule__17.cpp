@@ -21943,7 +21943,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TempMeshAllocatorImpl_AllocateTempMesh_m
 		il2cpp_codegen_runtime_class_init_inline(UIRenderDevice_t59628CBA89B4617E832C2B270E1C1A3931D01302_il2cpp_TypeInfo_var);
 		uint32_t L_1;
 		L_1 = UIRenderDevice_get_maxVerticesPerPage_mAEF2D856352CFBCDBF341E76DC05FC15D86EE66F(NULL);
-		V_0 = (bool)((((int64_t)((int64_t)L_0)) > ((int64_t)((int64_t)(uint64_t)L_1)))? 1 : 0);
+		V_0 = (bool)((((int64_t)((int64_t)L_0)) > ((int64_t)((int64_t)(uint64_t)((uint32_t)L_1))))? 1 : 0);
 		bool L_2 = V_0;
 		if (!L_2)
 		{

@@ -17851,7 +17851,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsignedIntegerInput_ApplyInputDeviceDel
 	{
 		uint32_t L_0 = ___2_startValue;
 		int64_t L_1;
-		L_1 = NumericFieldDraggerUtility_CalculateIntDragSensitivity_m18783F2C97722F41968E8CB9F2D1A15ED347A6BA(((int64_t)(uint64_t)L_0), NULL);
+		L_1 = NumericFieldDraggerUtility_CalculateIntDragSensitivity_m18783F2C97722F41968E8CB9F2D1A15ED347A6BA(((int64_t)(uint64_t)((uint32_t)L_0)), NULL);
 		V_0 = ((double)L_1);
 		int32_t L_2 = ___1_speed;
 		int32_t L_3 = ___1_speed;
@@ -17862,7 +17862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsignedIntegerInput_ApplyInputDeviceDel
 		L_5 = TextInputBase_get_text_mEB745A659F220ABD5E900BFEADC94DD875A9C37E(__this, TextInputBase_get_text_mEB745A659F220ABD5E900BFEADC94DD875A9C37E_RuntimeMethod_var);
 		uint32_t L_6;
 		L_6 = VirtualFuncInvoker1< uint32_t, String_t* >::Invoke(134, __this, L_5);
-		V_2 = ((int64_t)(uint64_t)L_6);
+		V_2 = ((int64_t)(uint64_t)((uint32_t)L_6));
 		int64_t L_7 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_delta;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9;

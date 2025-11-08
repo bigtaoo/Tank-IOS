@@ -13552,7 +13552,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decimal128__ctor_m888A5776795AC240DA1EFF
 	{
 		__this->____highBits = ((int64_t)0);
 		uint32_t L_0 = ___0_value;
-		__this->____lowBits = ((int64_t)(uint64_t)L_0);
+		__this->____lowBits = ((int64_t)(uint64_t)((uint32_t)L_0));
 		return;
 	}
 }

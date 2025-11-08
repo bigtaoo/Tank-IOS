@@ -8790,7 +8790,7 @@ IL_002b:
 		uint32_t L_10 = __this->___denominator;
 		RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F L_11 = ___0_other;
 		uint32_t L_12 = L_11.___numerator;
-		V_1 = (bool)((((int64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_7), ((int64_t)(uint64_t)L_9)))) == ((int64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_10), ((int64_t)(uint64_t)L_12)))))? 1 : 0);
+		V_1 = (bool)((((int64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_7)), ((int64_t)(uint64_t)((uint32_t)L_9))))) == ((int64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_10)), ((int64_t)(uint64_t)((uint32_t)L_12))))))? 1 : 0);
 		goto IL_004e;
 	}
 
@@ -8870,12 +8870,12 @@ IL_002e:
 		uint32_t L_7 = __this->___numerator;
 		RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F L_8 = ___0_other;
 		uint32_t L_9 = L_8.___denominator;
-		V_3 = ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_7), ((int64_t)(uint64_t)L_9)));
+		V_3 = ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_7)), ((int64_t)(uint64_t)((uint32_t)L_9))));
 		uint32_t L_10 = __this->___denominator;
 		RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F L_11 = ___0_other;
 		uint32_t L_12 = L_11.___numerator;
 		int32_t L_13;
-		L_13 = UInt64_CompareTo_m1292E47C1FE2A1FC5BC5E6E2EB9C1FCDCEFE7745((&V_3), ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_10), ((int64_t)(uint64_t)L_12))), NULL);
+		L_13 = UInt64_CompareTo_m1292E47C1FE2A1FC5BC5E6E2EB9C1FCDCEFE7745((&V_3), ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_10)), ((int64_t)(uint64_t)((uint32_t)L_12)))), NULL);
 		V_1 = L_13;
 		goto IL_0057;
 	}
@@ -38994,7 +38994,7 @@ IL_002b:
 		uint32_t L_10 = __this->___denominator;
 		RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F L_11 = ___0_other;
 		uint32_t L_12 = L_11.___numerator;
-		V_1 = (bool)((((int64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_7), ((int64_t)(uint64_t)L_9)))) == ((int64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_10), ((int64_t)(uint64_t)L_12)))))? 1 : 0);
+		V_1 = (bool)((((int64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_7)), ((int64_t)(uint64_t)((uint32_t)L_9))))) == ((int64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_10)), ((int64_t)(uint64_t)((uint32_t)L_12))))))? 1 : 0);
 		goto IL_004e;
 	}
 
@@ -39065,12 +39065,12 @@ IL_002e:
 		uint32_t L_7 = __this->___numerator;
 		RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F L_8 = ___0_other;
 		uint32_t L_9 = L_8.___denominator;
-		V_3 = ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_7), ((int64_t)(uint64_t)L_9)));
+		V_3 = ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_7)), ((int64_t)(uint64_t)((uint32_t)L_9))));
 		uint32_t L_10 = __this->___denominator;
 		RefreshRate_t44FF0D3F256477CC8AB97FA49D08B636AFB4F68F L_11 = ___0_other;
 		uint32_t L_12 = L_11.___numerator;
 		int32_t L_13;
-		L_13 = UInt64_CompareTo_m1292E47C1FE2A1FC5BC5E6E2EB9C1FCDCEFE7745((&V_3), ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_10), ((int64_t)(uint64_t)L_12))), NULL);
+		L_13 = UInt64_CompareTo_m1292E47C1FE2A1FC5BC5E6E2EB9C1FCDCEFE7745((&V_3), ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_10)), ((int64_t)(uint64_t)((uint32_t)L_12)))), NULL);
 		V_1 = L_13;
 		goto IL_0057;
 	}

@@ -4450,7 +4450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinXmlSqlDecimal_MpDiv1_m224EE00B15F5956
 	{
 		V_0 = 0;
 		uint32_t L_0 = ___2_iulD;
-		V_2 = ((int64_t)(uint64_t)L_0);
+		V_2 = ((int64_t)(uint64_t)((uint32_t)L_0));
 		int32_t* L_1 = ___1_ciulU;
 		int32_t L_2 = *((int32_t*)L_1);
 		V_3 = L_2;
@@ -4467,7 +4467,7 @@ IL_000a:
 		NullCheck(L_5);
 		int32_t L_7 = L_6;
 		uint32_t L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
-		V_1 = ((int64_t)il2cpp_codegen_add(((int64_t)(((int64_t)(uint64_t)L_4)<<((int32_t)32))), ((int64_t)(uint64_t)L_8)));
+		V_1 = ((int64_t)il2cpp_codegen_add(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_4))<<((int32_t)32))), ((int64_t)(uint64_t)((uint32_t)L_8))));
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_9 = ___0_rgulU;
 		int32_t L_10 = V_3;
 		uint64_t L_11 = V_1;
@@ -4481,7 +4481,7 @@ IL_000a:
 		int32_t L_16 = L_15;
 		uint32_t L_17 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
 		uint64_t L_18 = V_2;
-		V_0 = ((int32_t)(uint32_t)((int64_t)il2cpp_codegen_subtract((int64_t)L_13, ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_17), (int64_t)L_18)))));
+		V_0 = ((int32_t)(uint32_t)((int64_t)il2cpp_codegen_subtract((int64_t)L_13, ((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_17)), (int64_t)L_18)))));
 	}
 
 IL_002a:
@@ -6553,7 +6553,7 @@ IL_002c:
 		NullCheck(L_36);
 		int32_t L_38 = ((int32_t)il2cpp_codegen_add(L_37, 3));
 		uint8_t L_39 = (L_36)->GetAt(static_cast<il2cpp_array_size_t>(L_38));
-		V_2 = ((int64_t)(L_35|((int64_t)(((int64_t)(uint64_t)L_39)<<((int32_t)24)))));
+		V_2 = ((int64_t)(L_35|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_39))<<((int32_t)24)))));
 		int32_t* L_40 = ___1_pos;
 		int32_t L_41 = V_0;
 		*((int32_t*)L_40) = (int32_t)((int32_t)il2cpp_codegen_add(L_41, 4));
@@ -6596,7 +6596,7 @@ IL_0059:
 		NullCheck(L_60);
 		int32_t L_62 = ((int32_t)il2cpp_codegen_add(L_61, 4));
 		uint8_t L_63 = (L_60)->GetAt(static_cast<il2cpp_array_size_t>(L_62));
-		V_2 = ((int64_t)(L_55|((int64_t)(((int64_t)(((int64_t)(uint64_t)L_59)<<((int32_t)24)))|((int64_t)(((int64_t)(uint64_t)L_63)<<((int32_t)32)))))));
+		V_2 = ((int64_t)(L_55|((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_59))<<((int32_t)24)))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_63))<<((int32_t)32)))))));
 		int32_t* L_64 = ___1_pos;
 		int32_t L_65 = V_0;
 		*((int32_t*)L_64) = (int32_t)((int32_t)il2cpp_codegen_add(L_65, 5));
@@ -15378,7 +15378,7 @@ IL_008a:
 		NullCheck(L_3);
 		int32_t L_5 = L_4;
 		uint8_t L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
-		return ((int64_t)(uint64_t)L_6);
+		return ((int64_t)(uint64_t)((uint32_t)L_6));
 	}
 
 IL_0099:
@@ -15420,7 +15420,7 @@ IL_00d2:
 		int32_t L_17 = __this->___tokDataPos;
 		uint16_t L_18;
 		L_18 = XmlSqlBinaryReader_GetUInt16_mBA259526103D4F4120008D10A6EA4E1925B2117B(__this, L_17, NULL);
-		return ((int64_t)(uint64_t)L_18);
+		return ((int64_t)(uint64_t)((uint32_t)L_18));
 	}
 
 IL_00e0:
@@ -15428,7 +15428,7 @@ IL_00e0:
 		int32_t L_19 = __this->___tokDataPos;
 		uint32_t L_20;
 		L_20 = XmlSqlBinaryReader_GetUInt32_mC23D1CF3341DC69DA179FB5D22F653F89CAB1636(__this, L_19, NULL);
-		return ((int64_t)(uint64_t)L_20);
+		return ((int64_t)(uint64_t)((uint32_t)L_20));
 	}
 
 IL_00ee:
@@ -16822,7 +16822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t XmlSqlBinaryReader_GetInt64_mDE61F255
 		int32_t L_31 = ((int32_t)il2cpp_codegen_add(L_30, 7));
 		uint8_t L_32 = (L_29)->GetAt(static_cast<il2cpp_array_size_t>(L_31));
 		uint32_t L_33 = V_1;
-		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)((int32_t)(((int32_t)(((int32_t)((int32_t)L_20|((int32_t)((int32_t)L_24<<8))))|((int32_t)((int32_t)L_28<<((int32_t)16)))))|((int32_t)((int32_t)L_32<<((int32_t)24)))))))<<((int32_t)32)))|((int64_t)(uint64_t)L_33)));
+		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)((int32_t)(((int32_t)(((int32_t)((int32_t)L_20|((int32_t)((int32_t)L_24<<8))))|((int32_t)((int32_t)L_28<<((int32_t)16)))))|((int32_t)((int32_t)L_32<<((int32_t)24)))))))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_33))));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t XmlSqlBinaryReader_GetUInt64_mAD0271B128EAF456CA069262695771C9F78D2862 (XmlSqlBinaryReader_tDB2171373279BA92E7F7298C2EFE11B8C11117E8* __this, int32_t ___0_pos, const RuntimeMethod* method) 
@@ -16874,7 +16874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t XmlSqlBinaryReader_GetUInt64_mAD0271
 		int32_t L_31 = ((int32_t)il2cpp_codegen_add(L_30, 7));
 		uint8_t L_32 = (L_29)->GetAt(static_cast<il2cpp_array_size_t>(L_31));
 		uint32_t L_33 = V_1;
-		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)((int32_t)(((int32_t)(((int32_t)((int32_t)L_20|((int32_t)((int32_t)L_24<<8))))|((int32_t)((int32_t)L_28<<((int32_t)16)))))|((int32_t)((int32_t)L_32<<((int32_t)24)))))))<<((int32_t)32)))|((int64_t)(uint64_t)L_33)));
+		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)((int32_t)(((int32_t)(((int32_t)((int32_t)L_20|((int32_t)((int32_t)L_24<<8))))|((int32_t)((int32_t)L_28<<((int32_t)16)))))|((int32_t)((int32_t)L_32<<((int32_t)24)))))))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_33))));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XmlSqlBinaryReader_GetSingle_mC04D69D4C8262BD69785A2CFF748A486D990A3AF (XmlSqlBinaryReader_tDB2171373279BA92E7F7298C2EFE11B8C11117E8* __this, int32_t ___0_offset, const RuntimeMethod* method) 
@@ -16956,7 +16956,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double XmlSqlBinaryReader_GetDouble_m140942E5
 		int32_t L_30 = ((int32_t)il2cpp_codegen_add(L_29, 7));
 		uint8_t L_31 = (L_28)->GetAt(static_cast<il2cpp_array_size_t>(L_30));
 		uint32_t L_32 = V_0;
-		V_1 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)((int32_t)(((int32_t)(((int32_t)((int32_t)L_19|((int32_t)((int32_t)L_23<<8))))|((int32_t)((int32_t)L_27<<((int32_t)16)))))|((int32_t)((int32_t)L_31<<((int32_t)24)))))))<<((int32_t)32)))|((int64_t)(uint64_t)L_32)));
+		V_1 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)((int32_t)(((int32_t)(((int32_t)((int32_t)L_19|((int32_t)((int32_t)L_23<<8))))|((int32_t)((int32_t)L_27<<((int32_t)16)))))|((int32_t)((int32_t)L_31<<((int32_t)24)))))))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_32))));
 		double L_33 = *((double*)((uintptr_t)(&V_1)));
 		return L_33;
 	}

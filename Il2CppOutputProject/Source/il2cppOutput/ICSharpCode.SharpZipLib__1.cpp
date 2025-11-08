@@ -9188,7 +9188,7 @@ IL_007e:
 	{
 		uint32_t L_19 = __this->___buffer_;
 		int32_t L_20 = ___0_bitCount;
-		return ((int32_t)((int64_t)(((int64_t)(uint64_t)L_19)&((int64_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(1<<((int32_t)(L_20&((int32_t)31))))), 1))))));
+		return ((int32_t)((int64_t)(((int64_t)(uint64_t)((uint32_t)L_19))&((int64_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(1<<((int32_t)(L_20&((int32_t)31))))), 1))))));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamManipulator_DropBits_m094CABA3AB3B1B70D2680E4FB8962EBD6B8E0E49 (StreamManipulator_t626C6631E1D9BD1EAA5FDB4987C79A2F34A92689* __this, int32_t ___0_bitCount, const RuntimeMethod* method) 

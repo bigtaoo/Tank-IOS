@@ -11130,7 +11130,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t SecurityIdentifier_GetSidAuthority_m
 		NullCheck(L_15);
 		int32_t L_16 = 7;
 		uint8_t L_17 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_16));
-		return ((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(uint64_t)L_2)<<((int32_t)40)))|((int64_t)(((int64_t)(uint64_t)L_5)<<((int32_t)32)))))|((int64_t)(((int64_t)(uint64_t)L_8)<<((int32_t)24)))))|((int64_t)(((int64_t)(uint64_t)L_11)<<((int32_t)16)))))|((int64_t)(((int64_t)(uint64_t)L_14)<<8))))|((int64_t)(uint64_t)L_17)));
+		return ((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_2))<<((int32_t)40)))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_5))<<((int32_t)32)))))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_8))<<((int32_t)24)))))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_11))<<((int32_t)16)))))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_14))<<8))))|((int64_t)(uint64_t)((uint32_t)L_17))));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t SecurityIdentifier_GetSidSubAuthorityCount_m8F530F0B421BA284E23DCC888526992D7F94D184 (SecurityIdentifier_t98BF4E3CA88D1FB4FD864E4507ABB73AFEA2C026* __this, const RuntimeMethod* method) 

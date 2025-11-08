@@ -9347,7 +9347,7 @@ IL_0018:
 		V_1 = (uint8_t*)((void*)il2cpp_codegen_add((intptr_t)L_6, (intptr_t)((uintptr_t)L_7)));
 		uint8_t* L_8 = V_1;
 		uint32_t L_9 = V_0;
-		SafeBuffer_SpaceCheck_m79FF3C719A468FA00775EEAE9D1C67329BDD06E1(__this, L_8, (uint64_t)((int64_t)(uint64_t)L_9), NULL);
+		SafeBuffer_SpaceCheck_m79FF3C719A468FA00775EEAE9D1C67329BDD06E1(__this, L_8, (uint64_t)((int64_t)(uint64_t)((uint32_t)L_9)), NULL);
 		il2cpp_codegen_initobj((Il2CppFullySharedGenericStruct*)V_2, SizeOf_T_tEC271C47EBC395570408915ED6A6292849E4C547);
 		V_3 = (bool)0;
 	}
@@ -9529,10 +9529,10 @@ IL_0068:
 		uint8_t* L_19 = V_2;
 		uint32_t L_20 = V_1;
 		int32_t L_21 = ___3_count;
-		if (il2cpp_codegen_check_mul_overflow_i64((int64_t)((int64_t)(uint64_t)L_20), (int64_t)((int64_t)L_21), kIl2CppInt64Min, kIl2CppInt64Max))
+		if (il2cpp_codegen_check_mul_overflow_i64((int64_t)((int64_t)(uint64_t)((uint32_t)L_20)), (int64_t)((int64_t)L_21), kIl2CppInt64Min, kIl2CppInt64Max))
 			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), method);
-		if ((uint64_t)(((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_20), ((int64_t)L_21)))) > (std::numeric_limits<uint64_t>::max)()) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), method);
-		SafeBuffer_SpaceCheck_m79FF3C719A468FA00775EEAE9D1C67329BDD06E1(__this, L_19, ((uint64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_20), ((int64_t)L_21)))), NULL);
+		if ((uint64_t)(((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_20)), ((int64_t)L_21)))) > (std::numeric_limits<uint64_t>::max)()) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), method);
+		SafeBuffer_SpaceCheck_m79FF3C719A468FA00775EEAE9D1C67329BDD06E1(__this, L_19, ((uint64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_20)), ((int64_t)L_21)))), NULL);
 		V_3 = (bool)0;
 	}
 	{
@@ -9604,7 +9604,7 @@ IL_00b8_2:
 						uint32_t L_32 = V_1;
 						int32_t L_33 = V_6;
 						uint32_t L_34 = V_0;
-						Buffer_Memmove_mAA31A45BF1B1FA6490F0913B7FB59537767E5EF3(((uint8_t*)il2cpp_codegen_add((intptr_t)L_28, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_29), ((int64_t)L_30)))))), ((uint8_t*)il2cpp_codegen_add((intptr_t)L_31, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_32), ((int64_t)L_33)))))), L_34, NULL);
+						Buffer_Memmove_mAA31A45BF1B1FA6490F0913B7FB59537767E5EF3(((uint8_t*)il2cpp_codegen_add((intptr_t)L_28, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_29)), ((int64_t)L_30)))))), ((uint8_t*)il2cpp_codegen_add((intptr_t)L_31, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_32)), ((int64_t)L_33)))))), L_34, NULL);
 						int32_t L_35 = V_6;
 						V_6 = ((int32_t)il2cpp_codegen_add(L_35, 1));
 					}
@@ -9711,7 +9711,7 @@ IL_0018:
 		V_1 = (uint8_t*)((void*)il2cpp_codegen_add((intptr_t)L_6, (intptr_t)((uintptr_t)L_7)));
 		uint8_t* L_8 = V_1;
 		uint32_t L_9 = V_0;
-		SafeBuffer_SpaceCheck_m79FF3C719A468FA00775EEAE9D1C67329BDD06E1(__this, L_8, (uint64_t)((int64_t)(uint64_t)L_9), NULL);
+		SafeBuffer_SpaceCheck_m79FF3C719A468FA00775EEAE9D1C67329BDD06E1(__this, L_8, (uint64_t)((int64_t)(uint64_t)((uint32_t)L_9)), NULL);
 		V_2 = (bool)0;
 	}
 	{
@@ -9892,10 +9892,10 @@ IL_0068:
 		uint8_t* L_19 = V_2;
 		uint32_t L_20 = V_1;
 		int32_t L_21 = ___3_count;
-		if (il2cpp_codegen_check_mul_overflow_i64((int64_t)((int64_t)(uint64_t)L_20), (int64_t)((int64_t)L_21), kIl2CppInt64Min, kIl2CppInt64Max))
+		if (il2cpp_codegen_check_mul_overflow_i64((int64_t)((int64_t)(uint64_t)((uint32_t)L_20)), (int64_t)((int64_t)L_21), kIl2CppInt64Min, kIl2CppInt64Max))
 			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), method);
-		if ((uint64_t)(((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_20), ((int64_t)L_21)))) > (std::numeric_limits<uint64_t>::max)()) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), method);
-		SafeBuffer_SpaceCheck_m79FF3C719A468FA00775EEAE9D1C67329BDD06E1(__this, L_19, ((uint64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_20), ((int64_t)L_21)))), NULL);
+		if ((uint64_t)(((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_20)), ((int64_t)L_21)))) > (std::numeric_limits<uint64_t>::max)()) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), method);
+		SafeBuffer_SpaceCheck_m79FF3C719A468FA00775EEAE9D1C67329BDD06E1(__this, L_19, ((uint64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_20)), ((int64_t)L_21)))), NULL);
 		V_3 = (bool)0;
 	}
 	{
@@ -9967,7 +9967,7 @@ IL_00b8_2:
 						uint32_t L_32 = V_0;
 						int32_t L_33 = V_6;
 						uint32_t L_34 = V_0;
-						Buffer_Memmove_mAA31A45BF1B1FA6490F0913B7FB59537767E5EF3(((uint8_t*)il2cpp_codegen_add((intptr_t)L_28, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_29), ((int64_t)L_30)))))), ((uint8_t*)il2cpp_codegen_add((intptr_t)L_31, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_32), ((int64_t)L_33)))))), L_34, NULL);
+						Buffer_Memmove_mAA31A45BF1B1FA6490F0913B7FB59537767E5EF3(((uint8_t*)il2cpp_codegen_add((intptr_t)L_28, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_29)), ((int64_t)L_30)))))), ((uint8_t*)il2cpp_codegen_add((intptr_t)L_31, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_32)), ((int64_t)L_33)))))), L_34, NULL);
 						int32_t L_35 = V_6;
 						V_6 = ((int32_t)il2cpp_codegen_add(L_35, 1));
 					}
@@ -14664,7 +14664,7 @@ IL_00a7:
 		Unsafe_CopyBlock_mC12F9CCE52F3F5BBE21F8141BC76DE0E0E032846(L_44, L_48, L_49, NULL);
 		uint64_t L_50 = V_6;
 		uint32_t L_51 = V_7;
-		V_6 = (uint64_t)((int64_t)il2cpp_codegen_add((int64_t)L_50, ((int64_t)(uint64_t)L_51)));
+		V_6 = (uint64_t)((int64_t)il2cpp_codegen_add((int64_t)L_50, ((int64_t)(uint64_t)((uint32_t)L_51))));
 	}
 
 IL_00d3:

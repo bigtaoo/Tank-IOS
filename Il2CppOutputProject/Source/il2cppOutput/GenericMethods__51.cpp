@@ -9659,7 +9659,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UniversalCameraHistory_GetHist
 		uint32_t L_1 = V_0;
 		ItemU5BU5D_t9855C5AFE4DF3736F7200C827F5B60586193986E* L_2 = __this->___m_Items;
 		NullCheck(L_2);
-		if ((((int64_t)((int64_t)(uint64_t)L_1)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_1))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
 		{
 			goto IL_001d;
 		}
@@ -9712,7 +9712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UniversalCameraHistory_GetHist
 		uint32_t L_1 = V_0;
 		ItemU5BU5D_t9855C5AFE4DF3736F7200C827F5B60586193986E* L_2 = __this->___m_Items;
 		NullCheck(L_2);
-		if ((((int64_t)((int64_t)(uint64_t)L_1)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_1))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
 		{
 			goto IL_001d;
 		}
@@ -9800,7 +9800,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UniversalCameraHistory_IsAccessRequested
 		uint32_t L_1 = V_0;
 		ItemU5BU5D_t9855C5AFE4DF3736F7200C827F5B60586193986E* L_2 = __this->___m_Items;
 		NullCheck(L_2);
-		if ((((int64_t)((int64_t)(uint64_t)L_1)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_1))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
 		{
 			goto IL_0015;
 		}
@@ -9828,7 +9828,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UniversalCameraHistory_IsWritten_TisRunt
 		uint32_t L_1 = V_0;
 		ItemU5BU5D_t9855C5AFE4DF3736F7200C827F5B60586193986E* L_2 = __this->___m_Items;
 		NullCheck(L_2);
-		if ((((int64_t)((int64_t)(uint64_t)L_1)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_1))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
 		{
 			goto IL_0015;
 		}
@@ -9865,7 +9865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UniversalCameraHistory_RequestAccess_Tis
 		uint32_t L_1 = V_0;
 		ItemU5BU5D_t9855C5AFE4DF3736F7200C827F5B60586193986E* L_2 = __this->___m_Items;
 		NullCheck(L_2);
-		if ((((int64_t)((int64_t)(uint64_t)L_1)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_1))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_2)->max_length))))))
 		{
 			goto IL_0062;
 		}
@@ -9877,7 +9877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UniversalCameraHistory_RequestAccess_Tis
 		ItemU5BU5D_t9855C5AFE4DF3736F7200C827F5B60586193986E* L_5 = __this->___m_Items;
 		NullCheck(L_5);
 		int64_t L_6;
-		L_6 = math_max_mEBAE1BF7FA6B43BD0F4AE2E47FB6190041F8CE43_inline(((int64_t)(uint64_t)L_4), ((int64_t)((int32_t)il2cpp_codegen_multiply(((int32_t)(((RuntimeArray*)L_5)->max_length)), 2))), NULL);
+		L_6 = math_max_mEBAE1BF7FA6B43BD0F4AE2E47FB6190041F8CE43_inline(((int64_t)(uint64_t)((uint32_t)L_4)), ((int64_t)((int32_t)il2cpp_codegen_multiply(((int32_t)(((RuntimeArray*)L_5)->max_length)), 2))), NULL);
 		if ((int64_t)(L_6) > INTPTR_MAX) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), method);
 		ItemU5BU5D_t9855C5AFE4DF3736F7200C827F5B60586193986E* L_7 = (ItemU5BU5D_t9855C5AFE4DF3736F7200C827F5B60586193986E*)(ItemU5BU5D_t9855C5AFE4DF3736F7200C827F5B60586193986E*)SZArrayNew(ItemU5BU5D_t9855C5AFE4DF3736F7200C827F5B60586193986E_il2cpp_TypeInfo_var, (uint32_t)((intptr_t)L_6));
 		V_1 = L_7;
@@ -11349,7 +11349,7 @@ IL_0040:
 		int64_t L_7 = ___0_position;
 		int64_t L_8 = __this->____capacity;
 		uint32_t L_9 = V_0;
-		if ((((int64_t)L_7) <= ((int64_t)((int64_t)il2cpp_codegen_subtract(L_8, ((int64_t)(uint64_t)L_9))))))
+		if ((((int64_t)L_7) <= ((int64_t)((int64_t)il2cpp_codegen_subtract(L_8, ((int64_t)(uint64_t)((uint32_t)L_9)))))))
 		{
 			goto IL_008a;
 		}
@@ -11546,7 +11546,7 @@ IL_00c4:
 	{
 		uint32_t L_24 = V_0;
 		int32_t L_25 = ___3_count;
-		V_3 = (uint64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_24), ((int64_t)L_25)));
+		V_3 = (uint64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_24)), ((int64_t)L_25)));
 		int64_t L_26 = V_2;
 		uint64_t L_27 = V_3;
 		if ((!(((uint64_t)L_26) < ((uint64_t)L_27))))
@@ -11557,7 +11557,7 @@ IL_00c4:
 	{
 		int64_t L_28 = V_2;
 		uint32_t L_29 = V_0;
-		V_1 = ((int32_t)((int64_t)(L_28/((int64_t)(uint64_t)L_29))));
+		V_1 = ((int32_t)((int64_t)(L_28/((int64_t)(uint64_t)((uint32_t)L_29)))));
 	}
 
 IL_00d5:
@@ -11634,7 +11634,7 @@ IL_0040:
 		int64_t L_7 = ___0_position;
 		int64_t L_8 = __this->____capacity;
 		uint32_t L_9 = V_0;
-		if ((((int64_t)L_7) <= ((int64_t)((int64_t)il2cpp_codegen_subtract(L_8, ((int64_t)(uint64_t)L_9))))))
+		if ((((int64_t)L_7) <= ((int64_t)((int64_t)il2cpp_codegen_subtract(L_8, ((int64_t)(uint64_t)((uint32_t)L_9)))))))
 		{
 			goto IL_008a;
 		}

@@ -19831,7 +19831,7 @@ IL_000a:
 		int32_t L_4 = ___1_sharedInstanceIndex;
 		int32_t L_5;
 		L_5 = ReadOnly_get_Item_m9DFC7CAC9FE6CC930E5BB888FC1018C186B6B135_inline((&V_2), L_4, ReadOnly_get_Item_m9DFC7CAC9FE6CC930E5BB888FC1018C186B6B135_RuntimeMethod_var);
-		if (((int64_t)(((int64_t)(uint64_t)L_1)&((int64_t)((int32_t)(1<<((int32_t)(L_5&((int32_t)31)))))))))
+		if (((int64_t)(((int64_t)(uint64_t)((uint32_t)L_1))&((int64_t)((int32_t)(1<<((int32_t)(L_5&((int32_t)31)))))))))
 		{
 			goto IL_0030;
 		}
@@ -20852,7 +20852,7 @@ IL_0006:
 		V_1 = ((int32_t)((int32_t)L_4&((int32_t)-193)));
 		int32_t L_5 = ___0_batchLodLevel;
 		uint32_t L_6 = V_1;
-		if ((!(((uint64_t)((int64_t)L_5)) == ((uint64_t)((int64_t)(uint64_t)L_6)))))
+		if ((!(((uint64_t)((int64_t)L_5)) == ((uint64_t)((int64_t)(uint64_t)((uint32_t)L_6))))))
 		{
 			goto IL_0023;
 		}
@@ -20894,7 +20894,7 @@ IL_0035:
 		int32_t L_11 = ___0_batchLodLevel;
 		uint32_t L_12 = V_1;
 		int32_t L_13 = V_3;
-		return (bool)((((int64_t)((int64_t)L_11)) == ((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)L_12), ((int64_t)L_13)))))? 1 : 0);
+		return (bool)((((int64_t)((int64_t)L_11)) == ((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uint32_t)L_12)), ((int64_t)L_13)))))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C  bool AllocateBinsPerBatch_IsMeshLodVisible_m9D1674B4CE766557E8D2234D56DF2BACC2EDB576_AdjustorThunk (RuntimeObject* IL2CPP_PARAMETER_RESTRICT __this, int32_t ___0_batchLodLevel, int32_t ___1_rendererIndex, bool ___2_supportsCrossFade, const RuntimeMethod* method)
@@ -22550,7 +22550,7 @@ IL_0006:
 		V_1 = ((int32_t)((int32_t)L_4&((int32_t)-193)));
 		int32_t L_5 = ___0_batchLodLevel;
 		uint32_t L_6 = V_1;
-		if ((!(((uint64_t)((int64_t)L_5)) == ((uint64_t)((int64_t)(uint64_t)L_6)))))
+		if ((!(((uint64_t)((int64_t)L_5)) == ((uint64_t)((int64_t)(uint64_t)((uint32_t)L_6))))))
 		{
 			goto IL_0023;
 		}
@@ -22594,7 +22594,7 @@ IL_0035:
 		int32_t L_12 = ___0_batchLodLevel;
 		uint32_t L_13 = V_1;
 		int32_t L_14 = V_3;
-		return (bool)((((int64_t)((int64_t)L_12)) == ((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)L_13), ((int64_t)L_14)))))? 1 : 0);
+		return (bool)((((int64_t)((int64_t)L_12)) == ((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uint32_t)L_13)), ((int64_t)L_14)))))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C  bool DrawCommandOutputPerBatch_IsMeshLodVisible_mF345AFA69786A2EB8E65B25BFDB933A6321F1054_AdjustorThunk (RuntimeObject* IL2CPP_PARAMETER_RESTRICT __this, int32_t ___0_batchLodLevel, int32_t ___1_rendererIndex, bool ___2_supportsCrossFade, bool* ___3_negateCrossfade, const RuntimeMethod* method)
@@ -28959,10 +28959,10 @@ IL_0006:
 	{
 		uint32_t L_1 = ___0_x;
 		uint32_t L_2 = ___0_x;
-		___0_x = ((int32_t)((int32_t)L_1&((int32_t)(uint32_t)((-((int64_t)(uint64_t)L_2))))));
+		___0_x = ((int32_t)((int32_t)L_1&((int32_t)(uint32_t)((-((int64_t)(uint64_t)((uint32_t)L_2)))))));
 		(&V_0)->___doubleValue = (0.0);
 		uint32_t L_3 = ___0_x;
-		(&V_0)->___longValue = ((int64_t)il2cpp_codegen_add(((int64_t)4841369599423283200LL), ((int64_t)(uint64_t)L_3)));
+		(&V_0)->___longValue = ((int64_t)il2cpp_codegen_add(((int64_t)4841369599423283200LL), ((int64_t)(uint64_t)((uint32_t)L_3))));
 		double* L_4 = (double*)(&(&V_0)->___doubleValue);
 		double* L_5 = L_4;
 		double L_6 = *((double*)L_5);
@@ -29179,7 +29179,7 @@ IL_002a:
 		V_2 = G_B8_0;
 		(&V_3)->___doubleValue = (0.0);
 		uint32_t L_8 = V_1;
-		(&V_3)->___longValue = ((int64_t)il2cpp_codegen_add(((int64_t)4841369599423283200LL), ((int64_t)(uint64_t)L_8)));
+		(&V_3)->___longValue = ((int64_t)il2cpp_codegen_add(((int64_t)4841369599423283200LL), ((int64_t)(uint64_t)((uint32_t)L_8))));
 		double* L_9 = (double*)(&(&V_3)->___doubleValue);
 		double* L_10 = L_9;
 		double L_11 = *((double*)L_10);

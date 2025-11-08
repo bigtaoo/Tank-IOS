@@ -8368,7 +8368,7 @@ IL_005f:
 		NullCheck(L_15);
 		int32_t L_17 = L_16;
 		uint16_t L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
-		V_2 = ((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)L_18), ((int64_t)((int32_t)8192))));
+		V_2 = ((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)((uint32_t)L_18)), ((int64_t)((int32_t)8192))));
 		int64_t L_19 = V_2;
 		if ((((int64_t)L_19) > ((int64_t)((int64_t)0))))
 		{
@@ -9599,9 +9599,9 @@ IL_0011:
 		Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_4 = __this->____table;
 		uint32_t L_5 = V_0;
 		int32_t L_6 = __this->____tableMask;
-		if ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_5)&((int64_t)L_6)))) > INTPTR_MAX) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), HuffmanTree_GetNextSymbol_mDCFB630B8ECAC8B715A723830B1C8199E933189A_RuntimeMethod_var);
+		if ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_5))&((int64_t)L_6)))) > INTPTR_MAX) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), HuffmanTree_GetNextSymbol_mDCFB630B8ECAC8B715A723830B1C8199E933189A_RuntimeMethod_var);
 		NullCheck(L_4);
-		intptr_t L_7 = ((intptr_t)((int64_t)(((int64_t)(uint64_t)L_5)&((int64_t)L_6))));
+		intptr_t L_7 = ((intptr_t)((int64_t)(((int64_t)(uint64_t)((uint32_t)L_5))&((int64_t)L_6))));
 		int16_t L_8 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
 		V_1 = L_8;
 		int32_t L_9 = V_1;
@@ -13964,7 +13964,7 @@ IL_0060_1:
 			__this->____numberOfThisDisk = L_15;
 			ZipEndOfCentralDirectoryBlock_tEB3D33BF73FB38FC4B27554D9EAC2FC0B7124FDC L_16 = V_1;
 			uint32_t L_17 = L_16.___OffsetOfStartOfCentralDirectoryWithRespectToTheStartingDiskNumber;
-			__this->____centralDirectoryStart = ((int64_t)(uint64_t)L_17);
+			__this->____centralDirectoryStart = ((int64_t)(uint64_t)((uint32_t)L_17));
 			ZipEndOfCentralDirectoryBlock_tEB3D33BF73FB38FC4B27554D9EAC2FC0B7124FDC L_18 = V_1;
 			uint16_t L_19 = L_18.___NumberOfEntriesInTheCentralDirectory;
 			ZipEndOfCentralDirectoryBlock_tEB3D33BF73FB38FC4B27554D9EAC2FC0B7124FDC L_20 = V_1;
@@ -13984,7 +13984,7 @@ IL_0092_1:
 		{
 			ZipEndOfCentralDirectoryBlock_tEB3D33BF73FB38FC4B27554D9EAC2FC0B7124FDC L_23 = V_1;
 			uint16_t L_24 = L_23.___NumberOfEntriesInTheCentralDirectory;
-			__this->____expectedNumberOfEntries = ((int64_t)(uint64_t)L_24);
+			__this->____expectedNumberOfEntries = ((int64_t)(uint64_t)((uint32_t)L_24));
 			int32_t L_25 = __this->____mode;
 			if ((!(((uint32_t)L_25) == ((uint32_t)2))))
 			{
@@ -16386,7 +16386,7 @@ IL_0068:
 		NullCheck(L_16);
 		uint32_t L_17;
 		L_17 = ZipArchive_get_NumberOfThisDisk_m34BE6245FFCA87E7F5068C7A988922877B620DCB_inline(L_16, NULL);
-		if ((((int64_t)((int64_t)L_15)) == ((int64_t)((int64_t)(uint64_t)L_17))))
+		if ((((int64_t)((int64_t)L_15)) == ((int64_t)((int64_t)(uint64_t)((uint32_t)L_17)))))
 		{
 			goto IL_0086;
 		}
@@ -18272,7 +18272,7 @@ IL_001a:
 		L_14 = VirtualFuncInvoker0< int64_t >::Invoke(14, L_13);
 		ZipGenericExtraField_t74ADD41AFA880CD4603E172E221B54B9CB9CF530* L_15 = ___2_field;
 		uint16_t L_16 = L_15->____size;
-		if ((((int64_t)((int64_t)il2cpp_codegen_subtract(L_11, L_14))) >= ((int64_t)((int64_t)(uint64_t)L_16))))
+		if ((((int64_t)((int64_t)il2cpp_codegen_subtract(L_11, L_14))) >= ((int64_t)((int64_t)(uint64_t)((uint32_t)L_16)))))
 		{
 			goto IL_004a;
 		}
@@ -20003,7 +20003,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t0845A5AAFB6B816C6E2719A0588604CE3A080
 		uint16_t L_9 = V_1;
 		NullCheck(L_8);
 		int64_t L_10;
-		L_10 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(35, L_8, ((int64_t)(uint64_t)L_9), 1);
+		L_10 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(35, L_8, ((int64_t)(uint64_t)((uint32_t)L_9)), 1);
 		BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_11 = ___0_reader;
 		NullCheck(L_11);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_12;
@@ -20017,7 +20017,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t0845A5AAFB6B816C6E2719A0588604CE3A080
 		L_15 = VirtualFuncInvoker0< int64_t >::Invoke(14, L_14);
 		uint16_t L_16 = V_2;
 		SubReadStream_tEB96CAD88B64F09CBD888F18CF3A9460FCA8A132* L_17 = (SubReadStream_tEB96CAD88B64F09CBD888F18CF3A9460FCA8A132*)il2cpp_codegen_object_new(SubReadStream_tEB96CAD88B64F09CBD888F18CF3A9460FCA8A132_il2cpp_TypeInfo_var);
-		SubReadStream__ctor_m3104F68BD5EF131BBC3AB455283B7CFECE493CC5(L_17, L_12, L_15, ((int64_t)(uint64_t)L_16), NULL);
+		SubReadStream__ctor_m3104F68BD5EF131BBC3AB455283B7CFECE493CC5(L_17, L_12, L_15, ((int64_t)(uint64_t)((uint32_t)L_16)), NULL);
 		V_3 = L_17;
 	}
 	{
@@ -20145,7 +20145,7 @@ IL_002d:
 		L_20 = VirtualFuncInvoker0< int64_t >::Invoke(14, L_19);
 		uint16_t L_21 = V_0;
 		uint16_t L_22 = V_1;
-		if ((((int64_t)L_17) >= ((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_20, ((int64_t)(uint64_t)L_21))), ((int64_t)(uint64_t)L_22))))))
+		if ((((int64_t)L_17) >= ((int64_t)((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_20, ((int64_t)(uint64_t)((uint32_t)L_21)))), ((int64_t)(uint64_t)((uint32_t)L_22)))))))
 		{
 			goto IL_006b;
 		}
@@ -20412,7 +20412,7 @@ IL_0016:
 		L_58 = VirtualFuncInvoker0< int64_t >::Invoke(14, L_57);
 		ZipCentralDirectoryFileHeader_t6877BA1E2BF6E2359D29129EFE51EE920828E092* L_59 = ___2_header;
 		uint16_t L_60 = L_59->___ExtraFieldLength;
-		V_9 = ((int64_t)il2cpp_codegen_add(L_58, ((int64_t)(uint64_t)L_60)));
+		V_9 = ((int64_t)il2cpp_codegen_add(L_58, ((int64_t)(uint64_t)((uint32_t)L_60))));
 		BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* L_61 = ___0_reader;
 		NullCheck(L_61);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_62;
@@ -20427,7 +20427,7 @@ IL_0016:
 		ZipCentralDirectoryFileHeader_t6877BA1E2BF6E2359D29129EFE51EE920828E092* L_66 = ___2_header;
 		uint16_t L_67 = L_66->___ExtraFieldLength;
 		SubReadStream_tEB96CAD88B64F09CBD888F18CF3A9460FCA8A132* L_68 = (SubReadStream_tEB96CAD88B64F09CBD888F18CF3A9460FCA8A132*)il2cpp_codegen_object_new(SubReadStream_tEB96CAD88B64F09CBD888F18CF3A9460FCA8A132_il2cpp_TypeInfo_var);
-		SubReadStream__ctor_m3104F68BD5EF131BBC3AB455283B7CFECE493CC5(L_68, L_62, L_65, ((int64_t)(uint64_t)L_67), NULL);
+		SubReadStream__ctor_m3104F68BD5EF131BBC3AB455283B7CFECE493CC5(L_68, L_62, L_65, ((int64_t)(uint64_t)((uint32_t)L_67)), NULL);
 		V_10 = L_68;
 	}
 	{
@@ -20546,7 +20546,7 @@ IL_0195:
 		ZipCentralDirectoryFileHeader_t6877BA1E2BF6E2359D29129EFE51EE920828E092* L_102 = ___2_header;
 		uint16_t L_103 = L_102->___FileCommentLength;
 		NullCheck(L_100);
-		VirtualActionInvoker1< int64_t >::Invoke(15, L_100, ((int64_t)il2cpp_codegen_add(L_101, ((int64_t)(uint64_t)L_103))));
+		VirtualActionInvoker1< int64_t >::Invoke(15, L_100, ((int64_t)il2cpp_codegen_add(L_101, ((int64_t)(uint64_t)((uint32_t)L_103)))));
 		ZipCentralDirectoryFileHeader_t6877BA1E2BF6E2359D29129EFE51EE920828E092* L_104 = ___2_header;
 		L_104->___FileComment = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_104->___FileComment), (void*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)NULL);
@@ -20581,7 +20581,7 @@ IL_01b5:
 IL_01da:
 	{
 		uint32_t L_110 = V_1;
-		G_B15_0 = ((int64_t)(uint64_t)L_110);
+		G_B15_0 = ((int64_t)(uint64_t)((uint32_t)L_110));
 		G_B15_1 = G_B14_0;
 	}
 
@@ -20615,7 +20615,7 @@ IL_01dc:
 IL_0206:
 	{
 		uint32_t L_116 = V_0;
-		G_B18_0 = ((int64_t)(uint64_t)L_116);
+		G_B18_0 = ((int64_t)(uint64_t)((uint32_t)L_116));
 		G_B18_1 = G_B17_0;
 	}
 
@@ -20649,7 +20649,7 @@ IL_0208:
 IL_0232:
 	{
 		uint32_t L_122 = V_3;
-		G_B21_0 = ((int64_t)(uint64_t)L_122);
+		G_B21_0 = ((int64_t)(uint64_t)((uint32_t)L_122));
 		G_B21_1 = G_B20_0;
 	}
 

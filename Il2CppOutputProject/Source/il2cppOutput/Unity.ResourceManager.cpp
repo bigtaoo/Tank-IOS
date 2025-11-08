@@ -11828,7 +11828,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Reader__ctor_mD5825A3C8FB49651152C8E3EF7
 	}
 	{
 		uint32_t L_1 = ___1_bufferSize;
-		G_B3_0 = ((int64_t)(uint64_t)L_1);
+		G_B3_0 = ((int64_t)(uint64_t)((uint32_t)L_1));
 		goto IL_0013;
 	}
 
@@ -11988,7 +11988,7 @@ IL_0064:
 	{
 		int32_t L_23 = V_6;
 		uint32_t L_24 = V_4;
-		if ((((int64_t)((int64_t)L_23)) < ((int64_t)((int64_t)(uint64_t)L_24))))
+		if ((((int64_t)((int64_t)L_23)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_24)))))
 		{
 			goto IL_0041;
 		}
@@ -12118,7 +12118,7 @@ IL_0066:
 	{
 		int32_t L_24 = V_6;
 		uint32_t L_25 = V_4;
-		if ((((int64_t)((int64_t)L_24)) < ((int64_t)((int64_t)(uint64_t)L_25))))
+		if ((((int64_t)((int64_t)L_24)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_25)))))
 		{
 			goto IL_0041;
 		}
@@ -13316,7 +13316,7 @@ IL_003e:
 		Chunk_t6177AA77189C7004BBA48E4D1B8C9B341456F9BA* L_15 = V_0;
 		NullCheck(L_15);
 		uint32_t L_16 = L_15->___position;
-		if ((((int64_t)((int64_t)(uint64_t)L_12)) <= ((int64_t)((int64_t)il2cpp_codegen_subtract(((int64_t)((int32_t)(((RuntimeArray*)L_14)->max_length))), ((int64_t)(uint64_t)L_16))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_12))) <= ((int64_t)((int64_t)il2cpp_codegen_subtract(((int64_t)((int32_t)(((RuntimeArray*)L_14)->max_length))), ((int64_t)(uint64_t)((uint32_t)L_16)))))))
 		{
 			goto IL_0089;
 		}
@@ -13395,7 +13395,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Writer_WriteInternal_m928A20E0AAF2E5
 	{
 		void* L_0 = ___0_pData;
 		uint32_t L_1 = ___1_dataSize;
-		BinaryStorageBuffer_ComputeHash_m528E30FBF559FD6F302F7F415507C52E90292E14(L_0, ((int64_t)(uint64_t)L_1), (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40*)((uintptr_t)(&V_0)), NULL);
+		BinaryStorageBuffer_ComputeHash_m528E30FBF559FD6F302F7F415507C52E90292E14(L_0, ((int64_t)(uint64_t)((uint32_t)L_1)), (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40*)((uintptr_t)(&V_0)), NULL);
 		Dictionary_2_t3C672228BE4ABCF2C0BF465356E998696CFAF391* L_2 = __this->___existingValues;
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_3 = V_0;
 		NullCheck(L_2);
@@ -13469,7 +13469,7 @@ IL_0026:
 		uint8_t* L_20 = V_4;
 		void* L_21 = ___0_pData;
 		uint32_t L_22 = ___1_dataSize;
-		UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177((void*)((uintptr_t)((uint8_t*)il2cpp_codegen_add((intptr_t)L_20, 4))), L_21, ((int64_t)(uint64_t)L_22), NULL);
+		UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177((void*)((uintptr_t)((uint8_t*)il2cpp_codegen_add((intptr_t)L_20, 4))), L_21, ((int64_t)(uint64_t)((uint32_t)L_22)), NULL);
 	}
 
 IL_006f:
@@ -13496,7 +13496,7 @@ IL_007c:
 		uint8_t* L_25 = V_4;
 		void* L_26 = ___0_pData;
 		uint32_t L_27 = ___1_dataSize;
-		UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177((void*)L_25, L_26, ((int64_t)(uint64_t)L_27), NULL);
+		UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177((void*)L_25, L_26, ((int64_t)(uint64_t)((uint32_t)L_27)), NULL);
 	}
 
 IL_0086:
@@ -13587,7 +13587,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Writer_WriteInternal_mFEC1AC834A029D7D9F
 		bool L_0 = ___3_prefixSize;
 		void* L_1 = ___1_pData;
 		uint32_t L_2 = ___2_dataSize;
-		BinaryStorageBuffer_ComputeHash_m528E30FBF559FD6F302F7F415507C52E90292E14(L_1, ((int64_t)(uint64_t)L_2), (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40*)((uintptr_t)(&V_0)), NULL);
+		BinaryStorageBuffer_ComputeHash_m528E30FBF559FD6F302F7F415507C52E90292E14(L_1, ((int64_t)(uint64_t)((uint32_t)L_2)), (Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40*)((uintptr_t)(&V_0)), NULL);
 		Dictionary_2_t3C672228BE4ABCF2C0BF465356E998696CFAF391* L_3 = __this->___existingValues;
 		Hash128_t93367F504B687578F893CDBCD13FB95AC8A87A40 L_4 = V_0;
 		uint32_t L_5 = ___0_id;
@@ -13696,7 +13696,7 @@ IL_0074_2:
 						uint32_t L_22 = V_1;
 						void* L_23 = ___1_pData;
 						uint32_t L_24 = ___2_dataSize;
-						UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177((void*)((uintptr_t)((uint8_t*)il2cpp_codegen_add((intptr_t)L_21, (intptr_t)((uintptr_t)L_22)))), L_23, ((int64_t)(uint64_t)L_24), NULL);
+						UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177((void*)((uintptr_t)((uint8_t*)il2cpp_codegen_add((intptr_t)L_21, (intptr_t)((uintptr_t)L_22)))), L_23, ((int64_t)(uint64_t)((uint32_t)L_24)), NULL);
 						goto IL_00aa;
 					}
 				}
@@ -14058,7 +14058,7 @@ IL_0061_2:
 						Chunk_t6177AA77189C7004BBA48E4D1B8C9B341456F9BA* L_17 = V_5;
 						NullCheck(L_17);
 						uint32_t L_18 = L_17->___position;
-						UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177((void*)((uintptr_t)((uint8_t*)il2cpp_codegen_add((intptr_t)L_14, (intptr_t)((uintptr_t)L_15)))), (void*)L_16, ((int64_t)(uint64_t)L_18), NULL);
+						UnsafeUtility_MemCpy_m5CEA91ACDADC522E584AE3A2AB2B0B74393A9177((void*)((uintptr_t)((uint8_t*)il2cpp_codegen_add((intptr_t)L_14, (intptr_t)((uintptr_t)L_15)))), (void*)L_16, ((int64_t)(uint64_t)((uint32_t)L_18)), NULL);
 						goto IL_007b_1;
 					}
 				}

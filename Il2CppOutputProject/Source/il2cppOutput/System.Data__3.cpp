@@ -511,7 +511,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* DataViewListener_ChildRelationCollectionCha
 IL2CPP_EXTERN_C const RuntimeMethod* DataViewListener_ColumnCollectionChanged_mEDABFC6CEB5A2ECEF8E1235EA487A77FB42BC307_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DataViewListener_ParentRelationCollectionChanged_m29B3CC7EABFCD51DC30C312878D870CA9BA3489A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DataViewManager_CreateDataView_mF5D902E8C5E2E6DFD87EAEC34A672CB549124216_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* DataViewManager_OnListChanged_m52052B267C0E95EA1C0BDFF25FFAB90D9458B966_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DataViewManager_System_Collections_IList_Add_mD319D455C914225390C617069680DE3DCA40EE05_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DataViewManager_System_Collections_IList_Clear_mDE068B653B78F7C92945D2AB2FB6E04BDA325C4D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DataViewManager_System_Collections_IList_Insert_m6A5B4411B9DBCFF2C116304BC2E3F3E0744E8759_RuntimeMethod_var;
@@ -538,7 +537,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* DataView_CopyTo_m82053F50915E7ABA51D0DF4A72
 IL2CPP_EXTERN_C const RuntimeMethod* DataView_Delete_m9724175AA44E8CB560E6BB5BADB6C8225CA0556E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DataView_GetRecord_m22F0361A6942F721ADBAC2413AF3D61E7E0E648E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DataView_GetRow_m77FAF760765CAB3D0A6C656FCA6056BB5C2044E8_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* DataView_OnListChanged_m73F0C5FC89DF6B7C789102E634CBE5BDA1436AE7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DataView_SetDataViewManager_m1B91C695741ACAEB75CA31E9DE4DB825D243D596_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DataView_System_Collections_IList_Add_m0C55BFF4A10E839C0930052F4507D9B871F7C841_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DataView_System_Collections_IList_Clear_m11850989CC6EB5ED9971A5CD2207184A06B7C20D_RuntimeMethod_var;
@@ -8005,54 +8003,53 @@ IL_00e8_1:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_42 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_43 = ((Exception_t*)IsInstClass((RuntimeObject*)L_42, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_43)
+				bool __filter_local = false;
+				try
 				{
-					G_B19_0 = L_43;
-					goto IL_00f6;
-				}
-				G_B18_0 = L_43;
-			}
-			{
-				G_B20_0 = 0;
-				goto IL_0102;
-			}
+					{
+						Exception_t* L_42 = (Exception_t*)e.ex;;
+						Exception_t* L_43 = ((Exception_t*)IsInstClass((RuntimeObject*)L_42, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_43)
+						{
+							G_B19_0 = L_43;
+							goto IL_00f6;
+						}
+						G_B18_0 = L_43;
+					}
+					{
+						G_B20_0 = 0;
+						goto IL_0102;
+					}
 
 IL_00f6:
-			{
-				V_5 = G_B19_0;
-				Exception_t* L_44 = V_5;
-				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
-				bool L_45;
-				L_45 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(L_44, NULL);
-				G_B20_0 = ((!(((uint32_t)L_45) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_5 = G_B19_0;
+						Exception_t* L_44 = V_5;
+						il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
+						bool L_45;
+						L_45 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(L_44, NULL);
+						G_B20_0 = ((!(((uint32_t)L_45) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_0102:
-			{
-				__filter_local = (G_B20_0) ? true : false;
+					{
+						__filter_local = (G_B20_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_0104;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_0104;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DataView_OnListChanged_m73F0C5FC89DF6B7C789102E634CBE5BDA1436AE7_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_0104:
@@ -8354,54 +8351,53 @@ IL_002b:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_28 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_29 = ((Exception_t*)IsInstClass((RuntimeObject*)L_28, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_29)
+				bool __filter_local = false;
+				try
 				{
-					G_B10_0 = L_29;
-					goto IL_0094;
-				}
-				G_B9_0 = L_29;
-			}
-			{
-				G_B11_0 = 0;
-				goto IL_009e;
-			}
+					{
+						Exception_t* L_28 = (Exception_t*)e.ex;;
+						Exception_t* L_29 = ((Exception_t*)IsInstClass((RuntimeObject*)L_28, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_29)
+						{
+							G_B10_0 = L_29;
+							goto IL_0094;
+						}
+						G_B9_0 = L_29;
+					}
+					{
+						G_B11_0 = 0;
+						goto IL_009e;
+					}
 
 IL_0094:
-			{
-				V_2 = G_B10_0;
-				Exception_t* L_30 = V_2;
-				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
-				bool L_31;
-				L_31 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(L_30, NULL);
-				G_B11_0 = ((!(((uint32_t)L_31) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_2 = G_B10_0;
+						Exception_t* L_30 = V_2;
+						il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
+						bool L_31;
+						L_31 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(L_30, NULL);
+						G_B11_0 = ((!(((uint32_t)L_31) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_009e:
-			{
-				__filter_local = (G_B11_0) ? true : false;
+					{
+						__filter_local = (G_B11_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_00a0;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_00a0;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DataView_SetDataViewManager_m1B91C695741ACAEB75CA31E9DE4DB825D243D596_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_00a0:
@@ -10581,54 +10577,53 @@ IL_0013_1:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_3 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_4 = ((Exception_t*)IsInstClass((RuntimeObject*)L_3, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_4)
+				bool __filter_local = false;
+				try
 				{
-					G_B6_0 = L_4;
-					goto IL_0021;
-				}
-				G_B5_0 = L_4;
-			}
-			{
-				G_B7_0 = 0;
-				goto IL_002b;
-			}
+					{
+						Exception_t* L_3 = (Exception_t*)e.ex;;
+						Exception_t* L_4 = ((Exception_t*)IsInstClass((RuntimeObject*)L_3, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_4)
+						{
+							G_B6_0 = L_4;
+							goto IL_0021;
+						}
+						G_B5_0 = L_4;
+					}
+					{
+						G_B7_0 = 0;
+						goto IL_002b;
+					}
 
 IL_0021:
-			{
-				V_0 = G_B6_0;
-				Exception_t* L_5 = V_0;
-				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
-				bool L_6;
-				L_6 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(L_5, NULL);
-				G_B7_0 = ((!(((uint32_t)L_6) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_0 = G_B6_0;
+						Exception_t* L_5 = V_0;
+						il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
+						bool L_6;
+						L_6 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(L_5, NULL);
+						G_B7_0 = ((!(((uint32_t)L_6) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_002b:
-			{
-				__filter_local = (G_B7_0) ? true : false;
+					{
+						__filter_local = (G_B7_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_002d;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_002d;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DataViewManager_OnListChanged_m52052B267C0E95EA1C0BDFF25FFAB90D9458B966_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_002d:
@@ -22026,54 +22021,53 @@ IL_0064_1:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_17 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_18 = ((Exception_t*)IsInstClass((RuntimeObject*)L_17, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_18)
+				bool __filter_local = false;
+				try
 				{
-					G_B11_0 = L_18;
-					goto IL_0072;
-				}
-				G_B10_0 = L_18;
-			}
-			{
-				G_B12_0 = 0;
-				goto IL_007c;
-			}
+					{
+						Exception_t* L_17 = (Exception_t*)e.ex;;
+						Exception_t* L_18 = ((Exception_t*)IsInstClass((RuntimeObject*)L_17, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_18)
+						{
+							G_B11_0 = L_18;
+							goto IL_0072;
+						}
+						G_B10_0 = L_18;
+					}
+					{
+						G_B12_0 = 0;
+						goto IL_007c;
+					}
 
 IL_0072:
-			{
-				V_1 = G_B11_0;
-				Exception_t* L_19 = V_1;
-				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
-				bool L_20;
-				L_20 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(L_19, NULL);
-				G_B12_0 = ((!(((uint32_t)L_20) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_1 = G_B11_0;
+						Exception_t* L_19 = V_1;
+						il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
+						bool L_20;
+						L_20 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(L_19, NULL);
+						G_B12_0 = ((!(((uint32_t)L_20) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_007c:
-			{
-				__filter_local = (G_B12_0) ? true : false;
+					{
+						__filter_local = (G_B12_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_007e;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_007e;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DataExpression_Evaluate_m1B155E77721AF6F4DA817D4D810E06EBB5E84BE5_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_007e:
@@ -22344,54 +22338,53 @@ IL_0030:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_10 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_11 = ((Exception_t*)IsInstClass((RuntimeObject*)L_10, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_11)
+				bool __filter_local = false;
+				try
 				{
-					G_B10_0 = L_11;
-					goto IL_0052;
-				}
-				G_B9_0 = L_11;
-			}
-			{
-				G_B11_0 = 0;
-				goto IL_005c;
-			}
+					{
+						Exception_t* L_10 = (Exception_t*)e.ex;;
+						Exception_t* L_11 = ((Exception_t*)IsInstClass((RuntimeObject*)L_10, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_11)
+						{
+							G_B10_0 = L_11;
+							goto IL_0052;
+						}
+						G_B9_0 = L_11;
+					}
+					{
+						G_B11_0 = 0;
+						goto IL_005c;
+					}
 
 IL_0052:
-			{
-				V_2 = G_B10_0;
-				Exception_t* L_12 = V_2;
-				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
-				bool L_13;
-				L_13 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(L_12, NULL);
-				G_B11_0 = ((!(((uint32_t)L_13) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						V_2 = G_B10_0;
+						Exception_t* L_12 = V_2;
+						il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
+						bool L_13;
+						L_13 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(L_12, NULL);
+						G_B11_0 = ((!(((uint32_t)L_13) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_005c:
-			{
-				__filter_local = (G_B11_0) ? true : false;
+					{
+						__filter_local = (G_B11_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_005e;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_005e;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DataExpression_ToBoolean_m9005D935127C3F7D0A832DACFA5FA2B4B4D21C92_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_005e:
@@ -23436,52 +23429,51 @@ IL_01b3_1:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_40 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_41 = ((Exception_t*)IsInstClass((RuntimeObject*)L_40, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_41)
+				bool __filter_local = false;
+				try
 				{
-					G_B24_0 = L_41;
-					goto IL_01c1;
-				}
-				G_B23_0 = L_41;
-			}
-			{
-				G_B25_0 = 0;
-				goto IL_01c9;
-			}
+					{
+						Exception_t* L_40 = (Exception_t*)e.ex;;
+						Exception_t* L_41 = ((Exception_t*)IsInstClass((RuntimeObject*)L_40, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_41)
+						{
+							G_B24_0 = L_41;
+							goto IL_01c1;
+						}
+						G_B23_0 = L_41;
+					}
+					{
+						G_B25_0 = 0;
+						goto IL_01c9;
+					}
 
 IL_01c1:
-			{
-				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
-				bool L_42;
-				L_42 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(G_B24_0, NULL);
-				G_B25_0 = ((!(((uint32_t)L_42) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
+						bool L_42;
+						L_42 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(G_B24_0, NULL);
+						G_B25_0 = ((!(((uint32_t)L_42) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_01c9:
-			{
-				__filter_local = (G_B25_0) ? true : false;
+					{
+						__filter_local = (G_B25_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_01cb;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_01cb;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ExpressionParser_Parse_m4C6EAA31A6D7B781310F6C9907A10B3A6BA2C8D8_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_01cb:
@@ -24277,52 +24269,51 @@ IL_00b1_1:
 	}
 	catch(Il2CppExceptionWrapper& e)
 	{
-		IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-	}
-	{
-		bool __filter_local = false;
-		try
 		{
 			{
-				Exception_t* L_23 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				Exception_t* L_24 = ((Exception_t*)IsInstClass((RuntimeObject*)L_23, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-				if (L_24)
+				bool __filter_local = false;
+				try
 				{
-					G_B11_0 = L_24;
-					goto IL_00e6;
-				}
-				G_B10_0 = L_24;
-			}
-			{
-				G_B12_0 = 0;
-				goto IL_00ee;
-			}
+					{
+						Exception_t* L_23 = (Exception_t*)e.ex;;
+						Exception_t* L_24 = ((Exception_t*)IsInstClass((RuntimeObject*)L_23, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+						if (L_24)
+						{
+							G_B11_0 = L_24;
+							goto IL_00e6;
+						}
+						G_B10_0 = L_24;
+					}
+					{
+						G_B12_0 = 0;
+						goto IL_00ee;
+					}
 
 IL_00e6:
-			{
-				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
-				bool L_25;
-				L_25 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(G_B11_0, NULL);
-				G_B12_0 = ((!(((uint32_t)L_25) <= ((uint32_t)0)))? 1 : 0);
-			}
+					{
+						il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ADP_t2C39CD1D5CEFC1B88FF6F7C7AD1916F0FD538CC0_il2cpp_TypeInfo_var)));
+						bool L_25;
+						L_25 = ADP_IsCatchableExceptionType_mF95C2785B055C2BEB155D55C694E42F577515822(G_B11_0, NULL);
+						G_B12_0 = ((!(((uint32_t)L_25) <= ((uint32_t)0)))? 1 : 0);
+					}
 
 IL_00ee:
-			{
-				__filter_local = (G_B12_0) ? true : false;
+					{
+						__filter_local = (G_B12_0) ? true : false;
+					}
+				}
+				catch(Il2CppExceptionWrapper&)
+				{
+					__filter_local = false;
+				}
+				if (__filter_local)
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto FILTER_00f0;
+				}
 			}
 		}
-		catch(Il2CppExceptionWrapper&)
-		{
-			__filter_local = false;
-		}
-		if (__filter_local)
-		{
-			goto FILTER_00f0;
-		}
-		else
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ExpressionParser_ParseAggregateArgument_m06ABF8D32700EA9192953A4F5A23B262F0758898_RuntimeMethod_var)));
-		}
+		throw e;
 	}
 
 FILTER_00f0:

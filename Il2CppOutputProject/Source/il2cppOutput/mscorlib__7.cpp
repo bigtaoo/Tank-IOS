@@ -17112,7 +17112,7 @@ IL_0017:
 		Unsafe_InitBlockUnaligned_m41EDADCB54BB2A74F2D63E17DF939807EF0AA8DB((void*)L_7, (uint8_t)0, L_8, NULL);
 		uint64_t L_9 = V_0;
 		uint32_t L_10 = V_1;
-		V_0 = ((int64_t)il2cpp_codegen_subtract((int64_t)L_9, ((int64_t)(uint64_t)L_10)));
+		V_0 = ((int64_t)il2cpp_codegen_subtract((int64_t)L_9, ((int64_t)(uint64_t)((uint32_t)L_10))));
 		uint8_t* L_11 = ___0_ptr;
 		uint32_t L_12 = V_1;
 		___0_ptr = ((uint8_t*)il2cpp_codegen_add((intptr_t)L_11, (intptr_t)((uintptr_t)L_12)));
@@ -17149,7 +17149,7 @@ IL_0043:
 		___0_ptr = ((uint8_t*)il2cpp_codegen_add((intptr_t)L_17, (intptr_t)((uintptr_t)L_18)));
 		uint64_t L_19 = V_0;
 		uint32_t L_20 = V_1;
-		V_0 = ((int64_t)il2cpp_codegen_subtract((int64_t)L_19, ((int64_t)(uint64_t)L_20)));
+		V_0 = ((int64_t)il2cpp_codegen_subtract((int64_t)L_19, ((int64_t)(uint64_t)((uint32_t)L_20))));
 	}
 
 IL_0057:
@@ -17199,9 +17199,9 @@ IL_0017:
 		Unsafe_InitBlockUnaligned_m6F2353EB9ABC9320E61629FAEE23948C80BFF03A(L_7, (uint8_t)0, L_8, NULL);
 		uint64_t L_9 = V_0;
 		uint32_t L_10 = V_1;
-		V_0 = ((int64_t)il2cpp_codegen_subtract((int64_t)L_9, ((int64_t)(uint64_t)L_10)));
+		V_0 = ((int64_t)il2cpp_codegen_subtract((int64_t)L_9, ((int64_t)(uint64_t)((uint32_t)L_10))));
 		uint32_t L_11 = V_1;
-		V_2 = ((int64_t)(uint64_t)L_11);
+		V_2 = ((int64_t)(uint64_t)((uint32_t)L_11));
 		goto IL_005e;
 	}
 
@@ -17237,10 +17237,10 @@ IL_0040:
 		Unsafe_InitBlockUnaligned_m6F2353EB9ABC9320E61629FAEE23948C80BFF03A(L_17, (uint8_t)0, L_18, NULL);
 		int64_t L_19 = V_2;
 		uint32_t L_20 = V_1;
-		V_2 = ((int64_t)il2cpp_codegen_add(L_19, ((int64_t)(uint64_t)L_20)));
+		V_2 = ((int64_t)il2cpp_codegen_add(L_19, ((int64_t)(uint64_t)((uint32_t)L_20))));
 		uint64_t L_21 = V_0;
 		uint32_t L_22 = V_1;
-		V_0 = ((int64_t)il2cpp_codegen_subtract((int64_t)L_21, ((int64_t)(uint64_t)L_22)));
+		V_0 = ((int64_t)il2cpp_codegen_subtract((int64_t)L_21, ((int64_t)(uint64_t)((uint32_t)L_22))));
 	}
 
 IL_005e:

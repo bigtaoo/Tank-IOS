@@ -22010,7 +22010,7 @@ IL_043e:
 		Il2CppChar L_164 = ___1_firstChar;
 		il2cpp_codegen_runtime_class_init_inline(BoxedPrimitives_t306A24A9D64E429B168D416B37224A49AFE4A217_il2cpp_TypeInfo_var);
 		RuntimeObject* L_165;
-		L_165 = BoxedPrimitives_Get_mA76FFC582E66FADABC7EEBA9FF75908082C961C6(((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)L_164), ((int64_t)((int32_t)48)))), NULL);
+		L_165 = BoxedPrimitives_Get_mA76FFC582E66FADABC7EEBA9FF75908082C961C6(((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)((uint32_t)L_164)), ((int64_t)((int32_t)48)))), NULL);
 		V_0 = L_165;
 		V_1 = 7;
 		goto IL_0622;
@@ -24191,7 +24191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JsonTextWriter_WriteValue_m32656623E229E
 	{
 		JsonWriter_InternalWriteValue_m7E8EC6F2C19FDF8EEE42F5B33931C55AC01088F6(__this, 7, NULL);
 		uint32_t L_0 = ___0_value;
-		JsonTextWriter_WriteIntegerValue_m68840DA4197A6A3682D23CCB9FEA0CA8007DB11C(__this, ((int64_t)(uint64_t)L_0), NULL);
+		JsonTextWriter_WriteIntegerValue_m68840DA4197A6A3682D23CCB9FEA0CA8007DB11C(__this, ((int64_t)(uint64_t)((uint32_t)L_0)), NULL);
 		return;
 	}
 }
@@ -25146,7 +25146,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t JsonTextWriter_WriteNumberToBuffer_mF
 		JsonTextWriter_EnsureWriteBuffer_mF1019CFAE05467B551055C56E322432839A4387B(__this, NULL);
 		uint32_t L_0 = ___0_value;
 		int32_t L_1;
-		L_1 = MathUtils_IntLength_m23241F09F5280B9249FBD8D666E56C81E464919C(((int64_t)(uint64_t)L_0), NULL);
+		L_1 = MathUtils_IntLength_m23241F09F5280B9249FBD8D666E56C81E464919C(((int64_t)(uint64_t)((uint32_t)L_0)), NULL);
 		V_0 = L_1;
 		bool L_2 = ___1_negative;
 		if (!L_2)

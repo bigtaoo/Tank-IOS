@@ -8963,7 +8963,7 @@ IL_0013:
 		NullCheck(L_2);
 		Il2CppChar L_4;
 		L_4 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_2, L_3, NULL);
-		V_2 = ((int64_t)(uint64_t)L_4);
+		V_2 = ((int64_t)(uint64_t)((uint32_t)L_4));
 		int64_t L_5 = V_2;
 		if ((((int64_t)L_5) > ((int64_t)((int64_t)((int32_t)122)))))
 		{

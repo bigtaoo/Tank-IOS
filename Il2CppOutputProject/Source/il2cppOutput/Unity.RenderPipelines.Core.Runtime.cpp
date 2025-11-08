@@ -20197,7 +20197,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ContextContainer_Contains_mD38FBF0FAC841
 		uint32_t L_0 = ___0_typeId;
 		ItemU5BU5D_t4AC8CDDFF9ED634B9ECE154F0C638C00B12B5CCB* L_1 = __this->___m_Items;
 		NullCheck(L_1);
-		if ((((int64_t)((int64_t)(uint64_t)L_0)) >= ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_1)->max_length))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_0))) >= ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_1)->max_length))))))
 		{
 			goto IL_001f;
 		}
@@ -21291,10 +21291,10 @@ IL_00ab:
 		uint32_t* L_42 = V_6;
 		uint32_t* L_43 = V_3;
 		uint32_t L_44 = V_15;
-		int32_t L_45 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_43, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_44), ((int64_t)4))))))));
+		int32_t L_45 = (*(((uint32_t*)il2cpp_codegen_add((intptr_t)L_43, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_44)), ((int64_t)4))))))));
 		uint32_t* L_46 = V_1;
 		uint32_t L_47 = V_15;
-		uint32_t* L_48 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_46, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_47), ((int64_t)4))))));
+		uint32_t* L_48 = ((uint32_t*)il2cpp_codegen_add((intptr_t)L_46, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_47)), ((int64_t)4))))));
 		int32_t L_49 = (*(L_48));
 		V_16 = L_49;
 		uint32_t L_50 = V_16;

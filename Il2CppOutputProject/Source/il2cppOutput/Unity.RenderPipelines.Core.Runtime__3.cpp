@@ -7056,7 +7056,7 @@ IL_010d:
 	{
 		uint32_t L_41 = V_0;
 		int32_t L_42 = ___0_numberOfBrickChunks;
-		if ((((int64_t)((int64_t)(uint64_t)L_41)) < ((int64_t)((int64_t)L_42))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_41))) < ((int64_t)((int64_t)L_42))))
 		{
 			goto IL_003f;
 		}

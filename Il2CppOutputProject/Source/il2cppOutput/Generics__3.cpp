@@ -5892,51 +5892,50 @@ IL_0722_3:
 				}
 				catch(Il2CppExceptionWrapper& e)
 				{
-					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-				}
-				{
-					bool __filter_local = false;
-					try
 					{
 						{
-							Exception_t* L_200 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-							Exception_t* L_201 = ((Exception_t*)IsInstClass((RuntimeObject*)L_200, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-							if (L_201)
+							bool __filter_local = false;
+							try
 							{
-								G_B89_0 = L_201;
-								goto IL_074a_2;
-							}
-							G_B88_0 = L_201;
-						}
-						{
-							G_B90_0 = 0;
-							goto IL_075c_2;
-						}
+								{
+									Exception_t* L_200 = (Exception_t*)e.ex;;
+									Exception_t* L_201 = ((Exception_t*)IsInstClass((RuntimeObject*)L_200, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+									if (L_201)
+									{
+										G_B89_0 = L_201;
+										goto IL_074a_2;
+									}
+									G_B88_0 = L_201;
+								}
+								{
+									G_B90_0 = 0;
+									goto IL_075c_2;
+								}
 
 IL_074a_2:
-						{
-							V_14 = G_B89_0;
-							Exception_t* L_202 = V_14;
-							G_B90_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662*)((OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662*)IsInstClass((RuntimeObject*)L_202, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-						}
+								{
+									V_14 = G_B89_0;
+									Exception_t* L_202 = V_14;
+									G_B90_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662*)((OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662*)IsInstClass((RuntimeObject*)L_202, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+								}
 
 IL_075c_2:
-						{
-							__filter_local = (G_B90_0) ? true : false;
+								{
+									__filter_local = (G_B90_0) ? true : false;
+								}
+							}
+							catch(Il2CppExceptionWrapper&)
+							{
+								__filter_local = false;
+							}
+							if (__filter_local)
+							{
+								IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+								goto FILTER_075e_2;
+							}
 						}
 					}
-					catch(Il2CppExceptionWrapper&)
-					{
-						__filter_local = false;
-					}
-					if (__filter_local)
-					{
-						goto FILTER_075e_2;
-					}
-					else
-					{
-						IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), method);
-					}
+					throw e;
 				}
 
 FILTER_075e_2:
@@ -7212,51 +7211,50 @@ IL_0722_3:
 				}
 				catch(Il2CppExceptionWrapper& e)
 				{
-					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-				}
-				{
-					bool __filter_local = false;
-					try
 					{
 						{
-							Exception_t* L_246 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-							Exception_t* L_247 = ((Exception_t*)IsInstClass((RuntimeObject*)L_246, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
-							if (L_247)
+							bool __filter_local = false;
+							try
 							{
-								G_B89_0 = L_247;
-								goto IL_074a_2;
-							}
-							G_B88_0 = L_247;
-						}
-						{
-							G_B90_0 = 0;
-							goto IL_075c_2;
-						}
+								{
+									Exception_t* L_246 = (Exception_t*)e.ex;;
+									Exception_t* L_247 = ((Exception_t*)IsInstClass((RuntimeObject*)L_246, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var))));
+									if (L_247)
+									{
+										G_B89_0 = L_247;
+										goto IL_074a_2;
+									}
+									G_B88_0 = L_247;
+								}
+								{
+									G_B90_0 = 0;
+									goto IL_075c_2;
+								}
 
 IL_074a_2:
-						{
-							V_14 = G_B89_0;
-							Exception_t* L_248 = V_14;
-							G_B90_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662*)((OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662*)IsInstClass((RuntimeObject*)L_248, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
-						}
+								{
+									V_14 = G_B89_0;
+									Exception_t* L_248 = V_14;
+									G_B90_0 = ((!(((uint32_t)((((int32_t)((!(((RuntimeObject*)(OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662*)((OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662*)IsInstClass((RuntimeObject*)L_248, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OperationCanceledException_tC97D0B4532C15E6F0E9F9375091C9ECCA438D662_il2cpp_TypeInfo_var))))) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0)) <= ((uint32_t)0)))? 1 : 0);
+								}
 
 IL_075c_2:
-						{
-							__filter_local = (G_B90_0) ? true : false;
+								{
+									__filter_local = (G_B90_0) ? true : false;
+								}
+							}
+							catch(Il2CppExceptionWrapper&)
+							{
+								__filter_local = false;
+							}
+							if (__filter_local)
+							{
+								IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+								goto FILTER_075e_2;
+							}
 						}
 					}
-					catch(Il2CppExceptionWrapper&)
-					{
-						__filter_local = false;
-					}
-					if (__filter_local)
-					{
-						goto FILTER_075e_2;
-					}
-					else
-					{
-						IL2CPP_RAISE_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*), method);
-					}
+					throw e;
 				}
 
 FILTER_075e_2:

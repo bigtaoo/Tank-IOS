@@ -12254,7 +12254,7 @@ IL_005f:
 		float L_16 = V_2;
 		int32_t L_17 = V_10;
 		uint32_t L_18 = ___2_longSubdiv;
-		if ((((int64_t)((int64_t)L_17)) == ((int64_t)((int64_t)(uint64_t)L_18))))
+		if ((((int64_t)((int64_t)L_17)) == ((int64_t)((int64_t)(uint64_t)((uint32_t)L_18)))))
 		{
 			G_B4_0 = L_16;
 			goto IL_006b;
@@ -12310,7 +12310,7 @@ IL_00b4:
 	{
 		int32_t L_37 = V_10;
 		uint32_t L_38 = ___2_longSubdiv;
-		if ((((int64_t)((int64_t)L_37)) <= ((int64_t)((int64_t)(uint64_t)L_38))))
+		if ((((int64_t)((int64_t)L_37)) <= ((int64_t)((int64_t)(uint64_t)((uint32_t)L_38)))))
 		{
 			goto IL_005f;
 		}
@@ -12324,7 +12324,7 @@ IL_00c1:
 	{
 		int32_t L_40 = V_7;
 		uint32_t L_41 = ___3_latSubdiv;
-		if ((((int64_t)((int64_t)L_40)) < ((int64_t)((int64_t)(uint64_t)L_41))))
+		if ((((int64_t)((int64_t)L_40)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_41)))))
 		{
 			goto IL_003d;
 		}
@@ -12424,7 +12424,7 @@ IL_0181:
 	{
 		int32_t L_74 = V_15;
 		uint32_t L_75 = ___2_longSubdiv;
-		if ((((int64_t)((int64_t)L_74)) <= ((int64_t)((int64_t)(uint64_t)L_75))))
+		if ((((int64_t)((int64_t)L_74)) <= ((int64_t)((int64_t)(uint64_t)((uint32_t)L_75)))))
 		{
 			goto IL_0146;
 		}
@@ -12438,7 +12438,7 @@ IL_018e:
 	{
 		int32_t L_77 = V_14;
 		uint32_t L_78 = ___3_latSubdiv;
-		if ((((int64_t)((int64_t)L_77)) < ((int64_t)((int64_t)(uint64_t)L_78))))
+		if ((((int64_t)((int64_t)L_77)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_78)))))
 		{
 			goto IL_0141;
 		}
@@ -12484,7 +12484,7 @@ IL_01e0:
 	{
 		int32_t L_95 = V_16;
 		uint32_t L_96 = ___2_longSubdiv;
-		if ((((int64_t)((int64_t)L_95)) < ((int64_t)((int64_t)(uint64_t)L_96))))
+		if ((((int64_t)((int64_t)L_95)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_96)))))
 		{
 			goto IL_01b3;
 		}
@@ -12619,7 +12619,7 @@ IL_02b2:
 	{
 		int32_t L_147 = V_21;
 		uint32_t L_148 = ___2_longSubdiv;
-		if ((((int64_t)((int64_t)L_147)) < ((int64_t)((int64_t)(uint64_t)L_148))))
+		if ((((int64_t)((int64_t)L_147)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_148)))))
 		{
 			goto IL_0275;
 		}
@@ -21581,7 +21581,7 @@ IL_0078_1:
 			{
 				int32_t L_16 = V_5;
 				uint32_t L_17 = V_2;
-				if ((((int64_t)((int64_t)((int32_t)il2cpp_codegen_add(L_16, 1)))) >= ((int64_t)((int64_t)(uint64_t)L_17))))
+				if ((((int64_t)((int64_t)((int32_t)il2cpp_codegen_add(L_16, 1)))) >= ((int64_t)((int64_t)(uint64_t)((uint32_t)L_17)))))
 				{
 					goto IL_00f9_1;
 				}
@@ -21649,7 +21649,7 @@ IL_00f9_1:
 				int32_t L_33 = V_5;
 				int32_t L_34 = V_7;
 				uint32_t L_35 = V_2;
-				if ((((int64_t)((int64_t)((int32_t)il2cpp_codegen_add(L_33, L_34)))) > ((int64_t)((int64_t)(uint64_t)L_35))))
+				if ((((int64_t)((int64_t)((int32_t)il2cpp_codegen_add(L_33, L_34)))) > ((int64_t)((int64_t)(uint64_t)((uint32_t)L_35)))))
 				{
 					goto IL_0474_1;
 				}
@@ -22106,7 +22106,7 @@ IL_046a_1:
 			{
 				int32_t L_237 = V_5;
 				uint32_t L_238 = V_2;
-				if ((((int64_t)((int64_t)L_237)) < ((int64_t)((int64_t)(uint64_t)L_238))))
+				if ((((int64_t)((int64_t)L_237)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_238)))))
 				{
 					goto IL_0078_1;
 				}

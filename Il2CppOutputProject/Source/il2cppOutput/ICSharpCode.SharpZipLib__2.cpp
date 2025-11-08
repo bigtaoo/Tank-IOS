@@ -3051,7 +3051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t ZipEntry_get_DosTime_m6A8F98297BB9ACC
 IL_000e:
 	{
 		uint32_t L_1 = __this->___dosTime;
-		return ((int64_t)(uint64_t)L_1);
+		return ((int64_t)(uint64_t)((uint32_t)L_1));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ZipEntry_set_DosTime_m2576EB221481AEA4661C1247E25F3487CAC3E8FE (ZipEntry_t483CBFA9890036FAA5A865C33732D292A8F06BCC* __this, int64_t ___0_value, const RuntimeMethod* method) 
@@ -3284,14 +3284,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t ZipEntry_get_Crc_mD04C2F0CE0AC247282F
 IL_000e:
 	{
 		uint32_t L_1 = __this->___crc;
-		return ((int64_t)(((int64_t)(uint64_t)L_1)&((int64_t)(uint64_t)((uint32_t)(-1)))));
+		return ((int64_t)(((int64_t)(uint64_t)((uint32_t)L_1))&((int64_t)(uint64_t)((uint32_t)(-1)))));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ZipEntry_set_Crc_m31E729B5B4E5D12BCC3825FD47C61C1DF9B5A8F7 (ZipEntry_t483CBFA9890036FAA5A865C33732D292A8F06BCC* __this, int64_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		uint32_t L_0 = __this->___crc;
-		if ((((int64_t)((int64_t)(((int64_t)(uint64_t)L_0)&((int64_t)-4294967296LL)))) == ((int64_t)((int64_t)0))))
+		if ((((int64_t)((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))&((int64_t)-4294967296LL)))) == ((int64_t)((int64_t)0))))
 		{
 			goto IL_0020;
 		}
@@ -9384,10 +9384,10 @@ IL_006b_1:
 				V_7 = L_23;
 				uint32_t L_24;
 				L_24 = ZipFile_ReadLEUint_mFDC6397FB48B7AA2A60A7E331DD930B4981BF0C9(__this, NULL);
-				V_8 = ((int64_t)(uint64_t)L_24);
+				V_8 = ((int64_t)(uint64_t)((uint32_t)L_24));
 				uint32_t L_25;
 				L_25 = ZipFile_ReadLEUint_mFDC6397FB48B7AA2A60A7E331DD930B4981BF0C9(__this, NULL);
-				V_9 = ((int64_t)(uint64_t)L_25);
+				V_9 = ((int64_t)(uint64_t)((uint32_t)L_25));
 				uint16_t L_26;
 				L_26 = ZipFile_ReadLEUshort_m52190F6FBF9A2221C8A2BF2B2F2B378E58C4060B(__this, NULL);
 				V_10 = L_26;
@@ -14086,7 +14086,7 @@ IL_0037:
 		L_23 = VirtualFuncInvoker0< int64_t >::Invoke(14, L_22);
 		uint32_t L_24 = V_3;
 		uint32_t L_25 = V_4;
-		V_1 = ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_23, ((int64_t)(uint64_t)L_24))), ((int64_t)(uint64_t)L_25)));
+		V_1 = ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(L_23, ((int64_t)(uint64_t)((uint32_t)L_24)))), ((int64_t)(uint64_t)((uint32_t)L_25))));
 		bool L_26 = V_0;
 		if (!L_26)
 		{
@@ -15474,7 +15474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t ZipFile_ReadLEUlong_m46F777C7B54B6D3
 		L_0 = ZipFile_ReadLEUint_mFDC6397FB48B7AA2A60A7E331DD930B4981BF0C9(__this, NULL);
 		uint32_t L_1;
 		L_1 = ZipFile_ReadLEUint_mFDC6397FB48B7AA2A60A7E331DD930B4981BF0C9(__this, NULL);
-		return ((int64_t)(((int64_t)(uint64_t)L_0)|((int64_t)(((int64_t)(uint64_t)L_1)<<((int32_t)32)))));
+		return ((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))|((int64_t)(((int64_t)(uint64_t)((uint32_t)L_1))<<((int32_t)32)))));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t ZipFile_LocateBlockWithSignature_m5213FED6617508862B1A552F38AEF87AB76B62AD (ZipFile_t8623A6B24F047EE8218B35FA81651F841B83974B* __this, int32_t ___0_signature, int64_t ___1_endLocation, int32_t ___2_minimumBlockSize, int32_t ___3_maximumVariableData, const RuntimeMethod* method) 
@@ -15635,16 +15635,16 @@ IL_0046:
 		V_2 = L_9;
 		uint16_t L_10;
 		L_10 = ZipFile_ReadLEUshort_m52190F6FBF9A2221C8A2BF2B2F2B378E58C4060B(__this, NULL);
-		V_3 = ((int64_t)(uint64_t)L_10);
+		V_3 = ((int64_t)(uint64_t)((uint32_t)L_10));
 		uint16_t L_11;
 		L_11 = ZipFile_ReadLEUshort_m52190F6FBF9A2221C8A2BF2B2F2B378E58C4060B(__this, NULL);
-		V_4 = ((int64_t)(uint64_t)L_11);
+		V_4 = ((int64_t)(uint64_t)((uint32_t)L_11));
 		uint32_t L_12;
 		L_12 = ZipFile_ReadLEUint_mFDC6397FB48B7AA2A60A7E331DD930B4981BF0C9(__this, NULL);
-		V_5 = ((int64_t)(uint64_t)L_12);
+		V_5 = ((int64_t)(uint64_t)((uint32_t)L_12));
 		uint32_t L_13;
 		L_13 = ZipFile_ReadLEUint_mFDC6397FB48B7AA2A60A7E331DD930B4981BF0C9(__this, NULL);
-		V_6 = ((int64_t)(uint64_t)L_13);
+		V_6 = ((int64_t)(uint64_t)((uint32_t)L_13));
 		uint16_t L_14;
 		L_14 = ZipFile_ReadLEUshort_m52190F6FBF9A2221C8A2BF2B2F2B378E58C4060B(__this, NULL);
 		V_7 = L_14;
@@ -15756,7 +15756,7 @@ IL_0112:
 		VirtualActionInvoker1< int64_t >::Invoke(15, L_36, L_37);
 		uint32_t L_38;
 		L_38 = ZipFile_ReadLEUint_mFDC6397FB48B7AA2A60A7E331DD930B4981BF0C9(__this, NULL);
-		V_12 = ((int64_t)(uint64_t)L_38);
+		V_12 = ((int64_t)(uint64_t)((uint32_t)L_38));
 		int64_t L_39 = V_12;
 		if ((((int64_t)L_39) == ((int64_t)((int64_t)((int32_t)101075792)))))
 		{
@@ -15888,10 +15888,10 @@ IL_0219:
 		V_19 = L_76;
 		uint32_t L_77;
 		L_77 = ZipFile_ReadLEUint_mFDC6397FB48B7AA2A60A7E331DD930B4981BF0C9(__this, NULL);
-		V_20 = ((int64_t)(uint64_t)L_77);
+		V_20 = ((int64_t)(uint64_t)((uint32_t)L_77));
 		uint32_t L_78;
 		L_78 = ZipFile_ReadLEUint_mFDC6397FB48B7AA2A60A7E331DD930B4981BF0C9(__this, NULL);
-		V_21 = ((int64_t)(uint64_t)L_78);
+		V_21 = ((int64_t)(uint64_t)((uint32_t)L_78));
 		uint16_t L_79;
 		L_79 = ZipFile_ReadLEUshort_m52190F6FBF9A2221C8A2BF2B2F2B378E58C4060B(__this, NULL);
 		V_22 = L_79;
@@ -15910,7 +15910,7 @@ IL_0219:
 		V_25 = L_84;
 		uint32_t L_85;
 		L_85 = ZipFile_ReadLEUint_mFDC6397FB48B7AA2A60A7E331DD930B4981BF0C9(__this, NULL);
-		V_26 = ((int64_t)(uint64_t)L_85);
+		V_26 = ((int64_t)(uint64_t)((uint32_t)L_85));
 		int32_t L_86 = V_22;
 		int32_t L_87 = V_24;
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
@@ -15939,7 +15939,7 @@ IL_0219:
 		ZipEntry_t483CBFA9890036FAA5A865C33732D292A8F06BCC* L_102 = V_29;
 		uint32_t L_103 = V_19;
 		NullCheck(L_102);
-		ZipEntry_set_Crc_m31E729B5B4E5D12BCC3825FD47C61C1DF9B5A8F7(L_102, ((int64_t)(((int64_t)(uint64_t)L_103)&((int64_t)(uint64_t)((uint32_t)(-1))))), NULL);
+		ZipEntry_set_Crc_m31E729B5B4E5D12BCC3825FD47C61C1DF9B5A8F7(L_102, ((int64_t)(((int64_t)(uint64_t)((uint32_t)L_103))&((int64_t)(uint64_t)((uint32_t)(-1))))), NULL);
 		ZipEntry_t483CBFA9890036FAA5A865C33732D292A8F06BCC* L_104 = V_29;
 		int64_t L_105 = V_21;
 		NullCheck(L_104);
@@ -15955,7 +15955,7 @@ IL_0219:
 		ZipEntry_t483CBFA9890036FAA5A865C33732D292A8F06BCC* L_110 = V_29;
 		uint32_t L_111 = V_18;
 		NullCheck(L_110);
-		ZipEntry_set_DosTime_m2576EB221481AEA4661C1247E25F3487CAC3E8FE(L_110, ((int64_t)(uint64_t)L_111), NULL);
+		ZipEntry_set_DosTime_m2576EB221481AEA4661C1247E25F3487CAC3E8FE(L_110, ((int64_t)(uint64_t)((uint32_t)L_111)), NULL);
 		ZipEntry_t483CBFA9890036FAA5A865C33732D292A8F06BCC* L_112 = V_29;
 		uint64_t L_113 = V_13;
 		NullCheck(L_112);
@@ -20285,7 +20285,7 @@ IL_0247:
 		ZipEntry_t483CBFA9890036FAA5A865C33732D292A8F06BCC* L_75 = __this->___entry;
 		uint32_t L_76 = V_2;
 		NullCheck(L_75);
-		ZipEntry_set_DosTime_m2576EB221481AEA4661C1247E25F3487CAC3E8FE(L_75, ((int64_t)(uint64_t)L_76), NULL);
+		ZipEntry_set_DosTime_m2576EB221481AEA4661C1247E25F3487CAC3E8FE(L_75, ((int64_t)(uint64_t)((uint32_t)L_76)), NULL);
 		int32_t L_77 = V_5;
 		if ((((int32_t)L_77) <= ((int32_t)0)))
 		{

@@ -18197,7 +18197,7 @@ IL_00a3:
 				int64_t L_20 = ___1_offset;
 				int64_t L_21 = ___2_capacity;
 				uint8_t* L_22 = V_0;
-				if ((!(((uintptr_t)((uintptr_t)((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)(intptr_t)L_19), L_20)), L_21)))) < ((uintptr_t)L_22))))
+				if ((!(((uintptr_t)((uintptr_t)((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_19)), L_20)), L_21)))) < ((uintptr_t)L_22))))
 				{
 					goto IL_0096_1;
 				}
@@ -19665,7 +19665,7 @@ IL_004a:
 		uint8_t* L_9 = ___0_pointer;
 		int64_t L_10 = ___2_capacity;
 		uint8_t* L_11 = ___0_pointer;
-		if ((!(((uintptr_t)((uintptr_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)(intptr_t)L_9), L_10)))) < ((uintptr_t)L_11))))
+		if ((!(((uintptr_t)((uintptr_t)((int64_t)il2cpp_codegen_add(((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_9)), L_10)))) < ((uintptr_t)L_11))))
 		{
 			goto IL_0062;
 		}
@@ -20079,7 +20079,7 @@ IL_002d:
 	{
 		uint8_t* L_5 = ___0_value;
 		uint8_t* L_6 = __this->____mem;
-		V_0 = ((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)(intptr_t)L_5), ((int64_t)(uint64_t)(intptr_t)L_6)));
+		V_0 = ((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_5)), ((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_6))));
 		int64_t L_7 = V_0;
 		if ((((int64_t)L_7) >= ((int64_t)((int64_t)0))))
 		{

@@ -10077,7 +10077,7 @@ IL_000d:
 		int32_t L_77 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_il2cpp_TypeInfo_var);
 		uint32_t L_78 = ((DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_StaticFields*)il2cpp_codegen_static_fields_for(DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_il2cpp_TypeInfo_var))->___MaxBatchSize;
-		if (!((((int32_t)((((int64_t)((int64_t)((int32_t)il2cpp_codegen_subtract(L_76, L_77)))) < ((int64_t)((int64_t)(uint64_t)L_78)))? 1 : 0)) == ((int32_t)0))? 1 : 0))
+		if (!((((int32_t)((((int64_t)((int64_t)((int32_t)il2cpp_codegen_subtract(L_76, L_77)))) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_78))))? 1 : 0)) == ((int32_t)0))? 1 : 0))
 		{
 			goto IL_01e4;
 		}
@@ -17829,7 +17829,7 @@ IL_002d:
 	{
 		uint32_t L_12 = V_1;
 		int32_t L_13 = V_0;
-		if ((((int64_t)((int64_t)(uint64_t)L_12)) < ((int64_t)((int64_t)L_13))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_12))) < ((int64_t)((int64_t)L_13))))
 		{
 			goto IL_0015;
 		}
@@ -18028,7 +18028,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableRenderPass_ConfigureTarget_m95
 		uint32_t L_2 = V_0;
 		int32_t L_3;
 		L_3 = SystemInfo_get_supportedRenderTargetCount_mA8696B2D9AB343F9D04B0F4F14A4A1F7098DBC34(NULL);
-		if ((((int64_t)((int64_t)(uint64_t)L_2)) <= ((int64_t)((int64_t)L_3))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_2))) <= ((int64_t)((int64_t)L_3))))
 		{
 			goto IL_0040;
 		}
@@ -19994,7 +19994,7 @@ IL_0270_1:
 			{
 				int32_t L_129 = V_14;
 				uint32_t L_130 = V_10;
-				if ((((int64_t)((int64_t)L_129)) < ((int64_t)((int64_t)(uint64_t)L_130))))
+				if ((((int64_t)((int64_t)L_129)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_130)))))
 				{
 					goto IL_00f2_1;
 				}
@@ -21262,7 +21262,7 @@ IL_015f_1:
 			{
 				int32_t L_68 = V_13;
 				uint32_t L_69 = V_10;
-				if ((((int64_t)((int64_t)L_68)) < ((int64_t)((int64_t)(uint64_t)L_69))))
+				if ((((int64_t)((int64_t)L_68)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_69)))))
 				{
 					goto IL_0143_1;
 				}
@@ -21929,7 +21929,7 @@ IL_0044:
 	{
 		int32_t L_16 = V_4;
 		uint32_t L_17 = V_0;
-		if ((((int64_t)((int64_t)L_16)) < ((int64_t)((int64_t)(uint64_t)L_17))))
+		if ((((int64_t)((int64_t)L_16)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_17)))))
 		{
 			goto IL_001f;
 		}
@@ -21943,7 +21943,7 @@ IL_004f:
 	{
 		int32_t L_19 = V_3;
 		uint32_t L_20 = V_1;
-		if ((((int64_t)((int64_t)L_19)) < ((int64_t)((int64_t)(uint64_t)L_20))))
+		if ((((int64_t)((int64_t)L_19)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_20)))))
 		{
 			goto IL_001a;
 		}
@@ -27828,7 +27828,7 @@ IL_01c8:
 	{
 		int32_t L_109 = V_12;
 		uint32_t L_110 = V_7;
-		if ((((int64_t)((int64_t)L_109)) < ((int64_t)((int64_t)(uint64_t)L_110))))
+		if ((((int64_t)((int64_t)L_109)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_110)))))
 		{
 			goto IL_01af;
 		}
@@ -27836,7 +27836,7 @@ IL_01c8:
 	{
 		int32_t L_111 = V_9;
 		uint32_t L_112 = V_7;
-		if ((((int64_t)((int64_t)L_111)) == ((int64_t)((int64_t)(uint64_t)L_112))))
+		if ((((int64_t)((int64_t)L_111)) == ((int64_t)((int64_t)(uint64_t)((uint32_t)L_112)))))
 		{
 			goto IL_01fa;
 		}
@@ -32785,7 +32785,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ContextContainer_Contains_mD
 		uint32_t L_0 = ___0_typeId;
 		ItemU5BU5D_t4AC8CDDFF9ED634B9ECE154F0C638C00B12B5CCB* L_1 = __this->___m_Items;
 		NullCheck(L_1);
-		if ((((int64_t)((int64_t)(uint64_t)L_0)) >= ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_1)->max_length))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_0))) >= ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_1)->max_length))))))
 		{
 			goto IL_001f;
 		}

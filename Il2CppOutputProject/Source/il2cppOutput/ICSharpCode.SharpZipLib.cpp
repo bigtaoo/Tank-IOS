@@ -12437,7 +12437,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Adler32_get_Value_m0DACE9C725B003DA35
 {
 	{
 		uint32_t L_0 = __this->___checksum;
-		return ((int64_t)(uint64_t)L_0);
+		return ((int64_t)(uint64_t)((uint32_t)L_0));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Adler32__ctor_mFA294FA6B4753190DA810738C9F2BB9E2EC0778A (Adler32_t3C87E4FAF7E69D4379B00B6883FFD286EF5916DD* __this, const RuntimeMethod* method) 
@@ -12691,7 +12691,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Crc32_get_Value_m020994D900C4045A53E7
 {
 	{
 		uint32_t L_0 = __this->___crc;
-		return ((int64_t)(uint64_t)L_0);
+		return ((int64_t)(uint64_t)((uint32_t)L_0));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Crc32_set_Value_m7B6095DB470118CA615524C2EFBEF6512B8CACF7 (Crc32_t0827417B45870A6749C94A6BE6C47291A2EBA2ED* __this, int64_t ___0_value, const RuntimeMethod* method) 
@@ -12725,9 +12725,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Crc32_Update_m9BFA115FB6F3F1281622753D98
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_1 = ((Crc32_t0827417B45870A6749C94A6BE6C47291A2EBA2ED_StaticFields*)il2cpp_codegen_static_fields_for(Crc32_t0827417B45870A6749C94A6BE6C47291A2EBA2ED_il2cpp_TypeInfo_var))->___CrcTable;
 		uint32_t L_2 = __this->___crc;
 		int32_t L_3 = ___0_value;
-		if ((int64_t)(((int64_t)(((int64_t)(((int64_t)(uint64_t)L_2)^((int64_t)L_3)))&((int64_t)((int32_t)255))))) > INTPTR_MAX) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), Crc32_Update_m9BFA115FB6F3F1281622753D9855BF00AC5A4F4B_RuntimeMethod_var);
+		if ((int64_t)(((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_2))^((int64_t)L_3)))&((int64_t)((int32_t)255))))) > INTPTR_MAX) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), Crc32_Update_m9BFA115FB6F3F1281622753D9855BF00AC5A4F4B_RuntimeMethod_var);
 		NullCheck(L_1);
-		intptr_t L_4 = ((intptr_t)((int64_t)(((int64_t)(((int64_t)(uint64_t)L_2)^((int64_t)L_3)))&((int64_t)((int32_t)255)))));
+		intptr_t L_4 = ((intptr_t)((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_2))^((int64_t)L_3)))&((int64_t)((int32_t)255)))));
 		uint32_t L_5 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		uint32_t L_6 = __this->___crc;
 		__this->___crc = ((int32_t)((int32_t)L_5^((int32_t)((uint32_t)L_6>>8))));
@@ -12953,7 +12953,7 @@ IL_0018:
 		NullCheck(L_5);
 		int32_t L_7 = L_6;
 		uint32_t L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
-		__this->___globalCrc = ((int32_t)((int64_t)(((int64_t)((int32_t)(L_4<<8)))^((int64_t)(uint64_t)L_8))));
+		__this->___globalCrc = ((int32_t)((int64_t)(((int64_t)((int32_t)(L_4<<8)))^((int64_t)(uint64_t)((uint32_t)L_8)))));
 		return;
 	}
 }
@@ -20032,7 +20032,7 @@ IL_00ec:
 		V_5 = ((int32_t)(((int32_t)(((int32_t)(((int32_t)((int32_t)L_51&((int32_t)255)))|((int32_t)(((int32_t)((int32_t)L_54&((int32_t)255)))<<8))))|((int32_t)(((int32_t)((int32_t)L_57&((int32_t)255)))<<((int32_t)16)))))|((int32_t)((int32_t)L_60<<((int32_t)24)))));
 		int64_t L_61 = V_1;
 		uint32_t L_62 = V_5;
-		if ((((int64_t)L_61) == ((int64_t)((int64_t)(uint64_t)L_62))))
+		if ((((int64_t)L_61) == ((int64_t)((int64_t)(uint64_t)((uint32_t)L_62)))))
 		{
 			goto IL_0128;
 		}

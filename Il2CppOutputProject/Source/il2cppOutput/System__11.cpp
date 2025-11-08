@@ -16657,7 +16657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BitVector32_get_Item_m978AB1B65BC7B75C93
 		uint32_t L_0 = __this->____data;
 		int32_t L_1 = ___0_bit;
 		int32_t L_2 = ___0_bit;
-		return (bool)((((int64_t)((int64_t)(((int64_t)(uint64_t)L_0)&((int64_t)L_1)))) == ((int64_t)((int64_t)(uint64_t)((uint32_t)L_2))))? 1 : 0);
+		return (bool)((((int64_t)((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))&((int64_t)L_1)))) == ((int64_t)((int64_t)(uint64_t)((uint32_t)L_2))))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C  bool BitVector32_get_Item_m978AB1B65BC7B75C93FCE24924081447F631DC09_AdjustorThunk (RuntimeObject* __this, int32_t ___0_bit, const RuntimeMethod* method)

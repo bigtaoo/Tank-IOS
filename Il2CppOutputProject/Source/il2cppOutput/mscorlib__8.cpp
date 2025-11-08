@@ -6287,7 +6287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DecimalDecCalc_D32DivMod1E9_mAA37917
 		uint32_t L_0 = ___0_hi32;
 		uint32_t* L_1 = ___1_lo32;
 		int32_t L_2 = *((uint32_t*)L_1);
-		V_0 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_0)<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_2))));
+		V_0 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_2))));
 		uint32_t* L_3 = ___1_lo32;
 		uint64_t L_4 = V_0;
 		*((int32_t*)L_3) = (int32_t)((int32_t)(uint32_t)((int64_t)((uint64_t)(int64_t)L_4/(uint64_t)(int64_t)((int64_t)((int32_t)1000000000)))));
@@ -24741,7 +24741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_Memmove_mAA31A45BF1B1FA6490F0913B
 		uint8_t* L_0 = ___0_dest;
 		uint8_t* L_1 = ___1_src;
 		uint32_t L_2 = ___2_len;
-		if ((!(((uint64_t)((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)(intptr_t)L_0), ((int64_t)(uint64_t)(intptr_t)L_1)))) >= ((uint64_t)((int64_t)(uint64_t)L_2)))))
+		if ((!(((uint64_t)((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_0)), ((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_1))))) >= ((uint64_t)((int64_t)(uint64_t)((uint32_t)L_2))))))
 		{
 			goto IL_001b;
 		}
@@ -24750,7 +24750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_Memmove_mAA31A45BF1B1FA6490F0913B
 		uint8_t* L_3 = ___1_src;
 		uint8_t* L_4 = ___0_dest;
 		uint32_t L_5 = ___2_len;
-		if ((!(((uint64_t)((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)(intptr_t)L_3), ((int64_t)(uint64_t)(intptr_t)L_4)))) >= ((uint64_t)((int64_t)(uint64_t)L_5)))))
+		if ((!(((uint64_t)((int64_t)il2cpp_codegen_subtract(((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_3)), ((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_4))))) >= ((uint64_t)((int64_t)(uint64_t)((uint32_t)L_5))))))
 		{
 			goto IL_001b;
 		}

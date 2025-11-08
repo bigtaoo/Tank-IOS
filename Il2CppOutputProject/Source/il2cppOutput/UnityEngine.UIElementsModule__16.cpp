@@ -8828,7 +8828,7 @@ IL_0091:
 		uint32_t L_12;
 		L_12 = UIRenderDevice_get_maxVerticesPerPage_mAEF2D856352CFBCDBF341E76DC05FC15D86EE66F(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Assert_m6E778CACD0F440E2DEA9ACDD9330A22DAF16E96D((bool)((((int32_t)((((int64_t)((int64_t)L_11)) > ((int64_t)((int64_t)(uint64_t)L_12)))? 1 : 0)) == ((int32_t)0))? 1 : 0), NULL);
+		Debug_Assert_m6E778CACD0F440E2DEA9ACDD9330A22DAF16E96D((bool)((((int32_t)((((int64_t)((int64_t)L_11)) > ((int64_t)((int64_t)(uint64_t)((uint32_t)L_12))))? 1 : 0)) == ((int32_t)0))? 1 : 0), NULL);
 		Entry_t475ED76E31923970E7F7A6522E570E7577C487B9* L_13 = ___0_entry;
 		NullCheck(L_13);
 		NativeSlice_1_t66375568C4FF313931F4D2F646D64FE6A406BAD2* L_14 = (NativeSlice_1_t66375568C4FF313931F4D2F646D64FE6A406BAD2*)(&L_13->___vertices);
@@ -9018,7 +9018,7 @@ IL_0014:
 		il2cpp_codegen_runtime_class_init_inline(UIRenderDevice_t59628CBA89B4617E832C2B270E1C1A3931D01302_il2cpp_TypeInfo_var);
 		uint32_t L_7;
 		L_7 = UIRenderDevice_get_maxVerticesPerPage_mAEF2D856352CFBCDBF341E76DC05FC15D86EE66F(NULL);
-		V_2 = (bool)((((int32_t)((((int64_t)((int64_t)L_6)) > ((int64_t)((int64_t)(uint64_t)L_7)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		V_2 = (bool)((((int32_t)((((int64_t)((int64_t)L_6)) > ((int64_t)((int64_t)(uint64_t)((uint32_t)L_7))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_8 = V_2;
 		if (!L_8)
 		{
@@ -11387,7 +11387,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryProcessor_UpdateOrAllocate_m60176BF
 		Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE* L_5 = (Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE*)(&L_4->___allocVerts);
 		uint32_t L_6 = L_5->___size;
 		int32_t L_7 = ___1_vertexCount;
-		if ((((int64_t)((int64_t)(uint64_t)L_6)) < ((int64_t)((int64_t)L_7))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_6))) < ((int64_t)((int64_t)L_7))))
 		{
 			goto IL_0032;
 		}
@@ -11399,7 +11399,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EntryProcessor_UpdateOrAllocate_m60176BF
 		Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE* L_10 = (Alloc_t78312CFE58F38082281E80E297AE6176BD2BD8AE*)(&L_9->___allocIndices);
 		uint32_t L_11 = L_10->___size;
 		int32_t L_12 = ___2_indexCount;
-		G_B4_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)L_11)) < ((int64_t)((int64_t)L_12)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		G_B4_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_11))) < ((int64_t)((int64_t)L_12)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_0033;
 	}
 
@@ -12312,7 +12312,7 @@ IL_002f:
 		il2cpp_codegen_runtime_class_init_inline(UIRenderDevice_t59628CBA89B4617E832C2B270E1C1A3931D01302_il2cpp_TypeInfo_var);
 		uint32_t L_9;
 		L_9 = UIRenderDevice_get_maxVerticesPerPage_mAEF2D856352CFBCDBF341E76DC05FC15D86EE66F(NULL);
-		V_3 = (bool)((((int64_t)((int64_t)L_8)) > ((int64_t)((int64_t)(uint64_t)L_9)))? 1 : 0);
+		V_3 = (bool)((((int64_t)((int64_t)L_8)) > ((int64_t)((int64_t)(uint64_t)((uint32_t)L_9))))? 1 : 0);
 		bool L_10 = V_3;
 		if (!L_10)
 		{

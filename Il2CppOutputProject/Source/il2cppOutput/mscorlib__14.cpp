@@ -9768,7 +9768,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t AsyncCausalityTracer_GetOperationId_
 		int32_t L_1;
 		L_1 = AppDomain_get_Id_mB654DEF05DCF242EBEE9D156F5711C8BF946F4E4(L_0, NULL);
 		uint32_t L_2 = ___0_taskId;
-		return ((int64_t)il2cpp_codegen_add(((int64_t)(((int64_t)L_1)<<((int32_t)32))), ((int64_t)(uint64_t)L_2)));
+		return ((int64_t)il2cpp_codegen_add(((int64_t)(((int64_t)L_1)<<((int32_t)32))), ((int64_t)(uint64_t)((uint32_t)L_2))));
 	}
 }
 #ifdef __clang__

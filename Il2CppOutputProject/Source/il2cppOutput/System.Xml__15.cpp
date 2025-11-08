@@ -6296,7 +6296,7 @@ IL_02fe:
 		RuntimeObject* L_175 = ___0_value;
 		Type_t* L_176 = ___1_destinationType;
 		RuntimeObject* L_177;
-		L_177 = VirtualFuncInvoker2< RuntimeObject*, int64_t, Type_t* >::Invoke(55, __this, ((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_175, il2cpp_defaults.uint32_class)))), L_176);
+		L_177 = VirtualFuncInvoker2< RuntimeObject*, int64_t, Type_t* >::Invoke(55, __this, ((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_175, il2cpp_defaults.uint32_class))))), L_176);
 		return L_177;
 	}
 
@@ -6449,7 +6449,7 @@ IL_0073:
 		RuntimeObject* L_29 = ___0_value;
 		Type_t* L_30 = ___1_destinationType;
 		RuntimeObject* L_31;
-		L_31 = VirtualFuncInvoker2< RuntimeObject*, int64_t, Type_t* >::Invoke(55, __this, ((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_29, il2cpp_defaults.uint32_class)))), L_30);
+		L_31 = VirtualFuncInvoker2< RuntimeObject*, int64_t, Type_t* >::Invoke(55, __this, ((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_29, il2cpp_defaults.uint32_class))))), L_30);
 		return L_31;
 	}
 

@@ -17323,7 +17323,7 @@ IL_002e:
 		uint32_t L_11 = V_4;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = __this->____childrenIndexes;
 		NullCheck(L_12);
-		V_5 = (bool)((((int64_t)((int64_t)(uint64_t)L_11)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))? 1 : 0);
+		V_5 = (bool)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_11))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))? 1 : 0);
 		bool L_13 = V_5;
 		if (!L_13)
 		{
@@ -17340,7 +17340,7 @@ IL_002e:
 		uint32_t L_18 = V_4;
 		BsonTrieNode_1U5BU5D_tE67FEAB0D86DBE73A9B9407EA9AF0F42F5E0CC1A* L_19 = __this->____children;
 		NullCheck(L_19);
-		V_6 = (bool)((((int64_t)((int64_t)(uint64_t)L_18)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_19)->max_length)))))? 1 : 0);
+		V_6 = (bool)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_18))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_19)->max_length)))))? 1 : 0);
 		bool L_20 = V_6;
 		if (!L_20)
 		{
@@ -17919,7 +17919,7 @@ IL_002e:
 		uint32_t L_11 = V_4;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = __this->____childrenIndexes;
 		NullCheck(L_12);
-		V_5 = (bool)((((int64_t)((int64_t)(uint64_t)L_11)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))? 1 : 0);
+		V_5 = (bool)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_11))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))? 1 : 0);
 		bool L_13 = V_5;
 		if (!L_13)
 		{
@@ -17936,7 +17936,7 @@ IL_002e:
 		uint32_t L_18 = V_4;
 		BsonTrieNode_1U5BU5D_tD94266BC176F53ABCE0053B0BAAA12B3DD6FC423* L_19 = __this->____children;
 		NullCheck(L_19);
-		V_6 = (bool)((((int64_t)((int64_t)(uint64_t)L_18)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_19)->max_length)))))? 1 : 0);
+		V_6 = (bool)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_18))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_19)->max_length)))))? 1 : 0);
 		bool L_20 = V_6;
 		if (!L_20)
 		{
@@ -18519,7 +18519,7 @@ IL_002e:
 		uint32_t L_11 = V_4;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = *(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 0),5));
 		NullCheck(L_12);
-		V_5 = (bool)((((int64_t)((int64_t)(uint64_t)L_11)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))? 1 : 0);
+		V_5 = (bool)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_11))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))? 1 : 0);
 		bool L_13 = V_5;
 		if (!L_13)
 		{
@@ -18536,7 +18536,7 @@ IL_002e:
 		uint32_t L_18 = V_4;
 		BsonTrieNode_1U5BU5D_t8544D41037553477AD285A528E7A89481D64642D* L_19 = *(BsonTrieNode_1U5BU5D_t8544D41037553477AD285A528E7A89481D64642D**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 0),4));
 		NullCheck(L_19);
-		V_6 = (bool)((((int64_t)((int64_t)(uint64_t)L_18)) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_19)->max_length)))))? 1 : 0);
+		V_6 = (bool)((((int64_t)((int64_t)(uint64_t)((uint32_t)L_18))) < ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_19)->max_length)))))? 1 : 0);
 		bool L_20 = V_6;
 		if (!L_20)
 		{

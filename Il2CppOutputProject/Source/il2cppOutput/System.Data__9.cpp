@@ -21229,7 +21229,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UInt16Storage_Aggregate_m9D535
 IL_002f_1:
 		{
 			uint16_t L_1 = ((UInt16Storage_t7C13FE69DB3D901E0F3A122269F4030DE5FFE6F1_StaticFields*)il2cpp_codegen_static_fields_for(UInt16Storage_t7C13FE69DB3D901E0F3A122269F4030DE5FFE6F1_il2cpp_TypeInfo_var))->___s_defaultValue;
-			V_1 = ((int64_t)(uint64_t)L_1);
+			V_1 = ((int64_t)(uint64_t)((uint32_t)L_1));
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ___0_records;
 			V_10 = L_2;
 			V_11 = 0;
@@ -21259,9 +21259,9 @@ IL_003e_1:
 			NullCheck(L_10);
 			int32_t L_12 = L_11;
 			uint16_t L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
-			if ((uint64_t)L_9 > kIl2CppUInt64Max - (uint64_t)((int64_t)(uint64_t)L_13))
+			if ((uint64_t)L_9 > kIl2CppUInt64Max - (uint64_t)((int64_t)(uint64_t)((uint32_t)L_13)))
 				IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), UInt16Storage_Aggregate_m9D5350772E070327A6EA6FFE0FFD28164D1AD846_RuntimeMethod_var);
-			V_1 = ((int64_t)il2cpp_codegen_add((int64_t)L_9, ((int64_t)(uint64_t)L_13)));
+			V_1 = ((int64_t)il2cpp_codegen_add((int64_t)L_9, ((int64_t)(uint64_t)((uint32_t)L_13))));
 			V_0 = (bool)1;
 		}
 
@@ -21306,7 +21306,7 @@ IL_007c_1:
 IL_0089_1:
 		{
 			uint16_t L_22 = ((UInt16Storage_t7C13FE69DB3D901E0F3A122269F4030DE5FFE6F1_StaticFields*)il2cpp_codegen_static_fields_for(UInt16Storage_t7C13FE69DB3D901E0F3A122269F4030DE5FFE6F1_il2cpp_TypeInfo_var))->___s_defaultValue;
-			V_2 = ((int64_t)(uint64_t)L_22);
+			V_2 = ((int64_t)(uint64_t)((uint32_t)L_22));
 			V_3 = 0;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_23 = ___0_records;
 			V_10 = L_23;
@@ -21337,9 +21337,9 @@ IL_009a_1:
 			NullCheck(L_31);
 			int32_t L_33 = L_32;
 			uint16_t L_34 = (L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
-			if (il2cpp_codegen_check_add_overflow((int64_t)L_30, (int64_t)((int64_t)(uint64_t)L_34)))
+			if (il2cpp_codegen_check_add_overflow((int64_t)L_30, (int64_t)((int64_t)(uint64_t)((uint32_t)L_34))))
 				IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), UInt16Storage_Aggregate_m9D5350772E070327A6EA6FFE0FFD28164D1AD846_RuntimeMethod_var);
-			V_2 = ((int64_t)il2cpp_codegen_add(L_30, ((int64_t)(uint64_t)L_34)));
+			V_2 = ((int64_t)il2cpp_codegen_add(L_30, ((int64_t)(uint64_t)((uint32_t)L_34))));
 			int32_t L_35 = V_3;
 			V_3 = ((int32_t)il2cpp_codegen_add(L_35, 1));
 			V_0 = (bool)1;
@@ -22338,7 +22338,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UInt32Storage_Aggregate_m53C34
 IL_002f_1:
 		{
 			uint32_t L_1 = ((UInt32Storage_tE443657FB5A2B5CB890027F5F90788A6EB08A93B_StaticFields*)il2cpp_codegen_static_fields_for(UInt32Storage_tE443657FB5A2B5CB890027F5F90788A6EB08A93B_il2cpp_TypeInfo_var))->___s_defaultValue;
-			V_1 = ((int64_t)(uint64_t)L_1);
+			V_1 = ((int64_t)(uint64_t)((uint32_t)L_1));
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ___0_records;
 			V_10 = L_2;
 			V_11 = 0;
@@ -22368,9 +22368,9 @@ IL_003e_1:
 			NullCheck(L_10);
 			int32_t L_12 = L_11;
 			uint32_t L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
-			if ((uint64_t)L_9 > kIl2CppUInt64Max - (uint64_t)((int64_t)(uint64_t)L_13))
+			if ((uint64_t)L_9 > kIl2CppUInt64Max - (uint64_t)((int64_t)(uint64_t)((uint32_t)L_13)))
 				IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), UInt32Storage_Aggregate_m53C34B989370378E630691C2D4A91CB5A1D5EC83_RuntimeMethod_var);
-			V_1 = ((int64_t)il2cpp_codegen_add((int64_t)L_9, ((int64_t)(uint64_t)L_13)));
+			V_1 = ((int64_t)il2cpp_codegen_add((int64_t)L_9, ((int64_t)(uint64_t)((uint32_t)L_13))));
 			V_0 = (bool)1;
 		}
 
@@ -22415,7 +22415,7 @@ IL_007c_1:
 IL_0089_1:
 		{
 			uint32_t L_22 = ((UInt32Storage_tE443657FB5A2B5CB890027F5F90788A6EB08A93B_StaticFields*)il2cpp_codegen_static_fields_for(UInt32Storage_tE443657FB5A2B5CB890027F5F90788A6EB08A93B_il2cpp_TypeInfo_var))->___s_defaultValue;
-			V_2 = ((int64_t)(uint64_t)L_22);
+			V_2 = ((int64_t)(uint64_t)((uint32_t)L_22));
 			V_3 = 0;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_23 = ___0_records;
 			V_10 = L_23;
@@ -22446,9 +22446,9 @@ IL_009a_1:
 			NullCheck(L_31);
 			int32_t L_33 = L_32;
 			uint32_t L_34 = (L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
-			if (il2cpp_codegen_check_add_overflow((int64_t)L_30, (int64_t)((int64_t)(uint64_t)L_34)))
+			if (il2cpp_codegen_check_add_overflow((int64_t)L_30, (int64_t)((int64_t)(uint64_t)((uint32_t)L_34))))
 				IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), UInt32Storage_Aggregate_m53C34B989370378E630691C2D4A91CB5A1D5EC83_RuntimeMethod_var);
-			V_2 = ((int64_t)il2cpp_codegen_add(L_30, ((int64_t)(uint64_t)L_34)));
+			V_2 = ((int64_t)il2cpp_codegen_add(L_30, ((int64_t)(uint64_t)((uint32_t)L_34))));
 			int32_t L_35 = V_3;
 			V_3 = ((int32_t)il2cpp_codegen_add(L_35, 1));
 			V_0 = (bool)1;

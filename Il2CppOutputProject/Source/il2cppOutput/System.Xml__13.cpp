@@ -6611,7 +6611,7 @@ IL_01a6:
 		NullCheck(L_102);
 		uint32_t L_103 = L_102->____MaxLength;
 		NullCheck(L_100);
-		SchemaDeclBase_set_MaxLength_m531FCFB68899C79498462A69C28AB7447E5797EE_inline(L_100, ((int64_t)(uint64_t)L_103), NULL);
+		SchemaDeclBase_set_MaxLength_m531FCFB68899C79498462A69C28AB7447E5797EE_inline(L_100, ((int64_t)(uint64_t)((uint32_t)L_103)), NULL);
 		SchemaElementDecl_t985EC0AC51DF3E0339341916D061539CF41846AD* L_104 = V_0;
 		XdrBuilder_tFAD5028958B5F432AD022248915D66CC6F61C921* L_105 = ___0_builder;
 		NullCheck(L_105);
@@ -6619,7 +6619,7 @@ IL_01a6:
 		NullCheck(L_106);
 		uint32_t L_107 = L_106->____MinLength;
 		NullCheck(L_104);
-		SchemaDeclBase_set_MinLength_m0764D469D7282C7E68601AAF4520BC1809E31F0F_inline(L_104, ((int64_t)(uint64_t)L_107), NULL);
+		SchemaDeclBase_set_MinLength_m0764D469D7282C7E68601AAF4520BC1809E31F0F_inline(L_104, ((int64_t)(uint64_t)((uint32_t)L_107)), NULL);
 		XdrBuilder_tFAD5028958B5F432AD022248915D66CC6F61C921* L_108 = ___0_builder;
 		NullCheck(L_108);
 		ParticleContentValidator_tF4F0D4B27A8136F6A679933713C879BFBD60D1AF* L_109 = L_108->____contentValidator;
@@ -7226,7 +7226,7 @@ IL_00a3:
 		NullCheck(L_39);
 		uint32_t L_40 = L_39->____MaxLength;
 		NullCheck(L_37);
-		SchemaDeclBase_set_MaxLength_m531FCFB68899C79498462A69C28AB7447E5797EE_inline(L_37, ((int64_t)(uint64_t)L_40), NULL);
+		SchemaDeclBase_set_MaxLength_m531FCFB68899C79498462A69C28AB7447E5797EE_inline(L_37, ((int64_t)(uint64_t)((uint32_t)L_40)), NULL);
 		XdrBuilder_tFAD5028958B5F432AD022248915D66CC6F61C921* L_41 = ___0_builder;
 		NullCheck(L_41);
 		AttributeContent_tD9D01487D9604503778AC1094EA4E2DEB7C0B02E* L_42 = L_41->____AttributeDef;
@@ -7238,7 +7238,7 @@ IL_00a3:
 		NullCheck(L_45);
 		uint32_t L_46 = L_45->____MinLength;
 		NullCheck(L_43);
-		SchemaDeclBase_set_MinLength_m0764D469D7282C7E68601AAF4520BC1809E31F0F_inline(L_43, ((int64_t)(uint64_t)L_46), NULL);
+		SchemaDeclBase_set_MinLength_m0764D469D7282C7E68601AAF4520BC1809E31F0F_inline(L_43, ((int64_t)(uint64_t)((uint32_t)L_46)), NULL);
 		XdrBuilder_tFAD5028958B5F432AD022248915D66CC6F61C921* L_47 = ___0_builder;
 		NullCheck(L_47);
 		AttributeContent_tD9D01487D9604503778AC1094EA4E2DEB7C0B02E* L_48 = L_47->____AttributeDef;

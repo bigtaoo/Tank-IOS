@@ -20998,7 +20998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugUIHandlerUIntField_ChangeValue_m3CC
 		NullCheck(L_0);
 		uint32_t L_1;
 		L_1 = Field_1_GetValue_m5AB711420D2537F66BA9190AF59840BD2D284F0E(L_0, Field_1_GetValue_m5AB711420D2537F66BA9190AF59840BD2D284F0E_RuntimeMethod_var);
-		V_0 = ((int64_t)(uint64_t)L_1);
+		V_0 = ((int64_t)(uint64_t)((uint32_t)L_1));
 		int64_t L_2 = V_0;
 		if (L_2)
 		{

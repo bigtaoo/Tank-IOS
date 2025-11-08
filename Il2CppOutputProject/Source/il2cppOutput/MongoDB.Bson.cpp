@@ -29183,7 +29183,7 @@ IL_0115:
 IL_0124:
 	{
 		RuntimeObject* L_49 = ___0_value;
-		int64_t L_50 = ((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_49, il2cpp_defaults.uint32_class))));
+		int64_t L_50 = ((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_49, il2cpp_defaults.uint32_class)))));
 		RuntimeObject* L_51 = Box(il2cpp_defaults.int64_class, &L_50);
 		___0_value = L_51;
 		goto IL_0143;
@@ -30744,7 +30744,7 @@ IL_00e1:
 IL_00f0:
 	{
 		RuntimeObject* L_41 = ___0_value;
-		int64_t L_42 = ((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_41, il2cpp_defaults.uint32_class))));
+		int64_t L_42 = ((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_41, il2cpp_defaults.uint32_class)))));
 		RuntimeObject* L_43 = Box(il2cpp_defaults.int64_class, &L_42);
 		___0_value = L_43;
 		goto IL_010f;
@@ -31427,7 +31427,7 @@ IL_0241:
 		RuntimeObject* L_28 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(BsonInt64_t290BCF01E3A23308A54BC82FE1A9869EFBF783F6_il2cpp_TypeInfo_var);
 		BsonInt64_t290BCF01E3A23308A54BC82FE1A9869EFBF783F6* L_29;
-		L_29 = BsonInt64_op_Implicit_m94B38254D4789FDAFC42F7B6C251F061198EC87A(((int64_t)(uint64_t)((*(uint8_t*)UnBox(L_28, il2cpp_defaults.byte_class)))), NULL);
+		L_29 = BsonInt64_op_Implicit_m94B38254D4789FDAFC42F7B6C251F061198EC87A(((int64_t)(uint64_t)((uint32_t)((*(uint8_t*)UnBox(L_28, il2cpp_defaults.byte_class))))), NULL);
 		V_7 = L_29;
 		goto IL_082c;
 	}
@@ -31479,7 +31479,7 @@ IL_02a5:
 		RuntimeObject* L_39 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(BsonInt64_t290BCF01E3A23308A54BC82FE1A9869EFBF783F6_il2cpp_TypeInfo_var);
 		BsonInt64_t290BCF01E3A23308A54BC82FE1A9869EFBF783F6* L_40;
-		L_40 = BsonInt64_op_Implicit_m94B38254D4789FDAFC42F7B6C251F061198EC87A(((int64_t)(uint64_t)((*(Il2CppChar*)UnBox(L_39, il2cpp_defaults.char_class)))), NULL);
+		L_40 = BsonInt64_op_Implicit_m94B38254D4789FDAFC42F7B6C251F061198EC87A(((int64_t)(uint64_t)((uint32_t)((*(Il2CppChar*)UnBox(L_39, il2cpp_defaults.char_class))))), NULL);
 		V_7 = L_40;
 		goto IL_082c;
 	}
@@ -32125,7 +32125,7 @@ IL_0759:
 		RuntimeObject* L_182 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(BsonInt64_t290BCF01E3A23308A54BC82FE1A9869EFBF783F6_il2cpp_TypeInfo_var);
 		BsonInt64_t290BCF01E3A23308A54BC82FE1A9869EFBF783F6* L_183;
-		L_183 = BsonInt64_op_Implicit_m94B38254D4789FDAFC42F7B6C251F061198EC87A(((int64_t)(uint64_t)((*(uint16_t*)UnBox(L_182, il2cpp_defaults.uint16_class)))), NULL);
+		L_183 = BsonInt64_op_Implicit_m94B38254D4789FDAFC42F7B6C251F061198EC87A(((int64_t)(uint64_t)((uint32_t)((*(uint16_t*)UnBox(L_182, il2cpp_defaults.uint16_class))))), NULL);
 		V_7 = L_183;
 		goto IL_082c;
 	}
@@ -32177,7 +32177,7 @@ IL_07bb:
 		RuntimeObject* L_193 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(BsonInt64_t290BCF01E3A23308A54BC82FE1A9869EFBF783F6_il2cpp_TypeInfo_var);
 		BsonInt64_t290BCF01E3A23308A54BC82FE1A9869EFBF783F6* L_194;
-		L_194 = BsonInt64_op_Implicit_m94B38254D4789FDAFC42F7B6C251F061198EC87A(((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_193, il2cpp_defaults.uint32_class)))), NULL);
+		L_194 = BsonInt64_op_Implicit_m94B38254D4789FDAFC42F7B6C251F061198EC87A(((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_193, il2cpp_defaults.uint32_class))))), NULL);
 		V_7 = L_194;
 		goto IL_082c;
 	}

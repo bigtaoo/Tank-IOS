@@ -20467,7 +20467,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer__ctor_m46B86DB3D2B022C95B649B6EC6B
 	}
 	{
 		uint32_t L_1 = ___2_dueTime;
-		G_B3_0 = ((int64_t)(uint64_t)L_1);
+		G_B3_0 = ((int64_t)(uint64_t)((uint32_t)L_1));
 		goto IL_0010;
 	}
 
@@ -20487,7 +20487,7 @@ IL_0010:
 	}
 	{
 		uint32_t L_3 = ___3_period;
-		G_B6_0 = ((int64_t)(uint64_t)L_3);
+		G_B6_0 = ((int64_t)(uint64_t)((uint32_t)L_3));
 		goto IL_001d;
 	}
 
@@ -20592,7 +20592,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Timer_Change_m7FE16796C2DE07C6915120E508
 	}
 	{
 		uint32_t L_1 = ___0_dueTime;
-		G_B3_0 = ((int64_t)(uint64_t)L_1);
+		G_B3_0 = ((int64_t)(uint64_t)((uint32_t)L_1));
 		goto IL_000a;
 	}
 
@@ -20612,7 +20612,7 @@ IL_000a:
 	}
 	{
 		uint32_t L_3 = ___1_period;
-		G_B6_0 = ((int64_t)(uint64_t)L_3);
+		G_B6_0 = ((int64_t)(uint64_t)((uint32_t)L_3));
 		goto IL_0015;
 	}
 
@@ -35638,7 +35638,7 @@ IL_0038_1:
 				V_4 = ((int32_t)il2cpp_codegen_subtract(L_14, (int32_t)L_15));
 				uint32_t L_16 = V_4;
 				int32_t L_17 = ___0_millisecondsTimeout;
-				if ((((int64_t)((int64_t)(uint64_t)L_16)) >= ((int64_t)((int64_t)L_17))))
+				if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_16))) >= ((int64_t)((int64_t)L_17))))
 				{
 					goto IL_0057_1;
 				}
@@ -35650,7 +35650,7 @@ IL_0038_1:
 				CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED L_21 = ___1_cancellationToken;
 				NullCheck(L_18);
 				bool L_22;
-				L_22 = ManualResetEventSlim_Wait_mF47EE8574CCC7F6A5991A13F85EEC17844164AA0(L_18, ((int32_t)((int64_t)il2cpp_codegen_subtract(((int64_t)L_19), ((int64_t)(uint64_t)L_20)))), L_21, NULL);
+				L_22 = ManualResetEventSlim_Wait_mF47EE8574CCC7F6A5991A13F85EEC17844164AA0(L_18, ((int32_t)((int64_t)il2cpp_codegen_subtract(((int64_t)L_19), ((int64_t)(uint64_t)((uint32_t)L_20))))), L_21, NULL);
 				V_2 = L_22;
 			}
 

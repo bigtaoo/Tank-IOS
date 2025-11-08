@@ -20883,7 +20883,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BitSet_Get_mA7D0C2800F3EF8F759779F428326
 		int32_t L_6 = L_5;
 		uint32_t L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		int32_t L_8 = ___0_index;
-		V_0 = (bool)((!(((uint64_t)((int64_t)(((int64_t)(uint64_t)L_7)&((int64_t)((int32_t)(1<<((int32_t)(((int32_t)(L_8&((int32_t)31)))&((int32_t)31))))))))) <= ((uint64_t)((int64_t)0))))? 1 : 0);
+		V_0 = (bool)((!(((uint64_t)((int64_t)(((int64_t)(uint64_t)((uint32_t)L_7))&((int64_t)((int32_t)(1<<((int32_t)(((int32_t)(L_8&((int32_t)31)))&((int32_t)31))))))))) <= ((uint64_t)((int64_t)0))))? 1 : 0);
 	}
 
 IL_002c:

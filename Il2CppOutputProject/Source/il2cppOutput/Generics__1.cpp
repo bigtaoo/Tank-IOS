@@ -278,6 +278,10 @@ struct ConstrainedFuncInvoker0
 	}
 };
 
+struct U3CU3Ec__DisplayClass3_0_t8D7B0B1E85A1676DBD327CD05F108BCBB8097C86;
+struct U3CU3Ec__DisplayClass3_0_tEE6A1D697EFBCD1537D26C3909E301DD235D6083;
+struct U3CU3Ec__DisplayClass3_0_t1523C5FE4551B83E46BDD24E19821A90F1CE5379;
+struct U3CU3Ec__DisplayClass3_0_t9E6DF9F16E9A70B06FE00857C8A0ADECD21187B2;
 struct U3CU3Ec__DisplayClass3_0_t95F616822406FEEFD8E0E7B2CCCAD86ADEB5444C;
 struct U3CU3Ec__DisplayClass3_0_1_tAB7D10B5BECF37621041277A3092204EC8E2DDA3;
 struct U3CU3Ec__DisplayClass3_0_3_tADD2468E7ECA399FD7C7B1B778963433F3AC388B;
@@ -638,6 +642,7 @@ struct Func_5_t6B8ACC94CBF33B703F9222DAD0AC6427EC75F5B9;
 struct Grouping_tA7D79A8DCF5DF54971F5E38E3B02BC390C7F93C2;
 struct HashSet_1_t7FD3E09F5E6CC9B45ADC269EC25CEBBA5BCDE4E1;
 struct HashSet_1_tB813E9BB87712BD40D5CDC96CDB692FCBBEB5267;
+struct IBsonSerializer_1_t5844F241F1C34F07D03693473D8863144E787D69;
 struct IBsonSerializer_1_tE973130FB0A52FB4FE5BF9568C22251FB11CCCFF;
 struct IEnumerable_1_t698C25486803A441D6FAA8099A6D97AF1315C48E;
 struct IEnumerable_1_t60509816D8966320E2A9660FC756B6C440ADFC50;
@@ -893,6 +898,22 @@ IL2CPP_EXTERN_C_END
 #endif
 struct U3CU3Ec__55_2_t70575EFE08983FC69D288AF18CD115CB7610C9AE  : public RuntimeObject
 {
+};
+struct U3CU3Ec__DisplayClass3_0_t8D7B0B1E85A1676DBD327CD05F108BCBB8097C86  : public RuntimeObject
+{
+	RuntimeObject* ___serializerRegistry;
+};
+struct U3CU3Ec__DisplayClass3_0_tEE6A1D697EFBCD1537D26C3909E301DD235D6083  : public RuntimeObject
+{
+	RuntimeObject* ___itemSerializer;
+};
+struct U3CU3Ec__DisplayClass3_0_t1523C5FE4551B83E46BDD24E19821A90F1CE5379  : public RuntimeObject
+{
+	RuntimeObject* ___serializerRegistry;
+};
+struct U3CU3Ec__DisplayClass3_0_t9E6DF9F16E9A70B06FE00857C8A0ADECD21187B2  : public RuntimeObject
+{
+	RuntimeObject* ___serializerRegistry;
 };
 struct U3CU3Ec__DisplayClass3_0_t95F616822406FEEFD8E0E7B2CCCAD86ADEB5444C  : public RuntimeObject
 {
@@ -4139,6 +4160,103 @@ inline EqualityComparer_1_t97160852989689D9543E2E1EA7D7196DBEA5AEE4* EqualityCom
 {
 	return ((  EqualityComparer_1_t97160852989689D9543E2E1EA7D7196DBEA5AEE4* (*) (const RuntimeMethod*))EqualityComparer_1_CreateComparer_m3BD7BED1F69ABEE55E320BA9CCFBB473E9F57C66_gshared)(method);
 }
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass3_0__ctor_mE8D8E000F46A4CC1D36E08B8FC623AD817C8F963_gshared (U3CU3Ec__DisplayClass3_0_t8D7B0B1E85A1676DBD327CD05F108BCBB8097C86* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CU3Ec__DisplayClass3_0_U3C_ctorU3Eb__0_mEB9B74D69ACE315285FD26DD2AF6451816284F35_gshared (U3CU3Ec__DisplayClass3_0_t8D7B0B1E85A1676DBD327CD05F108BCBB8097C86* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___serializerRegistry;
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = GenericInterfaceFuncInvoker0< RuntimeObject* >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 1), L_0);
+		return L_1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass3_0__ctor_mDF45193B905A341E99B01F80A55D8A3C68D529A3_gshared (U3CU3Ec__DisplayClass3_0_tEE6A1D697EFBCD1537D26C3909E301DD235D6083* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CU3Ec__DisplayClass3_0_U3C_ctorU3Eb__0_m2AC68EFBEF92B9641DA39F4984F0CC49D95146E5_gshared (U3CU3Ec__DisplayClass3_0_tEE6A1D697EFBCD1537D26C3909E301DD235D6083* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___itemSerializer;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass3_0__ctor_mE1ABD7675DA2A1732F93E190E954EB5FB2C1A1A4_gshared (U3CU3Ec__DisplayClass3_0_t1523C5FE4551B83E46BDD24E19821A90F1CE5379* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CU3Ec__DisplayClass3_0_U3C_ctorU3Eb__0_m7C3979836186628A9875F51A3F32C20D157F9E08_gshared (U3CU3Ec__DisplayClass3_0_t1523C5FE4551B83E46BDD24E19821A90F1CE5379* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___serializerRegistry;
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = GenericInterfaceFuncInvoker0< RuntimeObject* >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 1), L_0);
+		return L_1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass3_0__ctor_m5EEC9C9E4BB44A87AEB6DD8926AE5FFABCE59D7E_gshared (U3CU3Ec__DisplayClass3_0_t9E6DF9F16E9A70B06FE00857C8A0ADECD21187B2* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CU3Ec__DisplayClass3_0_U3C_ctorU3Eb__0_m4265E2F65BD23AB332F78381E7BBFE49B600962F_gshared (U3CU3Ec__DisplayClass3_0_t9E6DF9F16E9A70B06FE00857C8A0ADECD21187B2* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___serializerRegistry;
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = GenericInterfaceFuncInvoker0< RuntimeObject* >::Invoke(il2cpp_rgctx_method(method->klass->rgctx_data, 1), L_0);
+		return L_1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"

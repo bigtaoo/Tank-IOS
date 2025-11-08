@@ -23242,7 +23242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Decimal_get_Low64_m024EBF16396B6B23A
 		L_0 = Decimal_get_Mid_mEE06DEE2D89FDD11819D89AD0FF8639866A51788_inline(__this, NULL);
 		uint32_t L_1;
 		L_1 = Decimal_get_Low_m8B0C535B60CF68D2E41E29F35949F4989D41799C_inline(__this, NULL);
-		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_0)<<((int32_t)32)))|((int64_t)(uint64_t)L_1)));
+		return ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_1))));
 	}
 
 IL_001a:

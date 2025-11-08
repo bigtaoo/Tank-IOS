@@ -1480,7 +1480,7 @@ IL_006d:
 		int32_t L_27 = L_26;
 		uint32_t L_28 = (L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
 		int32_t L_29 = V_2;
-		if ((((int64_t)((int64_t)(uint64_t)L_28)) <= ((int64_t)((int64_t)L_29))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_28))) <= ((int64_t)((int64_t)L_29))))
 		{
 			goto IL_005b;
 		}

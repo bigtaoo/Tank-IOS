@@ -16520,7 +16520,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Exception_t* Datatype_unsignedInt_TryParseVal
 		uint32_t L_8 = V_1;
 		NullCheck(L_7);
 		Exception_t* L_9;
-		L_9 = VirtualFuncInvoker2< Exception_t*, int64_t, XmlSchemaDatatype_t715572E6E9C9A145DBBF5DDF345EFA5D3AA3E34D* >::Invoke(7, L_7, ((int64_t)(uint64_t)L_8), __this);
+		L_9 = VirtualFuncInvoker2< Exception_t*, int64_t, XmlSchemaDatatype_t715572E6E9C9A145DBBF5DDF345EFA5D3AA3E34D* >::Invoke(7, L_7, ((int64_t)(uint64_t)((uint32_t)L_8)), __this);
 		V_0 = L_9;
 		Exception_t* L_10 = V_0;
 		if (L_10)

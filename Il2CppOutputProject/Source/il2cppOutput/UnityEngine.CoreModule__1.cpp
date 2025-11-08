@@ -21207,7 +21207,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExpressionEvaluator_SetRandomState_m172D
 		uint32_t L_0 = ___0_state;
 		PcgRandom_t68FB377AEE2D1ECA10F089EB028FBE8A2D012252 L_1;
 		memset((&L_1), 0, sizeof(L_1));
-		PcgRandom__ctor_m60661E44F818E77DABECCC669F8802633503DF1E((&L_1), ((int64_t)(uint64_t)L_0), ((int64_t)0), NULL);
+		PcgRandom__ctor_m60661E44F818E77DABECCC669F8802633503DF1E((&L_1), ((int64_t)(uint64_t)((uint32_t)L_0)), ((int64_t)0), NULL);
 		il2cpp_codegen_runtime_class_init_inline(ExpressionEvaluator_tF912A1FA6CB7EA697DFA7926E78D808A446B48F0_il2cpp_TypeInfo_var);
 		((ExpressionEvaluator_tF912A1FA6CB7EA697DFA7926E78D808A446B48F0_StaticFields*)il2cpp_codegen_static_fields_for(ExpressionEvaluator_tF912A1FA6CB7EA697DFA7926E78D808A446B48F0_il2cpp_TypeInfo_var))->___s_Random = L_1;
 		return;

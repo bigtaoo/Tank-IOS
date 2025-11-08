@@ -17602,7 +17602,7 @@ IL_0159:
 	{
 		int32_t L_86 = V_6;
 		uint32_t L_87 = V_5;
-		if ((((int64_t)((int64_t)L_86)) < ((int64_t)((int64_t)(uint64_t)L_87))))
+		if ((((int64_t)((int64_t)L_86)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_87)))))
 		{
 			goto IL_010d;
 		}
@@ -17647,7 +17647,7 @@ IL_01a5:
 	{
 		int32_t L_105 = V_10;
 		uint32_t L_106 = V_5;
-		if ((((int64_t)((int64_t)L_105)) < ((int64_t)((int64_t)(uint64_t)L_106))))
+		if ((((int64_t)((int64_t)L_105)) < ((int64_t)((int64_t)(uint64_t)((uint32_t)L_106)))))
 		{
 			goto IL_0183;
 		}

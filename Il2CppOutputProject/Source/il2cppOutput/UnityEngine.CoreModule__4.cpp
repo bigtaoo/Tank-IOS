@@ -22731,7 +22731,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SparseTexture_ValidateSize_m48481DA7F143
 		int32_t L_6 = ___2_format;
 		uint32_t L_7;
 		L_7 = GraphicsFormatUtility_GetBlockHeight_m350A2058DA517CC5FF6C287824D30D7DB2E9C7A3(L_6, NULL);
-		V_0 = (bool)((((int64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)L_1), ((int64_t)(((int64_t)L_2)/((int64_t)(uint64_t)L_4))))), ((int64_t)(((int64_t)L_5)/((int64_t)(uint64_t)L_7)))))) < ((int64_t)((int64_t)((int32_t)65536))))? 1 : 0);
+		V_0 = (bool)((((int64_t)((int64_t)il2cpp_codegen_multiply(((int64_t)il2cpp_codegen_multiply(((int64_t)(uint64_t)((uint32_t)L_1)), ((int64_t)(((int64_t)L_2)/((int64_t)(uint64_t)((uint32_t)L_4)))))), ((int64_t)(((int64_t)L_5)/((int64_t)(uint64_t)((uint32_t)L_7))))))) < ((int64_t)((int64_t)((int32_t)65536))))? 1 : 0);
 		bool L_8 = V_0;
 		if (!L_8)
 		{
@@ -31447,10 +31447,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Hash128__ctor_m4C7478EE2EED2085265B895E4
 	{
 		uint32_t L_0 = ___1_u32_1;
 		uint32_t L_1 = ___0_u32_0;
-		__this->___u64_0 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_0)<<((int32_t)32)))|((int64_t)(uint64_t)L_1)));
+		__this->___u64_0 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_1))));
 		uint32_t L_2 = ___3_u32_3;
 		uint32_t L_3 = ___2_u32_2;
-		__this->___u64_1 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_2)<<((int32_t)32)))|((int64_t)(uint64_t)L_3)));
+		__this->___u64_1 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_2))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_3))));
 		return;
 	}
 }
@@ -32290,7 +32290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Hash128_ShortHash4_mBA10B5DE506780EA55E9
 		V_3 = ((int64_t)il2cpp_codegen_add((int64_t)L_2, ((int64_t)288230376151711744LL)));
 		uint64_t L_3 = V_2;
 		uint32_t L_4 = ___0_data;
-		V_2 = ((int64_t)il2cpp_codegen_add((int64_t)L_3, ((int64_t)(uint64_t)L_4)));
+		V_2 = ((int64_t)il2cpp_codegen_add((int64_t)L_3, ((int64_t)(uint64_t)((uint32_t)L_4))));
 		Hash128_ShortEnd_mE744D09ADDB4EDFFFB7F0F1857B1862CB84308CA((&V_0), (&V_1), (&V_2), (&V_3), NULL);
 		uint64_t L_5 = V_0;
 		__this->___u64_0 = L_5;

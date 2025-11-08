@@ -8967,7 +8967,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool URPLightShadowCullingInfos_IsSliceValid_
 	{
 		uint32_t L_0 = __this->___slicesValidMask;
 		int32_t L_1 = ___0_i;
-		return (bool)((!(((uint64_t)((int64_t)(((int64_t)(uint64_t)L_0)&((int64_t)((int32_t)(1<<((int32_t)(L_1&((int32_t)31))))))))) <= ((uint64_t)((int64_t)0))))? 1 : 0);
+		return (bool)((!(((uint64_t)((int64_t)(((int64_t)(uint64_t)((uint32_t)L_0))&((int64_t)((int32_t)(1<<((int32_t)(L_1&((int32_t)31))))))))) <= ((uint64_t)((int64_t)0))))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C  bool URPLightShadowCullingInfos_IsSliceValid_m7A4FD76F47B4EA4E62951751ED4FD63E69535BD8_AdjustorThunk (RuntimeObject* __this, int32_t ___0_i, const RuntimeMethod* method)
@@ -44360,7 +44360,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ContextContainer_Contains_mD
 		uint32_t L_0 = ___0_typeId;
 		ItemU5BU5D_t4AC8CDDFF9ED634B9ECE154F0C638C00B12B5CCB* L_1 = __this->___m_Items;
 		NullCheck(L_1);
-		if ((((int64_t)((int64_t)(uint64_t)L_0)) >= ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_1)->max_length))))))
+		if ((((int64_t)((int64_t)(uint64_t)((uint32_t)L_0))) >= ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_1)->max_length))))))
 		{
 			goto IL_001f;
 		}

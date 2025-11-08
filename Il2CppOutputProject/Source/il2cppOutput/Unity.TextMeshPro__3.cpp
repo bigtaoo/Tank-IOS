@@ -16924,7 +16924,7 @@ IL_0032:
 		V_1 = G_B5_0;
 		uint32_t L_9 = V_1;
 		uint32_t L_10 = V_0;
-		V_2 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_9)<<((int32_t)32)))|((int64_t)(uint64_t)L_10)));
+		V_2 = ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_9))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_10))));
 		Dictionary_2_t8E76AA10F849EB48DC945DFABFCC4A6EDA4BAAB6* L_11 = __this->___s_SystemFontLookup;
 		uint64_t L_12 = V_2;
 		NullCheck(L_11);
@@ -17344,7 +17344,7 @@ IL_00ea:
 	{
 		uint32_t L_48 = V_1;
 		uint32_t L_49 = V_0;
-		__this->___hashCode = ((int64_t)(((int64_t)(((int64_t)(uint64_t)L_48)<<((int32_t)32)))|((int64_t)(uint64_t)L_49)));
+		__this->___hashCode = ((int64_t)(((int64_t)(((int64_t)(uint64_t)((uint32_t)L_48))<<((int32_t)32)))|((int64_t)(uint64_t)((uint32_t)L_49))));
 		return;
 	}
 }

@@ -8379,9 +8379,9 @@ IL_003a_1:
 			NullCheck(L_9);
 			int32_t L_11 = L_10;
 			uint8_t L_12 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
-			if ((uint64_t)L_8 > kIl2CppUInt64Max - (uint64_t)((int64_t)(uint64_t)L_12))
+			if ((uint64_t)L_8 > kIl2CppUInt64Max - (uint64_t)((int64_t)(uint64_t)((uint32_t)L_12)))
 				IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), ByteStorage_Aggregate_mC4C2B20E9CCF5E3C3EE8A5A11907A0C1EE520061_RuntimeMethod_var);
-			V_1 = ((int64_t)il2cpp_codegen_add((int64_t)L_8, ((int64_t)(uint64_t)L_12)));
+			V_1 = ((int64_t)il2cpp_codegen_add((int64_t)L_8, ((int64_t)(uint64_t)((uint32_t)L_12))));
 			V_0 = (bool)1;
 		}
 
@@ -8456,9 +8456,9 @@ IL_0092_1:
 			NullCheck(L_29);
 			int32_t L_31 = L_30;
 			uint8_t L_32 = (L_29)->GetAt(static_cast<il2cpp_array_size_t>(L_31));
-			if (il2cpp_codegen_check_add_overflow((int64_t)L_28, (int64_t)((int64_t)(uint64_t)L_32)))
+			if (il2cpp_codegen_check_add_overflow((int64_t)L_28, (int64_t)((int64_t)(uint64_t)((uint32_t)L_32))))
 				IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), ByteStorage_Aggregate_mC4C2B20E9CCF5E3C3EE8A5A11907A0C1EE520061_RuntimeMethod_var);
-			V_2 = ((int64_t)il2cpp_codegen_add(L_28, ((int64_t)(uint64_t)L_32)));
+			V_2 = ((int64_t)il2cpp_codegen_add(L_28, ((int64_t)(uint64_t)((uint32_t)L_32))));
 			int32_t L_33 = V_3;
 			V_3 = ((int32_t)il2cpp_codegen_add(L_33, 1));
 			V_0 = (bool)1;
@@ -23635,7 +23635,7 @@ IL_0089:
 		RuntimeObject* L_18 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(SqlInt64_t6F2A4BE192CBAA1059DDAB0D02FEDF4EDEAD6272_il2cpp_TypeInfo_var);
 		SqlInt64_t6F2A4BE192CBAA1059DDAB0D02FEDF4EDEAD6272 L_19;
-		L_19 = SqlInt64_op_Implicit_m987658055FF4968952677E2CBA70A30BC98E3CDF(((int64_t)(uint64_t)((*(uint16_t*)UnBox(L_18, il2cpp_defaults.uint16_class)))), NULL);
+		L_19 = SqlInt64_op_Implicit_m987658055FF4968952677E2CBA70A30BC98E3CDF(((int64_t)(uint64_t)((uint32_t)((*(uint16_t*)UnBox(L_18, il2cpp_defaults.uint16_class))))), NULL);
 		return L_19;
 	}
 
@@ -23662,7 +23662,7 @@ IL_00af:
 		RuntimeObject* L_24 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(SqlInt64_t6F2A4BE192CBAA1059DDAB0D02FEDF4EDEAD6272_il2cpp_TypeInfo_var);
 		SqlInt64_t6F2A4BE192CBAA1059DDAB0D02FEDF4EDEAD6272 L_25;
-		L_25 = SqlInt64_op_Implicit_m987658055FF4968952677E2CBA70A30BC98E3CDF(((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_24, il2cpp_defaults.uint32_class)))), NULL);
+		L_25 = SqlInt64_op_Implicit_m987658055FF4968952677E2CBA70A30BC98E3CDF(((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_24, il2cpp_defaults.uint32_class))))), NULL);
 		return L_25;
 	}
 
@@ -23680,7 +23680,7 @@ IL_00c8:
 		RuntimeObject* L_28 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(SqlInt64_t6F2A4BE192CBAA1059DDAB0D02FEDF4EDEAD6272_il2cpp_TypeInfo_var);
 		SqlInt64_t6F2A4BE192CBAA1059DDAB0D02FEDF4EDEAD6272 L_29;
-		L_29 = SqlInt64_op_Implicit_m987658055FF4968952677E2CBA70A30BC98E3CDF(((int64_t)(uint64_t)((*(uint8_t*)UnBox(L_28, il2cpp_defaults.byte_class)))), NULL);
+		L_29 = SqlInt64_op_Implicit_m987658055FF4968952677E2CBA70A30BC98E3CDF(((int64_t)(uint64_t)((uint32_t)((*(uint8_t*)UnBox(L_28, il2cpp_defaults.byte_class))))), NULL);
 		return L_29;
 	}
 
@@ -24215,7 +24215,7 @@ IL_00db:
 		RuntimeObject* L_23 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var);
 		SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406 L_24;
-		L_24 = SqlDecimal_op_Implicit_m6A5A2468D06AC0620AE94D742CB9B4D88BA93E59(((int64_t)(uint64_t)((*(uint16_t*)UnBox(L_23, il2cpp_defaults.uint16_class)))), NULL);
+		L_24 = SqlDecimal_op_Implicit_m6A5A2468D06AC0620AE94D742CB9B4D88BA93E59(((int64_t)(uint64_t)((uint32_t)((*(uint16_t*)UnBox(L_23, il2cpp_defaults.uint16_class))))), NULL);
 		return L_24;
 	}
 
@@ -24242,7 +24242,7 @@ IL_0101:
 		RuntimeObject* L_29 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var);
 		SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406 L_30;
-		L_30 = SqlDecimal_op_Implicit_m6A5A2468D06AC0620AE94D742CB9B4D88BA93E59(((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_29, il2cpp_defaults.uint32_class)))), NULL);
+		L_30 = SqlDecimal_op_Implicit_m6A5A2468D06AC0620AE94D742CB9B4D88BA93E59(((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_29, il2cpp_defaults.uint32_class))))), NULL);
 		return L_30;
 	}
 
@@ -24260,7 +24260,7 @@ IL_011a:
 		RuntimeObject* L_33 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var);
 		SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406 L_34;
-		L_34 = SqlDecimal_op_Implicit_m6A5A2468D06AC0620AE94D742CB9B4D88BA93E59(((int64_t)(uint64_t)((*(uint8_t*)UnBox(L_33, il2cpp_defaults.byte_class)))), NULL);
+		L_34 = SqlDecimal_op_Implicit_m6A5A2468D06AC0620AE94D742CB9B4D88BA93E59(((int64_t)(uint64_t)((uint32_t)((*(uint8_t*)UnBox(L_33, il2cpp_defaults.byte_class))))), NULL);
 		return L_34;
 	}
 
@@ -24759,7 +24759,7 @@ IL_00c7:
 		RuntimeObject* L_24 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(SqlMoney_t88BD587F422EA297502BC57B18010762C03531BB_il2cpp_TypeInfo_var);
 		SqlMoney_t88BD587F422EA297502BC57B18010762C03531BB L_25;
-		L_25 = SqlMoney_op_Implicit_m88FEDBC3FD9487B81D1E34FB6CFAA2C5E6E004B9(((int64_t)(uint64_t)((*(uint16_t*)UnBox(L_24, il2cpp_defaults.uint16_class)))), NULL);
+		L_25 = SqlMoney_op_Implicit_m88FEDBC3FD9487B81D1E34FB6CFAA2C5E6E004B9(((int64_t)(uint64_t)((uint32_t)((*(uint16_t*)UnBox(L_24, il2cpp_defaults.uint16_class))))), NULL);
 		return L_25;
 	}
 
@@ -24786,7 +24786,7 @@ IL_00ed:
 		RuntimeObject* L_30 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(SqlMoney_t88BD587F422EA297502BC57B18010762C03531BB_il2cpp_TypeInfo_var);
 		SqlMoney_t88BD587F422EA297502BC57B18010762C03531BB L_31;
-		L_31 = SqlMoney_op_Implicit_m88FEDBC3FD9487B81D1E34FB6CFAA2C5E6E004B9(((int64_t)(uint64_t)((*(uint32_t*)UnBox(L_30, il2cpp_defaults.uint32_class)))), NULL);
+		L_31 = SqlMoney_op_Implicit_m88FEDBC3FD9487B81D1E34FB6CFAA2C5E6E004B9(((int64_t)(uint64_t)((uint32_t)((*(uint32_t*)UnBox(L_30, il2cpp_defaults.uint32_class))))), NULL);
 		return L_31;
 	}
 
@@ -24804,7 +24804,7 @@ IL_0106:
 		RuntimeObject* L_34 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(SqlMoney_t88BD587F422EA297502BC57B18010762C03531BB_il2cpp_TypeInfo_var);
 		SqlMoney_t88BD587F422EA297502BC57B18010762C03531BB L_35;
-		L_35 = SqlMoney_op_Implicit_m88FEDBC3FD9487B81D1E34FB6CFAA2C5E6E004B9(((int64_t)(uint64_t)((*(uint8_t*)UnBox(L_34, il2cpp_defaults.byte_class)))), NULL);
+		L_35 = SqlMoney_op_Implicit_m88FEDBC3FD9487B81D1E34FB6CFAA2C5E6E004B9(((int64_t)(uint64_t)((uint32_t)((*(uint8_t*)UnBox(L_34, il2cpp_defaults.byte_class))))), NULL);
 		return L_35;
 	}
 

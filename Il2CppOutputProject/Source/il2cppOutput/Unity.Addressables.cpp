@@ -28531,7 +28531,7 @@ IL_0018:
 		SerializedData_t3E31C60A9E835DF7E68D557F18B794B31866D11C L_30 = V_0;
 		uint32_t L_31 = L_30.___bundleSize;
 		NullCheck(L_29);
-		AssetBundleRequestOptions_set_BundleSize_mBEC0BFD2694FB465EF71A626BAB0DAED839D340F_inline(L_29, ((int64_t)(uint64_t)L_31), NULL);
+		AssetBundleRequestOptions_set_BundleSize_mBEC0BFD2694FB465EF71A626BAB0DAED839D340F_inline(L_29, ((int64_t)(uint64_t)((uint32_t)L_31)), NULL);
 		AssetBundleRequestOptions_t28C7A48941B14DD1BAF93B223830820F1AB1E006* L_32 = L_29;
 		Common_t274B726A3B8A97AA7D5DFD9F6E11B661E05F39A2 L_33 = V_2;
 		int16_t L_34 = L_33.___timeout;
