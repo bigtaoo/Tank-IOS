@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
- "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>method</key>
-  <string>app-store</string>
-
-  <key>teamID</key>
-  <string>C677KJH544</string>
-
-  <!-- Map only the app's bundle id to your profile NAME -->
-  <key>provisioningProfiles</key>
-  <dict>
-    <key>com.taowang.tank-the-future</key>
-    <string>tank</string>
-  </dict>
-
-  <key>uploadSymbols</key>
-  <true/>
-
-  <!-- Bitcode is deprecated; disabling avoids unnecessary work -->
-  <key>compileBitcode</key>
-  <false/>
+	<key>method</key>
+	<string>app-store</string>
+	<key>teamID</key>
+	<string>C677KJH544</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.taowang.tankium</key>
+		<string>Tankium</string>
+	</dict>
+	<key>uploadSymbols</key>
+	<true/>
+	<key>compileBitcode</key>
+	<false/>
 </dict>
 </plist>
