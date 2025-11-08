@@ -69,7 +69,7 @@
 		53A7389F2A96F2AA43372F59 /* ObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 20EA2167940E38CE59078C26 /* ObjCRuntime.h */; };
 		5623C57617FDCB0800090B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		5623C57717FDCB0800090B9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B5C100E5ED4C100C7819F /* UIKit.framework */; };
-		5623C57D17FDCB0900090B9E = {isa = PBXBuildFile; fileRef = 5623C57B17FDCB0900090B9E /* InfoPlist.strings */; };
+		5623C57D17FDCB0900090B9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5623C57B17FDCB0900090B9E /* InfoPlist.strings */; };
 		5623C57F17FDCB0900090B9E /* Unity_iPhone_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5623C57E17FDCB0900090B9E /* Unity_iPhone_Tests.m */; };
 		56C56C9817D6015200616839 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C56C9717D6015100616839 /* Images.xcassets */; };
 		574A8D1BFDF4103B13A6538A /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21ECD27EDF8EB21168769097 /* GameController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -105,6 +105,7 @@
 		89F441207B7B11C00A565C76 /* RenderPluginDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 545C2725D520C9091BC28AFB /* RenderPluginDelegate.mm */; };
 		8C7D96410D212063F8183475 /* LPMInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E18C986A1A1AFD6D7AC01F /* LPMInterstitialAd.m */; };
 		91C1EB5F348833EAD02A7E9A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F2E4BD281D8D2761198E3AA0 /* PrivacyInfo.xcprivacy */; };
+		93CE33582EBFD7F500AEC2F2 /* FixIl2CppMemoryPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93CE33572EBFD7F500AEC2F2 /* FixIl2CppMemoryPool.cpp */; };
 		947A4B628B20E5D7DD8E07D8 /* IUnityProfilerCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B3AA4CC9BFFEBCECE491D36 /* IUnityProfilerCallbacks.h */; };
 		959F988410F5B9A01E86D316 /* UnityView.h in Headers */ = {isa = PBXBuildFile; fileRef = 05DDA3FCDF632B6069EF328B /* UnityView.h */; };
 		99352091BC8F1E75187FCCB8 /* IUnityRenderingExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD53DDCF41F47893B0FFED8 /* IUnityRenderingExtensions.h */; };
@@ -323,7 +324,7 @@
 		1C3F27E9009F948E3EC03458 /* System.Xml__5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = System.Xml__5.cpp; path = Il2CppOutputProject/Source/il2cppOutput/System.Xml__5.cpp; sourceTree = SOURCE_ROOT; };
 		1C3F318BA46B803440E78399 /* Generics__175.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__175.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__175.cpp; sourceTree = SOURCE_ROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unity-Target-New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Unity-Target-New.app"; path = Tankium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC31C363AA49E88C15788BB /* mscorlib__11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib__11.cpp; path = Il2CppOutputProject/Source/il2cppOutput/mscorlib__11.cpp; sourceTree = SOURCE_ROOT; };
 		1DD696E89C6A943954768877 /* Il2CppGenericInstDefinitions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Il2CppGenericInstDefinitions.c; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppGenericInstDefinitions.c; sourceTree = SOURCE_ROOT; };
 		1E24B93E9D27D99850693BAF /* LaunchScreen-iPhoneLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-iPhoneLandscape.png"; sourceTree = SOURCE_ROOT; };
@@ -714,6 +715,7 @@
 		9282457715F9AC625A54964C /* Generics__79.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__79.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__79.cpp; sourceTree = SOURCE_ROOT; };
 		92E17166D3BDB3EA24239E77 /* mscorlib__20.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib__20.cpp; path = Il2CppOutputProject/Source/il2cppOutput/mscorlib__20.cpp; sourceTree = SOURCE_ROOT; };
 		93494B068AD760E24AD9717D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		93CE33572EBFD7F500AEC2F2 /* FixIl2CppMemoryPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FixIl2CppMemoryPool.cpp; sourceTree = "<group>"; };
 		93DCE62BE3E166440E8359CE /* Unity.Addressables_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Unity.Addressables_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/Unity.Addressables_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		93E6825D15CDF948BB0DCB44 /* Il2CppCCalculateTypeValues2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCCalculateTypeValues2.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppCCalculateTypeValues2.cpp; sourceTree = SOURCE_ROOT; };
 		94171DB83A0E4A9A61CFBC08 /* Generics__46.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__46.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__46.cpp; sourceTree = SOURCE_ROOT; };
@@ -2126,6 +2128,7 @@
 		9D25AB9E213FB47800354C27 /* UnityFramework */ = {
 			isa = PBXGroup;
 			children = (
+				93CE33572EBFD7F500AEC2F2 /* FixIl2CppMemoryPool.cpp */,
 				D5FA3667394130C0BCCF8B0E /* ApplePrivacyManifestsMerge.txt */,
 				B58EF12BF9B65BC74A92DC07 /* AppleRequiredReasonCSharpAPIs.txt */,
 				9D25ABA0213FB47800354C27 /* Info.plist */,
@@ -2370,6 +2373,7 @@
 			attributes = {
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = C677KJH544;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.GameControllers.appletvos = {
@@ -2379,6 +2383,7 @@
 						UnityMainTarget = 1;
 					};
 					5623C57217FDCB0800090B9E = {
+						DevelopmentTeam = C677KJH544;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1D6058900D05DD3D006BFB54;
 					};
@@ -2435,7 +2440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5623C57D17FDCB0900090B9E,
+				5623C57D17FDCB0900090B9E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2501,6 +2506,7 @@
 				8C7D96410D212063F8183475 /* LPMInterstitialAd.m in Sources */,
 				45C58880305ACDBC1B311DFC /* LPMInitializer.m in Sources */,
 				9BA70426A90DB33FFDF35A71 /* lib_burst_generated.cpp in Sources */,
+				93CE33582EBFD7F500AEC2F2 /* FixIl2CppMemoryPool.cpp in Sources */,
 				D68A2D92E86446856C4F6FF9 /* InternalProfiler.cpp in Sources */,
 				77C0894FC16BA5631139FC8F /* StoreReview.m in Sources */,
 				6EFDFBBD1388F51433119270 /* main.mm in Sources */,
@@ -3207,7 +3213,7 @@
 					CoreMotion,
 					"-weak-lSystem",
 					"$(OTHER_LDFLAGS_FRAMEWORK)",
-					"$CONFIGURATION_BUILD_DIR/il2cpp.a",
+					$CONFIGURATION_BUILD_DIR/il2cpp.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unity3d.framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -3282,7 +3288,7 @@
 					CoreMotion,
 					"-weak-lSystem",
 					"$(OTHER_LDFLAGS_FRAMEWORK)",
-					"$CONFIGURATION_BUILD_DIR/il2cpp.a",
+					$CONFIGURATION_BUILD_DIR/il2cpp.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unity3d.framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -3358,7 +3364,7 @@
 					CoreMotion,
 					"-weak-lSystem",
 					"$(OTHER_LDFLAGS_FRAMEWORK)",
-					"$CONFIGURATION_BUILD_DIR/il2cpp.a",
+					$CONFIGURATION_BUILD_DIR/il2cpp.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unity3d.framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -3435,7 +3441,7 @@
 					CoreMotion,
 					"-weak-lSystem",
 					"$(OTHER_LDFLAGS_FRAMEWORK)",
-					"$CONFIGURATION_BUILD_DIR/il2cpp.a",
+					$CONFIGURATION_BUILD_DIR/il2cpp.a,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unity3d.framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
