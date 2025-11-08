@@ -60,10 +60,14 @@ jobs:
       # 1) Install provisioning profile (base64 of tankium.mobileprovision)
       - name: Install provisioning profile
         run: |
-          echo "${{ secrets.TANKIUM_MOBILEPROVISION_BASE64 }}" | base64 --decode > tankium.mobileprovision
+          echo "${{ secrets.TANKIUM_MOBILEPROVISION_BASE64 }}" | base64 --decode > Tankium.mobileprovision
           mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
-          UUID=$(/usr/libexec/PlistBuddy -c Print:UUID /dev/stdin <<< "$(security cms -D -i tankium.mobileprovision)")
-          cp tankium.mobileprovision "$HOME/Library/MobileDevice/Provisioning Profiles/$UUID.mobileprovision"
+          UUID=$(/usr/libexec/PlistBuddy -c Print:UUID /dev/stdin <<< "$(security cms -D -i Tankium.mobileprovision)")
+          cp Tankium.mobileprovision "$HOME/Library/MobileDevice/Provisioning Profiles/$UUID.mobileprovision"
+          echo "Installed provisioning profile UUID: $UUID"
+          echo "Profile name:"
+          security cms -D -i Tankium.mobileprovision | grep -A1 "<key>Name</key>"
+
 
       # 2) Install Apple Distribution certificate (.p12 + password)
       - name: Install signing certificate
@@ -102,7 +106,7 @@ jobs:
             project   = Xcodeproj::Project.open(proj_path)
 
             TEAM_ID   = 'C677KJH544'
-            PROFILE   = 'tankium'
+            PROFILE   = 'Tankium'
             APP_ID    = 'com.taowang.tankium'
 
             app = project.targets.find { |t| t.name == 'Unity-iPhone' }
