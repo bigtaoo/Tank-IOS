@@ -82,7 +82,7 @@ jobs:
 
       # Keep keychain unlocked & show identity
       - name: Keep keychain unlocked + verify identity
-        run: |
+        run: | 
           security set-keychain-settings -lut 21600 "$HOME/Library/Keychains/actions.keychain"
           security unlock-keychain -p github "$HOME/Library/Keychains/actions.keychain"
           echo "== Codesigning identities in actions.keychain =="
@@ -206,7 +206,7 @@ jobs:
       - name: Archive
         run: |
           xcodebuild \
-            -project Unity-iPhone.xcodeproj \
+            -workspace Unity-iPhone.xcworkspace \
             -scheme Unity-iPhone \
             -configuration Release \
             -sdk iphoneos \
