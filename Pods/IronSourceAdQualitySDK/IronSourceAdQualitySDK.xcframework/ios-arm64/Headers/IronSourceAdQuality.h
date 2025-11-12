@@ -13,7 +13,7 @@
 #import "ISAdQualityCustomMediationRevenue.h"
 #import "ISAdQualitySegment.h"
 
-#define IRONSOURCE_AD_QUALITY_VERSION    @"9.0.2"
+#define IRONSOURCE_AD_QUALITY_VERSION    @"9.1.0"
 
 static NSString *IRONSOURCE_AD_QUALITY_TAG = @"ISAdQualitySDK";
 
@@ -37,7 +37,8 @@ static NSString *IRONSOURCE_AD_QUALITY_TAG = @"ISAdQualitySDK";
 
 - (void)initializeWithAppKey:(NSString *)appKey;
 - (void)initializeWithAppKey:(NSString *)appKey andConfig:(ISAdQualityConfig *)config;
-- (void)shutdown;
+- (void)shutdown
+DEPRECATED_MSG_ATTRIBUTE("This method is deprecated and will be removed in version 10.0.0");
 - (void)changeUserId:(NSString *)userId;
 - (void)sendCustomMediationRevenue:(ISAdQualityCustomMediationRevenue *)customMediationRev;
 - (void)setSegment:(ISAdQualitySegment *)segment;

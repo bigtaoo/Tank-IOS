@@ -8,7 +8,7 @@ target 'UnityFramework' do
   pod 'IronSourceAppLovinAdapter', '5.1.0.0'
   pod 'IronSourceFacebookAdapter', '5.0.0.0'
   pod 'IronSourcePangleAdapter', '5.2.0.0'
-  pod 'IronSourceSDK', '9.0.0.0'
+  pod 'IronSourceSDK', '9.1.0.0'
   pod 'IronSourceTencentAdapter', '5.1.0.0'
   pod 'IronSourceUnityAdsAdapter', '5.2.0.0'
 end

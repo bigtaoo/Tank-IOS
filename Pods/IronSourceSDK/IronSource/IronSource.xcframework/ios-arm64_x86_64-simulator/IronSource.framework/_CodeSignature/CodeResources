@@ -322,7 +322,7 @@
 		</data>
 		<key>Headers/ISError.h</key>
 		<data>
-		4FDJsZsfMYyO51qWqYIoTXC036o=
+		3mhydpRV/MBcE4y1XGlwo+yLZIw=
 		</data>
 		<key>Headers/ISInterstitialAdapterDelegate.h</key>
 		<data>
@@ -470,7 +470,7 @@
 		</data>
 		<key>Headers/IronSource.h</key>
 		<data>
-		92KypcU02+ah5X5kvUiD5rfxdN4=
+		7MfkuFTiLup3RR/7w8BQDM5yBog=
 		</data>
 		<key>Headers/IronSourceAds.h</key>
 		<data>
@@ -614,7 +614,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		s/FqYKAfa6oOaTijU6TPvjLgJFU=
+		djMlcUNXxT7ZpsIp0GoiMqFcpEs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1500,11 +1500,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4FDJsZsfMYyO51qWqYIoTXC036o=
+			3mhydpRV/MBcE4y1XGlwo+yLZIw=
 			</data>
 			<key>hash2</key>
 			<data>
-			daS4aEDmR/JIvalIglY8EZsNpsoYzDsSx9XxBCQrBP8=
+			rsOijKbrHYLiKGmonN+9ALS1NyyCiVq3olSGhC9jEy8=
 			</data>
 		</dict>
 		<key>Headers/ISInterstitialAdapterDelegate.h</key>
@@ -1907,11 +1907,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			92KypcU02+ah5X5kvUiD5rfxdN4=
+			7MfkuFTiLup3RR/7w8BQDM5yBog=
 			</data>
 			<key>hash2</key>
 			<data>
-			l7vQDEIwFItwT2vJJUz01sOKcqkw6Q4GX7kQvB++ptc=
+			CzQfAf3EX1nND7OappaCV9gPdQURAOT3FMymXp3etmY=
 			</data>
 		</dict>
 		<key>Headers/IronSourceAds.h</key>

@@ -15,7 +15,7 @@ PODS:
   - IronSourceAdMobAdapter (5.2.0.0):
     - Google-Mobile-Ads-SDK (= 12.12.0)
     - IronSourceSDK/Ads (~> 9.0)
-  - IronSourceAdQualitySDK (9.0.2)
+  - IronSourceAdQualitySDK (9.1.0)
   - IronSourceAppLovinAdapter (5.1.0.0):
     - AppLovinSDK (= 13.5.0)
     - IronSourceSDK/Ads (~> 9.0)
@@ -25,12 +25,12 @@ PODS:
   - IronSourcePangleAdapter (5.2.0.0):
     - Ads-Global (= 7.7.0.4)
     - IronSourceSDK/Ads (~> 9.0)
-  - IronSourceSDK (9.0.0.0):
-    - IronSourceSDK/AdQuality (= 9.0.0.0)
-    - IronSourceSDK/Ads (= 9.0.0.0)
-  - IronSourceSDK/AdQuality (9.0.0.0):
-    - IronSourceAdQualitySDK (~> 9.0.0)
-  - IronSourceSDK/Ads (9.0.0.0)
+  - IronSourceSDK (9.1.0.0):
+    - IronSourceSDK/AdQuality (= 9.1.0.0)
+    - IronSourceSDK/Ads (= 9.1.0.0)
+  - IronSourceSDK/AdQuality (9.1.0.0):
+    - IronSourceAdQualitySDK (~> 9.1.0)
+  - IronSourceSDK/Ads (9.1.0.0)
   - IronSourceTencentAdapter (5.1.0.0):
     - GDTMobSDK (= 4.15.60)
     - IronSourceSDK/Ads (~> 9.0)
@@ -44,7 +44,7 @@ DEPENDENCIES:
   - IronSourceAppLovinAdapter (= 5.1.0.0)
   - IronSourceFacebookAdapter (= 5.0.0.0)
   - IronSourcePangleAdapter (= 5.2.0.0)
-  - IronSourceSDK (= 9.0.0.0)
+  - IronSourceSDK (= 9.1.0.0)
   - IronSourceTencentAdapter (= 5.1.0.0)
   - IronSourceUnityAdsAdapter (= 5.2.0.0)
 
@@ -76,15 +76,15 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 4dde70a8c18d96b14f9548759b8cec6ecb0bc3e6
   GoogleUserMessagingPlatform: befe603da6501006420c206222acd449bba45a9c
   IronSourceAdMobAdapter: 0fa22b461f252c0e0b927783f154cfa974ea6ae7
-  IronSourceAdQualitySDK: b34d46a52db89ac9d9d4169ceb41f44421e07606
+  IronSourceAdQualitySDK: 004e42fe12e9e95a0665eaf35ac852a73a757d10
   IronSourceAppLovinAdapter: 469b06b4e87109165fcca171c56ef79d31cfe3d6
   IronSourceFacebookAdapter: 66c698ad05818bc03f080f7f1ce0a26850b26092
   IronSourcePangleAdapter: 926970be0645ed7c1155e0e0efa3198befd07e7a
-  IronSourceSDK: b64660084bc4b162f30a4e846f7b763ce0074664
+  IronSourceSDK: 42f7abe6ab74a76d27d9325718471ebe72dde3d2
   IronSourceTencentAdapter: 979a485cd7b38bde7ef1e6aa8498dca0e61631de
   IronSourceUnityAdsAdapter: e4fae7ab466615e8265086d2d9661b628d50a2b4
   UnityAds: 64164885dd38214bfc556eb074ab1995cc613fbf
 
-PODFILE CHECKSUM: 1dd65bdbb8777e13aa0d153f633da0f1d96d21b3
+PODFILE CHECKSUM: b1750bad4462ad87b6dc73cb63b76caccab111ee
 
 COCOAPODS: 1.16.2
