@@ -206,7 +206,7 @@ jobs:
       - name: Archive
         run: |
           xcodebuild \
-            -project Unity-iPhone.xcodeproj \
+            -workspace Unity-iPhone.xcworkspace \
             -scheme Unity-iPhone \
             -configuration Release \
             -sdk iphoneos \
