@@ -1670,10 +1670,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AndroidJNI_CallStringMethodUnsafeInternal_Injected();
 		Register_UnityEngine_AndroidJNI_CallStringMethodUnsafeInternal_Injected();
 
-		//System.Void UnityEngine.AndroidJNI::CallVoidMethodUnsafe(System.IntPtr,System.IntPtr,UnityEngine.jvalue*)
-		void Register_UnityEngine_AndroidJNI_CallVoidMethodUnsafe();
-		Register_UnityEngine_AndroidJNI_CallVoidMethodUnsafe();
-
 		//System.Void UnityEngine.AndroidJNI::DeleteLocalRef(System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_DeleteLocalRef();
 		Register_UnityEngine_AndroidJNI_DeleteLocalRef();
@@ -9558,10 +9554,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.GUI
 
-		//System.Boolean UnityEngine.GUI::HasMouseControl(System.Int32)
-		void Register_UnityEngine_GUI_HasMouseControl();
-		Register_UnityEngine_GUI_HasMouseControl();
-
 		//System.Boolean UnityEngine.GUI::get_changed()
 		void Register_UnityEngine_GUI_get_changed();
 		Register_UnityEngine_GUI_get_changed();
@@ -9569,30 +9561,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.GUI::get_enabled()
 		void Register_UnityEngine_GUI_get_enabled();
 		Register_UnityEngine_GUI_get_enabled();
-
-		//System.IntPtr UnityEngine.GUI::get_blendMaterial_Injected()
-		void Register_UnityEngine_GUI_get_blendMaterial_Injected();
-		Register_UnityEngine_GUI_get_blendMaterial_Injected();
-
-		//System.IntPtr UnityEngine.GUI::get_blitMaterial_Injected()
-		void Register_UnityEngine_GUI_get_blitMaterial_Injected();
-		Register_UnityEngine_GUI_get_blitMaterial_Injected();
-
-		//System.IntPtr UnityEngine.GUI::get_roundedRectMaterial_Injected()
-		void Register_UnityEngine_GUI_get_roundedRectMaterial_Injected();
-		Register_UnityEngine_GUI_get_roundedRectMaterial_Injected();
-
-		//System.IntPtr UnityEngine.GUI::get_roundedRectWithColorPerBorderMaterial_Injected()
-		void Register_UnityEngine_GUI_get_roundedRectWithColorPerBorderMaterial_Injected();
-		Register_UnityEngine_GUI_get_roundedRectWithColorPerBorderMaterial_Injected();
-
-		//System.Void UnityEngine.GUI::GrabMouseControl(System.Int32)
-		void Register_UnityEngine_GUI_GrabMouseControl();
-		Register_UnityEngine_GUI_GrabMouseControl();
-
-		//System.Void UnityEngine.GUI::ReleaseMouseControl()
-		void Register_UnityEngine_GUI_ReleaseMouseControl();
-		Register_UnityEngine_GUI_ReleaseMouseControl();
 
 		//System.Void UnityEngine.GUI::get_backgroundColor_Injected(UnityEngine.Color&)
 		void Register_UnityEngine_GUI_get_backgroundColor_Injected();
@@ -9649,10 +9617,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.GUIClip::Internal_PushParentClip_Injected(UnityEngine.Matrix4x4&,UnityEngine.Matrix4x4&,UnityEngine.Rect&)
 		void Register_UnityEngine_GUIClip_Internal_PushParentClip_Injected();
 		Register_UnityEngine_GUIClip_Internal_PushParentClip_Injected();
-
-		//System.Void UnityEngine.GUIClip::Internal_Push_Injected(UnityEngine.Rect&,UnityEngine.Vector2&,UnityEngine.Vector2&,System.Boolean)
-		void Register_UnityEngine_GUIClip_Internal_Push_Injected();
-		Register_UnityEngine_GUIClip_Internal_Push_Injected();
 
 		//System.Void UnityEngine.GUIClip::SetMatrix_Injected(UnityEngine.Matrix4x4&)
 		void Register_UnityEngine_GUIClip_SetMatrix_Injected();
@@ -9769,10 +9733,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.GUIStyle::set_alignment_Injected(System.IntPtr,UnityEngine.TextAnchor)
 		void Register_UnityEngine_GUIStyle_set_alignment_Injected();
 		Register_UnityEngine_GUIStyle_set_alignment_Injected();
-
-		//System.Void UnityEngine.GUIStyle::set_fontSize_Injected(System.IntPtr,System.Int32)
-		void Register_UnityEngine_GUIStyle_set_fontSize_Injected();
-		Register_UnityEngine_GUIStyle_set_fontSize_Injected();
 
 		//System.Void UnityEngine.GUIStyle::set_rawName_Injected(System.IntPtr,UnityEngine.Bindings.ManagedSpanWrapper&)
 		void Register_UnityEngine_GUIStyle_set_rawName_Injected();
@@ -9909,10 +9869,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.GUIUtility::set_imeCompositionMode(UnityEngine.IMECompositionMode)
 		void Register_UnityEngine_GUIUtility_set_imeCompositionMode();
 		Register_UnityEngine_GUIUtility_set_imeCompositionMode();
-
-		//System.Void UnityEngine.GUIUtility::set_mouseUsed(System.Boolean)
-		void Register_UnityEngine_GUIUtility_set_mouseUsed();
-		Register_UnityEngine_GUIUtility_set_mouseUsed();
 
 		//System.Void UnityEngine.GUIUtility::set_pixelsPerPoint(System.Single)
 		void Register_UnityEngine_GUIUtility_set_pixelsPerPoint();
