@@ -1670,10 +1670,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AndroidJNI_CallStringMethodUnsafeInternal_Injected();
 		Register_UnityEngine_AndroidJNI_CallStringMethodUnsafeInternal_Injected();
 
-		//System.Void UnityEngine.AndroidJNI::CallVoidMethodUnsafe(System.IntPtr,System.IntPtr,UnityEngine.jvalue*)
-		void Register_UnityEngine_AndroidJNI_CallVoidMethodUnsafe();
-		Register_UnityEngine_AndroidJNI_CallVoidMethodUnsafe();
-
 		//System.Void UnityEngine.AndroidJNI::DeleteLocalRef(System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_DeleteLocalRef();
 		Register_UnityEngine_AndroidJNI_DeleteLocalRef();

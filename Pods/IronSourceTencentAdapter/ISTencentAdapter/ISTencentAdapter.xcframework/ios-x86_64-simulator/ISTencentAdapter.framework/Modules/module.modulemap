@@ -1,6 +1,0 @@
-framework module ISTencentAdapter {
-  umbrella header "ISTencentAdapter.h"
-  export *
-
-  module * { export * }
-}

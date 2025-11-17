@@ -1,90 +1,35 @@
 PODS:
-  - Ads-Global (7.7.0.4):
-    - Ads-Global/BUAdSDK (= 7.7.0.4)
-  - Ads-Global/BUAdSDK (7.7.0.4):
-    - Ads-Global/PangleSDK
-    - Ads-Global/TikTokBusinessSDK
-  - Ads-Global/PangleSDK (7.7.0.4)
-  - Ads-Global/TikTokBusinessSDK (7.7.0.4)
-  - AppLovinSDK (13.5.0)
-  - FBAudienceNetwork (6.20.1)
-  - GDTMobSDK (4.15.60)
-  - Google-Mobile-Ads-SDK (12.12.0):
-    - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleUserMessagingPlatform (3.1.0)
-  - IronSourceAdMobAdapter (5.2.0.0):
-    - Google-Mobile-Ads-SDK (= 12.12.0)
-    - IronSourceSDK/Ads (~> 9.0)
   - IronSourceAdQualitySDK (9.1.0)
-  - IronSourceAppLovinAdapter (5.1.0.0):
-    - AppLovinSDK (= 13.5.0)
-    - IronSourceSDK/Ads (~> 9.0)
-  - IronSourceFacebookAdapter (5.0.0.0):
-    - FBAudienceNetwork (= 6.20.1)
-    - IronSourceSDK/Ads (~> 9.0)
-  - IronSourcePangleAdapter (5.2.0.0):
-    - Ads-Global (= 7.7.0.4)
-    - IronSourceSDK/Ads (~> 9.0)
   - IronSourceSDK (9.1.0.0):
     - IronSourceSDK/AdQuality (= 9.1.0.0)
     - IronSourceSDK/Ads (= 9.1.0.0)
   - IronSourceSDK/AdQuality (9.1.0.0):
     - IronSourceAdQualitySDK (~> 9.1.0)
   - IronSourceSDK/Ads (9.1.0.0)
-  - IronSourceTencentAdapter (5.1.0.0):
-    - GDTMobSDK (= 4.15.60)
+  - IronSourceUnityAdsAdapter (5.3.0.0):
     - IronSourceSDK/Ads (~> 9.0)
-  - IronSourceUnityAdsAdapter (5.2.0.0):
-    - IronSourceSDK/Ads (~> 9.0)
-    - UnityAds (= 4.16.3)
-  - UnityAds (4.16.3)
+    - UnityAds (= 4.16.4)
+  - UnityAds (4.16.4)
 
 DEPENDENCIES:
-  - IronSourceAdMobAdapter (= 5.2.0.0)
-  - IronSourceAppLovinAdapter (= 5.1.0.0)
-  - IronSourceFacebookAdapter (= 5.0.0.0)
-  - IronSourcePangleAdapter (= 5.2.0.0)
   - IronSourceSDK (= 9.1.0.0)
-  - IronSourceTencentAdapter (= 5.1.0.0)
-  - IronSourceUnityAdsAdapter (= 5.2.0.0)
+  - IronSourceUnityAdsAdapter (= 5.3.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs:
-    - Ads-Global
-    - AppLovinSDK
-    - FBAudienceNetwork
-    - GDTMobSDK
-    - Google-Mobile-Ads-SDK
-    - GoogleUserMessagingPlatform
-    - IronSourceAdMobAdapter
     - IronSourceAdQualitySDK
-    - IronSourceAppLovinAdapter
-    - IronSourceFacebookAdapter
-    - IronSourcePangleAdapter
     - IronSourceSDK
-    - IronSourceTencentAdapter
     - IronSourceUnityAdsAdapter
     - UnityAds
   trunk:
     - IronSourceSDK
 
 SPEC CHECKSUMS:
-  Ads-Global: 777ec343f5d0ca54bb0b4b74c285363065bb771a
-  AppLovinSDK: bf8974163120910e6b902e9610e7c5a2c0f577b6
-  FBAudienceNetwork: 08e86d63a05b3a5a59414af12e4af8d756943c80
-  GDTMobSDK: 8cd8edbf854115062da986ce7bc4b57948f69e2b
-  Google-Mobile-Ads-SDK: 4dde70a8c18d96b14f9548759b8cec6ecb0bc3e6
-  GoogleUserMessagingPlatform: befe603da6501006420c206222acd449bba45a9c
-  IronSourceAdMobAdapter: 0fa22b461f252c0e0b927783f154cfa974ea6ae7
   IronSourceAdQualitySDK: 004e42fe12e9e95a0665eaf35ac852a73a757d10
-  IronSourceAppLovinAdapter: 469b06b4e87109165fcca171c56ef79d31cfe3d6
-  IronSourceFacebookAdapter: 66c698ad05818bc03f080f7f1ce0a26850b26092
-  IronSourcePangleAdapter: 926970be0645ed7c1155e0e0efa3198befd07e7a
   IronSourceSDK: 42f7abe6ab74a76d27d9325718471ebe72dde3d2
-  IronSourceTencentAdapter: 979a485cd7b38bde7ef1e6aa8498dca0e61631de
-  IronSourceUnityAdsAdapter: e4fae7ab466615e8265086d2d9661b628d50a2b4
-  UnityAds: 64164885dd38214bfc556eb074ab1995cc613fbf
+  IronSourceUnityAdsAdapter: e159ed615130e7623b2f9802bfd612fa146984e4
+  UnityAds: 91a5d786c1e79fcbf702c525af4700158aeb36c8
 
-PODFILE CHECKSUM: b1750bad4462ad87b6dc73cb63b76caccab111ee
+PODFILE CHECKSUM: 1c5f1afe3cf4f203da83f9b6d42d9331d88f58b9
 
 COCOAPODS: 1.16.2
