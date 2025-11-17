@@ -11,17 +11,17 @@ jobs:
 
     steps:
       # 0) Checkout with LFS so Unity .a archives are real binaries (not LFS pointer text files)
-      - name: Checkout (with LFS)
+      - name: Checkout (without LFS)
         uses: actions/checkout@v4
         with:
-          lfs: true
+          lfs: false
           fetch-depth: 0
 
-      - name: Ensure Git LFS content is present
+      - name: Download libiPhone-lib.a from GitHub Release
         run: |
-          git lfs install
-          git lfs fetch --all
-          git lfs pull
+          mkdir -p Libraries
+          curl -L -o Libraries/libiPhone-lib.a \
+            https://github.com/bigtaoo/Tank-IOS/releases/download/LFS/libiPhone-lib.a
 
       - name: Verify Unity static libs are real (not LFS pointers)
         run: |
