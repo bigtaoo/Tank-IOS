@@ -63,7 +63,7 @@
     "Emscripten": {},
     "Platform": "iOS",
     "Architecture": "arm64",
-    "Outputpath": "/Users/wangtao/Library/Developer/Xcode/DerivedData/Unity-iPhone-frpkdosxilxpengbsbyeiwxpvxjz/Build/Products/ReleaseForRunning-iphoneos/libGameAssembly.a",
+    "Outputpath": "/Users/wangtao/Library/Developer/Xcode/DerivedData/Unity-iPhone-aiiewkexzxdpyobxtszqkxfsfuwl/Build/Products/ReleaseForRunning-iphoneos/libGameAssembly.a",
     "DontDeployBaselib": false,
     "Verbose": false,
     "ToolChainPath": "/Applications/Development/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain",
